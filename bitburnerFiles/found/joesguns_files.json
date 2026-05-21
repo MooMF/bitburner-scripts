@@ -1,0 +1,421 @@
+{
+  "server": "joesguns",
+  "timestamp": 1779352273345,
+  "files": [
+    {
+      "file": "contract-11204.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-124452.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-124789.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-128681-Sector12.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-131330-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-157584.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-169938-Sector12.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-191543.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-199578.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-207922.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-213318-Sector12.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-240072.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-257273-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-269707-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-28QoNO.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-302262.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-303278-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-340779.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-361482-Sector12.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-363163-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-375538.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-378455-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-384178-Netburners.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-399210.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-39949-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-407404-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-415499-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-417870-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-418533.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-420725-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-436516-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-436744.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-437123-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-442805-Netburners.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-449123-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-52129.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-536135.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-54915-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-550606-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-556151.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-564283.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-603546.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-62766.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-641444.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-691158.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-695460.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-702151-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-712112-Sector12.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-716066.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-77343.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-774449.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-776509-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-801303.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-806891-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-849049.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-852026-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-874732-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-8z5gsk.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-916865-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-937653.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-986207.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-995739-Netburners.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-CIW2gW.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-GaNWBX.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-Myok8J.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-OJso82.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-OhxoXY.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-QjEyV7.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-SppNYK.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-XCgtLB.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-dlAy8v.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-fQpVHT.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-j8vFlr.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-jYj9ur.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-mUAK3s.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-xkpKC4.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "data/joesguns_files.json",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "found/joesguns_files.json",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "joesguns_files.json",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "propagation.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "rent-capacity.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "rent-share.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "telemetry.js",
+      "copied": false,
+      "reason": "catalog-only"
+    }
+  ]
+}

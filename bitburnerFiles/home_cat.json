@@ -1,0 +1,33 @@
+{
+  "server": "home",
+  "files": [
+    "AutoLink.exe",
+    "BruteSSH.exe",
+    "DeepscanV1.exe",
+    "DeepscanV2.exe",
+    "FTPCrack.exe",
+    "Formulas.exe",
+    "HTTPWorm.exe",
+    "NUKE.exe",
+    "SQLInject.exe",
+    "ServerProfiler.exe",
+    "csec-test.msg",
+    "data/home_files.json",
+    "earlyhack.js",
+    "fl1ght.exe",
+    "hack.js",
+    "hackServers.js",
+    "home_cat.json",
+    "infect.js",
+    "iteration.js",
+    "j0.msg",
+    "j1.msg",
+    "j2.msg",
+    "j3.msg",
+    "nitesec-test.msg",
+    "propagation.js",
+    "purchaseServer8gb.js",
+    "relaySMTP.exe",
+    "servers.json"
+  ]
+}

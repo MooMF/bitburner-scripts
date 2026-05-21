@@ -1,0 +1,396 @@
+{
+  "server": "rothman-uni",
+  "timestamp": 1779352275059,
+  "files": [
+    {
+      "file": "contract-171126-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-189501-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-198303-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-214778.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-21890-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-2344.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-247320.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-247977-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-264512-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-266367-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-270616-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-271428.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-282816-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-297970.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-35126-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-365285.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-372018.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-398502.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-404871.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-428308-Netburners.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-437232-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-466478-TheBlackHand.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-46747.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-469852-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-47097-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-471010-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-4I9ncT.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-501546.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-512968-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-525412.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-534606-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-534771.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-54916-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-550410.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-557619.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-598675.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-61595.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-616273-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-632320.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-681790-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-682601-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-705080.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-7088.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-719141-Netburners.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-719548.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-72232.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-728845.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-739923.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-746335-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-750698-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-77422.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-782840.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-789356-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-805701-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-83418-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-873535-NiteSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-892113.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-940047-CyberSec.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-955775-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-958652-CarmichaelSecurity.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-9b5QlX.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-B0VW7A.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-FvaXRM.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-LxVCjM.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-MZYnrZ.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-jBlH81.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-oVRgtf.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-qQ0ECs.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-sDaJ0O.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "contract-wSQdCn.cct",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "data/rothman-uni_files.json",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "found/rothman-uni_files.json",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "rent-capacity.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "rent-share.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "secret-societies.lit",
+      "copied": true,
+      "reason": "downloadable"
+    },
+    {
+      "file": "telemetry.js",
+      "copied": false,
+      "reason": "catalog-only"
+    },
+    {
+      "file": "tensions-in-tech-race.lit",
+      "copied": true,
+      "reason": "downloadable"
+    },
+    {
+      "file": "the-failed-frontier.lit",
+      "copied": true,
+      "reason": "downloadable"
+    }
+  ]
+}

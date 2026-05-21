@@ -1,0 +1,3087 @@
+{
+  "server": "titan-labs",
+  "timestamp": 1779353553958,
+  "filesFound": 79,
+  "contractsFound": 75,
+  "files": [
+    {
+      "server": "titan-labs",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/titan-labs__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553259
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "coded-intelligence.lit",
+      "originalFile": "coded-intelligence.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/titan-labs__coded-intelligence.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353553265
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-154228.cct",
+      "originalFile": "contract-154228.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-154228.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-154228.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553271,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-154228.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-154228.cct\", \"titan-labs\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          7,
+          [
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-164748-CarmichaelSecurity.cct",
+      "originalFile": "contract-164748-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-164748-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-164748-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553276,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-164748-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-164748-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            1,
+            6
+          ],
+          [
+            3,
+            6,
+            9,
+            8
+          ],
+          [
+            3,
+            6,
+            8,
+            9,
+            8
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-165499-Netburners.cct",
+      "originalFile": "contract-165499-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-165499-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-165499-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553282,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-165499-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-165499-Netburners.cct\", \"titan-labs\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-192357-Sector12.cct",
+      "originalFile": "contract-192357-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-192357-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-192357-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553316,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-192357-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-192357-Sector12.cct\", \"titan-labs\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "75202184",
+          83
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-202142-Sector12.cct",
+      "originalFile": "contract-202142-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-202142-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-202142-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553323,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-202142-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-202142-Sector12.cct\", \"titan-labs\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          3,
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-236255.cct",
+      "originalFile": "contract-236255.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-236255.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-236255.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553329,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-236255.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-236255.cct\", \"titan-labs\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "33Tz633ggg551a582F65295vRHV2RPv03Xvm945d3zNe5433fS",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-264953.cct",
+      "originalFile": "contract-264953.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-264953.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-264953.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553335,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-264953.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-264953.cct\", \"titan-labs\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "5rXtXt923n5n860471j395mB1mV732Ow314D8FF568Dl61GagV384XlzZ",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-267101.cct",
+      "originalFile": "contract-267101.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-267101.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-267101.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553374,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-267101.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-267101.cct\", \"titan-labs\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "67934770075",
+          23
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-268495-TheBlackHand.cct",
+      "originalFile": "contract-268495-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-268495-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-268495-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553380,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-268495-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-268495-TheBlackHand.cct\", \"titan-labs\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 201447204,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-280050-CarmichaelSecurity.cct",
+      "originalFile": "contract-280050-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-280050-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-280050-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553385,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-280050-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-280050-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          87,
+          181,
+          32,
+          77,
+          178,
+          193,
+          8,
+          66,
+          198,
+          176,
+          172,
+          51,
+          141,
+          44,
+          148,
+          150,
+          70,
+          14,
+          40,
+          80,
+          102,
+          165,
+          181,
+          156,
+          99,
+          25,
+          68,
+          141,
+          85,
+          96,
+          183,
+          155,
+          27,
+          168,
+          132,
+          107,
+          124,
+          97
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-284746-CarmichaelSecurity.cct",
+      "originalFile": "contract-284746-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-284746-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-284746-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553391,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-284746-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-284746-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Compression I: RLE Compression",
+        "data": "hh00000OiiiiiiiiiiiiiiiiiiiiiiVVVVoLRReeOvvvv11YYGGGGGGGGGGGGGGooMMMMMMMMMMM",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-307666.cct",
+      "originalFile": "contract-307666.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-307666.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-307666.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553398,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-307666.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-307666.cct\", \"titan-labs\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "ENTERARRAYCACHEPRINTLOGIN",
+          "TERABYTE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-311879.cct",
+      "originalFile": "contract-311879.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-311879.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-311879.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553432,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-311879.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-311879.cct\", \"titan-labs\")",
+        "type": "Array Jumping Game",
+        "data": [
+          9,
+          7,
+          0,
+          3,
+          9,
+          0,
+          4,
+          10,
+          1,
+          0,
+          4,
+          1,
+          3,
+          7,
+          8,
+          0,
+          9
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-313580-CarmichaelSecurity.cct",
+      "originalFile": "contract-313580-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-313580-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-313580-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553437,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-313580-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-313580-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          185,
+          10,
+          68,
+          51,
+          119,
+          130,
+          115,
+          24,
+          80,
+          153,
+          171,
+          109,
+          148,
+          18,
+          65,
+          135,
+          194,
+          91,
+          53
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-325247-CarmichaelSecurity.cct",
+      "originalFile": "contract-325247-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-325247-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-325247-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553444,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-325247-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-325247-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            7,
+            9
+          ],
+          [
+            24,
+            27
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            24,
+            29
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-339831.cct",
+      "originalFile": "contract-339831.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-339831.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-339831.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553451,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-339831.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-339831.cct\", \"titan-labs\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -9,
+          -2,
+          7,
+          7,
+          -3,
+          -3,
+          6,
+          2,
+          -7,
+          7,
+          1,
+          -8,
+          7,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-345809-NiteSec.cct",
+      "originalFile": "contract-345809-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-345809-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-345809-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553484,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-345809-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-345809-NiteSec.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 34,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-354207-CarmichaelSecurity.cct",
+      "originalFile": "contract-354207-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-354207-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-354207-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553489,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-354207-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-354207-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          145,
+          5,
+          160,
+          145,
+          97,
+          61,
+          21,
+          190,
+          78,
+          124,
+          54,
+          141,
+          98,
+          97,
+          90,
+          64,
+          1,
+          200,
+          119,
+          111,
+          193
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-360001.cct",
+      "originalFile": "contract-360001.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-360001.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-360001.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553495,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-360001.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-360001.cct\", \"titan-labs\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            50,
+            28,
+            9,
+            10,
+            41,
+            37,
+            5
+          ],
+          [
+            12,
+            16,
+            47,
+            19,
+            14,
+            19,
+            18
+          ],
+          [
+            21,
+            43,
+            13,
+            30,
+            10,
+            43,
+            3
+          ],
+          [
+            35,
+            32,
+            36,
+            3,
+            14,
+            49,
+            8
+          ],
+          [
+            23,
+            19,
+            45,
+            46,
+            48,
+            16,
+            37
+          ],
+          [
+            21,
+            32,
+            22,
+            43,
+            11,
+            41,
+            15
+          ],
+          [
+            45,
+            17,
+            10,
+            35,
+            5,
+            3,
+            3
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-387949.cct",
+      "originalFile": "contract-387949.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-387949.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-387949.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553501,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-387949.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-387949.cct\", \"titan-labs\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "(a()(()(()",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-408019.cct",
+      "originalFile": "contract-408019.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-408019.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-408019.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553506,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-408019.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-408019.cct\", \"titan-labs\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          7,
+          [
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              4,
+              6
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-469103-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-469103-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-469103-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-469103-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553543,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-469103-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-469103-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "LINUXFRAMEDEBUGMEDIAPRINT",
+          "COMPILE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-472587.cct",
+      "originalFile": "contract-472587.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-472587.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-472587.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553549,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-472587.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-472587.cct\", \"titan-labs\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-485660-CarmichaelSecurity.cct",
+      "originalFile": "contract-485660-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-485660-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-485660-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553555,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-485660-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-485660-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            2,
+            9
+          ],
+          [
+            6,
+            1,
+            8,
+            7
+          ],
+          [
+            1,
+            8,
+            3,
+            9,
+            7
+          ],
+          [
+            4,
+            9,
+            8,
+            3,
+            6,
+            9
+          ],
+          [
+            8,
+            3,
+            1,
+            6,
+            9,
+            8,
+            8
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-503815-CarmichaelSecurity.cct",
+      "originalFile": "contract-503815-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-503815-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-503815-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553562,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-503815-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-503815-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          36,
+          [
+            1,
+            2,
+            4,
+            5,
+            6,
+            8,
+            10,
+            11
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-5229-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-5229-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-5229-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-5229-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553600,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-5229-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-5229-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          17,
+          [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            12,
+            13
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-572633.cct",
+      "originalFile": "contract-572633.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-572633.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-572633.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553606,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-572633.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-572633.cct\", \"titan-labs\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          10,
+          7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-574346-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-574346-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-574346-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-574346-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553612,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-574346-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-574346-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          10,
+          [
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              5,
+              9
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-5sh6jx.cct",
+      "originalFile": "contract-5sh6jx.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-5sh6jx.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-5sh6jx.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553619,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-5sh6jx.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-5sh6jx.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          94,
+          156,
+          5,
+          200
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-609765.cct",
+      "originalFile": "contract-609765.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-609765.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-609765.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553655,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-609765.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-609765.cct\", \"titan-labs\")",
+        "type": "Find Largest Prime Factor",
+        "data": 718708546,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-616186-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-616186-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-616186-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-616186-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553664,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-616186-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-616186-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Square Root",
+        "data": "80837985324656058895628450950069422788754839642411509927790317619167110278231359351457316424167125566198344343342007128924537566695010487525653714795335473756323215240584761350335369026243530798254880",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-636426.cct",
+      "originalFile": "contract-636426.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-636426.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-636426.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553669,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-636426.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-636426.cct\", \"titan-labs\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "6gKHG5a6328O694MNgF490979BYne5wLrY08NUELrYh7890831K",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-64153.cct",
+      "originalFile": "contract-64153.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-64153.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-64153.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553676,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-64153.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-64153.cct\", \"titan-labs\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            4,
+            3,
+            2
+          ],
+          [
+            3,
+            7,
+            1,
+            1
+          ],
+          [
+            4,
+            5,
+            8,
+            8,
+            2
+          ],
+          [
+            3,
+            2,
+            1,
+            2,
+            7,
+            7
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-648354.cct",
+      "originalFile": "contract-648354.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-648354.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-648354.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553682,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-648354.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-648354.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          56,
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            18,
+            20,
+            22,
+            25
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-6HUN8R.cct",
+      "originalFile": "contract-6HUN8R.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-6HUN8R.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-6HUN8R.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553687,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-6HUN8R.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-6HUN8R.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 38,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-706125.cct",
+      "originalFile": "contract-706125.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-706125.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-706125.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553692,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-706125.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-706125.cct\", \"titan-labs\")",
+        "type": "Array Jumping Game II",
+        "data": [
+          2,
+          3,
+          7,
+          2,
+          4,
+          3,
+          1,
+          0,
+          2,
+          4
+        ],
+        "triesRemaining": 3,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-750255.cct",
+      "originalFile": "contract-750255.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-750255.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-750255.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553698,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-750255.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-750255.cct\", \"titan-labs\")",
+        "type": "Square Root",
+        "data": "185607140258961830053098705456314765801712158698232286351352130901280935996018528367310077715979721097531373497921935438830656835158407229388006432571822091054831596242573954414385111788326193446890112",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-751834-CyberSec.cct",
+      "originalFile": "contract-751834-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-751834-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-751834-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553704,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-751834-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-751834-CyberSec.cct\", \"titan-labs\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          12,
+          [
+            [
+              9,
+              11
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-777287.cct",
+      "originalFile": "contract-777287.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-777287.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-777287.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553710,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-777287.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-777287.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          88,
+          117,
+          39,
+          180,
+          13,
+          168,
+          77,
+          38,
+          88,
+          199
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-778668-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-778668-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-778668-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-778668-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553715,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-778668-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-778668-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            4
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            5,
+            5,
+            8,
+            5
+          ],
+          [
+            2,
+            9,
+            8,
+            7,
+            5
+          ],
+          [
+            3,
+            3,
+            5,
+            1,
+            7,
+            9
+          ],
+          [
+            2,
+            3,
+            5,
+            6,
+            4,
+            1,
+            8
+          ],
+          [
+            7,
+            1,
+            7,
+            9,
+            4,
+            4,
+            6,
+            6
+          ],
+          [
+            5,
+            6,
+            9,
+            6,
+            4,
+            7,
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            8,
+            4,
+            6,
+            2,
+            5,
+            4,
+            5,
+            6,
+            6
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-787369.cct",
+      "originalFile": "contract-787369.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-787369.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-787369.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553721,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-787369.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-787369.cct\", \"titan-labs\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-793867.cct",
+      "originalFile": "contract-793867.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-793867.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-793867.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553729,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-793867.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-793867.cct\", \"titan-labs\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-799602-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-799602-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-799602-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-799602-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553735,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-799602-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-799602-CentralIntelligenceAgency.cct\", \"titan-labs\")",
+        "type": "Array Jumping Game",
+        "data": [
+          6,
+          3,
+          5,
+          7,
+          5,
+          7,
+          9,
+          5,
+          0,
+          10,
+          3,
+          6,
+          1,
+          3,
+          0,
+          3,
+          2,
+          10,
+          7,
+          8,
+          0,
+          8,
+          1,
+          3
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-830702.cct",
+      "originalFile": "contract-830702.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-830702.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-830702.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553741,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-830702.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-830702.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 25,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-84782.cct",
+      "originalFile": "contract-84782.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-84782.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-84782.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553747,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-84782.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-84782.cct\", \"titan-labs\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            23,
+            32
+          ],
+          [
+            16,
+            21
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            19,
+            28
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            19,
+            25
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            19,
+            28
+          ],
+          [
+            25,
+            35
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            19,
+            26
+          ],
+          [
+            25,
+            33
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-854639.cct",
+      "originalFile": "contract-854639.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-854639.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-854639.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553754,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-854639.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-854639.cct\", \"titan-labs\")",
+        "type": "Compression I: RLE Compression",
+        "data": "6rrrrrrrrrrr2dEEEE6uuuuuuuuuuukNiooooooooox77PP888hhhhhhhhhhhhA77pVVsaabv",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-860593-CarmichaelSecurity.cct",
+      "originalFile": "contract-860593-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-860593-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-860593-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553759,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-860593-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-860593-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 81493,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-869373-Sector12.cct",
+      "originalFile": "contract-869373-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-869373-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-869373-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553765,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-869373-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-869373-Sector12.cct\", \"titan-labs\")",
+        "type": "Generate IP Addresses",
+        "data": "64163156",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-892250-TheBlackHand.cct",
+      "originalFile": "contract-892250-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-892250-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-892250-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553770,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-892250-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-892250-TheBlackHand.cct\", \"titan-labs\")",
+        "type": "Generate IP Addresses",
+        "data": "123181112191",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-892791.cct",
+      "originalFile": "contract-892791.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-892791.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-892791.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553776,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-892791.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-892791.cct\", \"titan-labs\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            18,
+            22
+          ],
+          [
+            21,
+            29
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            23,
+            28
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-893085-NiteSec.cct",
+      "originalFile": "contract-893085-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-893085-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-893085-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553783,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-893085-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-893085-NiteSec.cct\", \"titan-labs\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "10001000000000001001111110110010",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-898271.cct",
+      "originalFile": "contract-898271.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-898271.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-898271.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553789,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-898271.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-898271.cct\", \"titan-labs\")",
+        "type": "Compression III: LZ Compression",
+        "data": "oCIoffffffmalOQmRalOZ1Hv0M1OX5XtY35XM5XM5XMHM5XMHM5XFNFMFMFMF315TTDuyuTDuyuTDuyyyy",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-912631.cct",
+      "originalFile": "contract-912631.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-912631.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-912631.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553795,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-912631.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-912631.cct\", \"titan-labs\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "1100100011000000100001100111100111101010100011110110100001000101",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-914108-CarmichaelSecurity.cct",
+      "originalFile": "contract-914108-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-914108-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-914108-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553802,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-914108-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-914108-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-926085.cct",
+      "originalFile": "contract-926085.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-926085.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-926085.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553808,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-926085.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-926085.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          79,
+          132,
+          136,
+          157,
+          122,
+          100,
+          72,
+          31,
+          128,
+          147,
+          92,
+          200,
+          7,
+          163,
+          126,
+          39,
+          179,
+          44,
+          54,
+          84,
+          41,
+          24,
+          127,
+          54,
+          65,
+          170,
+          94,
+          78,
+          122,
+          53,
+          168,
+          186,
+          99,
+          36,
+          13,
+          12,
+          158,
+          146,
+          149,
+          138,
+          96,
+          67,
+          45,
+          13,
+          75,
+          35,
+          172,
+          45
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-934280-CarmichaelSecurity.cct",
+      "originalFile": "contract-934280-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-934280-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-934280-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553814,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-934280-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-934280-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          104,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-952583.cct",
+      "originalFile": "contract-952583.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-952583.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-952583.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553820,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-952583.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-952583.cct\", \"titan-labs\")",
+        "type": "Array Jumping Game II",
+        "data": [
+          2,
+          5,
+          2,
+          2,
+          2,
+          1,
+          1,
+          5,
+          3,
+          2,
+          2,
+          4,
+          4,
+          2,
+          5,
+          2,
+          4,
+          0,
+          2,
+          3,
+          5,
+          5,
+          5
+        ],
+        "triesRemaining": 3,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-954513.cct",
+      "originalFile": "contract-954513.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-954513.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-954513.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553826,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-954513.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-954513.cct\", \"titan-labs\")",
+        "type": "Find Largest Prime Factor",
+        "data": 922333891,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-959736.cct",
+      "originalFile": "contract-959736.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-959736.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-959736.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553833,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-959736.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-959736.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 33,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-966828.cct",
+      "originalFile": "contract-966828.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-966828.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-966828.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553840,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-966828.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-966828.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 58,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-986490-CarmichaelSecurity.cct",
+      "originalFile": "contract-986490-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-986490-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-986490-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553846,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-986490-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-986490-CarmichaelSecurity.cct\", \"titan-labs\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FLASH FRAME SHELL LOGIC VIRUS",
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-994552.cct",
+      "originalFile": "contract-994552.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-994552.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-994552.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553852,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-994552.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-994552.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          17,
+          57,
+          53,
+          47,
+          12,
+          158,
+          161,
+          182,
+          139,
+          173,
+          130,
+          107,
+          189,
+          190,
+          27,
+          116,
+          150,
+          67,
+          139,
+          167,
+          23,
+          115
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-HFf6xf.cct",
+      "originalFile": "contract-HFf6xf.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-HFf6xf.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-HFf6xf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553864,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-HFf6xf.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-HFf6xf.cct\", \"titan-labs\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "CLOUD LINUX ENTER DEBUG QUEUE",
+          12
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-KhFuTp.cct",
+      "originalFile": "contract-KhFuTp.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-KhFuTp.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-KhFuTp.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553870,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-KhFuTp.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-KhFuTp.cct\", \"titan-labs\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -2,
+          -3,
+          7,
+          10,
+          9,
+          -4,
+          -9,
+          3,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-NrSBf4.cct",
+      "originalFile": "contract-NrSBf4.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-NrSBf4.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-NrSBf4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553877,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-NrSBf4.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-NrSBf4.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 68,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-QMXNGJ.cct",
+      "originalFile": "contract-QMXNGJ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-QMXNGJ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-QMXNGJ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553884,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-QMXNGJ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-QMXNGJ.cct\", \"titan-labs\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          5,
+          6,
+          -10,
+          9,
+          -10,
+          -5,
+          10,
+          6,
+          0,
+          -10,
+          3,
+          9,
+          -5,
+          2,
+          -9,
+          -6,
+          -5,
+          -5,
+          2,
+          0,
+          3,
+          6,
+          -7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-asoWZF.cct",
+      "originalFile": "contract-asoWZF.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-asoWZF.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-asoWZF.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553889,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-asoWZF.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-asoWZF.cct\", \"titan-labs\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "DEBUG MEDIA ENTER QUEUE INBOX",
+          23
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-gJnYQl.cct",
+      "originalFile": "contract-gJnYQl.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-gJnYQl.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-gJnYQl.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553896,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-gJnYQl.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-gJnYQl.cct\", \"titan-labs\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          194,
+          49,
+          131,
+          140,
+          79,
+          80,
+          97,
+          14,
+          179,
+          17,
+          141,
+          99,
+          171,
+          63,
+          30,
+          34,
+          121,
+          135,
+          136,
+          128,
+          117,
+          39,
+          68,
+          82,
+          88,
+          40,
+          49
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-nCekeZ.cct",
+      "originalFile": "contract-nCekeZ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-nCekeZ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-nCekeZ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553902,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-nCekeZ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-nCekeZ.cct\", \"titan-labs\")",
+        "type": "Find Largest Prime Factor",
+        "data": 239812390,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-nrRta7.cct",
+      "originalFile": "contract-nrRta7.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-nrRta7.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-nrRta7.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553908,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-nrRta7.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-nrRta7.cct\", \"titan-labs\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          8,
+          -5,
+          5,
+          10,
+          3
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-rPsQXt.cct",
+      "originalFile": "contract-rPsQXt.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-rPsQXt.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-rPsQXt.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553914,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-rPsQXt.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-rPsQXt.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 9,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-rwAro9.cct",
+      "originalFile": "contract-rwAro9.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-rwAro9.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-rwAro9.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553920,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-rwAro9.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-rwAro9.cct\", \"titan-labs\")",
+        "type": "Total Ways to Sum",
+        "data": 63,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-suao9R.cct",
+      "originalFile": "contract-suao9R.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-suao9R.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-suao9R.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553927,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-suao9R.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-suao9R.cct\", \"titan-labs\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -6,
+          -4,
+          5,
+          -6,
+          2,
+          2,
+          -4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-v14rMz.cct",
+      "originalFile": "contract-v14rMz.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-v14rMz.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-v14rMz.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553933,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-v14rMz.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-v14rMz.cct\", \"titan-labs\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FRAME SHELL QUEUE ARRAY INBOX",
+          12
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "contract-zVE5U6.cct",
+      "originalFile": "contract-zVE5U6.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/titan-labs__contract-zVE5U6.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@titan-labs (PID - 12468)\n\nscp: Cannot transfer contract-zVE5U6.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553939,
+      "contract": {
+        "originServer": "titan-labs",
+        "originFile": "contract-zVE5U6.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-zVE5U6.cct\", \"titan-labs\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FLASH ARRAY TABLE LOGIN POPUP",
+          6
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "found/titan-labs_files.json",
+      "originalFile": "found/titan-labs_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/titan-labs__found__titan-labs_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553945
+    },
+    {
+      "server": "titan-labs",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/titan-labs__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553952
+    }
+  ]
+}

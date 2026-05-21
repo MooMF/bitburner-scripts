@@ -1,0 +1,2780 @@
+{
+  "server": "silver-helix",
+  "timestamp": 1779353553698,
+  "filesFound": 82,
+  "contractsFound": 77,
+  "files": [
+    {
+      "server": "silver-helix",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/silver-helix__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353552761
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-119091.cct",
+      "originalFile": "contract-119091.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-119091.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-119091.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552768,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-119091.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-119091.cct\", \"silver-helix\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "SHELL TRASH MACRO FRAME QUEUE",
+          16
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-138754-CarmichaelSecurity.cct",
+      "originalFile": "contract-138754-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-138754-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-138754-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552773,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-138754-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-138754-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          143,
+          181,
+          19,
+          81,
+          25,
+          65,
+          78,
+          197,
+          197,
+          160,
+          151,
+          178,
+          120,
+          132,
+          135,
+          167,
+          136,
+          61,
+          14,
+          154,
+          45,
+          200,
+          131,
+          49,
+          146,
+          4,
+          44,
+          96,
+          183,
+          47
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-144233.cct",
+      "originalFile": "contract-144233.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-144233.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-144233.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552778,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-144233.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-144233.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          134,
+          42,
+          146,
+          67,
+          143,
+          81,
+          61,
+          120,
+          55,
+          168,
+          9,
+          139,
+          150,
+          44,
+          4,
+          144
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-146533.cct",
+      "originalFile": "contract-146533.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-146533.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-146533.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552784,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-146533.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-146533.cct\", \"silver-helix\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "86959",
+          73
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-158184.cct",
+      "originalFile": "contract-158184.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-158184.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-158184.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552816,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-158184.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-158184.cct\", \"silver-helix\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          3,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-161813.cct",
+      "originalFile": "contract-161813.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-161813.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-161813.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552821,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-161813.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-161813.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 152473627,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-166412.cct",
+      "originalFile": "contract-166412.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-166412.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-166412.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552827,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-166412.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-166412.cct\", \"silver-helix\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "4k7Oi137vNKdx12649fC12uxiM0188yfW6eSzP6392zyyQlaLm09SQl7Mg7mR997j6bPwnI34",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-168819-CarmichaelSecurity.cct",
+      "originalFile": "contract-168819-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-168819-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-168819-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552833,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-168819-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-168819-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          126,
+          139,
+          19,
+          21,
+          28,
+          193,
+          176,
+          195,
+          98,
+          154,
+          155,
+          163,
+          51,
+          177,
+          86,
+          129,
+          162,
+          177,
+          153,
+          84,
+          123,
+          193,
+          68,
+          130,
+          114,
+          17,
+          20,
+          55,
+          126,
+          63,
+          172,
+          6,
+          139,
+          56,
+          121,
+          16,
+          68,
+          170,
+          70,
+          154,
+          10,
+          181,
+          122,
+          174,
+          51,
+          121
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-176258.cct",
+      "originalFile": "contract-176258.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-176258.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-176258.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552838,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-176258.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-176258.cct\", \"silver-helix\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-194576-Sector12.cct",
+      "originalFile": "contract-194576-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-194576-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-194576-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552878,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-194576-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-194576-Sector12.cct\", \"silver-helix\")",
+        "type": "Square Root",
+        "data": "83409552265872091386578055828214034851690910506972649753824768422228429469450404563364279124540351849322132852933230503633406306404945169178438298359682322390552211062421729493407999807115659187789493",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-242977-CarmichaelSecurity.cct",
+      "originalFile": "contract-242977-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-242977-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-242977-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552884,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-242977-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-242977-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          128,
+          58,
+          91,
+          17,
+          69,
+          194,
+          154,
+          30,
+          67,
+          7,
+          17,
+          14,
+          62,
+          65,
+          131,
+          36,
+          89,
+          104,
+          87,
+          143,
+          171,
+          153,
+          150,
+          123,
+          150,
+          183,
+          187,
+          49,
+          173,
+          45,
+          162,
+          116,
+          50,
+          154,
+          53,
+          199,
+          114,
+          37,
+          75
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-247312.cct",
+      "originalFile": "contract-247312.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-247312.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-247312.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552890,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-247312.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-247312.cct\", \"silver-helix\")",
+        "type": "Compression I: RLE Compression",
+        "data": "qMMtJllrXXEEEEEEEUUfAATTUPTTTTTTTTTTTaaaaaaaaaddddddXXiiQQGGGGGgggggggggggeeeeeeeeet",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-280320.cct",
+      "originalFile": "contract-280320.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-280320.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-280320.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552896,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-280320.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-280320.cct\", \"silver-helix\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY MACRO TRASH PASTE CACHE",
+          19
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-2v57Xf.cct",
+      "originalFile": "contract-2v57Xf.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-2v57Xf.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-2v57Xf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552902,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-2v57Xf.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-2v57Xf.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 532638735,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-306518-CarmichaelSecurity.cct",
+      "originalFile": "contract-306518-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-306518-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-306518-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552932,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-306518-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-306518-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            28,
+            39,
+            39,
+            39,
+            15,
+            6,
+            25,
+            20,
+            25
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-325136-CyberSec.cct",
+      "originalFile": "contract-325136-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-325136-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-325136-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552938,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-325136-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-325136-CyberSec.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 232862851,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-34208-CarmichaelSecurity.cct",
+      "originalFile": "contract-34208-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-34208-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-34208-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552944,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-34208-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-34208-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "EMAILCLOUDTABLEPOPUPPRINT",
+          "INTERFACE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-343517-CarmichaelSecurity.cct",
+      "originalFile": "contract-343517-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-343517-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-343517-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552950,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-343517-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-343517-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          9,
+          -10,
+          4,
+          5,
+          5,
+          6,
+          -6,
+          -6,
+          -1,
+          -6,
+          -1,
+          3,
+          -10,
+          5,
+          2,
+          -7,
+          3,
+          -6,
+          6,
+          0
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-373754-Sector12.cct",
+      "originalFile": "contract-373754-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-373754-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-373754-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552956,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-373754-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-373754-Sector12.cct\", \"silver-helix\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 49,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-381044-NiteSec.cct",
+      "originalFile": "contract-381044-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-381044-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-381044-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552991,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-381044-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-381044-NiteSec.cct\", \"silver-helix\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 558,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-384234-CarmichaelSecurity.cct",
+      "originalFile": "contract-384234-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-384234-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-384234-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552996,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-384234-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-384234-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "9F3azFB7NM865Xx4QS1892qcBirF4w09XOjkxeJBW14965k61YvHd369QhElmRQSf8626G",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-404556.cct",
+      "originalFile": "contract-404556.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-404556.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-404556.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553002,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-404556.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-404556.cct\", \"silver-helix\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            11,
+            17
+          ],
+          [
+            20,
+            23
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            11,
+            20
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            23,
+            31
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            21,
+            26
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            24,
+            31
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-422253.cct",
+      "originalFile": "contract-422253.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-422253.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-422253.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553008,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-422253.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-422253.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          18,
+          [
+            1,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            15,
+            16
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-451948.cct",
+      "originalFile": "contract-451948.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-451948.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-451948.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553014,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-451948.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-451948.cct\", \"silver-helix\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "01101000000011011000000011011001",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-485876-TheBlackHand.cct",
+      "originalFile": "contract-485876-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-485876-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-485876-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553045,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-485876-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-485876-TheBlackHand.cct\", \"silver-helix\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            15,
+            22
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            16,
+            23
+          ],
+          [
+            18,
+            21
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-491493-CarmichaelSecurity.cct",
+      "originalFile": "contract-491493-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-491493-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-491493-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553051,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-491493-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-491493-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          155,
+          [
+            1,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            10,
+            12
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-497999.cct",
+      "originalFile": "contract-497999.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-497999.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-497999.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553057,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-497999.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-497999.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          5,
+          -8,
+          6,
+          1,
+          1,
+          3,
+          5,
+          -10,
+          -10,
+          10,
+          8,
+          4,
+          -3,
+          3,
+          5,
+          -5,
+          6,
+          8,
+          -9,
+          -2,
+          -8,
+          -10,
+          -6,
+          3,
+          -10,
+          8,
+          -9,
+          8,
+          -7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-504199.cct",
+      "originalFile": "contract-504199.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-504199.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-504199.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553063,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-504199.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-504199.cct\", \"silver-helix\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          9,
+          10
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-515333-CarmichaelSecurity.cct",
+      "originalFile": "contract-515333-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-515333-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-515333-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553070,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-515333-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-515333-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          7,
+          [
+            109,
+            30,
+            179,
+            135,
+            90,
+            75,
+            200,
+            107,
+            52,
+            116,
+            55,
+            5,
+            115,
+            178,
+            6,
+            192,
+            169,
+            83,
+            124,
+            47,
+            8,
+            50,
+            59,
+            122
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-523654-CarmichaelSecurity.cct",
+      "originalFile": "contract-523654-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-523654-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-523654-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553101,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-523654-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-523654-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-536050-NiteSec.cct",
+      "originalFile": "contract-536050-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-536050-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-536050-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553108,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-536050-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-536050-NiteSec.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 933931382,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-548836.cct",
+      "originalFile": "contract-548836.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-548836.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-548836.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553113,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-548836.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-548836.cct\", \"silver-helix\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            19,
+            33
+          ],
+          [
+            38,
+            35
+          ],
+          [
+            17,
+            47
+          ],
+          [
+            49,
+            34
+          ],
+          [
+            43,
+            14
+          ],
+          [
+            18,
+            43
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            46,
+            39
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-561486-TheBlackHand.cct",
+      "originalFile": "contract-561486-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-561486-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-561486-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553119,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-561486-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-561486-TheBlackHand.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          189,
+          54,
+          48,
+          168
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-574063-CarmichaelSecurity.cct",
+      "originalFile": "contract-574063-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-574063-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-574063-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553126,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-574063-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-574063-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 16,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-576398.cct",
+      "originalFile": "contract-576398.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-576398.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-576398.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553141,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-576398.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-576398.cct\", \"silver-helix\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-623547.cct",
+      "originalFile": "contract-623547.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-623547.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-623547.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553147,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-623547.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-623547.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          7,
+          10,
+          -3,
+          0,
+          -3,
+          -7,
+          10,
+          -2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-626221-Sector12.cct",
+      "originalFile": "contract-626221-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-626221-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-626221-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553153,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-626221-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-626221-Sector12.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 42,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-652933-CarmichaelSecurity.cct",
+      "originalFile": "contract-652933-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-652933-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-652933-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553158,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-652933-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-652933-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "1100100101111001011001001110111000111011000000001111011001101110",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-67056-CarmichaelSecurity.cct",
+      "originalFile": "contract-67056-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-67056-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-67056-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553164,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-67056-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-67056-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Square Root",
+        "data": "77928419783974734591902934193225521902541265477574606160896528843662895288548946141195335273297528337890429477527648331095897012886951152659230336448006786410826611989304575343392452502819151098656580",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-677149.cct",
+      "originalFile": "contract-677149.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-677149.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-677149.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553201,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-677149.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-677149.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          110,
+          [
+            2,
+            5,
+            6,
+            7,
+            10,
+            12,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-6zNunt.cct",
+      "originalFile": "contract-6zNunt.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-6zNunt.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-6zNunt.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553208,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-6zNunt.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-6zNunt.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 93,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-70073-CarmichaelSecurity.cct",
+      "originalFile": "contract-70073-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-70073-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-70073-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553214,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-70073-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-70073-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "TABLE CLOUD CACHE MACRO DEBUG",
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-704008-Sector12.cct",
+      "originalFile": "contract-704008-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-704008-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-704008-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553220,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-704008-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-704008-Sector12.cct\", \"silver-helix\")",
+        "type": "Square Root",
+        "data": "76814779954330596601302049155729888828388760930267615774479152614839068551822392842228766798513138849633929570576820151601614461764153743826831329415914096163161999412858217707457783567086111775992424",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-722705-CarmichaelSecurity.cct",
+      "originalFile": "contract-722705-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-722705-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-722705-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553260,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-722705-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-722705-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Compression I: RLE Compression",
+        "data": "PPqquu5555555555Y888888kkkkkkkkklggggggggg4444444444444NNNNNNNn77777777LLGGPVggggggggggg7Uuuuuuu",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-72460-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-72460-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-72460-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-72460-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553265,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-72460-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-72460-CentralIntelligenceAgency.cct\", \"silver-helix\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "(a)a(a)a",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-732968.cct",
+      "originalFile": "contract-732968.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-732968.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-732968.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553271,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-732968.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-732968.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 79,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-741877.cct",
+      "originalFile": "contract-741877.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-741877.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-741877.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553277,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-741877.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-741877.cct\", \"silver-helix\")",
+        "type": "Compression I: RLE Compression",
+        "data": "WWVV22222222LVVggggLLGGHKKKf2yy110000000UccggWWn55Hsrrffdd533366TTTTTTppppppppppppppQQQ",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-745157-Sector12.cct",
+      "originalFile": "contract-745157-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-745157-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-745157-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553282,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-745157-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-745157-Sector12.cct\", \"silver-helix\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          6,
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-74yYpe.cct",
+      "originalFile": "contract-74yYpe.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-74yYpe.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-74yYpe.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553316,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-74yYpe.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-74yYpe.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -2,
+          -4,
+          -4,
+          9,
+          -8,
+          7,
+          9,
+          1,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-75980-CarmichaelSecurity.cct",
+      "originalFile": "contract-75980-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-75980-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-75980-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553323,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-75980-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-75980-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 170953645,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-768804-CarmichaelSecurity.cct",
+      "originalFile": "contract-768804-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-768804-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-768804-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553330,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-768804-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-768804-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Generate IP Addresses",
+        "data": "184809557",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-770874-Netburners.cct",
+      "originalFile": "contract-770874-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-770874-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-770874-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553335,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-770874-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-770874-Netburners.cct\", \"silver-helix\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          4,
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-805360-CarmichaelSecurity.cct",
+      "originalFile": "contract-805360-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-805360-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-805360-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553374,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-805360-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-805360-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -5,
+          7,
+          6,
+          3,
+          -2,
+          4,
+          4,
+          7,
+          9,
+          1,
+          5,
+          -4,
+          8,
+          -3,
+          -9,
+          -1,
+          8,
+          -1,
+          -10,
+          -3,
+          -9,
+          -9,
+          8,
+          9,
+          10,
+          -8,
+          -2,
+          3,
+          -1,
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-82004.cct",
+      "originalFile": "contract-82004.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-82004.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-82004.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553380,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-82004.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-82004.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          2,
+          [
+            142,
+            168,
+            145,
+            137,
+            166,
+            86,
+            9,
+            39,
+            37,
+            142,
+            198,
+            89,
+            15,
+            157,
+            114,
+            74,
+            194,
+            31,
+            165,
+            76,
+            74,
+            14,
+            180,
+            197,
+            48,
+            169,
+            151,
+            10,
+            14,
+            167,
+            1,
+            146,
+            163
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-852361-Sector12.cct",
+      "originalFile": "contract-852361-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-852361-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-852361-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553385,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-852361-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-852361-Sector12.cct\", \"silver-helix\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "((()a(()(a))))",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-861758-Sector12.cct",
+      "originalFile": "contract-861758-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-861758-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-861758-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553391,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-861758-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-861758-Sector12.cct\", \"silver-helix\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          4,
+          5,
+          -9,
+          3,
+          -4,
+          9,
+          -2,
+          1,
+          9,
+          1,
+          -10,
+          8,
+          4,
+          -8,
+          4,
+          7,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-864723-NiteSec.cct",
+      "originalFile": "contract-864723-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-864723-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-864723-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553398,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-864723-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-864723-NiteSec.cct\", \"silver-helix\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            18
+          ],
+          [
+            31
+          ],
+          [
+            15
+          ],
+          [
+            25
+          ],
+          [
+            10
+          ],
+          [
+            14
+          ],
+          [
+            45
+          ],
+          [
+            47
+          ],
+          [
+            36
+          ],
+          [
+            5
+          ],
+          [
+            14
+          ],
+          [
+            41
+          ],
+          [
+            38
+          ],
+          [
+            5
+          ],
+          [
+            22
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-87036-CarmichaelSecurity.cct",
+      "originalFile": "contract-87036-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-87036-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-87036-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553432,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-87036-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-87036-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Generate IP Addresses",
+        "data": "806613215",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-876111.cct",
+      "originalFile": "contract-876111.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-876111.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-876111.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553437,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-876111.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-876111.cct\", \"silver-helix\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "(a())((",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-884250.cct",
+      "originalFile": "contract-884250.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-884250.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-884250.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553445,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-884250.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-884250.cct\", \"silver-helix\")",
+        "type": "Generate IP Addresses",
+        "data": "20918878114",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-902776.cct",
+      "originalFile": "contract-902776.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-902776.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-902776.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553451,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-902776.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-902776.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 765200197,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-917226.cct",
+      "originalFile": "contract-917226.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-917226.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-917226.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553484,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-917226.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-917226.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          7,
+          [
+            95,
+            43,
+            83,
+            6,
+            9,
+            161,
+            159,
+            168,
+            198,
+            2,
+            16,
+            85,
+            100,
+            23,
+            174,
+            13,
+            43,
+            186,
+            42,
+            177,
+            83,
+            96,
+            120,
+            34,
+            109,
+            47,
+            182,
+            68,
+            200,
+            152,
+            69,
+            172,
+            182,
+            86,
+            13,
+            26
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-946661-CarmichaelSecurity.cct",
+      "originalFile": "contract-946661-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-946661-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-946661-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553489,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-946661-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-946661-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          7,
+          [
+            124,
+            139,
+            105,
+            116,
+            42,
+            138,
+            65,
+            106,
+            25,
+            11,
+            94,
+            81,
+            21,
+            107,
+            31,
+            130,
+            139,
+            80,
+            154,
+            35,
+            162,
+            95,
+            63,
+            121,
+            73,
+            182,
+            142,
+            5,
+            104,
+            31,
+            109,
+            196
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-95345-Sector12.cct",
+      "originalFile": "contract-95345-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-95345-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-95345-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553495,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-95345-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-95345-Sector12.cct\", \"silver-helix\")",
+        "type": "Generate IP Addresses",
+        "data": "35446124",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-956742-CarmichaelSecurity.cct",
+      "originalFile": "contract-956742-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-956742-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-956742-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553501,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-956742-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-956742-CarmichaelSecurity.cct\", \"silver-helix\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            8
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            6,
+            6
+          ],
+          [
+            6,
+            5,
+            6,
+            4
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-968471.cct",
+      "originalFile": "contract-968471.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-968471.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-968471.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553506,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-968471.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-968471.cct\", \"silver-helix\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-97713-Sector12.cct",
+      "originalFile": "contract-97713-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-97713-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-97713-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553543,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-97713-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-97713-Sector12.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          124,
+          92,
+          81,
+          12,
+          50,
+          118,
+          173,
+          144
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-9evPd2.cct",
+      "originalFile": "contract-9evPd2.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-9evPd2.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-9evPd2.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553549,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-9evPd2.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-9evPd2.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 233337030,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-B7fyVp.cct",
+      "originalFile": "contract-B7fyVp.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-B7fyVp.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-B7fyVp.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553555,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-B7fyVp.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-B7fyVp.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          165,
+          179,
+          68,
+          44,
+          196,
+          124,
+          155,
+          132,
+          41,
+          31,
+          22,
+          32,
+          112
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-Bj5TY2.cct",
+      "originalFile": "contract-Bj5TY2.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-Bj5TY2.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-Bj5TY2.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553562,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-Bj5TY2.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-Bj5TY2.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 953971115,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-JsVYHH.cct",
+      "originalFile": "contract-JsVYHH.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-JsVYHH.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-JsVYHH.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553600,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-JsVYHH.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-JsVYHH.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 96,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-eTNO90.cct",
+      "originalFile": "contract-eTNO90.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-eTNO90.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-eTNO90.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553606,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-eTNO90.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-eTNO90.cct\", \"silver-helix\")",
+        "type": "Total Ways to Sum",
+        "data": 80,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-jkc6aO.cct",
+      "originalFile": "contract-jkc6aO.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-jkc6aO.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-jkc6aO.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553612,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-jkc6aO.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-jkc6aO.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 924811769,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-n0fQbL.cct",
+      "originalFile": "contract-n0fQbL.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-n0fQbL.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-n0fQbL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553619,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-n0fQbL.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-n0fQbL.cct\", \"silver-helix\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          66,
+          102,
+          164,
+          90,
+          105,
+          99,
+          31,
+          64,
+          142,
+          190,
+          112,
+          179,
+          167,
+          79,
+          31,
+          107,
+          27,
+          90,
+          139,
+          80,
+          38,
+          1,
+          31,
+          149,
+          191
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-pBe03R.cct",
+      "originalFile": "contract-pBe03R.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-pBe03R.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-pBe03R.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553655,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-pBe03R.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-pBe03R.cct\", \"silver-helix\")",
+        "type": "Find Largest Prime Factor",
+        "data": 943104006,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-rBgomX.cct",
+      "originalFile": "contract-rBgomX.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-rBgomX.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-rBgomX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553664,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-rBgomX.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-rBgomX.cct\", \"silver-helix\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "CACHE PRINT DEBUG ENTER ARRAY",
+          25
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "contract-ypPqDL.cct",
+      "originalFile": "contract-ypPqDL.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/silver-helix__contract-ypPqDL.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nscp: Cannot transfer contract-ypPqDL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553669,
+      "contract": {
+        "originServer": "silver-helix",
+        "originFile": "contract-ypPqDL.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-ypPqDL.cct\", \"silver-helix\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY MEDIA INBOX POPUP QUEUE",
+          25
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "data/silver-helix_files.json",
+      "originalFile": "data/silver-helix_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/silver-helix__data__silver-helix_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553676
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "found/silver-helix_files.json",
+      "originalFile": "found/silver-helix_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/silver-helix__found__silver-helix_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553682
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "new-triads.lit",
+      "originalFile": "new-triads.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/silver-helix__new-triads.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@silver-helix (PID - 12458)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353553687
+    },
+    {
+      "server": "silver-helix",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/silver-helix__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553693
+    }
+  ]
+}

@@ -1,0 +1,3780 @@
+{
+  "server": "microdyne",
+  "timestamp": 1779353460639,
+  "filesFound": 89,
+  "contractsFound": 85,
+  "files": [
+    {
+      "server": "microdyne",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/microdyne__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459680
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-101614.cct",
+      "originalFile": "contract-101614.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-101614.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-101614.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459685,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-101614.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-101614.cct\", \"microdyne\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            9
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            1,
+            7
+          ],
+          [
+            9,
+            8,
+            7,
+            8
+          ],
+          [
+            9,
+            9,
+            4,
+            3,
+            5
+          ],
+          [
+            3,
+            6,
+            5,
+            2,
+            3,
+            1
+          ],
+          [
+            7,
+            5,
+            1,
+            1,
+            8,
+            3,
+            3
+          ],
+          [
+            6,
+            4,
+            8,
+            4,
+            9,
+            3,
+            5,
+            1
+          ],
+          [
+            7,
+            5,
+            8,
+            2,
+            9,
+            2,
+            2,
+            3,
+            4
+          ],
+          [
+            7,
+            2,
+            8,
+            7,
+            7,
+            4,
+            5,
+            7,
+            8,
+            8
+          ],
+          [
+            3,
+            1,
+            2,
+            7,
+            9,
+            8,
+            1,
+            7,
+            2,
+            6,
+            1
+          ],
+          [
+            2,
+            8,
+            9,
+            4,
+            7,
+            9,
+            3,
+            4,
+            3,
+            7,
+            4,
+            3
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-103635-CarmichaelSecurity.cct",
+      "originalFile": "contract-103635-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-103635-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-103635-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459691,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-103635-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-103635-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -3,
+          -4,
+          1,
+          -5,
+          -2,
+          6,
+          4,
+          -5,
+          3,
+          0,
+          0,
+          -4,
+          7,
+          -9,
+          8,
+          0,
+          -10,
+          -1,
+          -4,
+          7,
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-105464-CarmichaelSecurity.cct",
+      "originalFile": "contract-105464-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-105464-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-105464-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459696,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-105464-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-105464-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          4,
+          19,
+          85,
+          164,
+          81,
+          81,
+          35,
+          128,
+          64,
+          45,
+          91,
+          178,
+          50,
+          166,
+          65,
+          68,
+          1,
+          195,
+          13,
+          102,
+          48,
+          1,
+          93,
+          105,
+          81,
+          102
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-113285.cct",
+      "originalFile": "contract-113285.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-113285.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-113285.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459702,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-113285.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-113285.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-120060-CarmichaelSecurity.cct",
+      "originalFile": "contract-120060-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-120060-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-120060-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459739,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-120060-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-120060-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "79003740",
+          24
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-129914.cct",
+      "originalFile": "contract-129914.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-129914.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-129914.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459745,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-129914.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-129914.cct\", \"microdyne\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 23814579850137,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-135821.cct",
+      "originalFile": "contract-135821.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-135821.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-135821.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459751,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-135821.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-135821.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          14,
+          2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-160511-CarmichaelSecurity.cct",
+      "originalFile": "contract-160511-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-160511-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-160511-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459757,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-160511-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-160511-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 391339182,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-16682.cct",
+      "originalFile": "contract-16682.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-16682.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-16682.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459763,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-16682.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-16682.cct\", \"microdyne\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          10,
+          [
+            [
+              5,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-17608.cct",
+      "originalFile": "contract-17608.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-17608.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-17608.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459777,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-17608.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-17608.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          98,
+          168,
+          198,
+          8,
+          8,
+          143,
+          195,
+          63
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-180875.cct",
+      "originalFile": "contract-180875.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-180875.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-180875.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459783,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-180875.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-180875.cct\", \"microdyne\")",
+        "type": "Compression I: RLE Compression",
+        "data": "FF0xLLLLLLLLLq88llooKK111111122OOOOOOOOOOOOOZZZZZZZZZNNbCCVVHzooooooooooooQQQQQQxx",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-20550-Netburners.cct",
+      "originalFile": "contract-20550-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-20550-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-20550-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459789,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-20550-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-20550-Netburners.cct\", \"microdyne\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-254215.cct",
+      "originalFile": "contract-254215.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-254215.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-254215.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459795,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-254215.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-254215.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "4YYmY929dYls44p2D09meZz7KSSG150626qErJCu369wGHn62gL4785C0OJH82059",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-266665-CarmichaelSecurity.cct",
+      "originalFile": "contract-266665-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-266665-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-266665-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459801,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-266665-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-266665-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          9,
+          [
+            125,
+            194,
+            94,
+            73,
+            58,
+            143,
+            65,
+            50,
+            48,
+            143,
+            58,
+            69,
+            102,
+            78,
+            56,
+            108
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-275188-Sector12.cct",
+      "originalFile": "contract-275188-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-275188-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-275188-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459820,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-275188-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-275188-Sector12.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-276193-CarmichaelSecurity.cct",
+      "originalFile": "contract-276193-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-276193-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-276193-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459825,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-276193-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-276193-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 112670198,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-277157.cct",
+      "originalFile": "contract-277157.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-277157.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-277157.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459831,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-277157.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-277157.cct\", \"microdyne\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          13,
+          [
+            [
+              8,
+              12
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-280780-CarmichaelSecurity.cct",
+      "originalFile": "contract-280780-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-280780-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-280780-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459839,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-280780-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-280780-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "()()))(((a(((",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-282203-Netburners.cct",
+      "originalFile": "contract-282203-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-282203-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-282203-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459846,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-282203-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-282203-Netburners.cct\", \"microdyne\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-305542.cct",
+      "originalFile": "contract-305542.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-305542.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-305542.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459862,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-305542.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-305542.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          66,
+          194,
+          84,
+          155,
+          193,
+          105,
+          161,
+          93,
+          103,
+          66,
+          86,
+          17,
+          175,
+          48,
+          15,
+          78
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-305776.cct",
+      "originalFile": "contract-305776.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-305776.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-305776.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459868,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-305776.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-305776.cct\", \"microdyne\")",
+        "type": "Compression I: RLE Compression",
+        "data": "444444444444441gqqqqqqqqEEEEEEEEEEEEEEZYYYYYYYQf022gWWWWggtttttuuuuuuu",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-310693.cct",
+      "originalFile": "contract-310693.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-310693.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-310693.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459873,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-310693.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-310693.cct\", \"microdyne\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          14,
+          [
+            [
+              2,
+              12
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-365798.cct",
+      "originalFile": "contract-365798.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-365798.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-365798.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459879,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-365798.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-365798.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "6MwXLBN641n780710792EC61872D2LjVF255Dtyto379y6fdKoQEW761P85",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-373202.cct",
+      "originalFile": "contract-373202.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-373202.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-373202.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459885,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-373202.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-373202.cct\", \"microdyne\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 2542,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-375360-CarmichaelSecurity.cct",
+      "originalFile": "contract-375360-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-375360-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-375360-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459902,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-375360-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-375360-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Compression III: LZ Compression",
+        "data": "6LB666666666fNh5iLdKYsUwYsUyttsUwYsUtsUwYsUt4sUwYsUt4sKeZYsUt4sKjOY",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-397717-CarmichaelSecurity.cct",
+      "originalFile": "contract-397717-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-397717-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-397717-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459907,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-397717-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-397717-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          152,
+          75,
+          96,
+          52,
+          37,
+          149,
+          86,
+          51,
+          134,
+          70,
+          166,
+          141,
+          52,
+          180
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-398633.cct",
+      "originalFile": "contract-398633.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-398633.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-398633.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459913,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-398633.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-398633.cct\", \"microdyne\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "DEBUGARRAYPASTEINBOXCACHE",
+          "PODCAST"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-419397.cct",
+      "originalFile": "contract-419397.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-419397.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-419397.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459918,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-419397.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-419397.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 155945656,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-426611-Netburners.cct",
+      "originalFile": "contract-426611-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-426611-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-426611-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459924,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-426611-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-426611-Netburners.cct\", \"microdyne\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            15,
+            32,
+            49,
+            30,
+            13,
+            45,
+            2,
+            8,
+            2
+          ],
+          [
+            39,
+            20,
+            41,
+            41,
+            50,
+            1,
+            50,
+            2,
+            44
+          ],
+          [
+            34,
+            18,
+            46,
+            24,
+            36,
+            14,
+            43,
+            49,
+            16
+          ],
+          [
+            37,
+            49,
+            38,
+            5,
+            8,
+            18,
+            29,
+            40,
+            13
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-428467.cct",
+      "originalFile": "contract-428467.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-428467.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-428467.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459956,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-428467.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-428467.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "TRASH MOUSE FLASH QUEUE LOGIN",
+          6
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-430980-CyberSec.cct",
+      "originalFile": "contract-430980-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-430980-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-430980-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459964,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-430980-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-430980-CyberSec.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          10,
+          14
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-432692-Netburners.cct",
+      "originalFile": "contract-432692-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-432692-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-432692-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459970,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-432692-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-432692-Netburners.cct\", \"microdyne\")",
+        "type": "Array Jumping Game",
+        "data": [
+          9,
+          4,
+          6,
+          3
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-433857.cct",
+      "originalFile": "contract-433857.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-433857.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-433857.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459977,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-433857.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-433857.cct\", \"microdyne\")",
+        "type": "Compression III: LZ Compression",
+        "data": "jAXs6dTaLks6dTzkmvT808080vT80080vTTTTTTT2vTVpg5bpg5bpg5b3g5bpg5b3gOvH1qmKGGGGGGGGGxkBvMsv",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-435463-CarmichaelSecurity.cct",
+      "originalFile": "contract-435463-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-435463-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-435463-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460015,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-435463-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-435463-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          3,
+          [
+            187,
+            179,
+            170,
+            190,
+            43,
+            99,
+            192,
+            16,
+            105,
+            96,
+            117,
+            92,
+            118,
+            92,
+            160,
+            97,
+            68,
+            188,
+            41,
+            37,
+            37,
+            63,
+            89,
+            57
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-446280.cct",
+      "originalFile": "contract-446280.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-446280.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-446280.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460023,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-446280.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-446280.cct\", \"microdyne\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 14,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-45343-CarmichaelSecurity.cct",
+      "originalFile": "contract-45343-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-45343-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-45343-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460028,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-45343-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-45343-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 762130971,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-459265-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-459265-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-459265-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-459265-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460034,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-459265-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-459265-CentralIntelligenceAgency.cct\", \"microdyne\")",
+        "type": "Array Jumping Game",
+        "data": [
+          0,
+          1,
+          7,
+          6,
+          0,
+          0,
+          1
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-476853-CarmichaelSecurity.cct",
+      "originalFile": "contract-476853-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-476853-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-476853-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460073,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-476853-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-476853-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-4wl8yt.cct",
+      "originalFile": "contract-4wl8yt.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-4wl8yt.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-4wl8yt.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460080,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-4wl8yt.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-4wl8yt.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LINUX EMAIL DEBUG MEDIA TRASH",
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-502818.cct",
+      "originalFile": "contract-502818.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-502818.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-502818.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460085,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-502818.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-502818.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum",
+        "data": 8,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-505806.cct",
+      "originalFile": "contract-505806.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-505806.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-505806.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460091,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-505806.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-505806.cct\", \"microdyne\")",
+        "type": "Square Root",
+        "data": "265941191989031571188580155277114108927666657784504567505095887655916217167314160409102407503533210874998139650935200555799703759186808470953895282477102647035234063270893934900462423750330216218352063",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-515770.cct",
+      "originalFile": "contract-515770.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-515770.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-515770.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460097,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-515770.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-515770.cct\", \"microdyne\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "ARRAYEMAILMOUSEMEDIAQUEUE",
+          "SECURITY"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-523647.cct",
+      "originalFile": "contract-523647.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-523647.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-523647.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460130,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-523647.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-523647.cct\", \"microdyne\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "(a())())))aaa()",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-528183.cct",
+      "originalFile": "contract-528183.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-528183.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-528183.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460135,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-528183.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-528183.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "7hAMNkj7651a4628r5750GVOw731L749oSt6MzdCU177Y6lYrf2",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-576501-CarmichaelSecurity.cct",
+      "originalFile": "contract-576501-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-576501-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-576501-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460141,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-576501-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-576501-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 223620873,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-585175.cct",
+      "originalFile": "contract-585175.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-585175.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-585175.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460148,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-585175.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-585175.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          9,
+          -2,
+          4,
+          7,
+          10,
+          3,
+          -3,
+          4,
+          2,
+          -3,
+          5,
+          -4,
+          -1,
+          0,
+          0,
+          -10,
+          -10,
+          -8,
+          -4,
+          -2,
+          -2,
+          9,
+          9,
+          8,
+          10,
+          3,
+          10,
+          -8,
+          7,
+          -7,
+          6,
+          0,
+          -10,
+          8,
+          -8,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-605150.cct",
+      "originalFile": "contract-605150.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-605150.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-605150.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460183,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-605150.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-605150.cct\", \"microdyne\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-637881.cct",
+      "originalFile": "contract-637881.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-637881.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-637881.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460189,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-637881.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-637881.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "7cXX8hPD411X57988Fv2uPYe694AMsA5197gyRdghPQ07fJiRCEr4404954XCEt",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-646391-Sector12.cct",
+      "originalFile": "contract-646391-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-646391-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-646391-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460195,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-646391-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-646391-Sector12.cct\", \"microdyne\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "18785193",
+          -32
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-650001-Netburners.cct",
+      "originalFile": "contract-650001-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-650001-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-650001-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460200,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-650001-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-650001-Netburners.cct\", \"microdyne\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            9
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            5,
+            2,
+            4
+          ],
+          [
+            4,
+            9,
+            8,
+            8
+          ],
+          [
+            2,
+            6,
+            2,
+            1,
+            8
+          ],
+          [
+            8,
+            6,
+            9,
+            3,
+            5,
+            4
+          ],
+          [
+            3,
+            8,
+            4,
+            8,
+            4,
+            4,
+            7
+          ],
+          [
+            2,
+            6,
+            3,
+            6,
+            1,
+            1,
+            6,
+            6
+          ],
+          [
+            8,
+            5,
+            6,
+            9,
+            4,
+            1,
+            6,
+            5,
+            5
+          ],
+          [
+            9,
+            6,
+            5,
+            8,
+            5,
+            8,
+            5,
+            6,
+            7,
+            7
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-671736.cct",
+      "originalFile": "contract-671736.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-671736.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-671736.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460207,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-671736.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-671736.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          63,
+          [
+            1,
+            2,
+            3,
+            5,
+            8,
+            9,
+            10,
+            11,
+            15
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-67971-Netburners.cct",
+      "originalFile": "contract-67971-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-67971-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-67971-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460237,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-67971-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-67971-Netburners.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -1,
+          -5,
+          8,
+          -3,
+          -4,
+          -7,
+          -8,
+          -7,
+          6,
+          -7,
+          5,
+          10,
+          -5,
+          1,
+          -8,
+          4,
+          7,
+          -4,
+          -5,
+          2,
+          8,
+          1,
+          -9,
+          -2,
+          -2,
+          -2,
+          -9,
+          -7,
+          -10,
+          -8,
+          5,
+          1,
+          6,
+          7,
+          -5,
+          -9,
+          -9,
+          -7,
+          3
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-694381-CarmichaelSecurity.cct",
+      "originalFile": "contract-694381-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-694381-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-694381-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460243,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-694381-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-694381-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "MOUSEARRAYCACHEDEBUGPOPUP",
+          "ITERATION"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-713474.cct",
+      "originalFile": "contract-713474.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-713474.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-713474.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460249,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-713474.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-713474.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "6QCG3Yu559suCGY0qum085SslK3cQ5328N871D335yBd2g362Qe561w9267m8IfX",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-744577-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-744577-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-744577-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-744577-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460255,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-744577-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-744577-CentralIntelligenceAgency.cct\", \"microdyne\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            28,
+            39,
+            25,
+            27,
+            42
+          ],
+          [
+            2,
+            6,
+            25,
+            30,
+            30
+          ],
+          [
+            38,
+            43,
+            6,
+            48,
+            17
+          ],
+          [
+            16,
+            24,
+            31,
+            8,
+            27
+          ],
+          [
+            26,
+            39,
+            5,
+            2,
+            37
+          ],
+          [
+            29,
+            37,
+            47,
+            18,
+            46
+          ],
+          [
+            33,
+            31,
+            19,
+            48,
+            20
+          ],
+          [
+            33,
+            21,
+            35,
+            48,
+            32
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-744831-TheBlackHand.cct",
+      "originalFile": "contract-744831-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-744831-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-744831-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460260,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-744831-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-744831-TheBlackHand.cct\", \"microdyne\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-765730-CarmichaelSecurity.cct",
+      "originalFile": "contract-765730-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-765730-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-765730-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460294,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-765730-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-765730-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          107,
+          90,
+          14,
+          182,
+          47,
+          102,
+          143,
+          85,
+          162,
+          188,
+          127,
+          45,
+          189,
+          17,
+          6,
+          104,
+          191,
+          23,
+          185,
+          162,
+          121,
+          10,
+          16,
+          82,
+          187,
+          128,
+          114
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-772819.cct",
+      "originalFile": "contract-772819.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-772819.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-772819.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460300,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-772819.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-772819.cct\", \"microdyne\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          13,
+          [
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              2,
+              12
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              6,
+              10
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-806262-CarmichaelSecurity.cct",
+      "originalFile": "contract-806262-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-806262-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-806262-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460306,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-806262-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-806262-CarmichaelSecurity.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 736003565,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-823566.cct",
+      "originalFile": "contract-823566.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-823566.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-823566.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460312,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-823566.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-823566.cct\", \"microdyne\")",
+        "type": "Compression III: LZ Compression",
+        "data": "212121G7btmmmmmmmmmmIAT0000000wFs000000wF0000w00w8hPhAw00w8hPhA7YahA7YahA7A78ehA7A78ex2fL",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-856025.cct",
+      "originalFile": "contract-856025.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-856025.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-856025.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460319,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-856025.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-856025.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          49,
+          2,
+          110,
+          54,
+          97,
+          147,
+          109,
+          198,
+          133,
+          95,
+          176,
+          116,
+          101,
+          12,
+          75,
+          29,
+          104,
+          139,
+          15,
+          69,
+          151,
+          60,
+          120,
+          40,
+          30,
+          61,
+          29,
+          130,
+          108,
+          114,
+          119,
+          152,
+          189,
+          30,
+          196,
+          198,
+          192,
+          123,
+          103,
+          95,
+          17,
+          153,
+          178,
+          194,
+          4,
+          92,
+          65
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-886725-Sector12.cct",
+      "originalFile": "contract-886725-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-886725-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-886725-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460351,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-886725-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-886725-Sector12.cct\", \"microdyne\")",
+        "type": "Square Root",
+        "data": "85734248641791567220830980186046752671836830132081066576685295378863166016357316263842733320051589300536096607825870902480869441939924634908599352198500930173691711149231896187209163741397144567660628",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-893271.cct",
+      "originalFile": "contract-893271.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-893271.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-893271.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460358,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-893271.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-893271.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LINUX FRAME LOGIC PRINT CLOUD",
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-91722.cct",
+      "originalFile": "contract-91722.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-91722.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-91722.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460365,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-91722.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-91722.cct\", \"microdyne\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 379566268,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-931309.cct",
+      "originalFile": "contract-931309.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-931309.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-931309.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460372,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-931309.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-931309.cct\", \"microdyne\")",
+        "type": "Array Jumping Game",
+        "data": [
+          3,
+          8,
+          0,
+          4,
+          4,
+          0
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-95354.cct",
+      "originalFile": "contract-95354.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-95354.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-95354.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460406,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-95354.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-95354.cct\", \"microdyne\")",
+        "type": "Square Root",
+        "data": "140442664802766948184277225596628391070906833462240332816345906807024868098815678219466413873717964661888619186866962628849647328720217564037780246239516915763626246731198848292590173165918009690816172",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-955812.cct",
+      "originalFile": "contract-955812.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-955812.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-955812.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460413,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-955812.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-955812.cct\", \"microdyne\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            1
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            9,
+            5,
+            4
+          ],
+          [
+            9,
+            3,
+            2,
+            8
+          ],
+          [
+            1,
+            3,
+            4,
+            7,
+            6
+          ],
+          [
+            2,
+            4,
+            6,
+            2,
+            5,
+            8
+          ],
+          [
+            4,
+            5,
+            8,
+            1,
+            9,
+            2,
+            9
+          ],
+          [
+            8,
+            3,
+            1,
+            6,
+            4,
+            6,
+            8,
+            3
+          ],
+          [
+            6,
+            5,
+            3,
+            9,
+            5,
+            9,
+            6,
+            4,
+            8
+          ],
+          [
+            3,
+            4,
+            2,
+            4,
+            6,
+            1,
+            2,
+            7,
+            9,
+            2
+          ],
+          [
+            9,
+            8,
+            1,
+            6,
+            2,
+            4,
+            7,
+            9,
+            2,
+            4,
+            1
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-960438-Sector12.cct",
+      "originalFile": "contract-960438-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-960438-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-960438-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460418,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-960438-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-960438-Sector12.cct\", \"microdyne\")",
+        "type": "Compression I: RLE Compression",
+        "data": "U1266611vvvvvvvvvvvvvvDDDDDDDD44ggkkaaaKKbPPPPPPPPPPPFFFJePP11ee66yF88mWWWWy33B2hhDD",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-968074.cct",
+      "originalFile": "contract-968074.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-968074.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-968074.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460425,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-968074.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-968074.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          31,
+          [
+            2,
+            4,
+            6,
+            7,
+            8,
+            9,
+            11,
+            14,
+            15
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-972491.cct",
+      "originalFile": "contract-972491.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-972491.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-972491.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460463,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-972491.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-972491.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 731172040,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-974183.cct",
+      "originalFile": "contract-974183.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-974183.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-974183.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460470,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-974183.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-974183.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          10,
+          [
+            77,
+            99,
+            69,
+            151,
+            176,
+            68,
+            55,
+            14,
+            115,
+            7,
+            27,
+            81,
+            98,
+            13,
+            173,
+            18,
+            178,
+            118,
+            102
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-986232.cct",
+      "originalFile": "contract-986232.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-986232.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-986232.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460476,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-986232.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-986232.cct\", \"microdyne\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          12,
+          [
+            [
+              4,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              9,
+              11
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-991130-Netburners.cct",
+      "originalFile": "contract-991130-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-991130-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-991130-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460483,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-991130-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-991130-Netburners.cct\", \"microdyne\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "4yCBn532Bn634vA3l835YGJi4990722z4846xD8AUa771r",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-E79fYR.cct",
+      "originalFile": "contract-E79fYR.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-E79fYR.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-E79fYR.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460519,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-E79fYR.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-E79fYR.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          1,
+          -3,
+          9,
+          7,
+          9,
+          -9,
+          -2,
+          -8,
+          8,
+          -9,
+          1,
+          8,
+          0,
+          -10,
+          7,
+          9,
+          1,
+          -3,
+          1,
+          -8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-JuQ7vx.cct",
+      "originalFile": "contract-JuQ7vx.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-JuQ7vx.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-JuQ7vx.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460524,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-JuQ7vx.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-JuQ7vx.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum",
+        "data": 46,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-Ql6fef.cct",
+      "originalFile": "contract-Ql6fef.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-Ql6fef.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-Ql6fef.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460529,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-Ql6fef.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-Ql6fef.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum",
+        "data": 50,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-RUrnUX.cct",
+      "originalFile": "contract-RUrnUX.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-RUrnUX.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-RUrnUX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460537,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-RUrnUX.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-RUrnUX.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -1,
+          9,
+          -3,
+          -3,
+          -9,
+          -4,
+          7,
+          4,
+          5,
+          -3,
+          -10,
+          8,
+          3,
+          -8,
+          0,
+          -10,
+          -7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-XScECy.cct",
+      "originalFile": "contract-XScECy.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-XScECy.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-XScECy.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460544,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-XScECy.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-XScECy.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FLASH EMAIL MOUSE SHIFT MEDIA",
+          18
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-e2XEF1.cct",
+      "originalFile": "contract-e2XEF1.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-e2XEF1.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-e2XEF1.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460558,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-e2XEF1.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-e2XEF1.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ENTER TABLE TRASH EMAIL DEBUG",
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-fq74HO.cct",
+      "originalFile": "contract-fq74HO.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-fq74HO.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-fq74HO.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460564,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-fq74HO.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-fq74HO.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FRAME CACHE TABLE DEBUG TRASH",
+          15
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-jAuVMw.cct",
+      "originalFile": "contract-jAuVMw.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-jAuVMw.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-jAuVMw.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460571,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-jAuVMw.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-jAuVMw.cct\", \"microdyne\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -2,
+          6,
+          -8,
+          3,
+          -9,
+          9,
+          3,
+          0,
+          9,
+          5,
+          10,
+          5,
+          -8,
+          -6,
+          10,
+          10,
+          -10,
+          -10,
+          4,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-kO3zYW.cct",
+      "originalFile": "contract-kO3zYW.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-kO3zYW.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-kO3zYW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460577,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-kO3zYW.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-kO3zYW.cct\", \"microdyne\")",
+        "type": "Find Largest Prime Factor",
+        "data": 944649729,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-kc8iTJ.cct",
+      "originalFile": "contract-kc8iTJ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-kc8iTJ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-kc8iTJ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460584,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-kc8iTJ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-kc8iTJ.cct\", \"microdyne\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "MEDIA VIRUS EMAIL ENTER LOGIN",
+          16
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-lU506Z.cct",
+      "originalFile": "contract-lU506Z.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-lU506Z.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-lU506Z.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460598,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-lU506Z.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-lU506Z.cct\", \"microdyne\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          139,
+          141,
+          138,
+          68,
+          180,
+          10,
+          188,
+          174,
+          35,
+          188,
+          107,
+          44,
+          59,
+          61,
+          183,
+          70,
+          92
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "contract-t7dCEc.cct",
+      "originalFile": "contract-t7dCEc.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/microdyne__contract-t7dCEc.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nscp: Cannot transfer contract-t7dCEc.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460605,
+      "contract": {
+        "originServer": "microdyne",
+        "originFile": "contract-t7dCEc.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-t7dCEc.cct\", \"microdyne\")",
+        "type": "Total Ways to Sum",
+        "data": 47,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "found/microdyne_files.json",
+      "originalFile": "found/microdyne_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/microdyne__found__microdyne_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460612
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "synthetic-muscles.lit",
+      "originalFile": "synthetic-muscles.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/microdyne__synthetic-muscles.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@microdyne (PID - 11755)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353460618
+    },
+    {
+      "server": "microdyne",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/microdyne__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460623
+    }
+  ]
+}

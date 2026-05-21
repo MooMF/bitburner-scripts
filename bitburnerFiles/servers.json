@@ -1,0 +1,9 @@
+[
+  { "server": "n00dles", "threads": 1 },
+  { "server": "foodnstuff", "threads": 1 },
+  { "server": "sigma-cosmetics", "threads": 1},
+  { "server": "joesguns", "threads": 1},
+  { "server": "hong-fang-tea", "threads": 1},
+  { "server": "harakiri-sushi", "threads": 1},
+  { "server": "iron-gym", "threads": 1}
+]

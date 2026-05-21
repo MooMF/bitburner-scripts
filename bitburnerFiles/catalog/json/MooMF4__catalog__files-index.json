@@ -1,0 +1,50 @@
+{
+  "updated": 1779353459917,
+  "servers": {
+    "MooMF4": {
+      "timestamp": 1779353459917,
+      "filesFound": 3,
+      "contractsFound": 0,
+      "catalogFile": "/found/MooMF4_files.json"
+    }
+  },
+  "allFiles": [
+    {
+      "server": "MooMF4",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/MooMF4__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459912
+    },
+    {
+      "server": "MooMF4",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/MooMF4__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459900
+    },
+    {
+      "server": "MooMF4",
+      "originalPath": "found/MooMF4_files.json",
+      "originalFile": "found/MooMF4_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/MooMF4__found__MooMF4_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459907
+    }
+  ],
+  "contracts": []
+}

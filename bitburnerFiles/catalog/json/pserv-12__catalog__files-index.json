@@ -1,0 +1,38 @@
+{
+  "updated": 1779353460728,
+  "servers": {
+    "pserv-12": {
+      "timestamp": 1779353460728,
+      "filesFound": 2,
+      "contractsFound": 0,
+      "catalogFile": "/found/pserv-12_files.json"
+    }
+  },
+  "allFiles": [
+    {
+      "server": "pserv-12",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460716
+    },
+    {
+      "server": "pserv-12",
+      "originalPath": "found/pserv-12_files.json",
+      "originalFile": "found/pserv-12_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__found__pserv-12_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460722
+    }
+  ],
+  "contracts": []
+}

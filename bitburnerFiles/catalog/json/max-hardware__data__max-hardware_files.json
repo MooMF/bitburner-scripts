@@ -1,0 +1,9 @@
+{
+  "server": "max-hardware",
+  "files": [
+    "contract-443633-Netburners.cct",
+    "contract-448745.cct",
+    "contract-792018.cct",
+    "data/max-hardware_files.json"
+  ]
+}

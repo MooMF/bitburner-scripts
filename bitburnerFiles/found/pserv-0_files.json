@@ -1,0 +1,56 @@
+{
+  "server": "pserv-0",
+  "timestamp": 1779353551671,
+  "filesFound": 4,
+  "contractsFound": 0,
+  "files": [
+    {
+      "server": "pserv-0",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353551647
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "earlyhack.js",
+      "originalFile": "earlyhack.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/pserv-0__earlyhack.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353551653
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "found/pserv-0_files.json",
+      "originalFile": "found/pserv-0_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__found__pserv-0_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353551659
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/pserv-0__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353551665
+    }
+  ]
+}

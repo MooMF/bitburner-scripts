@@ -1,0 +1,62 @@
+{
+  "updated": 1779353461390,
+  "servers": {
+    "pserv-9": {
+      "timestamp": 1779353461389,
+      "filesFound": 4,
+      "contractsFound": 0,
+      "catalogFile": "/found/pserv-9_files.json"
+    }
+  },
+  "allFiles": [
+    {
+      "server": "pserv-9",
+      "originalPath": "earlyhack.js",
+      "originalFile": "earlyhack.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/pserv-9__earlyhack.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461372
+    },
+    {
+      "server": "pserv-9",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/pserv-9__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461384
+    },
+    {
+      "server": "pserv-9",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-9__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461367
+    },
+    {
+      "server": "pserv-9",
+      "originalPath": "found/pserv-9_files.json",
+      "originalFile": "found/pserv-9_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-9__found__pserv-9_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461378
+    }
+  ],
+  "contracts": []
+}

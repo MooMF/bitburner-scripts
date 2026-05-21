@@ -1,0 +1,1678 @@
+Bitburner Script Suite Manual - Version 2
+==============================================
+
+Status
+------
+This document describes the Version 2 Bitburner automation suite agreed for this project.
+
+The suite is designed around a small number of clear responsibilities:
+
+- deployment and refresh from home;
+- persistent per-target process management;
+- low-RAM target support via remote worker hosts;
+- purchased/cloud server expansion;
+- operational reporting;
+- server-level log inspection;
+- controlled cleanup/reset.
+
+The operational dashboard is check-infection.js. In normal play, this is the primary script to run when you want to know the state of the system.
+
+Core Concepts
+-------------
+
+1. Deployment layer
+
+   The deployment layer copies the current script bundle from home to every reachable rooted server.
+
+   Main script:
+
+   - upload.js
+
+2. Management layer
+
+   The management layer runs process.js instances. A process manager watches one target and decides whether that target currently needs weaken, grow, or hack.
+
+   Main script:
+
+   - process.js
+
+3. Worker layer
+
+   The worker layer consists of tiny single-purpose scripts that do one operation and exit.
+
+   Worker scripts:
+
+   - weaken.js
+   - grow.js
+   - hack.js
+
+4. Remote assignment layer
+
+   Low-RAM money servers may not be able to run process.js locally. assign-targets.js starts process.js on larger worker hosts, passing the low-RAM server as the target argument.
+
+   Main script:
+
+   - assign-targets.js
+
+5. Server expansion layer
+
+   buy-servers.js buys and upgrades purchased/cloud servers. These servers provide extra RAM capacity for remote target management and worker execution.
+
+   Main script:
+
+   - buy-servers.js
+
+6. Operational dashboard
+
+   check-infection.js scans the whole network and produces an actionable board report.
+
+   Main script:
+
+   - check-infection.js
+
+7. Diagnostics
+
+   logview.js shows aggregated logs for all scripts running on one selected server.
+
+   Main script:
+
+   - logview.js
+
+8. Cleanup/reset
+
+   clean.js kills selected classes of managed scripts, allowing a controlled restart.
+
+   Main script:
+
+   - clean.js
+
+9. Optional propagation support
+
+   The staged infection scripts are retained as a worm-style propagation subsystem. In Version 2, central deployment from home is the authoritative path, and the worm is secondary.
+
+   Scripts:
+
+   - infect.js
+   - infect-root.js
+   - infect-deploy.js
+   - infect-start.js
+
+10. File discovery
+
+   iteration.js scans the current host for files, copies useful readable files home, and writes a catalogue.
+
+   Script:
+
+   - iteration.js
+
+
+Normal Operating Model
+----------------------
+
+The common sequence is:
+
+1. Run startup.js after an augmentation, restart, or manual reset.
+
+2. startup.js optionally cleans existing managed scripts.
+
+3. startup.js optionally runs buy-servers.js.
+
+4. startup.js runs upload.js.
+
+5. startup.js runs assign-targets.js.
+
+6. startup.js starts check-infection.js.
+
+7. check-infection.js becomes the operational view.
+
+8. Use logview.js only when check-infection.js identifies a specific server worth inspecting.
+
+Recommended normal command:
+
+    run startup.js true false
+
+Recommended expansion command:
+
+    run buy-servers.js 0.4
+
+Then:
+
+    run startup.js true false
+
+Or in one step, if startup.js is configured to run purchases:
+
+    run startup.js true true 0.4
+
+
+Script Reference
+================
+
+
+upload.js
+---------
+
+Purpose
+~~~~~~~
+
+upload.js is the central deployment and refresh script.
+
+It should be run from home. It recursively scans all servers reachable from home, attempts root where possible, uploads the current payload bundle, and starts the first layer of runtime scripts.
+
+In Version 2, upload.js is the authoritative deployment mechanism. The worm scripts are optional support rather than the primary deployment method.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- startup.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes.
+
+Typical command
+~~~~~~~~~~~~~~~
+
+    run upload.js
+
+Optional worm mode, if enabled in the current implementation:
+
+    run upload.js true
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home only.
+
+Important parameters
+~~~~~~~~~~~~~~~~~~~~
+
+Depending on the exact saved version:
+
+- no arguments: normal deploy/refresh;
+- optional boolean: whether to launch infect.js as a propagation wave.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert current host is home
+
+    open tail window
+    define payload scripts:
+        infect.js
+        infect-root.js
+        infect-deploy.js
+        infect-start.js
+        process.js
+        iteration.js
+        weaken.js
+        grow.js
+        hack.js
+        assign-targets.js / buy-servers.js / startup.js if included in bundle
+
+    verify required files exist on home
+
+    servers = recursively scan from home
+
+    for each server:
+        attempt root using available port openers
+        if root unavailable:
+            skip
+
+        kill managed scripts on server
+        remove old managed script copies
+        copy fresh scripts from home
+
+        if server has money:
+            start process.js with target = server
+
+        start iteration.js if there is enough RAM
+
+        optionally start infect.js if worm mode is enabled
+
+    print deployment summary
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+upload.js is safe to run directly. It is also intended to be called by startup.js.
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+After running upload.js, run:
+
+    run assign-targets.js 1 2
+    run check-infection.js
+
+
+startup.js
+----------
+
+Purpose
+~~~~~~~
+
+startup.js is the one-command orchestrator for restart, augmentation, or manual recovery.
+
+It should run from home and launch the system in the correct order.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+None.
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes. This is the preferred entry point after reset/restart.
+
+Typical commands
+~~~~~~~~~~~~~~~~
+
+Clean and deploy, without buying servers:
+
+    run startup.js true false
+
+Clean, buy/upgrade servers with 40% of cash, then deploy:
+
+    run startup.js true true 0.4
+
+Default argument pattern:
+
+    run startup.js [clean] [buyServers] [buySpendRatio] [assignMinRam] [assignPerHost] [assignAllowMoneyHosts]
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home only.
+
+Parameters
+~~~~~~~~~~
+
+1. clean
+   Boolean. If true, run clean.js before deployment.
+
+2. buyServers
+   Boolean. If true, run buy-servers.js before deployment.
+
+3. buySpendRatio
+   Number from 0.01 to 1.0. Fraction of current home cash to spend.
+
+4. assignMinRam
+   Minimum RAM for worker hosts used by assign-targets.js.
+
+5. assignPerHost
+   Maximum remote targets per worker host.
+
+6. assignAllowMoneyHosts
+   Boolean. Whether money-bearing servers may also be used as remote worker hosts.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert current host is home
+
+    parse arguments
+
+    verify required scripts exist:
+        clean.js if clean requested
+        buy-servers.js if purchase requested
+        upload.js
+        assign-targets.js
+        check-infection.js
+
+    if clean:
+        run clean.js managed and wait
+
+    if buyServers:
+        run buy-servers.js spendRatio and wait
+
+    run upload.js and wait
+
+    run assign-targets.js assignMinRam assignPerHost assignAllowMoneyHosts and wait
+
+    if restart-required.txt exists:
+        delete restart-required.txt
+
+    start check-infection.js
+
+    exit
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+startup.js is intended to be run directly by the user.
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+If check-infection.js reports that server purchase changed capacity and restart is recommended, run:
+
+    run startup.js true false
+
+
+buy-servers.js
+--------------
+
+Purpose
+~~~~~~~
+
+buy-servers.js buys and upgrades purchased/cloud servers using a percentage of current home cash.
+
+It exists to increase available RAM for process.js controllers and weaken/grow/hack workers, especially for remote management of low-RAM money targets.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- startup.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes.
+
+Typical commands
+~~~~~~~~~~~~~~~~
+
+Spend 40% of current cash:
+
+    run buy-servers.js 0.4
+
+Spend default percentage, usually 50%:
+
+    run buy-servers.js
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home only.
+
+Parameters
+~~~~~~~~~~
+
+1. spendRatio
+   Fraction of current cash to spend. Example: 0.4 = 40%.
+
+Current Version 2 behaviour
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- On startup, deletes any stale restart-required.txt.
+- Buys new servers until the purchased/cloud server limit is reached or budget is exhausted.
+- Once the limit is reached, upgrades existing purchased/cloud servers.
+- Stops once the spend budget is exhausted or no useful purchase/upgrade is possible.
+- Writes restart-required.txt only if it actually bought or upgraded a server.
+- Exits cleanly.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert current host is home
+
+    open tail window
+
+    delete stale restart-required.txt if present
+
+    spendRatio = argument or default
+    budget = current home money * spendRatio
+
+    read cloud server limit
+    read max RAM per purchased/cloud server
+    read current purchased/cloud servers
+
+    phase 1:
+        for each missing pserv-N slot:
+            pick largest affordable power-of-two RAM
+            buy server
+            subtract cost from budget
+            stop when budget cannot buy another server
+
+    phase 2:
+        if purchased server limit is full:
+            while budget remains:
+                sort purchased servers smallest first
+                choose smallest server that can be upgraded affordably
+                kill scripts on that server
+                upgrade server
+                subtract cost
+                repeat until no useful upgrade possible
+
+    if bought or upgraded:
+        write restart-required.txt
+    else:
+        leave restart-required.txt absent
+
+    print summary
+    exit
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+Can be run directly. If it writes restart-required.txt, follow with:
+
+    run startup.js true false
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+check-infection.js reads restart-required.txt and recommends redeployment when server capacity changed.
+
+
+assign-targets.js
+-----------------
+
+Purpose
+~~~~~~~
+
+assign-targets.js assigns low-RAM or unmanaged money servers to larger remote worker hosts.
+
+This lets a large server run:
+
+    process.js targetName
+
+while the target may be too small to run process.js itself.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- startup.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes.
+
+Typical commands
+~~~~~~~~~~~~~~~~
+
+Normal assignment:
+
+    run assign-targets.js 1 2
+
+More conservative:
+
+    run assign-targets.js 1 1
+
+Only use non-money hosts if supported by current saved version:
+
+    run assign-targets.js 1 2 false
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home only.
+
+Parameters
+~~~~~~~~~~
+
+1. minWorkerRam
+   Minimum RAM for a host to be considered as a remote worker host.
+
+2. maxAssignmentsPerHost
+   Maximum number of remote process.js target managers per host.
+
+3. allowMoneyHosts
+   Boolean. Whether money servers can be used as worker hosts.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert current host is home
+
+    scan all servers
+
+    kill existing remote assignments:
+        for every host:
+            for every process.js/weaken/grow/hack:
+                if first arg is a server name and first arg != host:
+                    kill it
+
+    identify targets needing remote management:
+        money servers
+        rooted
+        not locally managed
+        not already remotely managed
+
+    identify worker hosts:
+        rooted
+        enough RAM
+        prefer:
+            pserv-*
+            MooMF*
+            non-money hosts
+        fallback:
+            money servers if allowed
+
+    copy process.js/weaken.js/grow.js/hack.js to worker hosts
+
+    for each target:
+        choose worker host with capacity
+        start process.js on worker host, passing target as argument
+
+    print assignment summary
+    exit
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+Safe to run directly after upload.js. It is normally run by startup.js.
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+After running assign-targets.js, run:
+
+    run check-infection.js
+
+You should see remote-managed targets in the dashboard.
+
+
+process.js
+----------
+
+Purpose
+~~~~~~~
+
+process.js is the persistent controller for a single target.
+
+It may run locally on the target server, or remotely on a larger worker host.
+
+Examples:
+
+Local management:
+
+    process.js running on joesguns with arg joesguns
+
+Remote management:
+
+    process.js running on pserv-0 with arg n00dles
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- upload.js for local processes
+- assign-targets.js for remote processes
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Usually no. Direct use is possible for testing only.
+
+Test command:
+
+    run process.js 1 targetServer
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+Any rooted server with enough RAM.
+
+Parameters
+~~~~~~~~~~
+
+1. target
+   Server being managed. Defaults to current host.
+
+2. securityBuffer
+   Additional tolerated security above minimum. Default: 5.
+
+3. moneyTargetRatio
+   Money refill target before hacking. Default: 0.85.
+
+4. hackTargetRatio
+   Fraction of target money to hack per hack phase. Default: 0.10.
+
+5. sleepMs
+   Manager loop delay. Default: 5000.
+
+Pseudocode
+~~~~~~~~~~
+
+    host = current hostname
+    target = arg0 or host
+
+    if host is home:
+        exit
+
+    verify target exists
+    verify target is rooted
+    verify host has RAM
+
+    while true:
+        read target money/security metrics
+
+        if target has no money:
+            write idle process-state.json
+            sleep
+            continue
+
+        if currentSecurity > minSecurity + buffer:
+            desired action = weaken
+            wanted threads = security excess / weaken per thread
+
+        else if currentMoney < maxMoney * moneyTargetRatio:
+            desired action = grow
+            wanted threads = growth analysis
+
+        else:
+            desired action = hack
+            wanted threads = hackTargetRatio / hackAnalyze(target)
+
+        kill unwanted worker scripts for this target on this host
+
+        if desired worker is not already running for this target:
+            calculate runnable threads from free RAM
+            exec worker script with target argument
+
+        write process-state.json
+
+        sleep
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+Do not normally run directly. It is a managed service launched by upload.js or assign-targets.js.
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+process.js should stay resident. Workers are one-shot and come/go.
+
+If check-infection.js shows process idle, use:
+
+    run logview.js serverName
+
+to inspect whether a worker is currently running or whether the dashboard sampled between worker launches.
+
+
+weaken.js
+---------
+
+Purpose
+~~~~~~~
+
+Single-operation worker. Weakens the target once and exits.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- process.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Only for testing.
+
+Command:
+
+    run weaken.js 10 targetServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+   Target to weaken. Defaults to current host.
+
+Pseudocode
+~~~~~~~~~~
+
+    target = arg0 or current host
+
+    if target is home:
+        exit
+
+    if no root:
+        exit
+
+    await ns.weaken(target)
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This script should remain tiny. Do not add management logic here.
+
+
+grow.js
+-------
+
+Purpose
+~~~~~~~
+
+Single-operation worker. Grows the target once and exits.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- process.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Only for testing.
+
+Command:
+
+    run grow.js 10 targetServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+   Target to grow. Defaults to current host.
+
+Pseudocode
+~~~~~~~~~~
+
+    target = arg0 or current host
+
+    if target is home:
+        exit
+
+    if no root:
+        exit
+
+    if max money <= 0:
+        exit
+
+    await ns.grow(target)
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This script should remain tiny.
+
+
+hack.js
+-------
+
+Purpose
+~~~~~~~
+
+Single-operation worker. Hacks the target once and exits.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- process.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Only for testing.
+
+Command:
+
+    run hack.js 10 targetServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+   Target to hack. Defaults to current host.
+
+Pseudocode
+~~~~~~~~~~
+
+    target = arg0 or current host
+
+    if target is home:
+        exit
+
+    if no root:
+        exit
+
+    if max money <= 0:
+        exit
+
+    await ns.hack(target)
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+Do not add loop logic here. process.js owns the loop.
+
+
+check-infection.js
+------------------
+
+Purpose
+~~~~~~~
+
+check-infection.js is the primary operational dashboard.
+
+It answers:
+
+- are all known servers rooted?
+- is the payload deployed everywhere?
+- are staged infection scripts present?
+- how many money servers are managed?
+- how many are locally managed?
+- how many are remotely managed?
+- what are the weaken/grow/hack ratios?
+- how much network RAM is used/free?
+- what is current money versus possible money?
+- what is the purchased/cloud server state?
+- is buy-servers.js currently running?
+- did server purchase/upgrade require restart?
+- which actions should be taken next?
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- startup.js can launch it
+- user runs directly during normal operation
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes. This is the main script to run for system state.
+
+Command:
+
+    run check-infection.js
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home.
+
+Parameters
+~~~~~~~~~~
+
+None.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert logically running from home
+
+    open/maximise tail
+
+    restartState = inspect restart-required.txt and buy-servers.js
+    cloudState = inspect purchased/cloud server fleet
+
+    servers = recursively scan from home
+
+    build process map:
+        for every host:
+            find process.js instances
+            map target arg -> process host
+
+    for each server:
+        check root
+        check RAM
+        check money
+        check payload files
+        check staged scripts
+        check infect.js running
+        detect local process.js
+        detect remote process.js for this target
+        detect active worker for this target:
+            weaken.js
+            grow.js
+            hack.js
+        classify reason:
+            managed
+            remoteManaged
+            lowRam
+            noProcess
+            missingProcessFile
+            processIdle
+            nonMoney
+            noRoot
+
+    print main table
+
+    print summary
+
+    print cloud/purchased server detail
+
+    print drill-down
+
+    build issues and commands
+
+    print actions
+
+    print AI handoff JSON
+
+    exit
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+Run directly whenever you want a board-level report.
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This is the script to trust for overall status.
+
+Important interpretation notes:
+
+- processIdle can be a sampling artefact. Confirm with logview.js if concerned.
+- lowRam means a target cannot locally host process.js. It may still be manageable remotely.
+- remoteManaged means another server is managing this target.
+- restart recommended means server capacity changed and redeployment is advised.
+
+
+logview.js
+----------
+
+Purpose
+~~~~~~~
+
+logview.js gives a per-server diagnostic view.
+
+It aggregates logs from every running script on a given server and colourises lines based on rough meaning.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+None.
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes.
+
+Typical commands
+~~~~~~~~~~~~~~~~
+
+Inspect one server:
+
+    run logview.js joesguns
+
+Refresh every 5 seconds:
+
+    run logview.js joesguns 5000
+
+Show up to 80 lines per script:
+
+    run logview.js joesguns 3000 80
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home is preferred, but it can run elsewhere if the required API calls are available.
+
+Parameters
+~~~~~~~~~~
+
+1. server
+   Server to inspect. Defaults to current host.
+
+2. refreshMs
+   Refresh interval. Default: 3000.
+
+3. maxLinesPerScript
+   Maximum log lines per running script. Default: 40.
+
+Pseudocode
+~~~~~~~~~~
+
+    server = arg0 or current host
+    refreshMs = arg1 or default
+    maxLines = arg2 or default
+
+    while true:
+        clear log
+        list running scripts on server
+
+        for each process:
+            print PID, filename, args
+            read script logs
+            colourise each line:
+                red = errors/failures
+                yellow = warnings/skips
+                green = success/start/copy/root
+                cyan = cycle actions
+                magenta = RAM/thread/money/security
+                grey = normal text
+
+        sleep refreshMs
+
+Isolation / parent use
+~~~~~~~~~~~~~~~~~~~~~~
+
+Run directly only when check-infection.js points to a server that needs inspection.
+
+
+clean.js
+--------
+
+Purpose
+~~~~~~~
+
+clean.js kills selected script classes across the network.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- startup.js may call it with managed mode.
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes, but use carefully.
+
+Typical commands
+~~~~~~~~~~~~~~~~
+
+Kill default strays:
+
+    run clean.js
+
+Kill all managed framework scripts:
+
+    run clean.js managed
+
+Kill only worker scripts:
+
+    run clean.js workers
+
+Kill everything the framework manages:
+
+    run clean.js all
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+home only.
+
+Parameters
+~~~~~~~~~~
+
+1. mode
+   Usually one of:
+   - strays
+   - workers
+   - managed
+   - all
+
+Pseudocode
+~~~~~~~~~~
+
+    assert current host is home
+
+    mode = arg0 or strays
+
+    if mode == workers:
+        scripts = weaken.js, grow.js, hack.js
+
+    else if mode == managed:
+        scripts = infect.js, infection stage scripts, process.js, iteration.js, workers
+
+    else if mode == all:
+        scripts = managed + upload.js + check-infection.js + logview.js
+
+    else:
+        scripts = upload.js
+
+    for every server:
+        for each selected script:
+            if running:
+                kill it
+
+    print summary
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+Use before redeploying if you want a clean baseline:
+
+    run clean.js managed
+    run upload.js
+    run assign-targets.js 1 2
+    run check-infection.js
+
+
+iteration.js
+------------
+
+Purpose
+~~~~~~~
+
+iteration.js searches the current server for files.
+
+It copies useful readable files home and writes a catalogue file.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- upload.js
+- infect-start.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Rarely. Normally run by deployment scripts.
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+Remote servers.
+
+Parameters
+~~~~~~~~~~
+
+None.
+
+Pseudocode
+~~~~~~~~~~
+
+    if current host is home:
+        exit
+
+    list files on current server
+
+    for each file:
+        ignore framework scripts and temporary markers
+        if file looks downloadable:
+            copy it home
+            add to catalogue as copied
+        else:
+            add to catalogue only
+
+    write /found/<server>_files.json
+    copy catalogue home
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+iteration.js should be lightweight. It is not part of the money-making loop.
+
+
+infect.js
+---------
+
+Purpose
+~~~~~~~
+
+infect.js is the optional worm coordinator.
+
+In Version 2, central upload.js deployment is the primary mechanism. infect.js remains available to propagate from a server to its neighbours if desired.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- upload.js in optional worm mode
+- infect-start.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Not usually.
+
+Expected location
+~~~~~~~~~~~~~~~~~
+
+Remote servers.
+
+Parameters
+~~~~~~~~~~
+
+1. parent
+   The server that launched this infection instance. Used to avoid immediately walking backwards.
+
+Pseudocode
+~~~~~~~~~~
+
+    here = current host
+    parent = arg0 or null
+
+    if here is home:
+        exit
+
+    copy stage scripts from home to here:
+        infect-root.js
+        infect-deploy.js
+        infect-start.js
+
+    neighbours = ns.scan(here), excluding home and parent
+
+    for each target neighbour:
+        run infect-root.js target
+        if root gained:
+            run infect-deploy.js target
+            run infect-start.js target here
+
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+Useful as propagation support, but not required once upload.js can centrally scan and deploy all rooted servers.
+
+
+infect-root.js
+--------------
+
+Purpose
+~~~~~~~
+
+Attempts to gain root on a target using available port openers and nuke.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- infect.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+For testing only.
+
+Command:
+
+    run infect-root.js targetServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+
+Pseudocode
+~~~~~~~~~~
+
+    target = arg0
+
+    if no target:
+        exit error
+
+    if target does not exist:
+        exit error
+
+    if already rooted:
+        exit success
+
+    for each port opener:
+        if opener exists on home:
+            run it against target
+
+    if opened ports >= required:
+        nuke target
+
+    return whether root exists
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This script does not copy payload. It only roots.
+
+
+infect-deploy.js
+----------------
+
+Purpose
+~~~~~~~
+
+Deploys the managed script bundle to a target from home.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- infect.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+For testing only.
+
+Command:
+
+    run infect-deploy.js targetServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+
+Pseudocode
+~~~~~~~~~~
+
+    target = arg0
+
+    verify target exists and is rooted
+
+    if target is already running process.js:
+        optionally skip to avoid disrupting active management
+
+    kill managed scripts on target
+
+    remove old managed script files
+
+    copy fresh managed scripts from home to target
+
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+In Version 2, upload.js is preferred for authoritative deployment. infect-deploy.js is retained for worm support.
+
+
+infect-start.js
+---------------
+
+Purpose
+~~~~~~~
+
+Starts the runtime layer on a newly deployed target.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+- infect.js
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+For testing only.
+
+Command:
+
+    run infect-start.js targetServer parentServer
+
+Parameters
+~~~~~~~~~~
+
+1. target
+2. parent
+
+Pseudocode
+~~~~~~~~~~
+
+    verify target exists and is rooted
+
+    start infect.js on target with parent argument
+
+    start iteration.js on target
+
+    if target has money:
+        start process.js on target with target argument
+
+    exit
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This is part of the optional staged worm subsystem.
+
+
+start-processes.js
+------------------
+
+Purpose
+~~~~~~~
+
+Diagnostic script used during development to verify that process.js can start and stay running on money servers.
+
+Typical parent
+~~~~~~~~~~~~~~
+
+None.
+
+Can be run directly
+~~~~~~~~~~~~~~~~~~~
+
+Yes, for diagnosis only.
+
+Command:
+
+    run start-processes.js
+
+Parameters
+~~~~~~~~~~
+
+1. waitMs
+   Optional delay to check whether process.js survived startup.
+
+Pseudocode
+~~~~~~~~~~
+
+    assert home
+
+    scan all servers
+
+    for each money server:
+        if rooted and process.js exists and enough RAM:
+            start process.js target
+
+    wait
+
+    recheck whether process.js survived
+
+    print summary:
+        started
+        still running
+        no root
+        no file
+        no RAM
+        died
+
+Operational notes
+~~~~~~~~~~~~~~~~~
+
+This is not a normal operational script once startup.js/upload.js/assign-targets.js are working.
+
+
+Operational Recipes
+===================
+
+Fresh post-augmentation start
+-----------------------------
+
+    run startup.js true false
+
+This cleans managed scripts, redeploys, assigns remote targets, and launches check-infection.js.
+
+Buy or upgrade purchased/cloud servers
+--------------------------------------
+
+Spend 40% of current cash:
+
+    run buy-servers.js 0.4
+
+Then redeploy:
+
+    run startup.js true false
+
+Or do it through startup if desired:
+
+    run startup.js true true 0.4
+
+Check current state
+-------------------
+
+    run check-infection.js
+
+Inspect one server
+------------------
+
+    run logview.js serverName
+
+Example:
+
+    run logview.js sigma-cosmetics
+
+Clean and redeploy manually
+---------------------------
+
+    run clean.js managed
+    run upload.js
+    run assign-targets.js 1 2
+    run check-infection.js
+
+Aggressive remote target assignment
+-----------------------------------
+
+    run assign-targets.js 1 3
+
+More conservative remote target assignment
+------------------------------------------
+
+    run assign-targets.js 1 1
+
+Only use non-money hosts as remote workers, if supported by the saved version
+----------------------------------------------------------------------------
+
+    run assign-targets.js 1 2 false
+
+
+Interpreting check-infection.js
+===============================
+
+Key fields
+----------
+
+Servers rooted
+    How many discovered servers have root access.
+
+Payload deployed
+    How many discovered servers have the core payload.
+
+Fully staged
+    How many discovered servers have the staged infection scripts.
+
+Money servers
+    Servers with max money greater than zero.
+
+process.js managing
+    How many money servers currently have a local or remote process.js manager.
+
+Local managed
+    Money servers where process.js runs on the target itself.
+
+Remote managed
+    Money servers where process.js runs on another host with the target as its argument.
+
+Total RAM / Free RAM
+    Total network RAM use, not only purchased servers.
+
+Current money
+    Current money across all money servers versus max possible money.
+
+Cycle: weaken/grow/hack
+    Current operational state of workers.
+
+Cloud servers
+    Purchased/cloud server fleet count.
+
+Cloud RAM
+    Total purchased/cloud capacity versus maximum possible.
+
+Cloud RAM use
+    Purchased/cloud RAM currently used.
+
+Cloud activity
+    Active versus idle purchased/cloud hosts.
+
+Cloud workers
+    How many purchased/cloud hosts are running managers and workers.
+
+Last purchase
+    Summary of last buy-servers.js run if restart-required.txt exists.
+
+Common statuses
+---------------
+
+good
+    Healthy.
+
+partial
+    Working, but not complete.
+
+poor
+    Needs attention.
+
+busy
+    RAM is being used. Usually good.
+
+idle
+    RAM or hosts are available but unused.
+
+restart
+    Server capacity changed. Redeploy recommended.
+
+watch
+    Not necessarily broken, but worth observing.
+
+Common reasons
+--------------
+
+managed
+    Locally managed by process.js.
+
+remoteManaged
+    Managed by process.js running on another host.
+
+lowRam
+    Cannot locally run process.js. May need remote assignment.
+
+noProcess
+    process.js exists but no local/remote manager is seen.
+
+missingProcessFile
+    Deployment incomplete.
+
+processIdle
+    process.js is running but no worker was visible at scan time. Often a timing artefact.
+
+nonMoney
+    Server has no money and does not need a money cycle.
+
+noRoot
+    Root missing.
+
+unknown
+    Dashboard could not classify the state.
+
+
+Version 2 Design Notes
+======================
+
+Why process.js is separate from workers
+---------------------------------------
+
+process.js is a low-thread controller. weaken.js/grow.js/hack.js are high-thread one-shot workers.
+
+This keeps RAM use predictable and allows process.js to kill and restart the correct worker type as the target changes state.
+
+Why remote management exists
+----------------------------
+
+Some profitable servers are too small to host process.js locally. Running process.js on a larger server while targeting a smaller server allows the whole money network to be exploited.
+
+Why check-infection.js is the main dashboard
+--------------------------------------------
+
+It correlates:
+
+- deployment;
+- root access;
+- money availability;
+- worker state;
+- local management;
+- remote management;
+- purchased/cloud server fleet state;
+- restart recommendations.
+
+This makes status.js and telemetry.js unnecessary in Version 2.
+
+Why restart-required.txt exists
+-------------------------------
+
+buy-servers.js changes server capacity. After that, upload.js and assign-targets.js should be rerun so new or upgraded servers receive scripts and are used.
+
+restart-required.txt is the marker that check-infection.js uses to recommend redeployment.
+
+Why logview.js still matters
+----------------------------
+
+check-infection.js gives board-level status. logview.js gives detailed server-level script behaviour.
+
+Use logview.js only when the dashboard points to a specific server worth inspecting.

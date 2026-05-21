@@ -1,0 +1,3591 @@
+{
+  "server": "run4theh111z",
+  "timestamp": 1779353553693,
+  "filesFound": 90,
+  "contractsFound": 85,
+  "files": [
+    {
+      "server": "run4theh111z",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/run4theh111z__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353552643
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-130290-CarmichaelSecurity.cct",
+      "originalFile": "contract-130290-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-130290-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-130290-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552649,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-130290-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-130290-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "EMAIL MEDIA CACHE FLASH DEBUG",
+          14
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-149405.cct",
+      "originalFile": "contract-149405.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-149405.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-149405.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552655,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-149405.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-149405.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          4,
+          9,
+          -7,
+          -8,
+          2,
+          -6,
+          9,
+          -3,
+          8,
+          -3,
+          -1,
+          -8,
+          10,
+          -10,
+          -3,
+          8,
+          -10,
+          9,
+          -3,
+          -10,
+          4,
+          -2,
+          -8,
+          8,
+          -2,
+          4,
+          7,
+          4,
+          10
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-169499.cct",
+      "originalFile": "contract-169499.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-169499.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-169499.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552660,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-169499.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-169499.cct\", \"run4theh111z\")",
+        "type": "Array Jumping Game",
+        "data": [
+          6,
+          4,
+          5
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-188468.cct",
+      "originalFile": "contract-188468.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-188468.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-188468.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552666,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-188468.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-188468.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          176,
+          50,
+          167,
+          9,
+          33,
+          71,
+          21,
+          124,
+          34,
+          71,
+          194,
+          171,
+          154,
+          164,
+          119,
+          147,
+          52,
+          194,
+          73,
+          81,
+          56,
+          140,
+          41,
+          13,
+          147
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-1gdZAN.cct",
+      "originalFile": "contract-1gdZAN.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-1gdZAN.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-1gdZAN.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552701,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-1gdZAN.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-1gdZAN.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "MODEM ARRAY TABLE CACHE POPUP",
+          18
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-20387.cct",
+      "originalFile": "contract-20387.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-20387.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-20387.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552708,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-20387.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-20387.cct\", \"run4theh111z\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "8NsTe2u6V68772xvJo3529ZQ7E8OHQz04fYeR4148ubA5308786AuaILhP",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-236093-Netburners.cct",
+      "originalFile": "contract-236093-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-236093-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-236093-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552715,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-236093-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-236093-Netburners.cct\", \"run4theh111z\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          7,
+          [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-236371.cct",
+      "originalFile": "contract-236371.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-236371.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-236371.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552722,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-236371.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-236371.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          6,
+          14
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-277057-CarmichaelSecurity.cct",
+      "originalFile": "contract-277057-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-277057-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-277057-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552761,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-277057-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-277057-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Compression I: RLE Compression",
+        "data": "ppppppppeeMMMMMMMMra66YYYYYYYYYYYYYYhhhqqqqqqqqqqqqOOOOOOOOOOO8888886ZZZZZZZZmmmDwmqjjiii",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-287577.cct",
+      "originalFile": "contract-287577.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-287577.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-287577.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552768,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-287577.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-287577.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          16,
+          39,
+          197,
+          107,
+          5,
+          171
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-292950-NiteSec.cct",
+      "originalFile": "contract-292950-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-292950-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-292950-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552773,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-292950-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-292950-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Total Ways to Sum",
+        "data": 70,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-296175-CarmichaelSecurity.cct",
+      "originalFile": "contract-296175-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-296175-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-296175-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552778,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-296175-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-296175-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "9QGnDZGTtz589et84PyESi01u837SicX122932WV66",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-309407-CarmichaelSecurity.cct",
+      "originalFile": "contract-309407-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-309407-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-309407-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552784,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-309407-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-309407-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Total Ways to Sum",
+        "data": 37,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-320606.cct",
+      "originalFile": "contract-320606.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-320606.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-320606.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552816,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-320606.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-320606.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          5,
+          [
+            197,
+            14,
+            100,
+            35,
+            114,
+            21,
+            59,
+            190,
+            94,
+            164,
+            54,
+            112,
+            70,
+            109,
+            114,
+            21,
+            32,
+            156,
+            125,
+            147,
+            18,
+            134,
+            55,
+            106,
+            195,
+            11,
+            38,
+            35
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-330644.cct",
+      "originalFile": "contract-330644.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-330644.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-330644.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552821,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-330644.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-330644.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          6,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-331172-TheBlackHand.cct",
+      "originalFile": "contract-331172-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-331172-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-331172-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552827,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-331172-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-331172-TheBlackHand.cct\", \"run4theh111z\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            2
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            3,
+            4
+          ],
+          [
+            7,
+            3,
+            9,
+            5
+          ],
+          [
+            9,
+            2,
+            7,
+            6,
+            8
+          ],
+          [
+            5,
+            4,
+            3,
+            5,
+            3,
+            4
+          ],
+          [
+            2,
+            9,
+            6,
+            7,
+            5,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6,
+            5,
+            5,
+            7,
+            6,
+            3
+          ],
+          [
+            1,
+            2,
+            9,
+            3,
+            6,
+            2,
+            3,
+            2,
+            5
+          ],
+          [
+            3,
+            8,
+            4,
+            7,
+            9,
+            4,
+            4,
+            6,
+            6,
+            4
+          ],
+          [
+            8,
+            8,
+            1,
+            3,
+            9,
+            8,
+            9,
+            1,
+            8,
+            3,
+            7
+          ],
+          [
+            4,
+            1,
+            4,
+            7,
+            7,
+            3,
+            8,
+            6,
+            1,
+            8,
+            1,
+            8
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-38640-CarmichaelSecurity.cct",
+      "originalFile": "contract-38640-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-38640-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-38640-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552833,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-38640-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-38640-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          12,
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-397631.cct",
+      "originalFile": "contract-397631.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-397631.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-397631.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552839,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-397631.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-397631.cct\", \"run4theh111z\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "MOUSEVIRUSCLOUDMODEMMEDIA",
+          "MALWARE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-452217-CyberSec.cct",
+      "originalFile": "contract-452217-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-452217-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-452217-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552878,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-452217-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-452217-CyberSec.cct\", \"run4theh111z\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 228114238,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-453927-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-453927-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-453927-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-453927-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552884,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-453927-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-453927-CentralIntelligenceAgency.cct\", \"run4theh111z\")",
+        "type": "Array Jumping Game",
+        "data": [
+          0,
+          1,
+          0,
+          6,
+          0,
+          4,
+          7,
+          0,
+          2,
+          2
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-463688-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-463688-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-463688-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-463688-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552890,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-463688-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-463688-CentralIntelligenceAgency.cct\", \"run4theh111z\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            23,
+            27
+          ],
+          [
+            22,
+            28
+          ],
+          [
+            8,
+            17
+          ],
+          [
+            19,
+            28
+          ],
+          [
+            9,
+            14
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            8,
+            17
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-467075.cct",
+      "originalFile": "contract-467075.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-467075.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-467075.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552896,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-467075.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-467075.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          2,
+          4,
+          3,
+          -8,
+          6,
+          6,
+          3,
+          2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-491259.cct",
+      "originalFile": "contract-491259.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-491259.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-491259.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552902,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-491259.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-491259.cct\", \"run4theh111z\")",
+        "type": "Array Jumping Game II",
+        "data": [
+          3,
+          1,
+          1,
+          3,
+          4,
+          3,
+          0,
+          2,
+          4,
+          1,
+          5,
+          3,
+          0,
+          5,
+          4,
+          2,
+          3,
+          2
+        ],
+        "triesRemaining": 3,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-501266-CarmichaelSecurity.cct",
+      "originalFile": "contract-501266-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-501266-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-501266-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552932,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-501266-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-501266-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          125,
+          75,
+          116,
+          176,
+          45,
+          79,
+          75,
+          110,
+          4,
+          43,
+          55,
+          74,
+          107,
+          168,
+          78,
+          33,
+          45,
+          10,
+          91,
+          74,
+          157,
+          37
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-502667-CarmichaelSecurity.cct",
+      "originalFile": "contract-502667-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-502667-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-502667-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552938,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-502667-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-502667-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-505930-Sector12.cct",
+      "originalFile": "contract-505930-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-505930-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-505930-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552944,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-505930-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-505930-Sector12.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          2,
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-511777-Netburners.cct",
+      "originalFile": "contract-511777-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-511777-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-511777-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552950,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-511777-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-511777-Netburners.cct\", \"run4theh111z\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 5368398871929,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-514961-Sector12.cct",
+      "originalFile": "contract-514961-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-514961-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-514961-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552956,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-514961-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-514961-Sector12.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY POPUP MEDIA LINUX CACHE",
+          25
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-5251.cct",
+      "originalFile": "contract-5251.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-5251.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-5251.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552991,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-5251.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-5251.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          141,
+          105,
+          140,
+          15
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-540646-CyberSec.cct",
+      "originalFile": "contract-540646-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-540646-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-540646-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353552996,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-540646-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-540646-CyberSec.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          7,
+          [
+            37,
+            63,
+            95,
+            170,
+            79,
+            31,
+            60,
+            38,
+            21,
+            119,
+            95,
+            53,
+            25,
+            19,
+            113,
+            62,
+            42,
+            60,
+            16,
+            4,
+            67,
+            42,
+            57,
+            147
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-56884.cct",
+      "originalFile": "contract-56884.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-56884.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-56884.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553002,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-56884.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-56884.cct\", \"run4theh111z\")",
+        "type": "Compression III: LZ Compression",
+        "data": "2QGqAvAsiaA6GWGWGWGW075Dvz75FFOFFFOFFFOFFJqSujFFh2OPHlnq6k8noL",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-578950.cct",
+      "originalFile": "contract-578950.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-578950.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-578950.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553008,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-578950.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-578950.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -7,
+          3,
+          5,
+          -10,
+          -10,
+          -9,
+          4,
+          2,
+          0,
+          -6,
+          0,
+          7,
+          -9,
+          0,
+          10,
+          1,
+          0,
+          -5,
+          8,
+          -2,
+          7,
+          -4,
+          7,
+          10,
+          0,
+          -3,
+          7,
+          -1,
+          8,
+          0
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-59977-CarmichaelSecurity.cct",
+      "originalFile": "contract-59977-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-59977-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-59977-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553014,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-59977-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-59977-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-603527-CarmichaelSecurity.cct",
+      "originalFile": "contract-603527-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-603527-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-603527-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553045,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-603527-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-603527-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Generate IP Addresses",
+        "data": "18316782143",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-642407-NiteSec.cct",
+      "originalFile": "contract-642407-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-642407-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-642407-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553051,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-642407-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-642407-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            9
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            3,
+            4,
+            2
+          ],
+          [
+            8,
+            9,
+            7,
+            3
+          ],
+          [
+            7,
+            4,
+            6,
+            3,
+            6
+          ],
+          [
+            4,
+            5,
+            5,
+            7,
+            4,
+            3
+          ],
+          [
+            7,
+            1,
+            6,
+            1,
+            1,
+            4,
+            3
+          ],
+          [
+            4,
+            7,
+            6,
+            4,
+            2,
+            4,
+            3,
+            3
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-646546.cct",
+      "originalFile": "contract-646546.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-646546.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-646546.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553057,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-646546.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-646546.cct\", \"run4theh111z\")",
+        "type": "Find Largest Prime Factor",
+        "data": 522545531,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-646670-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-646670-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-646670-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-646670-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553063,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-646670-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-646670-CentralIntelligenceAgency.cct\", \"run4theh111z\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          177,
+          [
+            1,
+            3,
+            6,
+            8,
+            10,
+            11,
+            13,
+            14,
+            17,
+            19,
+            20
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-646876.cct",
+      "originalFile": "contract-646876.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-646876.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-646876.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553070,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-646876.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-646876.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -5,
+          3,
+          -8,
+          0,
+          -3,
+          4,
+          -2,
+          3,
+          -5,
+          -8,
+          -1,
+          -9,
+          -2,
+          5,
+          6,
+          5,
+          8,
+          0,
+          -8,
+          -2,
+          -9,
+          -1,
+          -10,
+          4,
+          5,
+          6,
+          7,
+          -9,
+          -1,
+          -7,
+          -10,
+          3,
+          -1,
+          3,
+          7,
+          -7,
+          -9,
+          1,
+          -1,
+          4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-651248.cct",
+      "originalFile": "contract-651248.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-651248.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-651248.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553101,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-651248.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-651248.cct\", \"run4theh111z\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            37
+          ],
+          [
+            6
+          ],
+          [
+            11
+          ],
+          [
+            12
+          ],
+          [
+            36
+          ],
+          [
+            6
+          ],
+          [
+            37
+          ],
+          [
+            44
+          ],
+          [
+            29
+          ],
+          [
+            20
+          ],
+          [
+            30
+          ],
+          [
+            47
+          ],
+          [
+            17
+          ],
+          [
+            11
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-657416-NiteSec.cct",
+      "originalFile": "contract-657416-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-657416-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-657416-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553108,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-657416-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-657416-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "6OBoQfS263ttJ759cAJxhR4V005yAJMa971H461h299p5zUxM8KH07nttpzrG69032",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-659987.cct",
+      "originalFile": "contract-659987.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-659987.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-659987.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553113,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-659987.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-659987.cct\", \"run4theh111z\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "MEDIAVIRUSSHIFTLOGINQUEUE",
+          "ITERATION"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-668050.cct",
+      "originalFile": "contract-668050.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-668050.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-668050.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553119,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-668050.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-668050.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          164,
+          45,
+          111,
+          44,
+          48,
+          54,
+          14,
+          59,
+          19,
+          62,
+          62,
+          98,
+          158,
+          161,
+          149,
+          90,
+          53
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-672385.cct",
+      "originalFile": "contract-672385.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-672385.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-672385.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553126,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-672385.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-672385.cct\", \"run4theh111z\")",
+        "type": "Compression III: LZ Compression",
+        "data": "d1hV3IFUqV3IFUqIFUqIFUq4wYHEHEHEHEHE3u41CB41fQCtPg341fQCtPg",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-678139.cct",
+      "originalFile": "contract-678139.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-678139.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-678139.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553141,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-678139.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-678139.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          149,
+          148,
+          49,
+          175,
+          110,
+          122,
+          86,
+          32,
+          38,
+          17,
+          39,
+          25,
+          43,
+          10,
+          128,
+          67,
+          153,
+          4,
+          64,
+          45,
+          52,
+          32,
+          186
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-678531.cct",
+      "originalFile": "contract-678531.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-678531.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-678531.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553147,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-678531.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-678531.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY FRAME LOGIN PRINT LINUX",
+          7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-683697-Sector12.cct",
+      "originalFile": "contract-683697-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-683697-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-683697-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553153,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-683697-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-683697-Sector12.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          138,
+          147,
+          101,
+          193,
+          83,
+          84,
+          116,
+          124,
+          194,
+          26,
+          106,
+          168,
+          101,
+          105,
+          114,
+          97,
+          152,
+          80,
+          59,
+          120,
+          125,
+          109,
+          15,
+          26,
+          155,
+          169,
+          167,
+          105,
+          130,
+          65,
+          196,
+          35,
+          19,
+          173,
+          14,
+          51,
+          140,
+          41,
+          18,
+          61,
+          148,
+          175,
+          188,
+          183,
+          113,
+          37,
+          158,
+          102
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-688713-CarmichaelSecurity.cct",
+      "originalFile": "contract-688713-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-688713-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-688713-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553158,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-688713-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-688713-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          4,
+          [
+            31,
+            30,
+            130,
+            53,
+            136,
+            76,
+            9,
+            101,
+            172,
+            95,
+            46,
+            101,
+            59,
+            78,
+            188,
+            2,
+            195
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-72506.cct",
+      "originalFile": "contract-72506.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-72506.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-72506.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553164,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-72506.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-72506.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY MACRO VIRUS ENTER MEDIA",
+          5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-727712.cct",
+      "originalFile": "contract-727712.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-727712.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-727712.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553201,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-727712.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-727712.cct\", \"run4theh111z\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          9,
+          [
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              5,
+              8
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-738111-CarmichaelSecurity.cct",
+      "originalFile": "contract-738111-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-738111-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-738111-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553208,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-738111-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-738111-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            3
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2,
+            3
+          ],
+          [
+            9,
+            5,
+            1,
+            9
+          ],
+          [
+            8,
+            1,
+            6,
+            2,
+            3
+          ],
+          [
+            9,
+            6,
+            6,
+            7,
+            4,
+            3
+          ],
+          [
+            7,
+            3,
+            2,
+            1,
+            6,
+            2,
+            1
+          ],
+          [
+            1,
+            7,
+            9,
+            6,
+            9,
+            9,
+            3,
+            8
+          ],
+          [
+            9,
+            6,
+            6,
+            6,
+            3,
+            2,
+            2,
+            6,
+            2
+          ],
+          [
+            7,
+            4,
+            7,
+            3,
+            2,
+            3,
+            7,
+            1,
+            6,
+            1
+          ],
+          [
+            1,
+            2,
+            4,
+            8,
+            3,
+            6,
+            5,
+            1,
+            8,
+            4,
+            5
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-751673-CarmichaelSecurity.cct",
+      "originalFile": "contract-751673-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-751673-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-751673-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553214,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-751673-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-751673-CarmichaelSecurity.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          2,
+          1,
+          3,
+          -9,
+          6,
+          1,
+          -6,
+          9,
+          6,
+          7,
+          -4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-755460.cct",
+      "originalFile": "contract-755460.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-755460.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-755460.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553220,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-755460.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-755460.cct\", \"run4theh111z\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "((a(a(a()a()a()((",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-764229-NiteSec.cct",
+      "originalFile": "contract-764229-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-764229-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-764229-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553260,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-764229-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-764229-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "892820877271",
+          -4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-783280-Sector12.cct",
+      "originalFile": "contract-783280-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-783280-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-783280-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553265,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-783280-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-783280-Sector12.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          149,
+          88,
+          19,
+          123,
+          89,
+          73,
+          98,
+          10,
+          163,
+          51,
+          108,
+          83,
+          127,
+          33,
+          31
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-809440.cct",
+      "originalFile": "contract-809440.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-809440.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-809440.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553271,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-809440.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-809440.cct\", \"run4theh111z\")",
+        "type": "Array Jumping Game",
+        "data": [
+          8,
+          0,
+          8,
+          7
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-83872-TheBlackHand.cct",
+      "originalFile": "contract-83872-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-83872-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-83872-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553277,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-83872-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-83872-TheBlackHand.cct\", \"run4theh111z\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-844503.cct",
+      "originalFile": "contract-844503.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-844503.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-844503.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553282,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-844503.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-844503.cct\", \"run4theh111z\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          10,
+          7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-863657.cct",
+      "originalFile": "contract-863657.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-863657.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-863657.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553316,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-863657.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-863657.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          116,
+          83,
+          124,
+          171,
+          87,
+          99,
+          88,
+          165,
+          47,
+          169,
+          12,
+          165,
+          150,
+          95,
+          104,
+          134,
+          125,
+          31,
+          71,
+          182,
+          39,
+          131,
+          27,
+          79,
+          55,
+          161,
+          98,
+          72,
+          87,
+          94,
+          164,
+          19,
+          9,
+          127,
+          9,
+          63,
+          119,
+          133,
+          199,
+          35,
+          11,
+          136,
+          83
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-864068.cct",
+      "originalFile": "contract-864068.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-864068.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-864068.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553323,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-864068.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-864068.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          172,
+          72,
+          70,
+          168,
+          167
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-866893.cct",
+      "originalFile": "contract-866893.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-866893.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-866893.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553330,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-866893.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-866893.cct\", \"run4theh111z\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          8,
+          [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-881349-NiteSec.cct",
+      "originalFile": "contract-881349-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-881349-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-881349-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553335,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-881349-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-881349-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Generate IP Addresses",
+        "data": "24198128206",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-914064.cct",
+      "originalFile": "contract-914064.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-914064.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-914064.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553375,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-914064.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-914064.cct\", \"run4theh111z\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 32087501280,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-916702.cct",
+      "originalFile": "contract-916702.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-916702.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-916702.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553380,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-916702.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-916702.cct\", \"run4theh111z\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 9909982893992,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-92769.cct",
+      "originalFile": "contract-92769.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-92769.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-92769.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553385,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-92769.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-92769.cct\", \"run4theh111z\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "9RPYk4Izr401O7784eiu3NEZ3636tk45456MI482Hf476ZhtloO76",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-930942-NiteSec.cct",
+      "originalFile": "contract-930942-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-930942-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-930942-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553391,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-930942-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-930942-NiteSec.cct\", \"run4theh111z\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "01101011011101100011011100000011",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-942058.cct",
+      "originalFile": "contract-942058.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-942058.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-942058.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553398,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-942058.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-942058.cct\", \"run4theh111z\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "))a()aa())a(((a))a))",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-975542.cct",
+      "originalFile": "contract-975542.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-975542.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-975542.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553432,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-975542.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-975542.cct\", \"run4theh111z\")",
+        "type": "Compression I: RLE Compression",
+        "data": "mmxLLzzQQQQQQQQQQccVVVVVVVVVVYYBqqIIUUUUUUUUIPqqqqqqqqaEEE",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-978964.cct",
+      "originalFile": "contract-978964.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-978964.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-978964.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553438,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-978964.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-978964.cct\", \"run4theh111z\")",
+        "type": "Square Root",
+        "data": "151647076238180224525259141511868497983178440756907062427966549227858049202747781475949928295460204258475626431885764453386865241724421219230691945345543756332958577015245904883277272760307969267207553",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-981984-NiteSec.cct",
+      "originalFile": "contract-981984-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-981984-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-981984-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553445,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-981984-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-981984-NiteSec.cct\", \"run4theh111z\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          40,
+          [
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            15
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-986746.cct",
+      "originalFile": "contract-986746.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-986746.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-986746.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553451,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-986746.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-986746.cct\", \"run4theh111z\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-In3Sek.cct",
+      "originalFile": "contract-In3Sek.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-In3Sek.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-In3Sek.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553484,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-In3Sek.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-In3Sek.cct\", \"run4theh111z\")",
+        "type": "Find Largest Prime Factor",
+        "data": 360631046,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-LIpIuz.cct",
+      "originalFile": "contract-LIpIuz.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-LIpIuz.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-LIpIuz.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553489,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-LIpIuz.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-LIpIuz.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          147,
+          145,
+          164,
+          200,
+          21,
+          184,
+          172,
+          99,
+          109,
+          62,
+          190,
+          183,
+          5,
+          113,
+          126,
+          163,
+          147,
+          62,
+          189,
+          6,
+          198,
+          24,
+          130,
+          6,
+          115,
+          101,
+          36,
+          195,
+          64,
+          152,
+          96
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-PqIC3r.cct",
+      "originalFile": "contract-PqIC3r.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-PqIC3r.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-PqIC3r.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553495,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-PqIC3r.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-PqIC3r.cct\", \"run4theh111z\")",
+        "type": "Find Largest Prime Factor",
+        "data": 152993671,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-S1j4Vc.cct",
+      "originalFile": "contract-S1j4Vc.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-S1j4Vc.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-S1j4Vc.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553501,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-S1j4Vc.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-S1j4Vc.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -9,
+          -6,
+          -9,
+          0,
+          4,
+          2,
+          -10,
+          -3,
+          0,
+          3,
+          -5,
+          -10,
+          2,
+          -5,
+          -1,
+          3,
+          -8,
+          6,
+          10,
+          5,
+          -7,
+          -5,
+          -3,
+          9,
+          10,
+          7,
+          10,
+          3,
+          9,
+          9,
+          -5,
+          5,
+          -2,
+          -8,
+          -8,
+          -7,
+          1,
+          5,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-Z1Ty3A.cct",
+      "originalFile": "contract-Z1Ty3A.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-Z1Ty3A.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-Z1Ty3A.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553506,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-Z1Ty3A.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-Z1Ty3A.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          78,
+          189,
+          75,
+          139,
+          194,
+          158,
+          32,
+          14,
+          157,
+          90,
+          130,
+          68,
+          197,
+          46,
+          91,
+          193,
+          18,
+          125,
+          58,
+          13
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-a5az22.cct",
+      "originalFile": "contract-a5az22.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-a5az22.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-a5az22.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553543,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-a5az22.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-a5az22.cct\", \"run4theh111z\")",
+        "type": "Find Largest Prime Factor",
+        "data": 522257984,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-b2ldVK.cct",
+      "originalFile": "contract-b2ldVK.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-b2ldVK.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-b2ldVK.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553549,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-b2ldVK.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-b2ldVK.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -9,
+          0,
+          8,
+          -5,
+          -1,
+          3,
+          1,
+          2,
+          -1,
+          10,
+          3,
+          -4,
+          -6,
+          -5,
+          -5,
+          0,
+          -7,
+          5,
+          8,
+          10,
+          -7,
+          -3,
+          9,
+          3,
+          -9,
+          4,
+          -10,
+          2,
+          -2,
+          10,
+          -6,
+          0,
+          0,
+          -6,
+          -10,
+          -7,
+          -8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-blhdNT.cct",
+      "originalFile": "contract-blhdNT.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-blhdNT.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-blhdNT.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553555,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-blhdNT.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-blhdNT.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -10,
+          2,
+          1,
+          9,
+          8,
+          8,
+          3,
+          -4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-cCqt2b.cct",
+      "originalFile": "contract-cCqt2b.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-cCqt2b.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-cCqt2b.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553562,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-cCqt2b.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-cCqt2b.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -8,
+          7,
+          6,
+          -2,
+          -9,
+          -6,
+          -9,
+          0,
+          -5,
+          -1,
+          6,
+          7,
+          2,
+          6,
+          -7,
+          -7,
+          6,
+          -10,
+          6,
+          -6,
+          -4,
+          -7,
+          -9,
+          1,
+          5,
+          8,
+          1,
+          2,
+          -5,
+          -5,
+          -3,
+          -7,
+          -1,
+          -7,
+          -2,
+          -4,
+          1,
+          10,
+          -7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-iXtkyw.cct",
+      "originalFile": "contract-iXtkyw.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-iXtkyw.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-iXtkyw.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553600,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-iXtkyw.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-iXtkyw.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY FRAME MACRO TABLE MOUSE",
+          17
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-kLsiv8.cct",
+      "originalFile": "contract-kLsiv8.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-kLsiv8.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-kLsiv8.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553606,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-kLsiv8.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-kLsiv8.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "FRAME ARRAY DEBUG MEDIA SHELL",
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-rSTP0r.cct",
+      "originalFile": "contract-rSTP0r.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-rSTP0r.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-rSTP0r.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553612,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-rSTP0r.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-rSTP0r.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          10,
+          0,
+          7,
+          -3,
+          10,
+          -2,
+          5,
+          -3,
+          5,
+          0,
+          -4,
+          -1,
+          7,
+          -3,
+          4,
+          9,
+          0,
+          -4,
+          10,
+          10,
+          7,
+          9,
+          3,
+          10,
+          -10,
+          10,
+          0,
+          -6,
+          7,
+          -6,
+          4,
+          -8,
+          4,
+          -6,
+          -9,
+          10,
+          4,
+          -4,
+          -3
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-sZEwBr.cct",
+      "originalFile": "contract-sZEwBr.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-sZEwBr.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-sZEwBr.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553619,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-sZEwBr.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-sZEwBr.cct\", \"run4theh111z\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -3,
+          1,
+          -6,
+          6,
+          -9,
+          -8,
+          -7,
+          10,
+          7,
+          -9,
+          7,
+          3,
+          -3,
+          6,
+          -1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-zAFbga.cct",
+      "originalFile": "contract-zAFbga.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-zAFbga.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-zAFbga.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553655,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-zAFbga.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-zAFbga.cct\", \"run4theh111z\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ARRAY CACHE FLASH LINUX EMAIL",
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "contract-zkO76R.cct",
+      "originalFile": "contract-zkO76R.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/run4theh111z__contract-zkO76R.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nscp: Cannot transfer contract-zkO76R.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353553664,
+      "contract": {
+        "originServer": "run4theh111z",
+        "originFile": "contract-zkO76R.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-zkO76R.cct\", \"run4theh111z\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          26,
+          18,
+          3,
+          197,
+          147,
+          160,
+          35,
+          196,
+          135,
+          30,
+          84,
+          47,
+          25,
+          122,
+          173,
+          172,
+          158,
+          107,
+          115,
+          132,
+          98,
+          45,
+          197,
+          97,
+          144,
+          123,
+          183,
+          18,
+          27,
+          192,
+          67,
+          14,
+          131,
+          86,
+          123,
+          162,
+          178
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "found/run4theh111z_files.json",
+      "originalFile": "found/run4theh111z_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/run4theh111z__found__run4theh111z_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553669
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "simulated-reality.lit",
+      "originalFile": "simulated-reality.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/run4theh111z__simulated-reality.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353553677
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/run4theh111z__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353553682
+    },
+    {
+      "server": "run4theh111z",
+      "originalPath": "the-new-god.lit",
+      "originalFile": "the-new-god.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/run4theh111z__the-new-god.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@run4theh111z (PID - 12454)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353553687
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "server": "MooMF3",
+  "timestamp": 1779353459878,
+  "filesFound": 3,
+  "contractsFound": 0,
+  "files": [
+    {
+      "server": "MooMF3",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/MooMF3__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459860
+    },
+    {
+      "server": "MooMF3",
+      "originalPath": "found/MooMF3_files.json",
+      "originalFile": "found/MooMF3_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/MooMF3__found__MooMF3_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459866
+    },
+    {
+      "server": "MooMF3",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/MooMF3__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459871
+    }
+  ]
+}

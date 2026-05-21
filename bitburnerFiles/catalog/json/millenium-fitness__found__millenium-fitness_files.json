@@ -1,0 +1,4276 @@
+{
+  "server": "millenium-fitness",
+  "timestamp": 1779353460740,
+  "filesFound": 98,
+  "contractsFound": 95,
+  "files": [
+    {
+      "server": "millenium-fitness",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/millenium-fitness__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353459739
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-112368.cct",
+      "originalFile": "contract-112368.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-112368.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-112368.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459744,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-112368.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-112368.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            8,
+            17
+          ],
+          [
+            7,
+            14
+          ],
+          [
+            14,
+            21
+          ],
+          [
+            21,
+            28
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-126250.cct",
+      "originalFile": "contract-126250.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-126250.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-126250.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459751,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-126250.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-126250.cct\", \"millenium-fitness\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "TRASHCLOUDPOPUPENTERTABLE",
+          "DATABASE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-130285.cct",
+      "originalFile": "contract-130285.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-130285.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-130285.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459756,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-130285.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-130285.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 749143150,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-149537-CarmichaelSecurity.cct",
+      "originalFile": "contract-149537-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-149537-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-149537-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459762,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-149537-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-149537-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            3,
+            12
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            24,
+            27
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            20,
+            30
+          ],
+          [
+            9,
+            18
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-153668.cct",
+      "originalFile": "contract-153668.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-153668.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-153668.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459777,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-153668.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-153668.cct\", \"millenium-fitness\")",
+        "type": "Compression III: LZ Compression",
+        "data": "sT8hGIfG1Y5FpfG1YlJ1YlJ1Y2Nw604nNw604DavVy2S0HbmcwBiOlOlOlO",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-163841.cct",
+      "originalFile": "contract-163841.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-163841.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-163841.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459782,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-163841.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-163841.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          191,
+          20,
+          24,
+          57,
+          20,
+          56,
+          21,
+          70,
+          180,
+          22,
+          54,
+          51,
+          178,
+          12
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-176539.cct",
+      "originalFile": "contract-176539.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-176539.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-176539.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459788,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-176539.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-176539.cct\", \"millenium-fitness\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 215,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-192345-TheBlackHand.cct",
+      "originalFile": "contract-192345-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-192345-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-192345-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459795,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-192345-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-192345-TheBlackHand.cct\", \"millenium-fitness\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            2,
+            7
+          ],
+          [
+            9,
+            8,
+            2,
+            8
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-194778-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-194778-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-194778-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-194778-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459800,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-194778-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-194778-CentralIntelligenceAgency.cct\", \"millenium-fitness\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "7Sy5k7Sy816xoNlk4342cf5814319W1SgiXlwx05Cwncy326LN8iB3361o",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-1UcDfv.cct",
+      "originalFile": "contract-1UcDfv.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-1UcDfv.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-1UcDfv.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459819,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-1UcDfv.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-1UcDfv.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -9,
+          10,
+          0,
+          -5,
+          7,
+          -5,
+          0,
+          -7,
+          5,
+          -6,
+          -10,
+          -5,
+          -2,
+          8,
+          -9,
+          4,
+          -4,
+          3,
+          1,
+          0,
+          -3,
+          2,
+          -10,
+          1,
+          -2,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-204438.cct",
+      "originalFile": "contract-204438.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-204438.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-204438.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459825,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-204438.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-204438.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          196,
+          171,
+          196,
+          190,
+          136,
+          137,
+          149,
+          147,
+          198,
+          132,
+          43,
+          194,
+          32,
+          91,
+          143,
+          144,
+          69,
+          16,
+          89,
+          72,
+          109,
+          34
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-206446-CarmichaelSecurity.cct",
+      "originalFile": "contract-206446-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-206446-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-206446-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459831,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-206446-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-206446-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 498209722,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-209589.cct",
+      "originalFile": "contract-209589.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-209589.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-209589.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459838,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-209589.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-209589.cct\", \"millenium-fitness\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "7F4DM0aW312TK7236zH932wE42986tAk4n5T01W586O2t4mY113ffJ813OZJ",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-21234.cct",
+      "originalFile": "contract-21234.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-21234.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-21234.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459845,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-21234.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-21234.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          175,
+          72,
+          115,
+          76,
+          177,
+          194,
+          156,
+          102,
+          190,
+          8,
+          86,
+          66,
+          131
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-213764.cct",
+      "originalFile": "contract-213764.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-213764.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-213764.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459860,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-213764.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-213764.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            25,
+            33
+          ],
+          [
+            21,
+            28
+          ],
+          [
+            17,
+            25
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            20
+          ],
+          [
+            21,
+            28
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            16,
+            21
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            18,
+            23
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-214016.cct",
+      "originalFile": "contract-214016.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-214016.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-214016.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459866,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-214016.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-214016.cct\", \"millenium-fitness\")",
+        "type": "Compression III: LZ Compression",
+        "data": "omtRhomtRhowdk0v2v2v2v2v2a6mD2v2a6mD2vv2a6mGdddddddN5nzc5nzcz6oK888dqGIldql",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-248253-CarmichaelSecurity.cct",
+      "originalFile": "contract-248253-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-248253-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-248253-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459871,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-248253-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-248253-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            10,
+            18
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            20,
+            22
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            18,
+            25
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-270357-CarmichaelSecurity.cct",
+      "originalFile": "contract-270357-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-270357-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-270357-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459878,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-270357-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-270357-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-2UoEEm.cct",
+      "originalFile": "contract-2UoEEm.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-2UoEEm.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-2UoEEm.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459884,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-2UoEEm.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-2UoEEm.cct\", \"millenium-fitness\")",
+        "type": "Total Ways to Sum",
+        "data": 17,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-306313.cct",
+      "originalFile": "contract-306313.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-306313.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-306313.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459900,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-306313.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-306313.cct\", \"millenium-fitness\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          9,
+          [
+            [
+              4,
+              8
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              3,
+              7
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-355787.cct",
+      "originalFile": "contract-355787.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-355787.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-355787.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459907,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-355787.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-355787.cct\", \"millenium-fitness\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-357539.cct",
+      "originalFile": "contract-357539.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-357539.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-357539.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459912,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-357539.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-357539.cct\", \"millenium-fitness\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            7,
+            8
+          ],
+          [
+            7,
+            6,
+            3,
+            8
+          ],
+          [
+            1,
+            5,
+            6,
+            5,
+            9
+          ],
+          [
+            7,
+            2,
+            5,
+            6,
+            5,
+            9
+          ],
+          [
+            7,
+            5,
+            7,
+            4,
+            8,
+            7,
+            5
+          ],
+          [
+            6,
+            2,
+            7,
+            4,
+            4,
+            2,
+            8,
+            4
+          ],
+          [
+            4,
+            4,
+            4,
+            8,
+            5,
+            2,
+            7,
+            4,
+            7
+          ],
+          [
+            5,
+            2,
+            4,
+            7,
+            9,
+            7,
+            3,
+            8,
+            2,
+            6
+          ],
+          [
+            7,
+            6,
+            4,
+            9,
+            8,
+            7,
+            6,
+            4,
+            1,
+            9,
+            6
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-363294.cct",
+      "originalFile": "contract-363294.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-363294.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-363294.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459918,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-363294.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-363294.cct\", \"millenium-fitness\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "FLASHFRAMETRASHINBOXARRAY",
+          "TERMINAL"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-367053.cct",
+      "originalFile": "contract-367053.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-367053.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-367053.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459923,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-367053.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-367053.cct\", \"millenium-fitness\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "CACHEDEBUGTABLELOGICENTER",
+          "PROGRAM"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-371764.cct",
+      "originalFile": "contract-371764.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-371764.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-371764.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459956,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-371764.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-371764.cct\", \"millenium-fitness\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            14,
+            24,
+            24,
+            5,
+            45,
+            33,
+            41,
+            4,
+            42,
+            45,
+            39,
+            38
+          ],
+          [
+            48,
+            22,
+            12,
+            21,
+            50,
+            25,
+            6,
+            4,
+            23,
+            8,
+            20,
+            27
+          ],
+          [
+            1,
+            9,
+            9,
+            8,
+            37,
+            13,
+            36,
+            39,
+            12,
+            12,
+            7,
+            20
+          ],
+          [
+            13,
+            36,
+            22,
+            30,
+            33,
+            47,
+            41,
+            16,
+            26,
+            8,
+            7,
+            32
+          ],
+          [
+            2,
+            4,
+            2,
+            27,
+            33,
+            40,
+            8,
+            9,
+            33,
+            32,
+            41,
+            22
+          ],
+          [
+            31,
+            50,
+            31,
+            19,
+            1,
+            7,
+            3,
+            8,
+            38,
+            11,
+            1,
+            2
+          ],
+          [
+            31,
+            44,
+            37,
+            38,
+            6,
+            18,
+            32,
+            34,
+            4,
+            21,
+            3,
+            40
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-383874.cct",
+      "originalFile": "contract-383874.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-383874.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-383874.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459962,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-383874.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-383874.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            24,
+            27
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            15,
+            17
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            24,
+            30
+          ],
+          [
+            15,
+            21
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-390774-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-390774-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-390774-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-390774-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459969,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-390774-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-390774-CentralIntelligenceAgency.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          107,
+          177,
+          88,
+          196,
+          9,
+          167,
+          28,
+          113,
+          59,
+          137,
+          38,
+          159,
+          139,
+          49,
+          11,
+          121,
+          74,
+          5,
+          150,
+          120
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-398960-NiteSec.cct",
+      "originalFile": "contract-398960-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-398960-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-398960-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353459976,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-398960-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-398960-NiteSec.cct\", \"millenium-fitness\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 52983628250516040,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-407671-CarmichaelSecurity.cct",
+      "originalFile": "contract-407671-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-407671-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-407671-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460015,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-407671-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-407671-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LOGIC DEBUG SHIFT MODEM LINUX",
+          23
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-407926.cct",
+      "originalFile": "contract-407926.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-407926.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-407926.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460021,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-407926.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-407926.cct\", \"millenium-fitness\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "7JRv5rRT875ppzEQ360833YNh980680499HucUItj7j54",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-418165-NiteSec.cct",
+      "originalFile": "contract-418165-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-418165-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-418165-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460026,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-418165-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-418165-NiteSec.cct\", \"millenium-fitness\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            4,
+            2,
+            4
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-419358-Netburners.cct",
+      "originalFile": "contract-419358-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-419358-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-419358-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460032,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-419358-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-419358-Netburners.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          95,
+          34,
+          52,
+          161,
+          57,
+          73,
+          134,
+          64,
+          103,
+          87,
+          135,
+          158,
+          36,
+          15,
+          198,
+          189,
+          128,
+          107,
+          40,
+          44,
+          99,
+          189,
+          30,
+          103,
+          129,
+          76,
+          130,
+          111,
+          121,
+          106,
+          149,
+          79,
+          154,
+          190,
+          106,
+          189,
+          150,
+          148,
+          46,
+          185,
+          186,
+          176,
+          6,
+          64
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-41977-CarmichaelSecurity.cct",
+      "originalFile": "contract-41977-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-41977-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-41977-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460039,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-41977-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-41977-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          136,
+          72,
+          13,
+          184,
+          80,
+          124,
+          60,
+          176,
+          172,
+          84,
+          75,
+          126,
+          181,
+          135,
+          75,
+          153,
+          25,
+          122
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-426573.cct",
+      "originalFile": "contract-426573.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-426573.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-426573.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460073,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-426573.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-426573.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          3,
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-429987-CarmichaelSecurity.cct",
+      "originalFile": "contract-429987-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-429987-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-429987-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460080,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-429987-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-429987-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            13,
+            21
+          ],
+          [
+            4,
+            12
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            24,
+            33
+          ],
+          [
+            12,
+            17
+          ],
+          [
+            19,
+            24
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            23,
+            28
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-432900-CarmichaelSecurity.cct",
+      "originalFile": "contract-432900-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-432900-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-432900-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460085,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-432900-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-432900-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          114,
+          33,
+          162,
+          39,
+          181,
+          108,
+          47
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-448958.cct",
+      "originalFile": "contract-448958.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-448958.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-448958.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460091,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-448958.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-448958.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          37,
+          189,
+          154,
+          57,
+          79,
+          16,
+          91,
+          88,
+          114,
+          54,
+          11
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-451926.cct",
+      "originalFile": "contract-451926.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-451926.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-451926.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460097,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-451926.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-451926.cct\", \"millenium-fitness\")",
+        "type": "Array Jumping Game II",
+        "data": [
+          0,
+          2,
+          3,
+          1,
+          2,
+          0,
+          0,
+          4,
+          2,
+          3,
+          3,
+          1,
+          5,
+          4,
+          2,
+          7,
+          2,
+          4,
+          4,
+          6,
+          3
+        ],
+        "triesRemaining": 3,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-464727-CarmichaelSecurity.cct",
+      "originalFile": "contract-464727-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-464727-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-464727-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460130,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-464727-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-464727-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Proper 2-Coloring of a Graph",
+        "data": [
+          11,
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              0,
+              8
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-471033.cct",
+      "originalFile": "contract-471033.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-471033.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-471033.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460135,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-471033.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-471033.cct\", \"millenium-fitness\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            23,
+            3,
+            9,
+            18,
+            48,
+            50,
+            17
+          ],
+          [
+            16,
+            3,
+            16,
+            8,
+            16,
+            35,
+            11
+          ],
+          [
+            1,
+            7,
+            27,
+            10,
+            27,
+            30,
+            19
+          ],
+          [
+            16,
+            9,
+            20,
+            50,
+            42,
+            27,
+            35
+          ],
+          [
+            40,
+            24,
+            35,
+            45,
+            26,
+            6,
+            42
+          ],
+          [
+            39,
+            10,
+            30,
+            18,
+            21,
+            44,
+            47
+          ],
+          [
+            5,
+            23,
+            41,
+            28,
+            30,
+            23,
+            18
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-476652-Sector12.cct",
+      "originalFile": "contract-476652-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-476652-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-476652-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460141,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-476652-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-476652-Sector12.cct\", \"millenium-fitness\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            10,
+            12
+          ],
+          [
+            21,
+            25
+          ],
+          [
+            7,
+            16
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-480526-NiteSec.cct",
+      "originalFile": "contract-480526-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-480526-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-480526-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460148,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-480526-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-480526-NiteSec.cct\", \"millenium-fitness\")",
+        "type": "Generate IP Addresses",
+        "data": "14714724345",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-487029-CarmichaelSecurity.cct",
+      "originalFile": "contract-487029-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-487029-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-487029-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460183,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-487029-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-487029-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -4,
+          10,
+          9,
+          8,
+          -3,
+          -9,
+          -4,
+          6,
+          7,
+          -10,
+          1,
+          -7,
+          2,
+          -1,
+          -1,
+          10,
+          5,
+          -2,
+          -4,
+          -1,
+          -3,
+          -4,
+          -6,
+          7,
+          0,
+          -9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-489623.cct",
+      "originalFile": "contract-489623.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-489623.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-489623.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460189,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-489623.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-489623.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          8,
+          4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-492391-Netburners.cct",
+      "originalFile": "contract-492391-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-492391-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-492391-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460195,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-492391-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-492391-Netburners.cct\", \"millenium-fitness\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          199,
+          [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            10
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-506934-CarmichaelSecurity.cct",
+      "originalFile": "contract-506934-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-506934-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-506934-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460200,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-506934-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-506934-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Compression III: LZ Compression",
+        "data": "I6KgVzfkfkfkfbV7iu56666666HPC66HPC66HPC6vxyC6vxyCggJI2xyCggJI2BM8CggJI2B78CggJI",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-520388-TheBlackHand.cct",
+      "originalFile": "contract-520388-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-520388-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-520388-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460207,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-520388-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-520388-TheBlackHand.cct\", \"millenium-fitness\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "63566424",
+          90
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-523368.cct",
+      "originalFile": "contract-523368.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-523368.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-523368.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460237,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-523368.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-523368.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          9,
+          [
+            181,
+            108,
+            129,
+            67,
+            73,
+            23,
+            175,
+            15,
+            176,
+            85,
+            131,
+            128,
+            37,
+            31,
+            104,
+            58,
+            47,
+            64,
+            104,
+            156,
+            85,
+            124,
+            178,
+            109,
+            84,
+            124,
+            11,
+            25
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-550302-Netburners.cct",
+      "originalFile": "contract-550302-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-550302-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-550302-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460243,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-550302-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-550302-Netburners.cct\", \"millenium-fitness\")",
+        "type": "Compression III: LZ Compression",
+        "data": "rohPIiPIiPI8XXXXBI87UKXXXBI87UrCnUUUUUUzUUUUUUUUUUUUUUfUUvPVeItiFItiFX2ZnZnZnZnZn",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-570078-Netburners.cct",
+      "originalFile": "contract-570078-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-570078-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-570078-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460249,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-570078-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-570078-Netburners.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-571301-CarmichaelSecurity.cct",
+      "originalFile": "contract-571301-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-571301-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-571301-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460255,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-571301-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-571301-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Compression I: RLE Compression",
+        "data": "rrrrrrrrrrDDBBLLLLL2FEEaaaaq22vvvvvvvvvvvvvnnnnnnnn2",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-594390.cct",
+      "originalFile": "contract-594390.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-594390.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-594390.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460260,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-594390.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-594390.cct\", \"millenium-fitness\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "))(aaa()(()(a())a((a",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-612550.cct",
+      "originalFile": "contract-612550.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-612550.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-612550.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460294,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-612550.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-612550.cct\", \"millenium-fitness\")",
+        "type": "Compression I: RLE Compression",
+        "data": "zzzzzzzQddd66ffDDDDDfiXMMCLLNNNNNNoooooPPrrhhaWWWq7KKK2222yy11LLttl66",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-643812-CyberSec.cct",
+      "originalFile": "contract-643812-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-643812-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-643812-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460300,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-643812-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-643812-CyberSec.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          37,
+          31,
+          42,
+          67,
+          65,
+          93,
+          197,
+          168,
+          128,
+          19,
+          182,
+          4,
+          36,
+          100,
+          71,
+          93,
+          193,
+          84,
+          47,
+          8,
+          145,
+          58,
+          61,
+          99
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-65871-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-65871-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-65871-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-65871-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460306,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-65871-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-65871-CentralIntelligenceAgency.cct\", \"millenium-fitness\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-676896-CarmichaelSecurity.cct",
+      "originalFile": "contract-676896-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-676896-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-676896-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460312,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-676896-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-676896-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            6,
+            5,
+            14,
+            26,
+            15
+          ],
+          [
+            27,
+            15,
+            43,
+            7,
+            38
+          ],
+          [
+            33,
+            33,
+            22,
+            23,
+            2
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-699614.cct",
+      "originalFile": "contract-699614.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-699614.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-699614.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460319,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-699614.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-699614.cct\", \"millenium-fitness\")",
+        "type": "Square Root",
+        "data": "192665373110900565633058960751878418658033412249254001864252877779621441002595193405620935627569504444769823924785141660713826794819707821792758535755740366446882601317477558449103941651507947726128180",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-719032-TheBlackHand.cct",
+      "originalFile": "contract-719032-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-719032-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-719032-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460351,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-719032-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-719032-TheBlackHand.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-733187.cct",
+      "originalFile": "contract-733187.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-733187.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-733187.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460358,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-733187.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-733187.cct\", \"millenium-fitness\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            9,
+            2,
+            4
+          ],
+          [
+            1,
+            3,
+            7,
+            9
+          ],
+          [
+            9,
+            2,
+            6,
+            8,
+            5
+          ],
+          [
+            6,
+            5,
+            2,
+            3,
+            6,
+            1
+          ],
+          [
+            5,
+            8,
+            8,
+            9,
+            2,
+            8,
+            8
+          ],
+          [
+            2,
+            8,
+            2,
+            5,
+            5,
+            3,
+            3,
+            8
+          ],
+          [
+            1,
+            7,
+            2,
+            9,
+            3,
+            4,
+            9,
+            6,
+            1
+          ],
+          [
+            4,
+            2,
+            1,
+            6,
+            8,
+            8,
+            7,
+            9,
+            9,
+            9
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-734655-Netburners.cct",
+      "originalFile": "contract-734655-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-734655-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-734655-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460365,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-734655-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-734655-Netburners.cct\", \"millenium-fitness\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            1
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            6,
+            8,
+            3
+          ],
+          [
+            3,
+            9,
+            5,
+            5
+          ],
+          [
+            6,
+            2,
+            3,
+            4,
+            9
+          ],
+          [
+            9,
+            5,
+            4,
+            7,
+            7,
+            7
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-7654.cct",
+      "originalFile": "contract-7654.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-7654.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-7654.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460372,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-7654.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-7654.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 391076373,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-807289-TheBlackHand.cct",
+      "originalFile": "contract-807289-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-807289-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-807289-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460406,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-807289-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-807289-TheBlackHand.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "CLOUD EMAIL PASTE LINUX VIRUS",
+          3
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-816625.cct",
+      "originalFile": "contract-816625.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-816625.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-816625.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460413,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-816625.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-816625.cct\", \"millenium-fitness\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "SHIFTPOPUPMODEMTRASHMACRO",
+          "SCANNER"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-820878.cct",
+      "originalFile": "contract-820878.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-820878.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-820878.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460418,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-820878.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-820878.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 154644587,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-829346-CarmichaelSecurity.cct",
+      "originalFile": "contract-829346-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-829346-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-829346-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460425,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-829346-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-829346-CarmichaelSecurity.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          135,
+          128,
+          103,
+          30,
+          122,
+          61,
+          197,
+          79,
+          199,
+          34,
+          179,
+          103,
+          56,
+          91,
+          162,
+          38,
+          73,
+          4,
+          161
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-839802-Sector12.cct",
+      "originalFile": "contract-839802-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-839802-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-839802-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460463,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-839802-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-839802-Sector12.cct\", \"millenium-fitness\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-842878.cct",
+      "originalFile": "contract-842878.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-842878.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-842878.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460470,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-842878.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-842878.cct\", \"millenium-fitness\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            23,
+            29,
+            10,
+            1,
+            2,
+            18
+          ],
+          [
+            28,
+            17,
+            19,
+            46,
+            39,
+            41
+          ],
+          [
+            25,
+            5,
+            27,
+            36,
+            5,
+            26
+          ],
+          [
+            37,
+            4,
+            48,
+            50,
+            10,
+            23
+          ],
+          [
+            47,
+            34,
+            46,
+            25,
+            22,
+            44
+          ],
+          [
+            47,
+            50,
+            30,
+            47,
+            37,
+            7
+          ],
+          [
+            40,
+            13,
+            34,
+            13,
+            46,
+            10
+          ],
+          [
+            4,
+            4,
+            49,
+            12,
+            44,
+            11
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-871149.cct",
+      "originalFile": "contract-871149.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-871149.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-871149.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460476,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-871149.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-871149.cct\", \"millenium-fitness\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "4599",
+          7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-913924.cct",
+      "originalFile": "contract-913924.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-913924.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-913924.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460483,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-913924.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-913924.cct\", \"millenium-fitness\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "2040",
+          30
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-91753.cct",
+      "originalFile": "contract-91753.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-91753.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-91753.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460519,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-91753.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-91753.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-933457.cct",
+      "originalFile": "contract-933457.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-933457.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-933457.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460524,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-933457.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-933457.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          164,
+          146,
+          144,
+          180,
+          138,
+          41,
+          121,
+          165,
+          24,
+          113,
+          79,
+          190,
+          142,
+          88,
+          162,
+          13,
+          41,
+          26,
+          10,
+          1,
+          71
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-955070-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-955070-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-955070-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-955070-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460529,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-955070-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-955070-CentralIntelligenceAgency.cct\", \"millenium-fitness\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "0110100010000000000000001000111011101101110000000000101101001111",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-973544.cct",
+      "originalFile": "contract-973544.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-973544.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-973544.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460537,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-973544.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-973544.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          7,
+          [
+            13,
+            87,
+            116,
+            167,
+            110,
+            15,
+            57,
+            177,
+            101,
+            63,
+            94,
+            55,
+            64,
+            21,
+            46,
+            24,
+            134,
+            135,
+            29,
+            82,
+            110,
+            125,
+            96,
+            115,
+            12,
+            88,
+            163,
+            149,
+            199,
+            168,
+            109,
+            149,
+            122,
+            195,
+            146,
+            188,
+            29,
+            79,
+            29,
+            44
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-973706-TheBlackHand.cct",
+      "originalFile": "contract-973706-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-973706-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-973706-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460544,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-973706-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-973706-TheBlackHand.cct\", \"millenium-fitness\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          14,
+          2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-975969.cct",
+      "originalFile": "contract-975969.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-975969.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-975969.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460558,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-975969.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-975969.cct\", \"millenium-fitness\")",
+        "type": "Square Root",
+        "data": "182130339569215899531805030278928909012952831138382654986489914251993149715296243426752762366124859473905881956036267750241948085319582153306305005883125460148523065001821550970411975856024241459382233",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-9YcanA.cct",
+      "originalFile": "contract-9YcanA.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-9YcanA.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-9YcanA.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460564,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-9YcanA.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-9YcanA.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -5,
+          1,
+          0,
+          8,
+          -2,
+          -4,
+          6,
+          -3,
+          0
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-ANFQUR.cct",
+      "originalFile": "contract-ANFQUR.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-ANFQUR.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-ANFQUR.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460571,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-ANFQUR.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-ANFQUR.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "MODEM ARRAY SHELL PRINT FRAME",
+          12
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-E7W90T.cct",
+      "originalFile": "contract-E7W90T.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-E7W90T.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-E7W90T.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460577,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-E7W90T.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-E7W90T.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 322449050,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-EkLRkW.cct",
+      "originalFile": "contract-EkLRkW.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-EkLRkW.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-EkLRkW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460584,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-EkLRkW.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-EkLRkW.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          196,
+          109,
+          197,
+          54,
+          34,
+          192,
+          158,
+          48,
+          58,
+          148,
+          191,
+          92,
+          164,
+          161,
+          114,
+          103,
+          164,
+          97,
+          45,
+          125,
+          7,
+          188,
+          125,
+          34,
+          109,
+          142,
+          57,
+          180,
+          114
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-GWwFxT.cct",
+      "originalFile": "contract-GWwFxT.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-GWwFxT.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-GWwFxT.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460598,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-GWwFxT.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-GWwFxT.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 989294703,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-LFzER6.cct",
+      "originalFile": "contract-LFzER6.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-LFzER6.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-LFzER6.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460606,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-LFzER6.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-LFzER6.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -1,
+          -3,
+          7,
+          2,
+          1,
+          -4,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-PxSuxB.cct",
+      "originalFile": "contract-PxSuxB.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-PxSuxB.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-PxSuxB.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460613,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-PxSuxB.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-PxSuxB.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -8,
+          2,
+          5,
+          6,
+          -4,
+          6,
+          7,
+          -2,
+          -7,
+          10,
+          2,
+          7,
+          -2,
+          -8,
+          2,
+          3,
+          -2,
+          1,
+          -6,
+          5,
+          4,
+          -7,
+          0,
+          -7,
+          -1,
+          -8,
+          0,
+          -4,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-TNeKOQ.cct",
+      "originalFile": "contract-TNeKOQ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-TNeKOQ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-TNeKOQ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460618,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-TNeKOQ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-TNeKOQ.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          150,
+          146,
+          172,
+          101,
+          101,
+          30,
+          150,
+          161,
+          103,
+          123,
+          11,
+          179,
+          40,
+          21,
+          106,
+          43,
+          151,
+          122,
+          118,
+          105,
+          158,
+          68,
+          110,
+          12,
+          162,
+          30,
+          26,
+          136,
+          184,
+          161,
+          47,
+          183,
+          141,
+          63,
+          157,
+          112,
+          139,
+          35,
+          107,
+          82,
+          139,
+          128,
+          179,
+          200,
+          7,
+          107,
+          158
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-UM4dja.cct",
+      "originalFile": "contract-UM4dja.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-UM4dja.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-UM4dja.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460638,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-UM4dja.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-UM4dja.cct\", \"millenium-fitness\")",
+        "type": "Total Ways to Sum",
+        "data": 59,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-V206hM.cct",
+      "originalFile": "contract-V206hM.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-V206hM.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-V206hM.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460644,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-V206hM.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-V206hM.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -9,
+          -5,
+          4,
+          -8,
+          -4,
+          9,
+          8,
+          5,
+          -9,
+          9,
+          6,
+          3,
+          -5,
+          -2,
+          -2,
+          -1,
+          10,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-XcX6zQ.cct",
+      "originalFile": "contract-XcX6zQ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-XcX6zQ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-XcX6zQ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460649,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-XcX6zQ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-XcX6zQ.cct\", \"millenium-fitness\")",
+        "type": "Total Ways to Sum",
+        "data": 37,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-XeETng.cct",
+      "originalFile": "contract-XeETng.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-XeETng.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-XeETng.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460655,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-XeETng.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-XeETng.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          178,
+          5,
+          191,
+          184,
+          109,
+          177,
+          135,
+          42,
+          175,
+          176,
+          69,
+          69,
+          10,
+          22,
+          132,
+          31,
+          134,
+          157,
+          21,
+          58,
+          76,
+          110,
+          4,
+          186,
+          188
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-afUSvf.cct",
+      "originalFile": "contract-afUSvf.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-afUSvf.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-afUSvf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460660,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-afUSvf.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-afUSvf.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 500744140,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-b7zoka.cct",
+      "originalFile": "contract-b7zoka.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-b7zoka.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-b7zoka.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460676,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-b7zoka.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-b7zoka.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "TABLE FRAME CACHE TRASH SHELL",
+          5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-iNEgBq.cct",
+      "originalFile": "contract-iNEgBq.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-iNEgBq.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-iNEgBq.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460683,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-iNEgBq.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-iNEgBq.cct\", \"millenium-fitness\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          176,
+          37,
+          190,
+          109,
+          79,
+          137,
+          127,
+          11,
+          24,
+          184,
+          98,
+          53,
+          148,
+          37,
+          11,
+          16,
+          197,
+          41,
+          168,
+          4,
+          60,
+          196
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-jIsvV0.cct",
+      "originalFile": "contract-jIsvV0.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-jIsvV0.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-jIsvV0.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460688,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-jIsvV0.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-jIsvV0.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 489093314,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-nj5QYB.cct",
+      "originalFile": "contract-nj5QYB.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-nj5QYB.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-nj5QYB.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460695,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-nj5QYB.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-nj5QYB.cct\", \"millenium-fitness\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -3,
+          -6,
+          2,
+          10,
+          -8,
+          10,
+          -9,
+          8,
+          -9,
+          -4,
+          5,
+          0,
+          5,
+          10,
+          -8,
+          -3,
+          -6,
+          8,
+          8,
+          10,
+          -3,
+          7,
+          6,
+          9,
+          1,
+          5,
+          9,
+          2,
+          5,
+          -5,
+          -1,
+          4,
+          2,
+          -2,
+          -4,
+          -7
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-tcvpFl.cct",
+      "originalFile": "contract-tcvpFl.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-tcvpFl.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-tcvpFl.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460701,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-tcvpFl.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-tcvpFl.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LOGIC FLASH SHIFT EMAIL SHELL",
+          14
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-uhPZhJ.cct",
+      "originalFile": "contract-uhPZhJ.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-uhPZhJ.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-uhPZhJ.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460716,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-uhPZhJ.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-uhPZhJ.cct\", \"millenium-fitness\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LOGIC MEDIA CLOUD MACRO ENTER",
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "contract-xmLuaT.cct",
+      "originalFile": "contract-xmLuaT.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/millenium-fitness__contract-xmLuaT.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@millenium-fitness (PID - 11758)\n\nscp: Cannot transfer contract-xmLuaT.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460722,
+      "contract": {
+        "originServer": "millenium-fitness",
+        "originFile": "contract-xmLuaT.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-xmLuaT.cct\", \"millenium-fitness\")",
+        "type": "Find Largest Prime Factor",
+        "data": 708125296,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "found/millenium-fitness_files.json",
+      "originalFile": "found/millenium-fitness_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/millenium-fitness__found__millenium-fitness_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460728
+    },
+    {
+      "server": "millenium-fitness",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/millenium-fitness__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460734
+    }
+  ]
+}

@@ -1,0 +1,3741 @@
+{
+  "server": "omega-net",
+  "timestamp": 1779353461176,
+  "filesFound": 99,
+  "contractsFound": 94,
+  "files": [
+    {
+      "server": "omega-net",
+      "originalPath": "catalog/files-index.json",
+      "originalFile": "catalog/files-index.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/omega-net__catalog__files-index.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353460294
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-0iXzDE.cct",
+      "originalFile": "contract-0iXzDE.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-0iXzDE.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-0iXzDE.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460299,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-0iXzDE.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-0iXzDE.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          79,
+          179,
+          97,
+          44,
+          23,
+          54
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-10284-CyberSec.cct",
+      "originalFile": "contract-10284-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-10284-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-10284-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460305,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-10284-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-10284-CyberSec.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            25,
+            35
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            25,
+            35
+          ],
+          [
+            23,
+            25
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            25,
+            35
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-116200.cct",
+      "originalFile": "contract-116200.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-116200.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-116200.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460311,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-116200.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-116200.cct\", \"omega-net\")",
+        "type": "Array Jumping Game",
+        "data": [
+          4,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-118010-CarmichaelSecurity.cct",
+      "originalFile": "contract-118010-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-118010-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-118010-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460317,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-118010-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-118010-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 89827798,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-126992-CarmichaelSecurity.cct",
+      "originalFile": "contract-126992-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-126992-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-126992-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460351,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-126992-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-126992-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Square Root",
+        "data": "76721010065546939849612531642747983305987603457013146612757851778944649308459568012332208978655142069826878666762579725235606003420125571390321967682320364303712538141925511393322523561454283861928822",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-142332-CarmichaelSecurity.cct",
+      "originalFile": "contract-142332-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-142332-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-142332-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460356,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-142332-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-142332-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          58,
+          [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            12
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-146123.cct",
+      "originalFile": "contract-146123.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-146123.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-146123.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460362,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-146123.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-146123.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LOGIC MODEM ARRAY LINUX CACHE",
+          24
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-152101.cct",
+      "originalFile": "contract-152101.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-152101.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-152101.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460368,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-152101.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-152101.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 100,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-152804.cct",
+      "originalFile": "contract-152804.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-152804.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-152804.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460374,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-152804.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-152804.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          96,
+          [
+            1,
+            3,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13,
+            15,
+            16,
+            17
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-161423-Sector12.cct",
+      "originalFile": "contract-161423-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-161423-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-161423-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460406,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-161423-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-161423-Sector12.cct\", \"omega-net\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "663564794",
+          -26
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-169850-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-169850-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-169850-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-169850-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460413,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-169850-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-169850-CentralIntelligenceAgency.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          2,
+          [
+            142,
+            177,
+            143,
+            46,
+            54,
+            71,
+            82,
+            46,
+            167,
+            11,
+            17,
+            140,
+            184,
+            90,
+            105,
+            199,
+            83,
+            43,
+            165,
+            67
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-180766.cct",
+      "originalFile": "contract-180766.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-180766.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-180766.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460418,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-180766.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-180766.cct\", \"omega-net\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "MEDIAFRAMELOGICEMAILDEBUG",
+          "COMPRESS"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-187319.cct",
+      "originalFile": "contract-187319.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-187319.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-187319.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460425,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-187319.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-187319.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 85764648175782,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-206913.cct",
+      "originalFile": "contract-206913.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-206913.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-206913.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460463,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-206913.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-206913.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          8,
+          [
+            12,
+            96,
+            160,
+            6,
+            71,
+            86,
+            12,
+            3,
+            134,
+            167,
+            115,
+            80
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-208122.cct",
+      "originalFile": "contract-208122.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-208122.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-208122.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460470,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-208122.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-208122.cct\", \"omega-net\")",
+        "type": "Compression I: RLE Compression",
+        "data": "llFFFFFssKK00ppppppppp44444GGGGGGGGGGGkkLLBBffff55555555555gIIooA",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-218705-Sector12.cct",
+      "originalFile": "contract-218705-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-218705-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-218705-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460476,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-218705-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-218705-Sector12.cct\", \"omega-net\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          13,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-249646-TheBlackHand.cct",
+      "originalFile": "contract-249646-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-249646-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-249646-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460483,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-249646-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-249646-TheBlackHand.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          198,
+          [
+            1,
+            2,
+            4,
+            5,
+            7,
+            9,
+            11,
+            12,
+            13,
+            16
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-267083-Netburners.cct",
+      "originalFile": "contract-267083-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-267083-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-267083-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460519,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-267083-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-267083-Netburners.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          6,
+          [
+            169,
+            6,
+            38,
+            12,
+            185,
+            10,
+            53,
+            42,
+            115,
+            7,
+            173,
+            71,
+            63,
+            58,
+            165,
+            186,
+            63
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-277203.cct",
+      "originalFile": "contract-277203.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-277203.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-277203.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460524,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-277203.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-277203.cct\", \"omega-net\")",
+        "type": "Square Root",
+        "data": "291501103116279930681422680028839258183940391249400886091502740518664365665360438336508875293226480130661135530655509771971393049795278564661639525348108292274579920195968013938739954062294883788571654",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-284073.cct",
+      "originalFile": "contract-284073.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-284073.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-284073.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460530,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-284073.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-284073.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          111,
+          86,
+          130,
+          49,
+          139,
+          59,
+          8,
+          191,
+          124,
+          103,
+          14,
+          74,
+          72,
+          141,
+          166,
+          73,
+          152,
+          24,
+          91,
+          187,
+          64,
+          96,
+          191,
+          49,
+          55,
+          192,
+          1,
+          37,
+          16,
+          153,
+          128,
+          101,
+          67,
+          61,
+          130,
+          162,
+          96
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-28964.cct",
+      "originalFile": "contract-28964.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-28964.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-28964.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460537,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-28964.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-28964.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          21,
+          91,
+          144,
+          135,
+          58,
+          160,
+          193,
+          172,
+          164,
+          27,
+          59,
+          61,
+          162,
+          49,
+          37,
+          195,
+          186,
+          102,
+          196,
+          193,
+          165,
+          58,
+          44,
+          39,
+          128,
+          1,
+          1,
+          145,
+          148,
+          162,
+          79,
+          77,
+          29,
+          121,
+          37,
+          46,
+          70,
+          127,
+          52,
+          45,
+          107,
+          133,
+          141,
+          189,
+          55,
+          103,
+          52
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-312378-CarmichaelSecurity.cct",
+      "originalFile": "contract-312378-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-312378-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-312378-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460544,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-312378-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-312378-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 635436393,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-316798.cct",
+      "originalFile": "contract-316798.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-316798.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-316798.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460559,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-316798.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-316798.cct\", \"omega-net\")",
+        "type": "Compression I: RLE Compression",
+        "data": "ooggCUUaaKKKKKKKKKVVVttttZHHHHHffZZlliiiiiiVVLJJJvvvvvvvvvvvZZY6666RRRRRc6666",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-320455-Netburners.cct",
+      "originalFile": "contract-320455-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-320455-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-320455-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460565,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-320455-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-320455-Netburners.cct\", \"omega-net\")",
+        "type": "Array Jumping Game II",
+        "data": [
+          2,
+          5,
+          8,
+          0,
+          2,
+          4,
+          1
+        ],
+        "triesRemaining": 3,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-328762.cct",
+      "originalFile": "contract-328762.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-328762.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-328762.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460571,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-328762.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-328762.cct\", \"omega-net\")",
+        "type": "Square Root",
+        "data": "92346297959343068904619224514736100019429940753450417368732735990898822617016657266028252756753300389933321681056968172892036018871918790371494176451989831936742435315116720444586182333190913907613474",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-333442-CyberSec.cct",
+      "originalFile": "contract-333442-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-333442-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-333442-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460577,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-333442-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-333442-CyberSec.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          45,
+          15,
+          191,
+          140,
+          180,
+          129,
+          10,
+          182,
+          175,
+          87,
+          46,
+          182,
+          117,
+          74,
+          41,
+          8,
+          23,
+          200,
+          45,
+          200,
+          124,
+          83,
+          99,
+          150,
+          188,
+          20,
+          103,
+          154,
+          140,
+          152
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-334303-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-334303-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-334303-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-334303-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460584,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-334303-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-334303-CentralIntelligenceAgency.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 792953976,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-347613-CyberSec.cct",
+      "originalFile": "contract-347613-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-347613-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-347613-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460598,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-347613-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-347613-CyberSec.cct\", \"omega-net\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "1100000011000001100001110111101001011011100101010010001110001000",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-366318.cct",
+      "originalFile": "contract-366318.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-366318.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-366318.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460606,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-366318.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-366318.cct\", \"omega-net\")",
+        "type": "Unique Paths in a Grid II",
+        "data": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-379731-CarmichaelSecurity.cct",
+      "originalFile": "contract-379731-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-379731-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-379731-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460613,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-379731-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-379731-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "HammingCodes: Encoded Binary to Integer",
+        "data": "1110100010100111110111000010010010111110001110111101001100101101",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-401954-Sector12.cct",
+      "originalFile": "contract-401954-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-401954-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-401954-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460618,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-401954-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-401954-Sector12.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          94,
+          165,
+          29
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-409627.cct",
+      "originalFile": "contract-409627.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-409627.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-409627.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460638,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-409627.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-409627.cct\", \"omega-net\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "557423",
+          -52
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-42363.cct",
+      "originalFile": "contract-42363.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-42363.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-42363.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460644,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-42363.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-42363.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          5,
+          6,
+          -2,
+          8,
+          -8,
+          -9,
+          -10,
+          -8,
+          7,
+          3,
+          6,
+          -7,
+          7,
+          1,
+          8,
+          10,
+          4,
+          9,
+          -8,
+          6,
+          0,
+          10,
+          4,
+          4,
+          1,
+          -9,
+          2,
+          -3,
+          -5,
+          -6,
+          8,
+          -8,
+          9,
+          -8,
+          -3,
+          4,
+          6,
+          0,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-429991-CarmichaelSecurity.cct",
+      "originalFile": "contract-429991-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-429991-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-429991-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460649,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-429991-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-429991-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Compression I: RLE Compression",
+        "data": "bb6TTGGGGGGGGGGGGG00NNNNNNNNNNNNNHHssssssssssxxxxxxxxxx88111111111ggggggggbblll",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-432527.cct",
+      "originalFile": "contract-432527.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-432527.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-432527.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460655,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-432527.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-432527.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 43787676263,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-443281-Netburners.cct",
+      "originalFile": "contract-443281-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-443281-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-443281-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460660,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-443281-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-443281-Netburners.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 761998058,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-512687-CarmichaelSecurity.cct",
+      "originalFile": "contract-512687-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-512687-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-512687-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460676,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-512687-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-512687-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 116133203,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-524489-CarmichaelSecurity.cct",
+      "originalFile": "contract-524489-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-524489-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-524489-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460683,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-524489-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-524489-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            14,
+            18
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            7,
+            14
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            14,
+            24
+          ],
+          [
+            11,
+            14
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            24,
+            30
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            22,
+            32
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            18,
+            28
+          ],
+          [
+            12,
+            14
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-52680-TheBlackHand.cct",
+      "originalFile": "contract-52680-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-52680-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-52680-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460688,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-52680-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-52680-TheBlackHand.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 553563583284072,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-545435.cct",
+      "originalFile": "contract-545435.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-545435.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-545435.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460695,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-545435.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-545435.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum",
+        "data": 28,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-570153.cct",
+      "originalFile": "contract-570153.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-570153.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-570153.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460702,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-570153.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-570153.cct\", \"omega-net\")",
+        "type": "Compression III: LZ Compression",
+        "data": "Y15tJkJkJkJkJkSM7M7vLTM72TM72TM72TdvxL4itDdL7GyyedyH87ndttttttitttttitttt7lLt7lLt7lLtlo1",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-597168.cct",
+      "originalFile": "contract-597168.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-597168.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-597168.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460717,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-597168.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-597168.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "LOGIN ENTER LINUX FRAME INBOX",
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-630691.cct",
+      "originalFile": "contract-630691.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-630691.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-630691.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460722,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-630691.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-630691.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            2,
+            12
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            19,
+            26
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            21,
+            28
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-640337.cct",
+      "originalFile": "contract-640337.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-640337.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-640337.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460728,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-640337.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-640337.cct\", \"omega-net\")",
+        "type": "Compression III: LZ Compression",
+        "data": "Qv3rO3O3O3O3O3eO3O3O6KeOeOeOeOeOrV2iN0BPOoPkodXJadXJa6l1sbsbCe1lhpZ2b0zey0zndz8e",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-642304.cct",
+      "originalFile": "contract-642304.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-642304.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-642304.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460734,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-642304.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-642304.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum II",
+        "data": [
+          98,
+          [
+            2,
+            3,
+            6,
+            7,
+            11,
+            12,
+            13,
+            15,
+            16,
+            19
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-643842-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-643842-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-643842-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-643842-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460743,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-643842-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-643842-CentralIntelligenceAgency.cct\", \"omega-net\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "MEDIADEBUGARRAYPRINTLOGIN",
+          "COMPILE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-655156-CarmichaelSecurity.cct",
+      "originalFile": "contract-655156-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-655156-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-655156-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460758,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-655156-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-655156-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-703531-CyberSec.cct",
+      "originalFile": "contract-703531-CyberSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-703531-CyberSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-703531-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460764,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-703531-CyberSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-703531-CyberSec.cct\", \"omega-net\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          4,
+          11
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-709827-CarmichaelSecurity.cct",
+      "originalFile": "contract-709827-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-709827-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-709827-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460770,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-709827-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-709827-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            12,
+            6,
+            45,
+            23,
+            28,
+            7,
+            8,
+            46,
+            1,
+            15
+          ],
+          [
+            30,
+            10,
+            25,
+            35,
+            35,
+            6,
+            36,
+            40,
+            35,
+            41
+          ],
+          [
+            48,
+            38,
+            11,
+            21,
+            43,
+            50,
+            44,
+            27,
+            8,
+            50
+          ],
+          [
+            36,
+            23,
+            26,
+            13,
+            36,
+            7,
+            18,
+            40,
+            14,
+            42
+          ],
+          [
+            29,
+            18,
+            35,
+            4,
+            44,
+            30,
+            25,
+            42,
+            15,
+            26
+          ],
+          [
+            24,
+            44,
+            38,
+            36,
+            46,
+            14,
+            28,
+            20,
+            5,
+            29
+          ],
+          [
+            28,
+            6,
+            22,
+            18,
+            18,
+            37,
+            44,
+            3,
+            43,
+            41
+          ],
+          [
+            36,
+            32,
+            17,
+            47,
+            33,
+            25,
+            12,
+            23,
+            5,
+            14
+          ],
+          [
+            20,
+            2,
+            31,
+            3,
+            39,
+            24,
+            35,
+            16,
+            50,
+            34
+          ],
+          [
+            27,
+            30,
+            20,
+            35,
+            19,
+            22,
+            20,
+            3,
+            46,
+            3
+          ],
+          [
+            10,
+            25,
+            3,
+            7,
+            10,
+            15,
+            18,
+            14,
+            42,
+            10
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-726444-Sector12.cct",
+      "originalFile": "contract-726444-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-726444-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-726444-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460777,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-726444-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-726444-Sector12.cct\", \"omega-net\")",
+        "type": "Minimum Path Sum in a Triangle",
+        "data": [
+          [
+            9
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            6,
+            3
+          ],
+          [
+            7,
+            1,
+            7,
+            3
+          ],
+          [
+            4,
+            2,
+            7,
+            7,
+            7
+          ],
+          [
+            4,
+            3,
+            7,
+            4,
+            8,
+            9
+          ],
+          [
+            7,
+            1,
+            9,
+            6,
+            9,
+            6,
+            8
+          ],
+          [
+            1,
+            4,
+            2,
+            8,
+            3,
+            9,
+            6,
+            2
+          ],
+          [
+            1,
+            7,
+            2,
+            1,
+            5,
+            2,
+            4,
+            8,
+            5
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-736302.cct",
+      "originalFile": "contract-736302.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-736302.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-736302.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460784,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-736302.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-736302.cct\", \"omega-net\")",
+        "type": "Compression II: LZ Decompression",
+        "data": "4hGEe620772ph876vKfvKD929KDKxKDKTM972kb849pFYYCgsCr9346KM0",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-7429.cct",
+      "originalFile": "contract-7429.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-7429.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-7429.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460800,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-7429.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-7429.cct\", \"omega-net\")",
+        "type": "Square Root",
+        "data": "140145922228032108150474429426904053471716368804093762767052950701119680497718238473892321897713429359375872995634896956278506555409577911821996372311813493486543445254861527966534103481193571605432366",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-753819-CarmichaelSecurity.cct",
+      "originalFile": "contract-753819-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-753819-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-753819-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460806,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-753819-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-753819-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            18,
+            25
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            15,
+            18
+          ],
+          [
+            21,
+            23
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            24,
+            26
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-754900-CentralIntelligenceAgency.cct",
+      "originalFile": "contract-754900-CentralIntelligenceAgency.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-754900-CentralIntelligenceAgency.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-754900-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460811,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-754900-CentralIntelligenceAgency.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-754900-CentralIntelligenceAgency.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader II",
+        "data": [
+          86,
+          81,
+          105,
+          179,
+          128,
+          158,
+          171,
+          45,
+          56,
+          44,
+          177,
+          67,
+          11,
+          3,
+          166
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-763728-Netburners.cct",
+      "originalFile": "contract-763728-Netburners.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-763728-Netburners.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-763728-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460817,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-763728-Netburners.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-763728-Netburners.cct\", \"omega-net\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          11,
+          9
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-764053.cct",
+      "originalFile": "contract-764053.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-764053.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-764053.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460823,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-764053.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-764053.cct\", \"omega-net\")",
+        "type": "Array Jumping Game",
+        "data": [
+          9,
+          4,
+          4,
+          9,
+          9,
+          7,
+          9,
+          8,
+          0,
+          4,
+          6,
+          0,
+          0
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-78MyCV.cct",
+      "originalFile": "contract-78MyCV.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-78MyCV.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-78MyCV.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460840,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-78MyCV.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-78MyCV.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "MEDIA MODEM ENTER MACRO FRAME",
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-798652.cct",
+      "originalFile": "contract-798652.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-798652.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-798652.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460846,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-798652.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-798652.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            14,
+            19
+          ],
+          [
+            9,
+            15
+          ],
+          [
+            8,
+            15
+          ],
+          [
+            21,
+            26
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            22,
+            32
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            17,
+            20
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            17,
+            20
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-804004.cct",
+      "originalFile": "contract-804004.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-804004.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-804004.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460853,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-804004.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-804004.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          4,
+          7,
+          -2,
+          -4,
+          5,
+          3,
+          9,
+          -2,
+          -7,
+          6,
+          9,
+          -1,
+          9,
+          9,
+          -5,
+          6,
+          6,
+          4,
+          -3,
+          1,
+          -2,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-817609.cct",
+      "originalFile": "contract-817609.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-817609.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-817609.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460860,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-817609.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-817609.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          9,
+          [
+            95,
+            40,
+            133,
+            130,
+            147,
+            28,
+            180,
+            15,
+            138,
+            143,
+            197,
+            9,
+            54,
+            183,
+            200,
+            70,
+            10,
+            33,
+            69,
+            42,
+            72,
+            169,
+            66,
+            73,
+            147,
+            58,
+            149,
+            150,
+            101,
+            108,
+            134,
+            86,
+            74,
+            125,
+            119,
+            128,
+            24
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-823024.cct",
+      "originalFile": "contract-823024.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-823024.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-823024.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460865,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-823024.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-823024.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader III",
+        "data": [
+          81,
+          8,
+          60,
+          150,
+          168,
+          154,
+          41,
+          83,
+          7,
+          20,
+          93,
+          14,
+          130,
+          87,
+          23,
+          170,
+          152,
+          177,
+          6,
+          45,
+          181,
+          104,
+          90,
+          27,
+          91,
+          95,
+          80,
+          30,
+          142
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-826049.cct",
+      "originalFile": "contract-826049.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-826049.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-826049.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460880,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-826049.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-826049.cct\", \"omega-net\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "77460",
+          -40
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-862072-CarmichaelSecurity.cct",
+      "originalFile": "contract-862072-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-862072-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-862072-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460885,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-862072-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-862072-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "TRASH DEBUG PASTE INBOX LOGIN",
+          1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-883077.cct",
+      "originalFile": "contract-883077.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-883077.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-883077.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460892,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-883077.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-883077.cct\", \"omega-net\")",
+        "type": "Find All Valid Math Expressions",
+        "data": [
+          "83595689",
+          -34
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-893985-Sector12.cct",
+      "originalFile": "contract-893985-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-893985-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-893985-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460898,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-893985-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-893985-Sector12.cct\", \"omega-net\")",
+        "type": "Unique Paths in a Grid I",
+        "data": [
+          11,
+          13
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-894578-CarmichaelSecurity.cct",
+      "originalFile": "contract-894578-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-894578-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-894578-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460904,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-894578-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-894578-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          4,
+          0,
+          2,
+          -6,
+          -6,
+          6,
+          4,
+          -1,
+          -1,
+          -7,
+          -1,
+          -8,
+          6,
+          -4
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-897971-Sector12.cct",
+      "originalFile": "contract-897971-Sector12.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-897971-Sector12.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-897971-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460921,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-897971-Sector12.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-897971-Sector12.cct\", \"omega-net\")",
+        "type": "Array Jumping Game",
+        "data": [
+          7,
+          0,
+          5,
+          9,
+          9,
+          10,
+          0,
+          0,
+          1,
+          1,
+          0,
+          4,
+          2,
+          0,
+          8,
+          9,
+          6,
+          4,
+          5,
+          6,
+          2
+        ],
+        "triesRemaining": 1,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-903031-CarmichaelSecurity.cct",
+      "originalFile": "contract-903031-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-903031-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-903031-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460926,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-903031-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-903031-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Merge Overlapping Intervals",
+        "data": [
+          [
+            12,
+            16
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            16,
+            25
+          ],
+          [
+            20,
+            30
+          ],
+          [
+            7,
+            17
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            22,
+            26
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            21,
+            26
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "triesRemaining": 15,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-903427-CarmichaelSecurity.cct",
+      "originalFile": "contract-903427-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-903427-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-903427-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460932,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-903427-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-903427-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "Compression I: RLE Compression",
+        "data": "DXXXXXXXXXXXXXX666111111111111aaWWk66PPPPuuuuuuuuDDDDD",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-918960-TheBlackHand.cct",
+      "originalFile": "contract-918960-TheBlackHand.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-918960-TheBlackHand.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-918960-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460938,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-918960-TheBlackHand.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-918960-TheBlackHand.cct\", \"omega-net\")",
+        "type": "Shortest Path in a Grid",
+        "data": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-935745-NiteSec.cct",
+      "originalFile": "contract-935745-NiteSec.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-935745-NiteSec.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-935745-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460944,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-935745-NiteSec.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-935745-NiteSec.cct\", \"omega-net\")",
+        "type": "Sanitize Parentheses in Expression",
+        "data": "()))(aa",
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-960292.cct",
+      "originalFile": "contract-960292.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-960292.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-960292.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460963,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-960292.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-960292.cct\", \"omega-net\")",
+        "type": "Spiralize Matrix",
+        "data": [
+          [
+            35,
+            21,
+            4,
+            30
+          ],
+          [
+            5,
+            25,
+            28,
+            8
+          ],
+          [
+            44,
+            25,
+            39,
+            46
+          ],
+          [
+            30,
+            30,
+            20,
+            38
+          ],
+          [
+            44,
+            22,
+            46,
+            42
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-971545.cct",
+      "originalFile": "contract-971545.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-971545.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-971545.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460968,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-971545.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-971545.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          8,
+          0,
+          -1,
+          9,
+          5,
+          -7,
+          -2,
+          10
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-98683.cct",
+      "originalFile": "contract-98683.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-98683.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-98683.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460974,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-98683.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-98683.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader IV",
+        "data": [
+          3,
+          [
+            68,
+            178,
+            16,
+            173,
+            17,
+            152,
+            154,
+            100,
+            145,
+            58,
+            60
+          ]
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-994503.cct",
+      "originalFile": "contract-994503.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-994503.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-994503.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460981,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-994503.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-994503.cct\", \"omega-net\")",
+        "type": "Encryption II: Vigenère Cipher",
+        "data": [
+          "ENTERTRASHMODEMLOGINLINUX",
+          "CONFIGURE"
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-997760-CarmichaelSecurity.cct",
+      "originalFile": "contract-997760-CarmichaelSecurity.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-997760-CarmichaelSecurity.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-997760-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353460986,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-997760-CarmichaelSecurity.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-997760-CarmichaelSecurity.cct\", \"omega-net\")",
+        "type": "HammingCodes: Integer to Encoded Binary",
+        "data": 90387126141817,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-Fh4QUc.cct",
+      "originalFile": "contract-Fh4QUc.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-Fh4QUc.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-Fh4QUc.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461003,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-Fh4QUc.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-Fh4QUc.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          7,
+          -4,
+          8,
+          -7,
+          2,
+          -10,
+          -3,
+          3,
+          -6,
+          8,
+          -4,
+          -6,
+          -10,
+          10,
+          -1,
+          8,
+          7,
+          -6,
+          -7,
+          2,
+          -5,
+          5,
+          -5,
+          -10,
+          5,
+          1,
+          1,
+          8,
+          5,
+          1,
+          10,
+          -7,
+          -6,
+          4,
+          7,
+          9,
+          4,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-IxM0U9.cct",
+      "originalFile": "contract-IxM0U9.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-IxM0U9.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-IxM0U9.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461009,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-IxM0U9.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-IxM0U9.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 648111995,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-KotUJn.cct",
+      "originalFile": "contract-KotUJn.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-KotUJn.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-KotUJn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461016,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-KotUJn.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-KotUJn.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          166,
+          18,
+          170,
+          144,
+          175,
+          18,
+          94,
+          146,
+          27,
+          130,
+          185,
+          12,
+          147,
+          132,
+          36,
+          20,
+          6,
+          162,
+          198,
+          44,
+          95,
+          51,
+          95,
+          160,
+          127,
+          83,
+          188,
+          41,
+          66,
+          59,
+          112,
+          141,
+          178,
+          194,
+          115,
+          35,
+          197,
+          52,
+          169,
+          124,
+          153,
+          96,
+          196,
+          27,
+          180
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-LixtJ4.cct",
+      "originalFile": "contract-LixtJ4.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-LixtJ4.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-LixtJ4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461022,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-LixtJ4.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-LixtJ4.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "MEDIA INBOX ARRAY QUEUE VIRUS",
+          3
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-MT3G56.cct",
+      "originalFile": "contract-MT3G56.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-MT3G56.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-MT3G56.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461028,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-MT3G56.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-MT3G56.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 900166340,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-PjI8mG.cct",
+      "originalFile": "contract-PjI8mG.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-PjI8mG.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-PjI8mG.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461044,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-PjI8mG.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-PjI8mG.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          10,
+          -9,
+          -1,
+          7,
+          6,
+          -3,
+          5,
+          -3,
+          1,
+          -1,
+          2,
+          5,
+          1,
+          -5,
+          10,
+          6,
+          -2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-VO5No6.cct",
+      "originalFile": "contract-VO5No6.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-VO5No6.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-VO5No6.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461050,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-VO5No6.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-VO5No6.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 216530021,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-dlKC5R.cct",
+      "originalFile": "contract-dlKC5R.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-dlKC5R.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-dlKC5R.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461055,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-dlKC5R.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-dlKC5R.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          178,
+          191,
+          192,
+          60,
+          27,
+          176,
+          35,
+          65,
+          133,
+          123,
+          16,
+          55,
+          182,
+          25,
+          76,
+          82,
+          159,
+          44,
+          131,
+          143,
+          8,
+          139,
+          35,
+          150,
+          142,
+          58,
+          55,
+          1,
+          9,
+          85,
+          122,
+          34,
+          136,
+          55
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-gWZuAH.cct",
+      "originalFile": "contract-gWZuAH.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-gWZuAH.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-gWZuAH.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461061,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-gWZuAH.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-gWZuAH.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          144,
+          173,
+          18,
+          128,
+          118,
+          76,
+          177,
+          106,
+          77,
+          46,
+          47,
+          15,
+          84,
+          68,
+          125,
+          22,
+          14,
+          57,
+          105,
+          69,
+          8,
+          94,
+          103,
+          161,
+          108,
+          104,
+          98,
+          120,
+          198,
+          59,
+          159,
+          83,
+          54,
+          162
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-joMQyd.cct",
+      "originalFile": "contract-joMQyd.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-joMQyd.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-joMQyd.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461068,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-joMQyd.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-joMQyd.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          -10,
+          -5,
+          -1,
+          5,
+          -2,
+          -2,
+          10,
+          5,
+          -2,
+          9,
+          -8,
+          4,
+          -10,
+          7,
+          -10,
+          10,
+          8,
+          -2,
+          -9,
+          -5
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-mzBpI0.cct",
+      "originalFile": "contract-mzBpI0.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-mzBpI0.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-mzBpI0.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461085,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-mzBpI0.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-mzBpI0.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          5,
+          -2,
+          -3,
+          -8,
+          -8,
+          -4,
+          2,
+          8,
+          -4,
+          6,
+          -2,
+          1,
+          -4,
+          1,
+          5,
+          -10,
+          -3,
+          0,
+          -1,
+          2,
+          -5,
+          2,
+          10,
+          -9,
+          7,
+          -1
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-oQnCEh.cct",
+      "originalFile": "contract-oQnCEh.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-oQnCEh.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-oQnCEh.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461091,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-oQnCEh.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-oQnCEh.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          4,
+          8,
+          8,
+          9,
+          9,
+          9,
+          3,
+          -6,
+          -8,
+          -6,
+          7,
+          4,
+          -8,
+          -7,
+          -4,
+          -5,
+          -7,
+          7,
+          6,
+          2,
+          10,
+          0,
+          6,
+          6,
+          -4,
+          -4,
+          -10,
+          10,
+          -7,
+          3,
+          -3,
+          -7,
+          -3,
+          -8,
+          -1,
+          -10,
+          2
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-pWQwQq.cct",
+      "originalFile": "contract-pWQwQq.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-pWQwQq.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-pWQwQq.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461097,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-pWQwQq.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-pWQwQq.cct\", \"omega-net\")",
+        "type": "Subarray with Maximum Sum",
+        "data": [
+          6,
+          9,
+          6,
+          -8,
+          -3,
+          6,
+          1,
+          -2,
+          3,
+          -10,
+          -1,
+          8,
+          5,
+          3,
+          1,
+          -9,
+          9,
+          -3,
+          4,
+          8,
+          8
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-qxLgyf.cct",
+      "originalFile": "contract-qxLgyf.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-qxLgyf.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-qxLgyf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461103,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-qxLgyf.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-qxLgyf.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum",
+        "data": 67,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-rEawhg.cct",
+      "originalFile": "contract-rEawhg.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-rEawhg.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-rEawhg.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461110,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-rEawhg.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-rEawhg.cct\", \"omega-net\")",
+        "type": "Total Ways to Sum",
+        "data": 61,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-un68Hm.cct",
+      "originalFile": "contract-un68Hm.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-un68Hm.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-un68Hm.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461124,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-un68Hm.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-un68Hm.cct\", \"omega-net\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "QUEUE EMAIL MOUSE DEBUG LOGIN",
+          16
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-vBM8qm.cct",
+      "originalFile": "contract-vBM8qm.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-vBM8qm.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-vBM8qm.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461130,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-vBM8qm.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-vBM8qm.cct\", \"omega-net\")",
+        "type": "Find Largest Prime Factor",
+        "data": 618110440,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "contract-wBlmVD.cct",
+      "originalFile": "contract-wBlmVD.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/omega-net__contract-wBlmVD.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nscp: Cannot transfer contract-wBlmVD.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779353461136,
+      "contract": {
+        "originServer": "omega-net",
+        "originFile": "contract-wBlmVD.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-wBlmVD.cct\", \"omega-net\")",
+        "type": "Algorithmic Stock Trader I",
+        "data": [
+          131,
+          16,
+          15,
+          29,
+          10,
+          160,
+          191,
+          133,
+          159,
+          79,
+          42,
+          162,
+          17,
+          34,
+          97,
+          23,
+          60,
+          67,
+          93,
+          164,
+          97,
+          9,
+          77,
+          5,
+          82,
+          148,
+          121,
+          146,
+          39,
+          69,
+          84,
+          51,
+          132,
+          134,
+          109,
+          48,
+          54,
+          67,
+          1,
+          184,
+          113,
+          80,
+          165,
+          170
+        ],
+        "triesRemaining": 5,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "data/omega-net_files.json",
+      "originalFile": "data/omega-net_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/omega-net__data__omega-net_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461141
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "found/omega-net_files.json",
+      "originalFile": "found/omega-net_files.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/omega-net__found__omega-net_files.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461149
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "telemetry.js",
+      "originalFile": "telemetry.js",
+      "fileType": "javascript",
+      "extension": ".js",
+      "homeDestination": "/scripts/js/omega-net__telemetry.js",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779353461165
+    },
+    {
+      "server": "omega-net",
+      "originalPath": "the-new-god.lit",
+      "originalFile": "the-new-god.lit",
+      "fileType": "literature",
+      "extension": ".lit",
+      "homeDestination": "/lit/omega-net__the-new-god.lit",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@omega-net (PID - 11773)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779353461170
+    }
+  ]
+}
