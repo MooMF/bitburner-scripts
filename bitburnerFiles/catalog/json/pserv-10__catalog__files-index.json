@@ -1,9 +1,9 @@
 {
-  "updated": 1779353460660,
+  "updated": 1779500196613,
   "servers": {
     "pserv-10": {
-      "timestamp": 1779353460660,
-      "filesFound": 4,
+      "timestamp": 1779500196613,
+      "filesFound": 8,
       "contractsFound": 0,
       "catalogFile": "/found/pserv-10_files.json"
     }
@@ -19,7 +19,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460644
+      "timestamp": 1779500196595
     },
     {
       "server": "pserv-10",
@@ -31,7 +31,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460655
+      "timestamp": 1779500196607
     },
     {
       "server": "pserv-10",
@@ -43,7 +43,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460638
+      "timestamp": 1779500196547
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-b-and-a.json",
+      "originalFile": "data/process-state-b-and-a.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-b-and-a.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196553
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-nova-med.json",
+      "originalFile": "data/process-state-nova-med.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-nova-med.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196560
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-nwo.json",
+      "originalFile": "data/process-state-nwo.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-nwo.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196567
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-zb-def.json",
+      "originalFile": "data/process-state-zb-def.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-zb-def.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196590
     },
     {
       "server": "pserv-10",
@@ -55,7 +103,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460649
+      "timestamp": 1779500196601
     }
   ],
   "contracts": []

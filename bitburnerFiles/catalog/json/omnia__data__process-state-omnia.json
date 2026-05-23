@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500201441,
+  "host": "omnia",
+  "target": "omnia",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 908317512,
+  "maxMoney": 22707937800,
+  "moneyPct": 4,
+  "moneyTarget": 19301747130,
+  "moneyDeficit": 18393429618,
+  "currentSecurity": 68.1,
+  "minSecurity": 30,
+  "allowedSecurity": 35,
+  "securityExcess": 33.099999999999994,
+  "wantedThreads": 662,
+  "running": [],
+  "launched": true,
+  "pid": 295232,
+  "runnableThreads": 22,
+  "launchReason": "started worker"
+}

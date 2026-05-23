@@ -1,9 +1,9 @@
 {
-  "updated": 1779353461067,
+  "updated": 1779500197019,
   "servers": {
     "pserv-2": {
-      "timestamp": 1779353461066,
-      "filesFound": 4,
+      "timestamp": 1779500197019,
+      "filesFound": 8,
       "contractsFound": 0,
       "catalogFile": "/found/pserv-2_files.json"
     }
@@ -19,7 +19,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353461050
+      "timestamp": 1779500197001
     },
     {
       "server": "pserv-2",
@@ -31,7 +31,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353461060
+      "timestamp": 1779500197013
     },
     {
       "server": "pserv-2",
@@ -43,7 +43,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353461044
+      "timestamp": 1779500196960
+    },
+    {
+      "server": "pserv-2",
+      "originalPath": "data/process-state-crush-fitness.json",
+      "originalFile": "data/process-state-crush-fitness.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-2__data__process-state-crush-fitness.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196966
+    },
+    {
+      "server": "pserv-2",
+      "originalPath": "data/process-state-ecorp.json",
+      "originalFile": "data/process-state-ecorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-2__data__process-state-ecorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196971
+    },
+    {
+      "server": "pserv-2",
+      "originalPath": "data/process-state-fulcrumassets.json",
+      "originalFile": "data/process-state-fulcrumassets.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-2__data__process-state-fulcrumassets.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196977
+    },
+    {
+      "server": "pserv-2",
+      "originalPath": "data/process-state-megacorp.json",
+      "originalFile": "data/process-state-megacorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-2__data__process-state-megacorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196983
     },
     {
       "server": "pserv-2",
@@ -55,7 +103,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353461055
+      "timestamp": 1779500197007
     }
   ],
   "contracts": []

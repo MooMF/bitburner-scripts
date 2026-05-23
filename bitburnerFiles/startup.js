@@ -3,64 +3,54 @@ export async function main(ns) {
     ns.disableLog("ALL");
 
     if (ns.getHostname() !== "home") {
-        ns.tprint("ERROR: startup.js should be run from home.");
+        ns.print("startup.js should be run from home.");
         return -1;
     }
 
     await openLargeTail(ns, "Startup");
+    ns.clearLog();
 
     /*
-        Args:
-        0  clean                  true/false. Default true.
-        1  buyServers             true/false. Default false.
-        2  buySpendRatio          e.g. 0.4. Default 0.4.
-        3  assignMinRam           Default 1.
-        4  assignPerHost          Default 2.
-        5  assignAllowMoneyHosts  true/false. Default true.
+        Existing arguments:
 
-        6  capacityMode           faction | share | legacy | off. Default faction.
-                                  faction = run faction-control.js auto
-                                  share   = run faction-control.js share-only
-                                  legacy  = run rent-capacity.js
-                                  off     = run neither
+        run startup.js [clean] [buyServers] [buySpendRatio] [assignMinRam] [assignPerHost] [assignAllowMoneyHosts]
 
-        7  reserveGb              RAM reserve per purchased/cloud host. Default 8.
-        8  targetUsePct           Target RAM use percentage. Default 0.98.
-        9  capacityLoopMs         Rebalance interval. Default 10000.
-        10 includeHome            true/false. Default false.
-        11 preferredFaction       Optional faction name. Default "".
-        12 workType               hacking | field | security. Default hacking.
-        13 focus                  true/false. Default false.
+        New optional arguments:
+
+        [startRent] [rentReserveGb] [rentTargetUsePct] [rentLoopMs] [rentMinThreads] [rentIncludeHome]
+
+        Recommended normal run:
+
+        run startup.js true false
+
+        This now also runs: clean.js share
+        when clean=true, so the share/rent layer is reset cleanly.
+
+        With explicit rent settings:
+
+        run startup.js true false 0.5 1 2 true true 8 0.98 5000 1 false
     */
 
     const doClean = parseBool(ns.args[0] ?? true);
     const doBuyServers = parseBool(ns.args[1] ?? false);
-    const buySpendRatio = Number(ns.args[2] ?? 0.4);
+
+    const buySpendRatio = Number(ns.args[2] ?? 0.5);
 
     const assignMinRam = Number(ns.args[3] ?? 1);
     const assignPerHost = Number(ns.args[4] ?? 2);
     const assignAllowMoneyHosts = parseBool(ns.args[5] ?? true);
 
-    const capacityMode = String(ns.args[6] ?? "faction").toLowerCase();
-    const reserveGb = Number(ns.args[7] ?? 8);
-    const targetUsePct = Number(ns.args[8] ?? 0.98);
-    const capacityLoopMs = Number(ns.args[9] ?? 10000);
-    const includeHome = parseBool(ns.args[10] ?? false);
-    const preferredFaction = String(ns.args[11] ?? "");
-    const workType = String(ns.args[12] ?? "hacking");
-    const focus = parseBool(ns.args[13] ?? false);
+    // New rent-capacity layer.
+    const startRent = parseBool(ns.args[6] ?? true);
 
-    ns.clearLog();
-    ns.print("Startup sequence beginning.");
-    ns.print("");
-    ns.print(`Clean:                  ${doClean}`);
-    ns.print(`Buy/upgrade servers:    ${doBuyServers}`);
-    ns.print(`Buy spend ratio:        ${buySpendRatio}`);
-    ns.print(`Assign min RAM:         ${assignMinRam}`);
-    ns.print(`Assign per host:        ${assignPerHost}`);
-    ns.print(`Allow money hosts:      ${assignAllowMoneyHosts}`);
-    ns.print(`Capacity mode:          ${capacityMode}`);
-    ns.print("");
+    // rent-capacity.js argument order:
+    // rent-capacity.js <maxSharePct> <reserveGb> <includeHome> <loopMs>
+    const rentMaxSharePct = Number(ns.args[7] ?? 60);
+    const rentReserveGb = Number(ns.args[8] ?? 1024);
+    const rentIncludeHome = parseBool(ns.args[9] ?? false);
+    const rentLoopMs = Number(ns.args[10] ?? 10000);
+
+    const restartMarker = "restart-required.txt";
 
     const requiredScripts = [
         "upload.js",
@@ -71,246 +61,204 @@ export async function main(ns) {
     if (doClean) requiredScripts.push("clean.js");
     if (doBuyServers) requiredScripts.push("buy-servers.js");
 
-    if (capacityMode === "faction" || capacityMode === "share") {
-        requiredScripts.push("faction-control.js");
-        requiredScripts.push("rent-share.js");
-    } else if (capacityMode === "legacy") {
+    if (startRent) {
         requiredScripts.push("rent-capacity.js");
         requiredScripts.push("rent-share.js");
-    } else if (capacityMode !== "off" && capacityMode !== "none" && capacityMode !== "false") {
-        ns.print(`WARN: Unknown capacityMode '${capacityMode}'. Treating as 'off'.`);
     }
 
-    const missing = requiredScripts.filter(s => !ns.fileExists(s, "home"));
-    if (missing.length > 0) {
-        ns.tprint(`ERROR: Missing required startup files on home: ${missing.join(", ")}`);
-        ns.print(`ERROR: Missing required startup files on home: ${missing.join(", ")}`);
-        return -2;
+    for (const script of requiredScripts) {
+        if (!ns.fileExists(script, "home")) {
+            ns.print(`ERROR: Missing required script on home: ${script}`);
+            return -2;
+        }
     }
+
+    ns.print("Startup plan");
+    ns.print("------------");
+    ns.print(`Clean managed scripts:        ${doClean}`);
+    ns.print(`Buy / upgrade servers:        ${doBuyServers}`);
+    ns.print(`Buy spend ratio:              ${(buySpendRatio * 100).toFixed(1)}%`);
+    ns.print(`Assign min worker RAM:        ${assignMinRam}GB`);
+    ns.print(`Assign max remote targets:    ${assignPerHost}`);
+    ns.print(`Assign allow money hosts:     ${assignAllowMoneyHosts}`);
+    ns.print(`Start rent capacity:          ${startRent}`);
+    ns.print(`Rent max share pct:           ${rentMaxSharePct}%`);
+    ns.print(`Rent reserve per host:        ${rentReserveGb}GB`);
+    ns.print(`Rent include home:            ${rentIncludeHome}`);
+    ns.print(`Rent loop:                    ${rentLoopMs}ms`);
+    ns.print(`Restart marker exists:        ${ns.fileExists(restartMarker, "home")}`);
+    ns.print("");
 
     if (doClean) {
-        await runAndWait(ns, "clean.js", ["managed"], "Clean managed scripts");
-    }
+        await runAndWait(ns, "clean.js", "managed");
+        await ns.sleep(500);
 
-    // Always prevent duplicate spare-capacity controllers.
-    // This avoids running faction-control.js and rent-capacity.js at the same time.
-    stopCapacityControllers(ns);
+        // rent-capacity.js is a home-level manager and rent-share.js may run across the fleet.
+        // This requires clean.js with explicit share/rent support.
+        await runAndWait(ns, "clean.js", "share");
+        await ns.sleep(500);
+    }
 
     if (doBuyServers) {
-        await runAndWait(ns, "buy-servers.js", [buySpendRatio], "Buy/upgrade purchased servers");
+        await runAndWait(ns, "buy-servers.js", buySpendRatio);
+        await ns.sleep(500);
     }
 
-    await runAndWait(ns, "upload.js", [], "Deploy payload");
+    await runAndWait(ns, "upload.js");
+    await ns.sleep(1000);
+
     await runAndWait(
         ns,
         "assign-targets.js",
-        [assignMinRam, assignPerHost, assignAllowMoneyHosts],
-        "Assign remote targets"
+        assignMinRam,
+        assignPerHost,
+        assignAllowMoneyHosts
     );
 
-    clearRestartMarker(ns);
+    await ns.sleep(1000);
 
-    startCapacityController(
-        ns,
-        capacityMode,
-        reserveGb,
-        targetUsePct,
-        capacityLoopMs,
-        includeHome,
-        preferredFaction,
-        workType,
-        focus
-    );
+    if (startRent) {
+        restartRentCapacity(ns, {
+            maxSharePct: rentMaxSharePct,
+            reserveGb: rentReserveGb,
+            includeHome: rentIncludeHome,
+            loopMs: rentLoopMs
+        });
 
-    startDashboard(ns);
-
-    ns.print("");
-    ns.print("Startup sequence complete.");
-    return 0;
-}
-
-function startCapacityController(
-    ns,
-    capacityMode,
-    reserveGb,
-    targetUsePct,
-    capacityLoopMs,
-    includeHome,
-    preferredFaction,
-    workType,
-    focus
-) {
-    const mode = String(capacityMode).toLowerCase();
-
-    if (mode === "off" || mode === "none" || mode === "false") {
-        ns.print("Capacity controller: off.");
-        return;
+        await ns.sleep(500);
     }
 
-    if (mode === "legacy") {
-        const args = [
-            reserveGb,
-            targetUsePct,
-            capacityLoopMs,
-            1,
-            includeHome,
-            "rep"
-        ];
-
-        const pid = ns.run("rent-capacity.js", 1, ...args);
-
-        if (pid > 0) {
-            ns.print(`Started legacy rent-capacity.js PID ${pid}`);
-        } else {
-            ns.print("WARN: Failed to start rent-capacity.js.");
-        }
-
-        return;
+    // If startup has reached this point, deployment has been refreshed,
+    // so the restart marker is no longer relevant.
+    if (ns.fileExists(restartMarker, "home")) {
+        ns.rm(restartMarker, "home");
+        ns.print(`Cleared ${restartMarker}`);
     }
 
-    if (mode === "share") {
-        const args = [
-            reserveGb,
-            targetUsePct,
-            capacityLoopMs,
-            1,
-            includeHome,
-            "share",
-            preferredFaction,
-            workType,
-            focus
-        ];
+    const checkPid = ns.run("check-infection.js", 1);
 
-        const pid = ns.run("faction-control.js", 1, ...args);
-
-        if (pid > 0) {
-            ns.print(`Started faction-control.js in share-only mode PID ${pid}`);
-        } else {
-            ns.print("WARN: Failed to start faction-control.js share mode.");
-        }
-
-        return;
-    }
-
-    if (mode === "faction" || mode === "auto") {
-        const args = [
-            reserveGb,
-            targetUsePct,
-            capacityLoopMs,
-            1,
-            includeHome,
-            "auto",
-            preferredFaction,
-            workType,
-            focus
-        ];
-
-        const pid = ns.run("faction-control.js", 1, ...args);
-
-        if (pid > 0) {
-            ns.print(`Started faction-control.js auto mode PID ${pid}`);
-        } else {
-            ns.print("WARN: Failed to start faction-control.js.");
-        }
-
-        return;
-    }
-
-    ns.print(`Capacity controller: unknown mode '${capacityMode}', not started.`);
-}
-
-function stopCapacityControllers(ns) {
-    const scripts = [
-        "faction-control.js",
-        "rent-capacity.js"
-    ];
-
-    for (const script of scripts) {
-        try {
-            const procs = ns.ps("home").filter(p => p.filename === script);
-            for (const proc of procs) {
-                ns.kill(proc.pid);
-                ns.print(`Stopped old ${script} PID ${proc.pid}`);
-            }
-        } catch (err) {
-            ns.print(`WARN: Could not stop ${script}: ${String(err)}`);
-        }
-    }
-}
-
-function startDashboard(ns) {
-    try {
-        const existing = ns.ps("home").filter(p => p.filename === "check-infection.js");
-        for (const proc of existing) {
-            ns.kill(proc.pid);
-            ns.print(`Stopped old check-infection.js PID ${proc.pid}`);
-        }
-    } catch (_) {}
-
-    const pid = ns.run("check-infection.js", 1);
-
-    if (pid > 0) {
-        ns.print(`Started check-infection.js PID ${pid}`);
+    if (checkPid === 0) {
+        ns.print("WARNING: Could not start check-infection.js.");
     } else {
-        ns.print("WARN: Failed to start check-infection.js.");
+        ns.print(`Started check-infection.js PID ${checkPid}`);
     }
+
+    ns.print("");
+    ns.print("Startup complete.");
+
+    return 1;
 }
 
-async function runAndWait(ns, script, args, label) {
-    ns.print("");
-    ns.print(`${label}: ${script} ${args.map(String).join(" ")}`);
+function restartRentCapacity(ns, options) {
+    const script = "rent-capacity.js";
+
+    ns.print(`Preparing ${script}`);
+
+    const running = ns.ps("home").filter(p => p.filename === script);
+
+    for (const proc of running) {
+        ns.print(`Killing old ${script} PID ${proc.pid}`);
+        ns.kill(proc.pid);
+    }
+
+    const pid = ns.run(
+        script,
+        1,
+        options.maxSharePct,
+        options.reserveGb,
+        options.includeHome,
+        options.loopMs
+    );
+
+    if (pid === 0) {
+        ns.print(`WARNING: Could not start ${script}.`);
+        return 0;
+    }
+
+    ns.print(
+        `Started ${script} PID ${pid} ` +
+        `[maxShare=${options.maxSharePct}%, reserve=${options.reserveGb}GB, ` +
+        `includeHome=${options.includeHome}, loop=${options.loopMs}ms]`
+    );
+
+    return pid;
+}
+
+async function runAndWait(ns, script, ...args) {
+    ns.print(`Starting ${script} ${args.join(" ")}`);
+
+    if (!ns.fileExists(script, "home")) {
+        ns.print(`FAILED: ${script} missing on home.`);
+        return 0;
+    }
 
     const pid = ns.run(script, 1, ...args);
 
-    if (pid <= 0) {
-        ns.tprint(`ERROR: Failed to start ${script}.`);
-        ns.print(`ERROR: Failed to start ${script}.`);
-        return false;
+    if (pid === 0) {
+        ns.print(`FAILED to start ${script}`);
+        return 0;
     }
 
-    while (isPidRunning(ns, pid)) {
-        await ns.sleep(250);
+    while (ns.isRunning(pid, "home")) {
+        await ns.sleep(500);
     }
 
-    ns.print(`${label}: complete.`);
-    return true;
-}
-
-function isPidRunning(ns, pid) {
-    try {
-        return ns.ps("home").some(p => p.pid === pid);
-    } catch (_) {
-        return false;
-    }
-}
-
-function clearRestartMarker(ns) {
-    try {
-        if (ns.fileExists("restart-required.txt", "home")) {
-            ns.rm("restart-required.txt", "home");
-            ns.print("Cleared restart-required.txt after redeploy.");
-        }
-    } catch (err) {
-        ns.print(`WARN: Could not clear restart-required.txt: ${String(err)}`);
-    }
-}
-
-async function openLargeTail(ns, title) {
-    try {
-        ns.tail();
-        await ns.sleep(50);
-        ns.resizeTail(1000, 650);
-        ns.moveTail(60, 60);
-    } catch (_) {}
-
-    try {
-        ns.setTitle(title);
-    } catch (_) {}
+    ns.print(`Finished ${script}`);
+    return pid;
 }
 
 function parseBool(value) {
-    if (typeof value === "boolean") return value;
+    if (value === true) return true;
+    if (value === false) return false;
 
     const text = String(value).toLowerCase().trim();
-    return text === "true" || text === "1" || text === "yes" || text === "y";
+
+    return text === "true" ||
+        text === "1" ||
+        text === "yes" ||
+        text === "y";
+}
+
+async function openLargeTail(ns, title = null) {
+    try {
+        if (ns.ui && typeof ns.ui.openTail === "function") {
+            ns.ui.openTail();
+
+            try {
+                if (title && ns.ui.setTailTitle) {
+                    ns.ui.setTailTitle(title);
+                }
+            } catch (_) { }
+
+            await ns.sleep(50);
+
+            try {
+                if (!ns.ui.windowSize || !ns.ui.resizeTail || !ns.ui.moveTail) return;
+
+                const size = ns.ui.windowSize();
+                const width = Array.isArray(size) ? size[0] : size.width;
+                const height = Array.isArray(size) ? size[1] : size.height;
+
+                if (!width || !height) return;
+
+                ns.ui.moveTail(10, 10);
+                ns.ui.resizeTail(Math.max(500, width - 30), Math.max(350, height - 60));
+            } catch (_) { }
+
+            return;
+        }
+    } catch (_) { }
+
+    try {
+        ns.tail();
+        await ns.sleep(50);
+        ns.resizeTail(1100, 700);
+        ns.moveTail(10, 10);
+
+        if (title && typeof ns.setTitle === "function") {
+            ns.setTitle(title);
+        }
+    } catch (_) {
+        // Leave default tail behaviour.
+    }
 }

@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779498618290,
+  "host": "pserv-13",
+  "target": "snap-fitness",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 11250000000,
+  "maxMoney": 11250000000,
+  "moneyPct": 100,
+  "moneyTarget": 9562500000,
+  "moneyDeficit": 0,
+  "currentSecurity": 14,
+  "minSecurity": 14,
+  "allowedSecurity": 19,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

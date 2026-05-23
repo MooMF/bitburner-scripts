@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500201384,
+  "host": "omega-net",
+  "target": "omega-net",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 1345666872.7815866,
+  "maxMoney": 1608397375,
+  "moneyPct": 83.66507516723513,
+  "moneyTarget": 1367137768.75,
+  "moneyDeficit": 21470895.968413353,
+  "currentSecurity": 14.016250000000012,
+  "minSecurity": 9,
+  "allowedSecurity": 14,
+  "securityExcess": 0.016250000000011866,
+  "wantedThreads": 1,
+  "running": [],
+  "launched": true,
+  "pid": 295229,
+  "runnableThreads": 1,
+  "launchReason": "started worker"
+}

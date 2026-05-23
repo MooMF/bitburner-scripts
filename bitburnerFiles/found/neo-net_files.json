@@ -1,7 +1,7 @@
 {
   "server": "neo-net",
-  "timestamp": 1779353552038,
-  "filesFound": 82,
+  "timestamp": 1779500202032,
+  "filesFound": 83,
   "contractsFound": 77,
   "files": [
     {
@@ -14,7 +14,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551129
+      "timestamp": 1779500201158
     },
     {
       "server": "neo-net",
@@ -25,8 +25,8 @@
       "homeDestination": "/contracts/neo-net__contract-100149-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-100149-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551135,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-100149-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201163,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-100149-CarmichaelSecurity.cct",
@@ -50,8 +50,8 @@
       "homeDestination": "/contracts/neo-net__contract-110120-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-110120-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551140,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-110120-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201170,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-110120-CentralIntelligenceAgency.cct",
@@ -72,8 +72,8 @@
       "homeDestination": "/contracts/neo-net__contract-111032.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-111032.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551145,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-111032.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201177,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-111032.cct",
@@ -130,8 +130,8 @@
       "homeDestination": "/contracts/neo-net__contract-120359.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-120359.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551154,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-120359.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201216,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-120359.cct",
@@ -163,8 +163,8 @@
       "homeDestination": "/contracts/neo-net__contract-130828-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-130828-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551190,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-130828-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201221,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-130828-Sector12.cct",
@@ -185,8 +185,8 @@
       "homeDestination": "/contracts/neo-net__contract-151908-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-151908-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551196,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-151908-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201227,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-151908-Sector12.cct",
@@ -207,8 +207,8 @@
       "homeDestination": "/contracts/neo-net__contract-154028-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-154028-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551202,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-154028-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201233,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-154028-CarmichaelSecurity.cct",
@@ -281,8 +281,8 @@
       "homeDestination": "/contracts/neo-net__contract-157966-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-157966-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551207,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-157966-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201240,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-157966-CarmichaelSecurity.cct",
@@ -327,8 +327,8 @@
       "homeDestination": "/contracts/neo-net__contract-158350-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-158350-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551213,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-158350-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201272,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-158350-CarmichaelSecurity.cct",
@@ -352,8 +352,8 @@
       "homeDestination": "/contracts/neo-net__contract-224088.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-224088.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551246,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-224088.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201279,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-224088.cct",
@@ -374,8 +374,8 @@
       "homeDestination": "/contracts/neo-net__contract-224626-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-224626-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551253,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-224626-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201286,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-224626-CarmichaelSecurity.cct",
@@ -396,8 +396,8 @@
       "homeDestination": "/contracts/neo-net__contract-235235.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-235235.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551259,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-235235.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201292,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-235235.cct",
@@ -517,8 +517,8 @@
       "homeDestination": "/contracts/neo-net__contract-2443-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-2443-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551264,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-2443-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201326,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-2443-CarmichaelSecurity.cct",
@@ -570,8 +570,8 @@
       "homeDestination": "/contracts/neo-net__contract-275868-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-275868-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551270,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-275868-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201332,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-275868-Sector12.cct",
@@ -592,8 +592,8 @@
       "homeDestination": "/contracts/neo-net__contract-278766.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-278766.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551304,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-278766.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201337,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-278766.cct",
@@ -652,8 +652,8 @@
       "homeDestination": "/contracts/neo-net__contract-282370-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-282370-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551310,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-282370-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201343,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-282370-CarmichaelSecurity.cct",
@@ -720,8 +720,8 @@
       "homeDestination": "/contracts/neo-net__contract-282406.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-282406.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551316,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-282406.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201349,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-282406.cct",
@@ -745,8 +745,8 @@
       "homeDestination": "/contracts/neo-net__contract-290589.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-290589.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551323,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-290589.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201386,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-290589.cct",
@@ -767,8 +767,8 @@
       "homeDestination": "/contracts/neo-net__contract-314027.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-314027.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551328,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-314027.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201392,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-314027.cct",
@@ -789,8 +789,8 @@
       "homeDestination": "/contracts/neo-net__contract-321840-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-321840-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551364,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-321840-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201398,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-321840-CarmichaelSecurity.cct",
@@ -814,8 +814,8 @@
       "homeDestination": "/contracts/neo-net__contract-332645-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-332645-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551370,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-332645-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201404,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-332645-CarmichaelSecurity.cct",
@@ -836,8 +836,8 @@
       "homeDestination": "/contracts/neo-net__contract-364827.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-364827.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551375,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-364827.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201409,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-364827.cct",
@@ -971,8 +971,8 @@
       "homeDestination": "/contracts/neo-net__contract-365114.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-365114.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551382,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-365114.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201444,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-365114.cct",
@@ -993,8 +993,8 @@
       "homeDestination": "/contracts/neo-net__contract-382935-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-382935-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551422,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-382935-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201450,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-382935-CarmichaelSecurity.cct",
@@ -1015,8 +1015,8 @@
       "homeDestination": "/contracts/neo-net__contract-418855-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-418855-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551430,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-418855-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201456,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-418855-NiteSec.cct",
@@ -1089,8 +1089,8 @@
       "homeDestination": "/contracts/neo-net__contract-429360-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-429360-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551437,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-429360-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201463,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-429360-CarmichaelSecurity.cct",
@@ -1115,8 +1115,8 @@
       "homeDestination": "/contracts/neo-net__contract-439331-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-439331-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551443,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-439331-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201503,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-439331-CarmichaelSecurity.cct",
@@ -1137,8 +1137,8 @@
       "homeDestination": "/contracts/neo-net__contract-46333.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-46333.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551483,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-46333.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201512,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-46333.cct",
@@ -1185,8 +1185,8 @@
       "homeDestination": "/contracts/neo-net__contract-486127-CyberSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-486127-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551488,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-486127-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201519,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-486127-CyberSec.cct",
@@ -1207,8 +1207,8 @@
       "homeDestination": "/contracts/neo-net__contract-491426-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-491426-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551494,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-491426-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201525,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-491426-NiteSec.cct",
@@ -1273,8 +1273,8 @@
       "homeDestination": "/contracts/neo-net__contract-51217-TheBlackHand.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-51217-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551500,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-51217-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201564,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-51217-TheBlackHand.cct",
@@ -1366,8 +1366,8 @@
       "homeDestination": "/contracts/neo-net__contract-519394.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-519394.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551550,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-519394.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201571,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-519394.cct",
@@ -1391,8 +1391,8 @@
       "homeDestination": "/contracts/neo-net__contract-531890-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-531890-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551557,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-531890-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201578,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-531890-CarmichaelSecurity.cct",
@@ -1413,8 +1413,8 @@
       "homeDestination": "/contracts/neo-net__contract-532449.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-532449.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551563,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-532449.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201584,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-532449.cct",
@@ -1448,8 +1448,8 @@
       "homeDestination": "/contracts/neo-net__contract-552427-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-552427-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551570,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-552427-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201619,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-552427-CarmichaelSecurity.cct",
@@ -1470,8 +1470,8 @@
       "homeDestination": "/contracts/neo-net__contract-556884.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-556884.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551608,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-556884.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201626,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-556884.cct",
@@ -1492,8 +1492,8 @@
       "homeDestination": "/contracts/neo-net__contract-612509.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-612509.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551615,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-612509.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201633,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-612509.cct",
@@ -1517,8 +1517,8 @@
       "homeDestination": "/contracts/neo-net__contract-624780.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-624780.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551621,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-624780.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201638,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-624780.cct",
@@ -1539,8 +1539,8 @@
       "homeDestination": "/contracts/neo-net__contract-656341.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-656341.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551628,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-656341.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201658,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-656341.cct",
@@ -1561,8 +1561,8 @@
       "homeDestination": "/contracts/neo-net__contract-657109-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-657109-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551647,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-657109-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201664,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-657109-Netburners.cct",
@@ -1583,8 +1583,8 @@
       "homeDestination": "/contracts/neo-net__contract-673339.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-673339.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551654,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-673339.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201671,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-673339.cct",
@@ -1605,8 +1605,8 @@
       "homeDestination": "/contracts/neo-net__contract-704964-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-704964-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551660,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-704964-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201677,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-704964-CarmichaelSecurity.cct",
@@ -1630,8 +1630,8 @@
       "homeDestination": "/contracts/neo-net__contract-72282-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-72282-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551666,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-72282-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201683,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-72282-CarmichaelSecurity.cct",
@@ -1671,8 +1671,8 @@
       "homeDestination": "/contracts/neo-net__contract-724926-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-724926-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551671,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-724926-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201698,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-724926-NiteSec.cct",
@@ -1705,8 +1705,8 @@
       "homeDestination": "/contracts/neo-net__contract-725373.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-725373.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551690,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-725373.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201704,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-725373.cct",
@@ -1730,8 +1730,8 @@
       "homeDestination": "/contracts/neo-net__contract-72625.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-72625.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551697,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-72625.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201710,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-72625.cct",
@@ -1755,8 +1755,8 @@
       "homeDestination": "/contracts/neo-net__contract-746575.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-746575.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551704,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-746575.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201717,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-746575.cct",
@@ -1780,8 +1780,8 @@
       "homeDestination": "/contracts/neo-net__contract-772201.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-772201.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551710,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-772201.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201723,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-772201.cct",
@@ -1802,8 +1802,8 @@
       "homeDestination": "/contracts/neo-net__contract-789251-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-789251-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551732,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-789251-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201738,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-789251-CarmichaelSecurity.cct",
@@ -1824,8 +1824,8 @@
       "homeDestination": "/contracts/neo-net__contract-818930-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-818930-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551739,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-818930-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201744,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-818930-CarmichaelSecurity.cct",
@@ -1846,8 +1846,8 @@
       "homeDestination": "/contracts/neo-net__contract-824300.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-824300.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551745,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-824300.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201749,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-824300.cct",
@@ -1898,8 +1898,8 @@
       "homeDestination": "/contracts/neo-net__contract-833356-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-833356-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551751,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-833356-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201757,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-833356-Netburners.cct",
@@ -2009,8 +2009,8 @@
       "homeDestination": "/contracts/neo-net__contract-874275-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-874275-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551757,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-874275-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201763,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-874275-NiteSec.cct",
@@ -2052,8 +2052,8 @@
       "homeDestination": "/contracts/neo-net__contract-8AItvo.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-8AItvo.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551773,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-8AItvo.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201780,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-8AItvo.cct",
@@ -2074,8 +2074,8 @@
       "homeDestination": "/contracts/neo-net__contract-917317-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-917317-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551780,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-917317-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201785,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-917317-CarmichaelSecurity.cct",
@@ -2096,8 +2096,8 @@
       "homeDestination": "/contracts/neo-net__contract-917652.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-917652.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551786,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-917652.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201791,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-917652.cct",
@@ -2118,8 +2118,8 @@
       "homeDestination": "/contracts/neo-net__contract-92768-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-92768-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551792,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-92768-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201797,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-92768-CarmichaelSecurity.cct",
@@ -2143,8 +2143,8 @@
       "homeDestination": "/contracts/neo-net__contract-928674.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-928674.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551798,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-928674.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201820,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-928674.cct",
@@ -2273,8 +2273,8 @@
       "homeDestination": "/contracts/neo-net__contract-9AAAtr.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-9AAAtr.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551813,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-9AAAtr.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201826,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-9AAAtr.cct",
@@ -2295,8 +2295,8 @@
       "homeDestination": "/contracts/neo-net__contract-EB72nL.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-EB72nL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551819,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-EB72nL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201832,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-EB72nL.cct",
@@ -2317,8 +2317,8 @@
       "homeDestination": "/contracts/neo-net__contract-GFFkwf.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-GFFkwf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551826,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-GFFkwf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201838,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-GFFkwf.cct",
@@ -2352,8 +2352,8 @@
       "homeDestination": "/contracts/neo-net__contract-KDKlGY.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-KDKlGY.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551832,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-KDKlGY.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201845,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-KDKlGY.cct",
@@ -2395,8 +2395,8 @@
       "homeDestination": "/contracts/neo-net__contract-KLbTiy.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-KLbTiy.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551838,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-KLbTiy.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201862,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-KLbTiy.cct",
@@ -2417,8 +2417,8 @@
       "homeDestination": "/contracts/neo-net__contract-KYjZJL.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-KYjZJL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551855,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-KYjZJL.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201867,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-KYjZJL.cct",
@@ -2471,8 +2471,8 @@
       "homeDestination": "/contracts/neo-net__contract-Kx2kxf.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-Kx2kxf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551878,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-Kx2kxf.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201873,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-Kx2kxf.cct",
@@ -2496,8 +2496,8 @@
       "homeDestination": "/contracts/neo-net__contract-OMBlKn.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-OMBlKn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551900,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-OMBlKn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201878,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-OMBlKn.cct",
@@ -2533,8 +2533,8 @@
       "homeDestination": "/contracts/neo-net__contract-PSYDOI.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-PSYDOI.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551907,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-PSYDOI.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201884,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-PSYDOI.cct",
@@ -2555,8 +2555,8 @@
       "homeDestination": "/contracts/neo-net__contract-RsZvNX.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-RsZvNX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551915,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-RsZvNX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201905,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-RsZvNX.cct",
@@ -2598,8 +2598,8 @@
       "homeDestination": "/contracts/neo-net__contract-Tzkxx9.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-Tzkxx9.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551921,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-Tzkxx9.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201912,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-Tzkxx9.cct",
@@ -2623,8 +2623,8 @@
       "homeDestination": "/contracts/neo-net__contract-UkZLmA.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-UkZLmA.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551943,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-UkZLmA.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201917,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-UkZLmA.cct",
@@ -2645,8 +2645,8 @@
       "homeDestination": "/contracts/neo-net__contract-cUxgje.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-cUxgje.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551949,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-cUxgje.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201923,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-cUxgje.cct",
@@ -2697,8 +2697,8 @@
       "homeDestination": "/contracts/neo-net__contract-d6V71o.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-d6V71o.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551955,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-d6V71o.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201943,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-d6V71o.cct",
@@ -2728,8 +2728,8 @@
       "homeDestination": "/contracts/neo-net__contract-d87mSF.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-d87mSF.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551962,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-d87mSF.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201948,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-d87mSF.cct",
@@ -2750,8 +2750,8 @@
       "homeDestination": "/contracts/neo-net__contract-fKFq53.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-fKFq53.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551968,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-fKFq53.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201954,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-fKFq53.cct",
@@ -2802,8 +2802,8 @@
       "homeDestination": "/contracts/neo-net__contract-mWaUV3.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-mWaUV3.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551983,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-mWaUV3.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201960,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-mWaUV3.cct",
@@ -2824,8 +2824,8 @@
       "homeDestination": "/contracts/neo-net__contract-paGOZO.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-paGOZO.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551989,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-paGOZO.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201965,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-paGOZO.cct",
@@ -2846,8 +2846,8 @@
       "homeDestination": "/contracts/neo-net__contract-wY2cFC.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nscp: Cannot transfer contract-wY2cFC.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551994,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nscp: Cannot transfer contract-wY2cFC.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201985,
       "contract": {
         "originServer": "neo-net",
         "originFile": "contract-wY2cFC.cct",
@@ -2874,6 +2874,18 @@
     },
     {
       "server": "neo-net",
+      "originalPath": "data/process-state-neo-net.json",
+      "originalFile": "data/process-state-neo-net.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/neo-net__data__process-state-neo-net.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201991
+    },
+    {
+      "server": "neo-net",
       "originalPath": "found/neo-net_files.json",
       "originalFile": "found/neo-net_files.json",
       "fileType": "json",
@@ -2882,7 +2894,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552001
+      "timestamp": 1779500201997
     },
     {
       "server": "neo-net",
@@ -2894,7 +2906,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552008
+      "timestamp": 1779500202003
     },
     {
       "server": "neo-net",
@@ -2906,7 +2918,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552024
+      "timestamp": 1779500202009
     },
     {
       "server": "neo-net",
@@ -2917,8 +2929,8 @@
       "homeDestination": "/lit/neo-net__the-hidden-world.lit",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 12409)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
-      "timestamp": 1779353552030
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@neo-net (PID - 295222)\n\nmv: 'mv' can only be used on scripts (.js, .jsx, .ts, .tsx) and text files (.txt, .json, .css)\n\nStack:\niteration.js:L175@copyToTypedHomeFolder\niteration.js:L59@async main",
+      "timestamp": 1779500202026
     }
   ]
 }

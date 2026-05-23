@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500201156,
+  "host": "neo-net",
+  "target": "neo-net",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 103847658.0539658,
+  "maxMoney": 125000000,
+  "moneyPct": 83.07812644317265,
+  "moneyTarget": 106250000,
+  "moneyDeficit": 2402341.946034193,
+  "currentSecurity": 13.025499999999898,
+  "minSecurity": 8,
+  "allowedSecurity": 13,
+  "securityExcess": 0.025499999999897938,
+  "wantedThreads": 1,
+  "running": [],
+  "launched": true,
+  "pid": 295223,
+  "runnableThreads": 1,
+  "launchReason": "started worker"
+}

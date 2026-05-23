@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500200599,
+  "host": "lexo-corp",
+  "target": "lexo-corp",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 714678763,
+  "maxMoney": 17866969075,
+  "moneyPct": 4,
+  "moneyTarget": 15186923713.75,
+  "moneyDeficit": 14472244950.75,
+  "currentSecurity": 58,
+  "minSecurity": 24,
+  "allowedSecurity": 29,
+  "securityExcess": 29,
+  "wantedThreads": 580,
+  "running": [],
+  "launched": true,
+  "pid": 295205,
+  "runnableThreads": 5,
+  "launchReason": "started worker"
+}

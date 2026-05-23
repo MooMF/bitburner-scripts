@@ -1,9 +1,9 @@
 {
-  "updated": 1779353460583,
+  "updated": 1779500196528,
   "servers": {
     "pserv-0": {
-      "timestamp": 1779353460583,
-      "filesFound": 4,
+      "timestamp": 1779500196528,
+      "filesFound": 8,
       "contractsFound": 0,
       "catalogFile": "/found/pserv-0_files.json"
     }
@@ -19,7 +19,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460563
+      "timestamp": 1779500196511
     },
     {
       "server": "pserv-0",
@@ -31,7 +31,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460576
+      "timestamp": 1779500196522
     },
     {
       "server": "pserv-0",
@@ -43,7 +43,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460558
+      "timestamp": 1779500196466
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-deltaone.json",
+      "originalFile": "data/process-state-deltaone.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-deltaone.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196472
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-ecorp.json",
+      "originalFile": "data/process-state-ecorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-ecorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196478
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-kuai-gong.json",
+      "originalFile": "data/process-state-kuai-gong.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-kuai-gong.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196484
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-megacorp.json",
+      "originalFile": "data/process-state-megacorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-megacorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196491
     },
     {
       "server": "pserv-0",
@@ -55,7 +103,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460570
+      "timestamp": 1779500196516
     }
   ],
   "contracts": []

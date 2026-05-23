@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500200767,
+  "host": "microdyne",
+  "target": "microdyne",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 565260735,
+  "maxMoney": 14131518375,
+  "moneyPct": 4,
+  "moneyTarget": 12011790618.75,
+  "moneyDeficit": 11446529883.75,
+  "currentSecurity": 58.421875,
+  "minSecurity": 24,
+  "allowedSecurity": 29,
+  "securityExcess": 29.421875,
+  "wantedThreads": 589,
+  "running": [],
+  "launched": true,
+  "pid": 295211,
+  "runnableThreads": 5,
+  "launchReason": "started worker"
+}

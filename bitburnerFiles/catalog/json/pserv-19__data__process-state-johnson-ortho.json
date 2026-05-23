@@ -1,0 +1,30 @@
+{
+  "timestamp": 1779500191315,
+  "host": "pserv-19",
+  "target": "johnson-ortho",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 1667623004.6875322,
+  "maxMoney": 2065178650,
+  "moneyPct": 80.74957605665409,
+  "moneyTarget": 1755401852.5,
+  "moneyDeficit": 87778847.81246781,
+  "currentSecurity": 25.128000000000004,
+  "minSecurity": 20,
+  "allowedSecurity": 25,
+  "securityExcess": 0.12800000000000367,
+  "wantedThreads": 3,
+  "running": [
+    {
+      "pid": 294903,
+      "filename": "weaken.js",
+      "threads": 3,
+      "args": [
+        "johnson-ortho"
+      ]
+    }
+  ],
+  "launched": false,
+  "launchReason": "desired worker already running"
+}

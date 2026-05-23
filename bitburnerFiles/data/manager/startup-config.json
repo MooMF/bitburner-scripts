@@ -1,0 +1,156 @@
+{
+  "context": "Bitburner startup configuration recommendation",
+  "schemaVersion": 1,
+  "generatedAt": 1779500192199,
+  "generatedAtText": "2026-05-23T01:36:32.199Z",
+  "mode": "normal",
+  "source": "info-startup-config.js",
+  "inputs": {
+    "reportFiles": {
+      "runtime": "/data/manager/runtime.json",
+      "money": "/data/manager/money.json",
+      "security": "/data/manager/security.json",
+      "payouts": "/data/manager/payouts.json",
+      "share": "/data/manager/share.json",
+      "contracts": "/data/manager/contracts.json",
+      "contractsTriage": "/data/manager/contracts-triage.json",
+      "diagnostic": "/data/manager/ai-diagnostic.json"
+    },
+    "reportsPresent": {
+      "runtime": true,
+      "money": true,
+      "security": true,
+      "payouts": true,
+      "share": true,
+      "contracts": false,
+      "contractsTriage": false,
+      "diagnostic": false
+    }
+  },
+  "observations": {
+    "totalServers": 95,
+    "moneyServers": 63,
+    "runtime": {
+      "managedTargets": 63,
+      "unmanagedTargets": 0,
+      "ramUsedPct": 49.77447545730095,
+      "payloadMissing": 0,
+      "restartRequired": false,
+      "weakenWorkers": 25,
+      "growWorkers": 15,
+      "hackWorkers": 0,
+      "idleManagers": 23
+    },
+    "money": {
+      "moneyPct": 93.80911640096906,
+      "lowMoneyTargets": 38,
+      "readyTargets": 25,
+      "moneyTargets": 63
+    },
+    "security": {
+      "blockedTargets": 25,
+      "totalExcess": 426.4383749999994,
+      "worstServer": "helios",
+      "readyTargets": 38
+    },
+    "payouts": {
+      "hackReadyTargets": 0,
+      "preparedButUnhackableTargets": 19,
+      "blockedBySecurityTargets": 24,
+      "blockedByMoneyTargets": 15,
+      "nextHackMoney": 0,
+      "bestTarget": null
+    },
+    "share": {
+      "managerRunning": true,
+      "shareRamPct": 49.79771423339844,
+      "shareThreads": 3263543,
+      "shareWorkers": 25,
+      "shareReserveGb": 8,
+      "sharePower": 1.59993297117696
+    },
+    "contracts": {
+      "uniqueValid": 0,
+      "rawFiles": 0,
+      "duplicatesSuppressed": 0,
+      "triageTotal": 0,
+      "lowTries": 0
+    },
+    "home": {
+      "maxRam": 16384,
+      "usedRam": 625.8,
+      "freeRam": 15758.2,
+      "usedPct": 3.8195800781249996
+    },
+    "purchasedServers": {
+      "count": 0,
+      "limit": 0,
+      "maxRam": 0,
+      "canBuyMore": false
+    },
+    "pressure": {
+      "moneyPressure": true,
+      "securityPressure": true,
+      "sharePressure": false,
+      "assignmentPressure": false,
+      "deploymentPressure": false,
+      "hackingLevelPressure": true,
+      "contractPressure": false
+    }
+  },
+  "config": {
+    "cleanManaged": true,
+    "cleanShare": true,
+    "uploadPayloads": true,
+    "buyServers": true,
+    "buyPct": 0.4,
+    "uploadAfterBuy": true,
+    "assignTargets": true,
+    "assignMinThreads": 1,
+    "assignReserveThreads": 2,
+    "startShare": true,
+    "sharePct": 50,
+    "shareReserveGb": 2048,
+    "shareHome": false,
+    "shareLoopMs": 10000,
+    "securityBuffer": 5,
+    "moneyTargetRatio": 0.85,
+    "hackTargetRatio": 0.1,
+    "refreshContracts": false,
+    "openManagerConsole": true,
+    "consoleView": "overview"
+  },
+  "reasoning": [
+    "Baseline config starts from conservative automation defaults.",
+    "startup.js is expected to execute this config, not decide policy itself.",
+    "No unmanaged target pressure detected; assignment still enabled as a cheap consistency pass.",
+    "Money/security/assignment pressure detected; share allowed but capped at 50% with 2048GB reserve.",
+    "25 security-blocked target(s), total excess 426.44; preserving RAM for weaken/grow work.",
+    "38 low-money target(s), network money 93.8%; keeping money target ratio at 0.85 until backlog falls.",
+    "19 prepared target(s) are unhackable at current hack analysis; this is likely hacking-level/formula pressure, not startup failure.",
+    "Share on home remains disabled to preserve command/reporting capacity.",
+    "Purchased server limit reached or unknown; buy-servers.js should handle upgrade behaviour at 40% budget."
+  ],
+  "warnings": [],
+  "suggestedManualChecks": [
+    "run manager-console.js security 25",
+    "run manager-console.js money 40",
+    "run manager-console.js payouts 25",
+    "run manager-console.js share",
+    "run manager-console.js runtime",
+    "run info-diagnostic.js"
+  ],
+  "nextPromptSeed": {
+    "prompt": "Review this startup-config.json together with ai-diagnostic.json. Check whether the chosen share cap, reserve, buy budget, and assignment settings are appropriate. If not, rewrite info-startup-config.js.",
+    "focus": [
+      "Baseline config starts from conservative automation defaults.",
+      "startup.js is expected to execute this config, not decide policy itself.",
+      "No unmanaged target pressure detected; assignment still enabled as a cheap consistency pass.",
+      "Money/security/assignment pressure detected; share allowed but capped at 50% with 2048GB reserve.",
+      "25 security-blocked target(s), total excess 426.44; preserving RAM for weaken/grow work.",
+      "38 low-money target(s), network money 93.8%; keeping money target ratio at 0.85 until backlog falls.",
+      "19 prepared target(s) are unhackable at current hack analysis; this is likely hacking-level/formula pressure, not startup failure.",
+      "Share on home remains disabled to preserve command/reporting capacity."
+    ]
+  }
+}

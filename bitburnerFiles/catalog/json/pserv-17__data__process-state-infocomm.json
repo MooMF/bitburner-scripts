@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779500191176,
+  "host": "pserv-17",
+  "target": "infocomm",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 20826321725,
+  "maxMoney": 20826321725,
+  "moneyPct": 100,
+  "moneyTarget": 17702373466.25,
+  "moneyDeficit": 0,
+  "currentSecurity": 25,
+  "minSecurity": 25,
+  "allowedSecurity": 30,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

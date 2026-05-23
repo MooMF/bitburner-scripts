@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500201214,
+  "host": "netlink",
+  "target": "netlink",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 5684383971.595861,
+  "maxMoney": 6875000000,
+  "moneyPct": 82.68194867775799,
+  "moneyTarget": 5843750000,
+  "moneyDeficit": 159366028.40413857,
+  "currentSecurity": 28.953249999999983,
+  "minSecurity": 24,
+  "allowedSecurity": 29,
+  "securityExcess": 0,
+  "wantedThreads": 36,
+  "running": [],
+  "launched": true,
+  "pid": 295226,
+  "runnableThreads": 36,
+  "launchReason": "started worker"
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779498618290,
+  "host": "pserv-0",
+  "target": "kuai-gong",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 682838387850,
+  "maxMoney": 682838387850,
+  "moneyPct": 100,
+  "moneyTarget": 580412629672.5,
+  "moneyDeficit": 0,
+  "currentSecurity": 33,
+  "minSecurity": 33,
+  "allowedSecurity": 38,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

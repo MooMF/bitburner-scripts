@@ -1,7 +1,7 @@
 {
   "server": "pserv-14",
-  "timestamp": 1779353551914,
-  "filesFound": 2,
+  "timestamp": 1779500201949,
+  "filesFound": 6,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551900
+      "timestamp": 1779500201903
+    },
+    {
+      "server": "pserv-14",
+      "originalPath": "data/process-state-aerocorp.json",
+      "originalFile": "data/process-state-aerocorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-14__data__process-state-aerocorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201908
+    },
+    {
+      "server": "pserv-14",
+      "originalPath": "data/process-state-galactic-cyber.json",
+      "originalFile": "data/process-state-galactic-cyber.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-14__data__process-state-galactic-cyber.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201914
+    },
+    {
+      "server": "pserv-14",
+      "originalPath": "data/process-state-stormtech.json",
+      "originalFile": "data/process-state-stormtech.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-14__data__process-state-stormtech.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201921
+    },
+    {
+      "server": "pserv-14",
+      "originalPath": "data/process-state-taiyang-digital.json",
+      "originalFile": "data/process-state-taiyang-digital.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-14__data__process-state-taiyang-digital.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201927
     },
     {
       "server": "pserv-14",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551907
+      "timestamp": 1779500201943
     }
   ]
 }

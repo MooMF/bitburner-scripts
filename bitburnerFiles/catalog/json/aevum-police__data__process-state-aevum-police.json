@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500198994,
+  "host": "aevum-police",
+  "target": "aevum-police",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 542822213.7997423,
+  "maxMoney": 9525264575,
+  "moneyPct": 5.698762585812398,
+  "moneyTarget": 8096474888.75,
+  "moneyDeficit": 7553652674.950257,
+  "currentSecurity": 28.524624999999972,
+  "minSecurity": 24,
+  "allowedSecurity": 29,
+  "securityExcess": 0,
+  "wantedThreads": 5560,
+  "running": [],
+  "launched": true,
+  "pid": 295173,
+  "runnableThreads": 21,
+  "launchReason": "started worker"
+}

@@ -205,7 +205,7 @@ export async function main(ns) {
             budget,
             spent,
             remainingBudget,
-            message: "Server capacity changed. Run startup.js true false or upload.js + assign-targets.js to redeploy."
+            message: "Server capacity changed. Run startup.js true false to clean, redeploy, assign targets, and restart the share/rent layer."
         };
 
         await ns.write(CFG.markerFile, JSON.stringify(marker, null, 2), "w");

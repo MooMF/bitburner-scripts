@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779500191217,
+  "host": "pserv-18",
+  "target": "syscore",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 10879516050,
+  "maxMoney": 10879516050,
+  "moneyPct": 100,
+  "moneyTarget": 9247588642.5,
+  "moneyDeficit": 0,
+  "currentSecurity": 21,
+  "minSecurity": 21,
+  "allowedSecurity": 26,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

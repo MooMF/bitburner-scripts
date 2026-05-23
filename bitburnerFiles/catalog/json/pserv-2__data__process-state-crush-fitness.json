@@ -1,0 +1,30 @@
+{
+  "timestamp": 1779500191361,
+  "host": "pserv-2",
+  "target": "crush-fitness",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 1097587649.3690562,
+  "maxMoney": 1355297325,
+  "moneyPct": 80.98500816926324,
+  "moneyTarget": 1152002726.25,
+  "moneyDeficit": 54415076.880943775,
+  "currentSecurity": 18.956000000000007,
+  "minSecurity": 14,
+  "allowedSecurity": 19,
+  "securityExcess": 0,
+  "wantedThreads": 98,
+  "running": [
+    {
+      "pid": 294905,
+      "filename": "grow.js",
+      "threads": 98,
+      "args": [
+        "crush-fitness"
+      ]
+    }
+  ],
+  "launched": false,
+  "launchReason": "desired worker already running"
+}

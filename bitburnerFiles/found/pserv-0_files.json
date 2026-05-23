@@ -1,7 +1,7 @@
 {
   "server": "pserv-0",
-  "timestamp": 1779353551671,
-  "filesFound": 4,
+  "timestamp": 1779500201716,
+  "filesFound": 8,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551647
+      "timestamp": 1779500201658
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-deltaone.json",
+      "originalFile": "data/process-state-deltaone.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-deltaone.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201664
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-ecorp.json",
+      "originalFile": "data/process-state-ecorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-ecorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201671
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-kuai-gong.json",
+      "originalFile": "data/process-state-kuai-gong.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-kuai-gong.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201677
+    },
+    {
+      "server": "pserv-0",
+      "originalPath": "data/process-state-megacorp.json",
+      "originalFile": "data/process-state-megacorp.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-0__data__process-state-megacorp.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201683
     },
     {
       "server": "pserv-0",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551653
+      "timestamp": 1779500201698
     },
     {
       "server": "pserv-0",
@@ -38,7 +86,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551659
+      "timestamp": 1779500201703
     },
     {
       "server": "pserv-0",
@@ -50,7 +98,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551665
+      "timestamp": 1779500201709
     }
   ]
 }

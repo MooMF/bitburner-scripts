@@ -1,8 +1,8 @@
 {
-  "updated": 1779353459794,
+  "updated": 1779500195693,
   "servers": {
     "MooMF1": {
-      "timestamp": 1779353459794,
+      "timestamp": 1779500195692,
       "filesFound": 3,
       "contractsFound": 0,
       "catalogFile": "/found/MooMF1_files.json"
@@ -19,7 +19,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353459788
+      "timestamp": 1779500195686
     },
     {
       "server": "MooMF1",
@@ -31,7 +31,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353459776
+      "timestamp": 1779500195675
     },
     {
       "server": "MooMF1",
@@ -43,7 +43,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353459782
+      "timestamp": 1779500195681
     }
   ],
   "contracts": []

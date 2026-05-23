@@ -1,0 +1,24 @@
+/catalog/
+/data/
+/found/
+
+# Generated catalogue/state files
+/servers.json
+/home_cat.json
+/*_cat.json
+/process-state.json
+/restart-required.txt
+/session-gains-*.json
+
+# Infection/version markers
+*-infect-version.txt
+tmp-*-infect-version.txt
+*infect-version*.txt
+
+# Logs / temp files
+*.log
+*.tmp
+tmp-*
+.cache/
+.DS_Store
+Thumbs.db

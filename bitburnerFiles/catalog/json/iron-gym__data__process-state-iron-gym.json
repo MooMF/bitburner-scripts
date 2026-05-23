@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500200372,
+  "host": "iron-gym",
+  "target": "iron-gym",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 394665515.82509196,
+  "maxMoney": 500000000,
+  "moneyPct": 78.9331031650184,
+  "moneyTarget": 425000000,
+  "moneyDeficit": 30334484.174908042,
+  "currentSecurity": 14.982000000000035,
+  "minSecurity": 10,
+  "allowedSecurity": 15,
+  "securityExcess": 0,
+  "wantedThreads": 177,
+  "running": [],
+  "launched": true,
+  "pid": 295200,
+  "runnableThreads": 4,
+  "launchReason": "started worker"
+}

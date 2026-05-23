@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500202761,
+  "host": "silver-helix",
+  "target": "silver-helix",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 939948991.1553773,
+  "maxMoney": 1125000000,
+  "moneyPct": 83.55102143603354,
+  "moneyTarget": 956250000,
+  "moneyDeficit": 16301008.844622731,
+  "currentSecurity": 15.062375000000012,
+  "minSecurity": 10,
+  "allowedSecurity": 15,
+  "securityExcess": 0.06237500000001184,
+  "wantedThreads": 2,
+  "running": [],
+  "launched": true,
+  "pid": 295279,
+  "runnableThreads": 2,
+  "launchReason": "started worker"
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500203376,
+  "host": "univ-energy",
+  "target": "univ-energy",
+  "rooted": true,
+  "desiredAction": "weaken",
+  "reason": "security",
+  "currentMoney": 1177169262,
+  "maxMoney": 29429231550,
+  "moneyPct": 4,
+  "moneyTarget": 25014846817.5,
+  "moneyDeficit": 23837677555.5,
+  "currentSecurity": 59.54375,
+  "minSecurity": 29,
+  "allowedSecurity": 34,
+  "securityExcess": 25.543750000000003,
+  "wantedThreads": 511,
+  "running": [],
+  "launched": true,
+  "pid": 295311,
+  "runnableThreads": 22,
+  "launchReason": "started worker"
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779500190663,
+  "host": "pserv-10",
+  "target": "nwo",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 799015696925,
+  "maxMoney": 799015696925,
+  "moneyPct": 100,
+  "moneyTarget": 679163342386.25,
+  "moneyDeficit": 0,
+  "currentSecurity": 33,
+  "minSecurity": 33,
+  "allowedSecurity": 38,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

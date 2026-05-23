@@ -1,7 +1,7 @@
 {
   "server": "pserv-12",
-  "timestamp": 1779353460728,
-  "filesFound": 2,
+  "timestamp": 1779500196679,
+  "filesFound": 6,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460716
+      "timestamp": 1779500196631
+    },
+    {
+      "server": "pserv-12",
+      "originalPath": "data/process-state-b-and-a.json",
+      "originalFile": "data/process-state-b-and-a.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__data__process-state-b-and-a.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196637
+    },
+    {
+      "server": "pserv-12",
+      "originalPath": "data/process-state-n00dles.json",
+      "originalFile": "data/process-state-n00dles.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__data__process-state-n00dles.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196644
+    },
+    {
+      "server": "pserv-12",
+      "originalPath": "data/process-state-nwo.json",
+      "originalFile": "data/process-state-nwo.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__data__process-state-nwo.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196650
+    },
+    {
+      "server": "pserv-12",
+      "originalPath": "data/process-state-zeus-med.json",
+      "originalFile": "data/process-state-zeus-med.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-12__data__process-state-zeus-med.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196656
     },
     {
       "server": "pserv-12",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460722
+      "timestamp": 1779500196673
     }
   ]
 }

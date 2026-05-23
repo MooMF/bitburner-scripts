@@ -1,0 +1,30 @@
+{
+  "timestamp": 1779500190804,
+  "host": "pserv-12",
+  "target": "n00dles",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 1408088.5133816022,
+  "maxMoney": 1750000,
+  "moneyPct": 80.46220076466298,
+  "moneyTarget": 1487500,
+  "moneyDeficit": 79411.48661839776,
+  "currentSecurity": 5.979999999999983,
+  "minSecurity": 1,
+  "allowedSecurity": 6,
+  "securityExcess": 0,
+  "wantedThreads": 1,
+  "running": [
+    {
+      "pid": 294886,
+      "filename": "grow.js",
+      "threads": 1,
+      "args": [
+        "n00dles"
+      ]
+    }
+  ],
+  "launched": false,
+  "launchReason": "desired worker already running"
+}

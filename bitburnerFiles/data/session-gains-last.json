@@ -1,0 +1,122 @@
+{
+  "version": 4,
+  "timestamp": 1779503115511,
+  "money": 594950820065.2859,
+  "skills": {
+    "hacking": 460,
+    "strength": 90,
+    "defense": 42,
+    "dexterity": 21,
+    "agility": 15,
+    "charisma": 309,
+    "intelligence": 0
+  },
+  "exp": {
+    "hacking": 56302115.62370355,
+    "strength": 7074.07500978455,
+    "defense": 1298.7866682995614,
+    "dexterity": 439.788542479204,
+    "agility": 279.78135457404983,
+    "charisma": 5187383.113342442,
+    "intelligence": 0
+  },
+  "factions": [
+    "The Black Hand",
+    "NiteSec",
+    "Sector-12",
+    "Netburners",
+    "CyberSec"
+  ],
+  "jobs": [
+    "Carmichael Security",
+    "Central Intelligence Agency"
+  ],
+  "factionRep": {},
+  "companyRep": {},
+  "karma": 0,
+  "kills": 0,
+  "scriptIncomePerSecond": 590097.0729201273,
+  "scriptExpPerSecond": 29.809880561089628,
+  "hacknet": {
+    "available": true,
+    "nodes": 34,
+    "productionPerSecond": 456043.18022512115,
+    "hashes": 0,
+    "capacity": 0
+  },
+  "moneySources": {
+    "available": true,
+    "raw": {
+      "sinceInstall": {
+        "bladeburner": 0,
+        "casino": 0,
+        "class": -1240954888.8000016,
+        "codingcontract": 0,
+        "corporation": 0,
+        "crime": 0,
+        "darknet": 0,
+        "gang": 0,
+        "gang_expenses": 0,
+        "hacking": 87618141294.65886,
+        "hacknet": 5486349229164.613,
+        "hacknet_expenses": -1051701509076.222,
+        "hospitalization": 0,
+        "infiltration": 0,
+        "sleeves": 0,
+        "stock": 0,
+        "total": 594950818886.2859,
+        "work": 15960113888.107613,
+        "servers": -1652156637688.3103,
+        "other": -5306350000,
+        "augmentations": -2284571206449.3335
+      },
+      "sinceStart": {
+        "bladeburner": 0,
+        "casino": 0,
+        "class": -1240954888.8000016,
+        "codingcontract": 0,
+        "corporation": 0,
+        "crime": 0,
+        "darknet": 0,
+        "gang": 0,
+        "gang_expenses": 0,
+        "hacking": 89724570146.48938,
+        "hacknet": 5514841311710.13,
+        "hacknet_expenses": -1052432485579.3661,
+        "hospitalization": 0,
+        "infiltration": 0,
+        "sleeves": 0,
+        "stock": 0,
+        "total": 599089469454.477,
+        "work": 15961444910.507612,
+        "servers": -1652213783080.1963,
+        "other": -5306550000,
+        "augmentations": -2310244076406.0215
+      }
+    },
+    "activePeriod": "sinceInstall",
+    "totals": {
+      "bladeburner": 0,
+      "casino": 0,
+      "class": -1240954888.8000016,
+      "codingcontract": 0,
+      "corporation": 0,
+      "crime": 0,
+      "darknet": 0,
+      "gang": 0,
+      "gang_expenses": 0,
+      "hacking": 87618141294.65886,
+      "hacknet": 5486349229164.613,
+      "hacknet_expenses": -1051701509076.222,
+      "hospitalization": 0,
+      "infiltration": 0,
+      "sleeves": 0,
+      "stock": 0,
+      "total": 594950818886.2859,
+      "work": 15960113888.107613,
+      "servers": -1652156637688.3103,
+      "other": -5306350000,
+      "augmentations": -2284571206449.3335
+    }
+  }
+}

@@ -431,10 +431,29 @@ function killScriptOnHost(ns, script, host) {
 
 async function openLargeTail(ns, title) {
     try {
-        ns.tail();
+        if (ns.ui?.openTail) {
+            ns.ui.openTail();
+        } else if (ns.tail) {
+            ns.tail();
+        }
+
         await ns.sleep(50);
-        ns.resizeTail(1100, 700);
-        ns.moveTail(80, 80);
+    } catch (_) {}
+
+    try {
+        if (ns.ui?.resizeTail) {
+            ns.ui.resizeTail(1100, 700);
+        } else if (ns.resizeTail) {
+            ns.resizeTail(1100, 700);
+        }
+    } catch (_) {}
+
+    try {
+        if (ns.ui?.moveTail) {
+            ns.ui.moveTail(80, 80);
+        } else if (ns.moveTail) {
+            ns.moveTail(80, 80);
+        }
     } catch (_) {}
 
     try {

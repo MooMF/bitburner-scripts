@@ -1,7 +1,7 @@
 {
   "server": "pserv-16",
-  "timestamp": 1779353460892,
-  "filesFound": 2,
+  "timestamp": 1779500196843,
+  "filesFound": 6,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460880
+      "timestamp": 1779500196795
+    },
+    {
+      "server": "pserv-16",
+      "originalPath": "data/process-state-defcomm.json",
+      "originalFile": "data/process-state-defcomm.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-16__data__process-state-defcomm.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196801
+    },
+    {
+      "server": "pserv-16",
+      "originalPath": "data/process-state-stormtech.json",
+      "originalFile": "data/process-state-stormtech.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-16__data__process-state-stormtech.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196808
+    },
+    {
+      "server": "pserv-16",
+      "originalPath": "data/process-state-syscore.json",
+      "originalFile": "data/process-state-syscore.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-16__data__process-state-syscore.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196814
+    },
+    {
+      "server": "pserv-16",
+      "originalPath": "data/process-state-taiyang-digital.json",
+      "originalFile": "data/process-state-taiyang-digital.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-16__data__process-state-taiyang-digital.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500196820
     },
     {
       "server": "pserv-16",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353460885
+      "timestamp": 1779500196837
     }
   ]
 }

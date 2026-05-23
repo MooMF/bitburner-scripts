@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500199322,
+  "host": "catalyst",
+  "target": "catalyst",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 6396301217.60921,
+  "maxMoney": 8808571350,
+  "moneyPct": 72.61451333545943,
+  "moneyTarget": 7487285647.5,
+  "moneyDeficit": 1090984429.89079,
+  "currentSecurity": 22.265249999999988,
+  "minSecurity": 20,
+  "allowedSecurity": 25,
+  "securityExcess": 0,
+  "wantedThreads": 228,
+  "running": [],
+  "launched": true,
+  "pid": 295182,
+  "runnableThreads": 54,
+  "launchReason": "started worker"
+}

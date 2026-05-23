@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779500190600,
+  "host": "pserv-1",
+  "target": "4sigma",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 445779649050,
+  "maxMoney": 445779649050,
+  "moneyPct": 100,
+  "moneyTarget": 378912701692.5,
+  "moneyDeficit": 0,
+  "currentSecurity": 21,
+  "minSecurity": 21,
+  "allowedSecurity": 26,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

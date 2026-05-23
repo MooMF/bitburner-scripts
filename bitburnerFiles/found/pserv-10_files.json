@@ -1,7 +1,7 @@
 {
   "server": "pserv-10",
-  "timestamp": 1779353551757,
-  "filesFound": 4,
+  "timestamp": 1779500201794,
+  "filesFound": 8,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551732
+      "timestamp": 1779500201738
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-b-and-a.json",
+      "originalFile": "data/process-state-b-and-a.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-b-and-a.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201743
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-nova-med.json",
+      "originalFile": "data/process-state-nova-med.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-nova-med.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201749
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-nwo.json",
+      "originalFile": "data/process-state-nwo.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-nwo.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201756
+    },
+    {
+      "server": "pserv-10",
+      "originalPath": "data/process-state-zb-def.json",
+      "originalFile": "data/process-state-zb-def.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-10__data__process-state-zb-def.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201763
     },
     {
       "server": "pserv-10",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551738
+      "timestamp": 1779500201778
     },
     {
       "server": "pserv-10",
@@ -38,7 +86,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551745
+      "timestamp": 1779500201783
     },
     {
       "server": "pserv-10",
@@ -50,7 +98,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551751
+      "timestamp": 1779500201788
     }
   ]
 }

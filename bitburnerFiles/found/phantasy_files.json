@@ -1,8 +1,8 @@
 {
   "server": "phantasy",
-  "timestamp": 1779353552153,
-  "filesFound": 64,
-  "contractsFound": 59,
+  "timestamp": 1779500202156,
+  "filesFound": 66,
+  "contractsFound": 60,
   "files": [
     {
       "server": "phantasy",
@@ -14,7 +14,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551550
+      "timestamp": 1779500201562
     },
     {
       "server": "phantasy",
@@ -25,8 +25,8 @@
       "homeDestination": "/contracts/phantasy__contract-141853-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-141853-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551557,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-141853-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201569,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-141853-CentralIntelligenceAgency.cct",
@@ -47,8 +47,8 @@
       "homeDestination": "/contracts/phantasy__contract-174648.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-174648.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551563,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-174648.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201575,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-174648.cct",
@@ -88,8 +88,8 @@
       "homeDestination": "/contracts/phantasy__contract-187155-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-187155-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551570,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-187155-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201581,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-187155-CarmichaelSecurity.cct",
@@ -127,8 +127,8 @@
       "homeDestination": "/contracts/phantasy__contract-192948-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-192948-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551608,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-192948-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201619,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-192948-CarmichaelSecurity.cct",
@@ -160,8 +160,8 @@
       "homeDestination": "/contracts/phantasy__contract-201301-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-201301-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551614,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-201301-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201625,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-201301-CarmichaelSecurity.cct",
@@ -199,8 +199,8 @@
       "homeDestination": "/contracts/phantasy__contract-207233.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-207233.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551620,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-207233.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201632,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-207233.cct",
@@ -225,8 +225,8 @@
       "homeDestination": "/contracts/phantasy__contract-210177-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-210177-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551627,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-210177-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201638,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-210177-CentralIntelligenceAgency.cct",
@@ -298,8 +298,8 @@
       "homeDestination": "/contracts/phantasy__contract-213356.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-213356.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551647,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-213356.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201658,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-213356.cct",
@@ -368,8 +368,8 @@
       "homeDestination": "/contracts/phantasy__contract-288360-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-288360-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551653,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-288360-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201664,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-288360-CentralIntelligenceAgency.cct",
@@ -390,8 +390,8 @@
       "homeDestination": "/contracts/phantasy__contract-288516.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-288516.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551659,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-288516.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201671,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-288516.cct",
@@ -415,8 +415,8 @@
       "homeDestination": "/contracts/phantasy__contract-289515-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-289515-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551665,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-289515-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201677,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-289515-CarmichaelSecurity.cct",
@@ -528,8 +528,8 @@
       "homeDestination": "/contracts/phantasy__contract-292048-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-292048-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551671,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-292048-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201683,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-292048-CarmichaelSecurity.cct",
@@ -631,8 +631,8 @@
       "homeDestination": "/contracts/phantasy__contract-2wOGg8.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-2wOGg8.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551690,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-2wOGg8.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201698,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-2wOGg8.cct",
@@ -676,8 +676,8 @@
       "homeDestination": "/contracts/phantasy__contract-304131-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-304131-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551697,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-304131-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201703,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-304131-CarmichaelSecurity.cct",
@@ -698,8 +698,8 @@
       "homeDestination": "/contracts/phantasy__contract-314489.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-314489.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551704,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-314489.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201709,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-314489.cct",
@@ -723,8 +723,8 @@
       "homeDestination": "/contracts/phantasy__contract-332386.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-332386.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551710,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-332386.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201716,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-332386.cct",
@@ -836,8 +836,8 @@
       "homeDestination": "/contracts/phantasy__contract-340413-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-340413-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551732,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-340413-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201722,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-340413-CarmichaelSecurity.cct",
@@ -870,8 +870,8 @@
       "homeDestination": "/contracts/phantasy__contract-374632.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-374632.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551738,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-374632.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201738,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-374632.cct",
@@ -892,8 +892,8 @@
       "homeDestination": "/contracts/phantasy__contract-496252-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-496252-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551745,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-496252-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201743,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-496252-CarmichaelSecurity.cct",
@@ -959,8 +959,8 @@
       "homeDestination": "/contracts/phantasy__contract-563317-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-563317-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551751,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-563317-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201749,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-563317-NiteSec.cct",
@@ -984,8 +984,8 @@
       "homeDestination": "/contracts/phantasy__contract-564481.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-564481.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551757,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-564481.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201756,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-564481.cct",
@@ -1018,8 +1018,8 @@
       "homeDestination": "/contracts/phantasy__contract-577238.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-577238.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551773,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-577238.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201763,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-577238.cct",
@@ -1093,8 +1093,8 @@
       "homeDestination": "/contracts/phantasy__contract-590005-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-590005-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551780,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-590005-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201778,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-590005-CentralIntelligenceAgency.cct",
@@ -1130,8 +1130,8 @@
       "homeDestination": "/contracts/phantasy__contract-596571.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-596571.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551786,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-596571.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201783,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-596571.cct",
@@ -1174,8 +1174,8 @@
       "homeDestination": "/contracts/phantasy__contract-606511.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-606511.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551792,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-606511.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201788,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-606511.cct",
@@ -1214,8 +1214,8 @@
       "homeDestination": "/contracts/phantasy__contract-618113-TheBlackHand.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-618113-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551798,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-618113-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201794,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-618113-TheBlackHand.cct",
@@ -1236,8 +1236,8 @@
       "homeDestination": "/contracts/phantasy__contract-627263-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-627263-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551813,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-627263-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201799,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-627263-CarmichaelSecurity.cct",
@@ -1258,8 +1258,8 @@
       "homeDestination": "/contracts/phantasy__contract-63007.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-63007.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551819,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-63007.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201820,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-63007.cct",
@@ -1401,8 +1401,8 @@
       "homeDestination": "/contracts/phantasy__contract-632377.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-632377.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551826,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-632377.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201826,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-632377.cct",
@@ -1520,8 +1520,8 @@
       "homeDestination": "/contracts/phantasy__contract-641808-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-641808-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551832,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-641808-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201832,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-641808-CarmichaelSecurity.cct",
@@ -1542,8 +1542,8 @@
       "homeDestination": "/contracts/phantasy__contract-64755-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-64755-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551838,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-64755-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201839,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-64755-Sector12.cct",
@@ -1567,8 +1567,8 @@
       "homeDestination": "/contracts/phantasy__contract-657593-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-657593-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551855,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-657593-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201846,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-657593-CentralIntelligenceAgency.cct",
@@ -1602,8 +1602,8 @@
       "homeDestination": "/contracts/phantasy__contract-717192.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-717192.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551878,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-717192.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201862,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-717192.cct",
@@ -1637,8 +1637,8 @@
       "homeDestination": "/contracts/phantasy__contract-729208-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-729208-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551900,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-729208-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201867,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-729208-NiteSec.cct",
@@ -1659,8 +1659,8 @@
       "homeDestination": "/contracts/phantasy__contract-773362-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-773362-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551907,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-773362-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201873,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-773362-CentralIntelligenceAgency.cct",
@@ -1681,8 +1681,8 @@
       "homeDestination": "/contracts/phantasy__contract-780108-CyberSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-780108-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551915,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-780108-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201878,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-780108-CyberSec.cct",
@@ -1717,8 +1717,8 @@
       "homeDestination": "/contracts/phantasy__contract-783096-CyberSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-783096-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551921,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-783096-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201884,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-783096-CyberSec.cct",
@@ -1742,8 +1742,8 @@
       "homeDestination": "/contracts/phantasy__contract-801557-CyberSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-801557-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551943,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-801557-CyberSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201905,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-801557-CyberSec.cct",
@@ -1853,8 +1853,8 @@
       "homeDestination": "/contracts/phantasy__contract-823012-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-823012-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551949,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-823012-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201912,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-823012-CarmichaelSecurity.cct",
@@ -1878,8 +1878,8 @@
       "homeDestination": "/contracts/phantasy__contract-831403-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-831403-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551955,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-831403-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201917,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-831403-Sector12.cct",
@@ -1900,8 +1900,8 @@
       "homeDestination": "/contracts/phantasy__contract-870354-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-870354-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551961,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-870354-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201923,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-870354-CarmichaelSecurity.cct",
@@ -1962,8 +1962,8 @@
       "homeDestination": "/contracts/phantasy__contract-931756-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-931756-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551967,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-931756-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201943,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-931756-CarmichaelSecurity.cct",
@@ -2008,8 +2008,8 @@
       "homeDestination": "/contracts/phantasy__contract-958605-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-958605-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551983,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-958605-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201948,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-958605-CarmichaelSecurity.cct",
@@ -2030,8 +2030,8 @@
       "homeDestination": "/contracts/phantasy__contract-961704-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-961704-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551989,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-961704-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201954,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-961704-CarmichaelSecurity.cct",
@@ -2052,8 +2052,8 @@
       "homeDestination": "/contracts/phantasy__contract-979996-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-979996-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551994,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-979996-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201960,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-979996-Sector12.cct",
@@ -2086,8 +2086,8 @@
       "homeDestination": "/contracts/phantasy__contract-985118-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-985118-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552001,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-985118-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201966,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-985118-Sector12.cct",
@@ -2108,8 +2108,8 @@
       "homeDestination": "/contracts/phantasy__contract-986954-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-986954-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552008,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-986954-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201985,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-986954-NiteSec.cct",
@@ -2130,8 +2130,8 @@
       "homeDestination": "/contracts/phantasy__contract-98809.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-98809.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552024,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-98809.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201991,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-98809.cct",
@@ -2155,8 +2155,8 @@
       "homeDestination": "/contracts/phantasy__contract-E4PzsI.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-E4PzsI.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552030,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-E4PzsI.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201997,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-E4PzsI.cct",
@@ -2180,8 +2180,8 @@
       "homeDestination": "/contracts/phantasy__contract-E7WUXB.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-E7WUXB.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552036,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-E7WUXB.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202003,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-E7WUXB.cct",
@@ -2227,8 +2227,8 @@
       "homeDestination": "/contracts/phantasy__contract-I8LoTK.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-I8LoTK.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552041,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-I8LoTK.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202009,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-I8LoTK.cct",
@@ -2249,8 +2249,8 @@
       "homeDestination": "/contracts/phantasy__contract-a1j0Qh.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-a1j0Qh.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552047,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-a1j0Qh.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202026,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-a1j0Qh.cct",
@@ -2288,8 +2288,8 @@
       "homeDestination": "/contracts/phantasy__contract-am3nZK.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-am3nZK.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552065,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-am3nZK.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202034,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-am3nZK.cct",
@@ -2310,8 +2310,8 @@
       "homeDestination": "/contracts/phantasy__contract-cMYzg4.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-cMYzg4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552072,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-cMYzg4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202040,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-cMYzg4.cct",
@@ -2332,8 +2332,8 @@
       "homeDestination": "/contracts/phantasy__contract-gcaKeF.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-gcaKeF.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552078,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-gcaKeF.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202046,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-gcaKeF.cct",
@@ -2350,6 +2350,31 @@
     },
     {
       "server": "phantasy",
+      "originalPath": "contract-mwyoOi.cct",
+      "originalFile": "contract-mwyoOi.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/phantasy__contract-mwyoOi.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-mwyoOi.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202066,
+      "contract": {
+        "originServer": "phantasy",
+        "originFile": "contract-mwyoOi.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-mwyoOi.cct\", \"phantasy\")",
+        "type": "Encryption I: Caesar Cipher",
+        "data": [
+          "ENTER EMAIL ARRAY MEDIA FRAME",
+          16
+        ],
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "phantasy",
       "originalPath": "contract-pWbu7s.cct",
       "originalFile": "contract-pWbu7s.cct",
       "fileType": "contract",
@@ -2357,8 +2382,8 @@
       "homeDestination": "/contracts/phantasy__contract-pWbu7s.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-pWbu7s.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552084,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-pWbu7s.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202071,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-pWbu7s.cct",
@@ -2392,8 +2417,8 @@
       "homeDestination": "/contracts/phantasy__contract-sLet0i.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-sLet0i.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552089,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-sLet0i.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202076,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-sLet0i.cct",
@@ -2441,8 +2466,8 @@
       "homeDestination": "/contracts/phantasy__contract-ygpKeo.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-ygpKeo.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552107,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-ygpKeo.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202082,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-ygpKeo.cct",
@@ -2463,8 +2488,8 @@
       "homeDestination": "/contracts/phantasy__contract-ykrinn.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 12424)\n\nscp: Cannot transfer contract-ykrinn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353552113,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@phantasy (PID - 295236)\n\nscp: Cannot transfer contract-ykrinn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500202087,
       "contract": {
         "originServer": "phantasy",
         "originFile": "contract-ykrinn.cct",
@@ -2486,7 +2511,19 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552119
+      "timestamp": 1779500202115
+    },
+    {
+      "server": "phantasy",
+      "originalPath": "data/process-state-phantasy.json",
+      "originalFile": "data/process-state-phantasy.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/phantasy__data__process-state-phantasy.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202121
     },
     {
       "server": "phantasy",
@@ -2498,7 +2535,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552125
+      "timestamp": 1779500202128
     },
     {
       "server": "phantasy",
@@ -2510,7 +2547,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552131
+      "timestamp": 1779500202134
     },
     {
       "server": "phantasy",
@@ -2522,7 +2559,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552147
+      "timestamp": 1779500202140
     }
   ]
 }

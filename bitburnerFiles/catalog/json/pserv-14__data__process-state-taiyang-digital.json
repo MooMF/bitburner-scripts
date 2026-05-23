@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779498618290,
+  "host": "pserv-14",
+  "target": "taiyang-digital",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 22382446725,
+  "maxMoney": 22382446725,
+  "moneyPct": 100,
+  "moneyTarget": 19025079716.25,
+  "moneyDeficit": 0,
+  "currentSecurity": 25,
+  "minSecurity": 25,
+  "allowedSecurity": 30,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

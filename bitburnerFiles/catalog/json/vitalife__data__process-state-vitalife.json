@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500203433,
+  "host": "vitalife",
+  "target": "vitalife",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 1002948209.5964522,
+  "maxMoney": 18772413025,
+  "moneyPct": 5.342670695881155,
+  "moneyTarget": 15956551071.25,
+  "moneyDeficit": 14953602861.653547,
+  "currentSecurity": 34.985625,
+  "minSecurity": 30,
+  "allowedSecurity": 35,
+  "securityExcess": 0,
+  "wantedThreads": 4654,
+  "running": [],
+  "launched": true,
+  "pid": 295314,
+  "runnableThreads": 54,
+  "launchReason": "started worker"
+}

@@ -1,7 +1,7 @@
 {
   "server": "pserv-17",
-  "timestamp": 1779353552036,
-  "filesFound": 2,
+  "timestamp": 1779500202071,
+  "filesFound": 6,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552024
+      "timestamp": 1779500202024
+    },
+    {
+      "server": "pserv-17",
+      "originalPath": "data/process-state-computek.json",
+      "originalFile": "data/process-state-computek.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-17__data__process-state-computek.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202030
+    },
+    {
+      "server": "pserv-17",
+      "originalPath": "data/process-state-icarus.json",
+      "originalFile": "data/process-state-icarus.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-17__data__process-state-icarus.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202036
+    },
+    {
+      "server": "pserv-17",
+      "originalPath": "data/process-state-infocomm.json",
+      "originalFile": "data/process-state-infocomm.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-17__data__process-state-infocomm.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202041
+    },
+    {
+      "server": "pserv-17",
+      "originalPath": "data/process-state-johnson-ortho.json",
+      "originalFile": "data/process-state-johnson-ortho.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-17__data__process-state-johnson-ortho.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202046
     },
     {
       "server": "pserv-17",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552030
+      "timestamp": 1779500202066
     }
   ]
 }

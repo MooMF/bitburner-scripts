@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500203545,
+  "host": "zb-institute",
+  "target": "zb-institute",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 1534367003.1542425,
+  "maxMoney": 24812579050,
+  "moneyPct": 6.183827163078569,
+  "moneyTarget": 21090692192.5,
+  "moneyDeficit": 19556325189.345757,
+  "currentSecurity": 29.508374999999994,
+  "minSecurity": 28,
+  "allowedSecurity": 33,
+  "securityExcess": 0,
+  "wantedThreads": 3187,
+  "running": [],
+  "launched": true,
+  "pid": 295317,
+  "runnableThreads": 54,
+  "launchReason": "started worker"
+}

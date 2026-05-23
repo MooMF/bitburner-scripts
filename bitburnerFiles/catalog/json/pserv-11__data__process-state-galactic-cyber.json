@@ -1,0 +1,21 @@
+{
+  "timestamp": 1779498618290,
+  "host": "pserv-11",
+  "target": "galactic-cyber",
+  "rooted": true,
+  "desiredAction": "hack",
+  "reason": "payout",
+  "currentMoney": 21187753250,
+  "maxMoney": 21187753250,
+  "moneyPct": 100,
+  "moneyTarget": 18009590262.5,
+  "moneyDeficit": 0,
+  "currentSecurity": 18,
+  "minSecurity": 18,
+  "allowedSecurity": 23,
+  "securityExcess": 0,
+  "wantedThreads": 0,
+  "running": [],
+  "launched": false,
+  "runnableThreads": 0
+}

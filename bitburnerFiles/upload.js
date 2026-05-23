@@ -24,7 +24,6 @@ export async function main(ns) {
         "weaken.js",
         "grow.js",
         "hack.js",
-        "rent-capacity.js",
         "rent-share.js",
     ];
 
@@ -166,7 +165,12 @@ async function tryRoot(ns, server) {
 }
 
 function stopManagedScripts(ns, server, scripts) {
-    for (const script of scripts) {
+    const managedRuntimeScripts = [
+        ...scripts,
+        "rent-capacity.js" // legacy cleanup only; rent-capacity.js is home-only now.
+    ];
+
+    for (const script of managedRuntimeScripts) {
         if (ns.scriptRunning(script, server)) {
             ns.scriptKill(script, server);
         }
@@ -174,7 +178,12 @@ function stopManagedScripts(ns, server, scripts) {
 }
 
 function removeManagedFiles(ns, server, scripts) {
-    for (const script of scripts) {
+    const removableFiles = [
+        ...scripts,
+        "rent-capacity.js" // remove older remote copies; the manager belongs on home.
+    ];
+
+    for (const script of removableFiles) {
         if (ns.fileExists(script, server)) {
             ns.rm(script, server);
         }

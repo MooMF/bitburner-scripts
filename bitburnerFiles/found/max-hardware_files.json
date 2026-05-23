@@ -1,8 +1,8 @@
 {
   "server": "max-hardware",
-  "timestamp": 1779353551481,
-  "filesFound": 74,
-  "contractsFound": 69,
+  "timestamp": 1779500201563,
+  "filesFound": 76,
+  "contractsFound": 70,
   "files": [
     {
       "server": "max-hardware",
@@ -14,7 +14,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353550620
+      "timestamp": 1779500200656
     },
     {
       "server": "max-hardware",
@@ -25,8 +25,8 @@
       "homeDestination": "/contracts/max-hardware__contract-0IgP8H.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-0IgP8H.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550626,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-0IgP8H.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200662,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-0IgP8H.cct",
@@ -47,8 +47,8 @@
       "homeDestination": "/contracts/max-hardware__contract-104526.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-104526.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550631,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-104526.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200669,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-104526.cct",
@@ -69,8 +69,8 @@
       "homeDestination": "/contracts/max-hardware__contract-10657-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-10657-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550637,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-10657-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200675,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-10657-CarmichaelSecurity.cct",
@@ -91,8 +91,8 @@
       "homeDestination": "/contracts/max-hardware__contract-141492.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-141492.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550644,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-141492.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200682,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-141492.cct",
@@ -154,8 +154,8 @@
       "homeDestination": "/contracts/max-hardware__contract-154019-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-154019-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550676,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-154019-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200713,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-154019-CarmichaelSecurity.cct",
@@ -176,8 +176,8 @@
       "homeDestination": "/contracts/max-hardware__contract-157069.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-157069.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550682,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-157069.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200718,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-157069.cct",
@@ -198,8 +198,8 @@
       "homeDestination": "/contracts/max-hardware__contract-166240.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-166240.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550688,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-166240.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200724,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-166240.cct",
@@ -220,8 +220,8 @@
       "homeDestination": "/contracts/max-hardware__contract-189732-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-189732-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550695,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-189732-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200732,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-189732-CentralIntelligenceAgency.cct",
@@ -260,8 +260,8 @@
       "homeDestination": "/contracts/max-hardware__contract-202077.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-202077.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550734,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-202077.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200769,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-202077.cct",
@@ -282,8 +282,8 @@
       "homeDestination": "/contracts/max-hardware__contract-253987.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-253987.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550739,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-253987.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200776,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-253987.cct",
@@ -313,8 +313,8 @@
       "homeDestination": "/contracts/max-hardware__contract-282284.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-282284.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550746,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-282284.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200782,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-282284.cct",
@@ -335,8 +335,8 @@
       "homeDestination": "/contracts/max-hardware__contract-2TTLim.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-2TTLim.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550752,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-2TTLim.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200788,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-2TTLim.cct",
@@ -360,8 +360,8 @@
       "homeDestination": "/contracts/max-hardware__contract-30700.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-30700.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550758,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-30700.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200827,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-30700.cct",
@@ -382,8 +382,8 @@
       "homeDestination": "/contracts/max-hardware__contract-329863-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-329863-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550793,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-329863-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200834,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-329863-Netburners.cct",
@@ -407,8 +407,8 @@
       "homeDestination": "/contracts/max-hardware__contract-33664-CentralIntelligenceAgency.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-33664-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550799,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-33664-CentralIntelligenceAgency.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200841,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-33664-CentralIntelligenceAgency.cct",
@@ -462,8 +462,8 @@
       "homeDestination": "/contracts/max-hardware__contract-354978.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-354978.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550805,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-354978.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200848,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-354978.cct",
@@ -484,8 +484,8 @@
       "homeDestination": "/contracts/max-hardware__contract-368750-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-368750-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550811,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-368750-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200866,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-368750-CarmichaelSecurity.cct",
@@ -506,8 +506,8 @@
       "homeDestination": "/contracts/max-hardware__contract-409830-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-409830-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550833,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-409830-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200872,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-409830-CarmichaelSecurity.cct",
@@ -536,8 +536,8 @@
       "homeDestination": "/contracts/max-hardware__contract-411210.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-411210.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550839,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-411210.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200878,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-411210.cct",
@@ -568,8 +568,8 @@
       "homeDestination": "/contracts/max-hardware__contract-42791-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-42791-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550845,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-42791-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200884,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-42791-Sector12.cct",
@@ -602,8 +602,8 @@
       "homeDestination": "/contracts/max-hardware__contract-443633-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-443633-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550852,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-443633-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200890,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-443633-Netburners.cct",
@@ -624,8 +624,8 @@
       "homeDestination": "/contracts/max-hardware__contract-448183-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-448183-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550858,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-448183-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200906,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-448183-Netburners.cct",
@@ -646,8 +646,8 @@
       "homeDestination": "/contracts/max-hardware__contract-448745.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-448745.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550875,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-448745.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200912,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-448745.cct",
@@ -668,8 +668,8 @@
       "homeDestination": "/contracts/max-hardware__contract-454969.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-454969.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550881,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-454969.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200919,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-454969.cct",
@@ -717,8 +717,8 @@
       "homeDestination": "/contracts/max-hardware__contract-481812.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-481812.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550886,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-481812.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200925,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-481812.cct",
@@ -752,8 +752,8 @@
       "homeDestination": "/contracts/max-hardware__contract-484893-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-484893-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550892,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-484893-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200931,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-484893-CarmichaelSecurity.cct",
@@ -777,8 +777,8 @@
       "homeDestination": "/contracts/max-hardware__contract-498241-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-498241-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550898,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-498241-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200946,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-498241-Netburners.cct",
@@ -799,8 +799,8 @@
       "homeDestination": "/contracts/max-hardware__contract-508667.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-508667.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550917,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-508667.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200952,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-508667.cct",
@@ -821,8 +821,8 @@
       "homeDestination": "/contracts/max-hardware__contract-566287.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-566287.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550923,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-566287.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200958,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-566287.cct",
@@ -891,8 +891,8 @@
       "homeDestination": "/contracts/max-hardware__contract-58755-NiteSec.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-58755-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550928,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-58755-NiteSec.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200964,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-58755-NiteSec.cct",
@@ -916,8 +916,8 @@
       "homeDestination": "/contracts/max-hardware__contract-587919-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-587919-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550934,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-587919-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200972,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-587919-CarmichaelSecurity.cct",
@@ -1027,8 +1027,8 @@
       "homeDestination": "/contracts/max-hardware__contract-609825-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-609825-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550940,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-609825-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200986,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-609825-CarmichaelSecurity.cct",
@@ -1074,8 +1074,8 @@
       "homeDestination": "/contracts/max-hardware__contract-660298.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-660298.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550959,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-660298.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200992,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-660298.cct",
@@ -1096,8 +1096,8 @@
       "homeDestination": "/contracts/max-hardware__contract-6gsOmy.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-6gsOmy.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550965,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-6gsOmy.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500200998,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-6gsOmy.cct",
@@ -1121,8 +1121,8 @@
       "homeDestination": "/contracts/max-hardware__contract-72535-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-72535-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550971,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-72535-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201005,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-72535-Netburners.cct",
@@ -1163,8 +1163,8 @@
       "homeDestination": "/contracts/max-hardware__contract-727794.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-727794.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550977,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-727794.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201010,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-727794.cct",
@@ -1185,8 +1185,8 @@
       "homeDestination": "/contracts/max-hardware__contract-777488-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-777488-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353550982,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-777488-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201043,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-777488-CarmichaelSecurity.cct",
@@ -1210,8 +1210,8 @@
       "homeDestination": "/contracts/max-hardware__contract-785258.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-785258.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551014,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-785258.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201048,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-785258.cct",
@@ -1262,8 +1262,8 @@
       "homeDestination": "/contracts/max-hardware__contract-792018.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-792018.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551020,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-792018.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201054,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-792018.cct",
@@ -1284,8 +1284,8 @@
       "homeDestination": "/contracts/max-hardware__contract-7iRmFi.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-7iRmFi.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551026,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-7iRmFi.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201060,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-7iRmFi.cct",
@@ -1337,8 +1337,8 @@
       "homeDestination": "/contracts/max-hardware__contract-81921.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-81921.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551032,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-81921.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201066,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-81921.cct",
@@ -1369,8 +1369,8 @@
       "homeDestination": "/contracts/max-hardware__contract-82608-Netburners.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-82608-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551039,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-82608-Netburners.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201102,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-82608-Netburners.cct",
@@ -1408,8 +1408,8 @@
       "homeDestination": "/contracts/max-hardware__contract-827963.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-827963.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551073,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-827963.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201109,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-827963.cct",
@@ -1430,8 +1430,8 @@
       "homeDestination": "/contracts/max-hardware__contract-853074.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-853074.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551079,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-853074.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201116,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-853074.cct",
@@ -1489,8 +1489,8 @@
       "homeDestination": "/contracts/max-hardware__contract-861894.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-861894.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551085,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-861894.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201123,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-861894.cct",
@@ -1511,8 +1511,8 @@
       "homeDestination": "/contracts/max-hardware__contract-869967-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-869967-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551090,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-869967-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201160,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-869967-CarmichaelSecurity.cct",
@@ -1564,8 +1564,8 @@
       "homeDestination": "/contracts/max-hardware__contract-872179.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-872179.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551130,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-872179.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201166,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-872179.cct",
@@ -1599,8 +1599,8 @@
       "homeDestination": "/contracts/max-hardware__contract-879719.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-879719.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551135,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-879719.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201172,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-879719.cct",
@@ -1678,8 +1678,8 @@
       "homeDestination": "/contracts/max-hardware__contract-881033.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-881033.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551140,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-881033.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201177,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-881033.cct",
@@ -1737,8 +1737,8 @@
       "homeDestination": "/contracts/max-hardware__contract-893133-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-893133-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551145,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-893133-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201216,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-893133-CarmichaelSecurity.cct",
@@ -1759,8 +1759,8 @@
       "homeDestination": "/contracts/max-hardware__contract-913583-Sector12.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-913583-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551154,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-913583-Sector12.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201221,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-913583-Sector12.cct",
@@ -1784,8 +1784,8 @@
       "homeDestination": "/contracts/max-hardware__contract-922941.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-922941.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551190,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-922941.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201228,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-922941.cct",
@@ -1809,8 +1809,8 @@
       "homeDestination": "/contracts/max-hardware__contract-939050.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-939050.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551196,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-939050.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201233,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-939050.cct",
@@ -1831,8 +1831,8 @@
       "homeDestination": "/contracts/max-hardware__contract-941214.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-941214.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551202,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-941214.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201240,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-941214.cct",
@@ -1895,8 +1895,8 @@
       "homeDestination": "/contracts/max-hardware__contract-955191-TheBlackHand.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-955191-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551208,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-955191-TheBlackHand.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201273,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-955191-TheBlackHand.cct",
@@ -1917,8 +1917,8 @@
       "homeDestination": "/contracts/max-hardware__contract-991943.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-991943.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551214,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-991943.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201279,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-991943.cct",
@@ -1988,8 +1988,8 @@
       "homeDestination": "/contracts/max-hardware__contract-994009-CarmichaelSecurity.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-994009-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551246,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-994009-CarmichaelSecurity.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201286,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-994009-CarmichaelSecurity.cct",
@@ -2101,8 +2101,8 @@
       "homeDestination": "/contracts/max-hardware__contract-BWJSTX.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-BWJSTX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551253,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-BWJSTX.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201292,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-BWJSTX.cct",
@@ -2123,8 +2123,8 @@
       "homeDestination": "/contracts/max-hardware__contract-CH6gB6.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-CH6gB6.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551259,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-CH6gB6.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201326,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-CH6gB6.cct",
@@ -2145,8 +2145,8 @@
       "homeDestination": "/contracts/max-hardware__contract-CnAbZn.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-CnAbZn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551265,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-CnAbZn.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201332,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-CnAbZn.cct",
@@ -2167,8 +2167,8 @@
       "homeDestination": "/contracts/max-hardware__contract-DWOiEY.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-DWOiEY.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551271,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-DWOiEY.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201338,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-DWOiEY.cct",
@@ -2192,8 +2192,8 @@
       "homeDestination": "/contracts/max-hardware__contract-Hpztna.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-Hpztna.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551304,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-Hpztna.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201343,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-Hpztna.cct",
@@ -2214,8 +2214,8 @@
       "homeDestination": "/contracts/max-hardware__contract-KzRdMD.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-KzRdMD.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551311,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-KzRdMD.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201349,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-KzRdMD.cct",
@@ -2258,8 +2258,8 @@
       "homeDestination": "/contracts/max-hardware__contract-Z8agFU.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-Z8agFU.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551316,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-Z8agFU.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201386,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-Z8agFU.cct",
@@ -2291,8 +2291,8 @@
       "homeDestination": "/contracts/max-hardware__contract-gUBRh4.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-gUBRh4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551323,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-gUBRh4.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201392,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-gUBRh4.cct",
@@ -2344,8 +2344,8 @@
       "homeDestination": "/contracts/max-hardware__contract-ippq8Y.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-ippq8Y.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551364,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-ippq8Y.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201398,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-ippq8Y.cct",
@@ -2366,8 +2366,8 @@
       "homeDestination": "/contracts/max-hardware__contract-jfQxCW.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-jfQxCW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551370,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-jfQxCW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201404,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-jfQxCW.cct",
@@ -2413,8 +2413,8 @@
       "homeDestination": "/contracts/max-hardware__contract-oetZme.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-oetZme.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551375,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-oetZme.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201443,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-oetZme.cct",
@@ -2444,8 +2444,8 @@
       "homeDestination": "/contracts/max-hardware__contract-tDWFwW.cct",
       "copied": false,
       "moved": false,
-      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 12394)\n\nscp: Cannot transfer contract-tDWFwW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
-      "timestamp": 1779353551382,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-tDWFwW.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201450,
       "contract": {
         "originServer": "max-hardware",
         "originFile": "contract-tDWFwW.cct",
@@ -2462,6 +2462,28 @@
     },
     {
       "server": "max-hardware",
+      "originalPath": "contract-vl0swP.cct",
+      "originalFile": "contract-vl0swP.cct",
+      "fileType": "contract",
+      "extension": ".cct",
+      "homeDestination": "/contracts/max-hardware__contract-vl0swP.cct",
+      "copied": false,
+      "moved": false,
+      "reason": "copy-failed: RUNTIME ERROR\niteration.js@max-hardware (PID - 295207)\n\nscp: Cannot transfer contract-vl0swP.cct: scp only can be used with script, text, and .lit files\n\nStack:\niteration.js:L172@copyToTypedHomeFolder\niteration.js:L59@main",
+      "timestamp": 1779500201456,
+      "contract": {
+        "originServer": "max-hardware",
+        "originFile": "contract-vl0swP.cct",
+        "solveCommandHint": "ns.codingcontract.attempt(answer, \"contract-vl0swP.cct\", \"max-hardware\")",
+        "type": "Find Largest Prime Factor",
+        "data": 642642835,
+        "triesRemaining": 10,
+        "metadataAvailable": true,
+        "error": null
+      }
+    },
+    {
+      "server": "max-hardware",
       "originalPath": "data/max-hardware_files.json",
       "originalFile": "data/max-hardware_files.json",
       "fileType": "json",
@@ -2470,7 +2492,19 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551422
+      "timestamp": 1779500201463
+    },
+    {
+      "server": "max-hardware",
+      "originalPath": "data/process-state-max-hardware.json",
+      "originalFile": "data/process-state-max-hardware.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/max-hardware__data__process-state-max-hardware.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500201501
     },
     {
       "server": "max-hardware",
@@ -2482,7 +2516,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551428
+      "timestamp": 1779500201512
     },
     {
       "server": "max-hardware",
@@ -2494,7 +2528,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551434
+      "timestamp": 1779500201519
     },
     {
       "server": "max-hardware",
@@ -2506,7 +2540,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353551441
+      "timestamp": 1779500201525
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "server": "pserv-18",
-  "timestamp": 1779353552078,
-  "filesFound": 2,
+  "timestamp": 1779500202121,
+  "filesFound": 6,
   "contractsFound": 0,
   "files": [
     {
@@ -14,7 +14,55 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552065
+      "timestamp": 1779500202066
+    },
+    {
+      "server": "pserv-18",
+      "originalPath": "data/process-state-crush-fitness.json",
+      "originalFile": "data/process-state-crush-fitness.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-18__data__process-state-crush-fitness.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202071
+    },
+    {
+      "server": "pserv-18",
+      "originalPath": "data/process-state-defcomm.json",
+      "originalFile": "data/process-state-defcomm.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-18__data__process-state-defcomm.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202076
+    },
+    {
+      "server": "pserv-18",
+      "originalPath": "data/process-state-fulcrumassets.json",
+      "originalFile": "data/process-state-fulcrumassets.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-18__data__process-state-fulcrumassets.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202081
+    },
+    {
+      "server": "pserv-18",
+      "originalPath": "data/process-state-syscore.json",
+      "originalFile": "data/process-state-syscore.json",
+      "fileType": "json",
+      "extension": ".json",
+      "homeDestination": "/catalog/json/pserv-18__data__process-state-syscore.json",
+      "copied": true,
+      "moved": false,
+      "reason": "copied-but-move-failed",
+      "timestamp": 1779500202086
     },
     {
       "server": "pserv-18",
@@ -26,7 +74,7 @@
       "copied": true,
       "moved": false,
       "reason": "copied-but-move-failed",
-      "timestamp": 1779353552072
+      "timestamp": 1779500202115
     }
   ]
 }

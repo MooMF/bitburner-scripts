@@ -1,0 +1,23 @@
+{
+  "timestamp": 1779500203602,
+  "host": "zer0",
+  "target": "zer0",
+  "rooted": true,
+  "desiredAction": "grow",
+  "reason": "money",
+  "currentMoney": 159211527.34936064,
+  "maxMoney": 187500000,
+  "moneyPct": 84.91281458632568,
+  "moneyTarget": 159375000,
+  "moneyDeficit": 163472.65063935518,
+  "currentSecurity": 12.967624999999902,
+  "minSecurity": 8,
+  "allowedSecurity": 13,
+  "securityExcess": 0,
+  "wantedThreads": 11,
+  "running": [],
+  "launched": true,
+  "pid": 295320,
+  "runnableThreads": 4,
+  "launchReason": "started worker"
+}
