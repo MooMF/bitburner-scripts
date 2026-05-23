@@ -1,8 +1,0 @@
-{
-  "server": "netlink",
-  "files": [
-    "contract-100094.cct",
-    "contract-936412-Netburners.cct",
-    "data/netlink_files.json"
-  ]
-}

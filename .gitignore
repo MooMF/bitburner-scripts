@@ -1,19 +1,20 @@
-/catalog/
-/data/
-/found/
+# Bitburner generated/runtime discovery data
+/bitburnerFiles/catalog/
+/bitburnerFiles/data/
+/bitburnerFiles/found/
 
-# Generated catalogue/state files
-/servers.json
-/home_cat.json
-/*_cat.json
-/process-state.json
-/restart-required.txt
-/session-gains-*.json
+# Generated catalogue/state files in bitburnerFiles root
+/bitburnerFiles/servers.json
+/bitburnerFiles/home_cat.json
+/bitburnerFiles/*_cat.json
+/bitburnerFiles/process-state.json
+/bitburnerFiles/restart-required.txt
+/bitburnerFiles/session-gains-*.json
 
 # Infection/version markers
-*-infect-version.txt
-tmp-*-infect-version.txt
-*infect-version*.txt
+/bitburnerFiles/*-infect-version.txt
+/bitburnerFiles/tmp-*-infect-version.txt
+/bitburnerFiles/*infect-version*.txt
 
 # Logs / temp files
 *.log
