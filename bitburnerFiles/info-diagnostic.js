@@ -45,6 +45,8 @@ export async function main(ns) {
         security: readJson(ns, "/data/manager/security.json", null),
         payouts: readJson(ns, "/data/manager/payouts.json", null),
         share: readJson(ns, "/data/manager/share.json", null),
+        player: readJson(ns, "/data/manager/player.json", null),
+        xpFarm: readJson(ns, "/data/manager/xp-farm.json", null),
     };
 
     const serverInventory = buildServerInventory(ns, servers);
@@ -113,6 +115,7 @@ export async function main(ns) {
             "info-security.js",
             "info-payouts.js",
             "info-share.js",
+            "info-player.js",
             "info-diagnostic.js",
             "startup.js",
             "upload.js",
@@ -123,6 +126,7 @@ export async function main(ns) {
             "hack.js",
             "rent-capacity.js",
             "rent-share.js",
+            "xp-farm.js",
             "buy-servers.js",
             "clean.js",
             "logview.js",
@@ -162,6 +166,7 @@ async function refreshKnownReports(ns) {
         "info-security.js",
         "info-payouts.js",
         "info-share.js",
+        "info-player.js",
         "info-contracts.js",
     ];
 
@@ -287,6 +292,8 @@ function buildProcessInventory(ns, servers) {
                     isManager: filename === "process.js",
                     isShareWorker: filename === "rent-share.js",
                     isShareManager: filename === "rent-capacity.js",
+                    isXpFarmManager: filename === "xp-farm.js",
+                    isXpFarmWorker: filename === "weaken.js" && args.length >= 2 && String(args[1]) === "xp-farm",
                     isConsole: filename === "manager-console.js" || filename.startsWith("info-"),
                 },
             });
@@ -313,6 +320,8 @@ function summarizeProcesses(processes) {
         hackWorkers: 0,
         shareManagers: 0,
         shareWorkers: 0,
+        xpFarmManagers: 0,
+        xpFarmWorkers: 0,
         consoleScripts: 0,
 
         byFilename: {},
@@ -334,6 +343,8 @@ function summarizeProcesses(processes) {
         if (p.filename === "hack.js") summary.hackWorkers++;
         if (p.filename === "rent-capacity.js") summary.shareManagers++;
         if (p.filename === "rent-share.js") summary.shareWorkers++;
+        if (p.filename === "xp-farm.js") summary.xpFarmManagers++;
+        if (p.filename === "weaken.js" && p.args && String(p.args[1]) === "xp-farm") summary.xpFarmWorkers++;
         if (p.framework.isConsole) summary.consoleScripts++;
 
         summary.byFilename[p.filename] = (summary.byFilename[p.filename] || 0) + 1;
@@ -598,31 +609,20 @@ function buildActionSuggestions(context) {
     const security = managerReports.security && managerReports.security.summary;
     const payouts = managerReports.payouts && managerReports.payouts.summary;
     const share = managerReports.share && managerReports.share.summary;
+    const player = managerReports.player && managerReports.player.summary;
+    const xpFarm = managerReports.xpFarm && managerReports.xpFarm.summary;
     const network = summaries.network;
     const processes = summaries.processes;
 
     // Compatibility layer for old/new info-share.js schemas.
-    // Current info-share.js fields:
-    //   shareWorkers, shareThreads, idleShareCapableRam, possibleExtraThreads
-    // Older diagnostic assumptions:
-    //   workerProcesses, workerThreads, spareShareRam
     const shareManagerRunning = Boolean(share && share.managerRunning);
+    const shareWorkers = share ? firstNumber([share.shareWorkers, share.workerProcesses], 0) : 0;
+    const shareThreads = share ? firstNumber([share.shareThreads, share.workerThreads], 0) : 0;
+    const spareShareRam = share ? firstNumber([share.idleShareCapableRam, share.spareShareRam, share.shareCapableFreeRam], 0) : 0;
+    const possibleExtraThreads = share ? firstNumber([share.possibleExtraThreads], 0) : 0;
 
-    const shareWorkers = share
-        ? firstNumber([share.shareWorkers, share.workerProcesses], 0)
-        : 0;
-
-    const shareThreads = share
-        ? firstNumber([share.shareThreads, share.workerThreads], 0)
-        : 0;
-
-    const spareShareRam = share
-        ? firstNumber([share.idleShareCapableRam, share.spareShareRam, share.shareCapableFreeRam], 0)
-        : 0;
-
-    const possibleExtraThreads = share
-        ? firstNumber([share.possibleExtraThreads], 0)
-        : 0;
+    const xpFarmRunning = Boolean((xpFarm && xpFarm.workersRunning > 0) || processes.xpFarmManagers > 0 || processes.xpFarmWorkers > 0);
+    const playerHacking = player ? firstNumber([player.hacking], null) : null;
 
     addSuggestion(suggestions, {
         id: "deployment-restart-required",
@@ -633,15 +633,6 @@ function buildActionSuggestions(context) {
         recommendedCommand: "run startup.js true false",
         aiPrompt: "The diagnostic shows restart-required.txt is present. Review whether startup.js, upload.js, and assign-targets.js will correctly redeploy after server purchases/upgrades. Suggest any safe changes.",
     });
-
-    function firstNumber(values, fallback = 0) {
-        for (const value of values) {
-            const n = Number(value);
-            if (Number.isFinite(n)) return n;
-        }
-
-        return fallback;
-    }
 
     addSuggestion(suggestions, {
         id: "unrooted-servers",
@@ -738,6 +729,30 @@ function buildActionSuggestions(context) {
     });
 
     addSuggestion(suggestions, {
+        id: "xp-farm-opportunity",
+        priority: (payouts && payouts.preparedButUnhackableTargets > 0 && !xpFarmRunning) ? "medium" : "informational",
+        category: "hacking-xp",
+        condition: payouts && payouts.preparedButUnhackableTargets > 0,
+        observation: payouts
+            ? `${payouts.preparedButUnhackableTargets} prepared target(s) are not yet hackable. Current hacking level: ${playerHacking ?? "unknown"}. XP farm running: ${xpFarmRunning}.`
+            : "Payout report missing.",
+        recommendedCommand: xpFarmRunning ? "run manager-console.js xp" : "run clean.js share; run xp-farm.js nwo 1024 false 10000 60",
+        aiPrompt: "The diagnostic shows prepared-but-unhackable targets. Review whether temporary xp-farm.js use is appropriate, and whether it should replace share/rent capacity until hacking level improves.",
+    });
+
+    addSuggestion(suggestions, {
+        id: "xp-farm-active-review",
+        priority: "low",
+        category: "hacking-xp",
+        condition: xpFarmRunning,
+        observation: xpFarm
+            ? `XP farm is active against ${managerReports.xpFarm.target || "unknown"}. Workers: ${xpFarm.workersRunning || 0}; threads: ${xpFarm.totalThreads || 0}; committed RAM: ${round(xpFarm.committedRam, 2)}GB.`
+            : `XP farm processes are running, but /data/manager/xp-farm.json is missing or stale. Managers: ${processes.xpFarmManagers}; workers: ${processes.xpFarmWorkers}.`,
+        recommendedCommand: "run manager-console.js xp",
+        aiPrompt: "The diagnostic shows active XP farming. Review whether it is competing with money/share work and whether it should continue or be stopped with xp-farm.js stop.",
+    });
+
+    addSuggestion(suggestions, {
         id: "contracts-discovered",
         priority: (contracts.summary.validUniqueContracts || 0) > 0 ? "medium" : "low",
         category: "contracts",
@@ -788,6 +803,15 @@ function buildActionSuggestions(context) {
     });
 
     return suggestions;
+}
+
+function firstNumber(values, fallback = 0) {
+    for (const value of values) {
+        const n = Number(value);
+        if (Number.isFinite(n)) return n;
+    }
+
+    return fallback;
 }
 
 function addSuggestion(suggestions, item) {
@@ -923,6 +947,8 @@ function summarizeNetwork(serverInventory) {
 
 function classifyProcess(filename, args, host) {
     if (filename === "process.js") return "target-manager";
+    if (filename === "xp-farm.js") return "xp-farm-manager";
+    if (filename === "weaken.js" && args.length >= 2 && String(args[1]) === "xp-farm") return "xp-farm-worker";
     if (filename === "weaken.js") return "worker-weaken";
     if (filename === "grow.js") return "worker-grow";
     if (filename === "hack.js") return "worker-hack";
@@ -950,6 +976,7 @@ function isKnownFrameworkScript(filename) {
         "info-security.js",
         "info-payouts.js",
         "info-share.js",
+        "info-player.js",
         "info-diagnostic.js",
         "startup.js",
         "upload.js",
@@ -960,6 +987,7 @@ function isKnownFrameworkScript(filename) {
         "hack.js",
         "rent-capacity.js",
         "rent-share.js",
+        "xp-farm.js",
         "buy-servers.js",
         "clean.js",
         "logview.js",

@@ -8,6 +8,7 @@
  *   info-payouts.js    -> /data/manager/payouts.json
  *   info-runtime.js    -> /data/manager/runtime.json
  *   info-share.js      -> /data/manager/share.json
+ *   xp-farm.js         -> /data/manager/xp-farm.json when XP farm is running
  *
  * Usage:
  *   run manager-console.js
@@ -17,6 +18,7 @@
  *   run manager-console.js payouts
  *   run manager-console.js runtime
  *   run manager-console.js share
+ *   run manager-console.js xp
  *   run manager-console.js actions
  *   run manager-console.js server 4sigma
  *
@@ -36,6 +38,7 @@ export async function main(ns) {
         payouts: "/data/manager/payouts.json",
         runtime: "/data/manager/runtime.json",
         share: "/data/manager/share.json",
+        xp: "/data/manager/xp-farm.json",
     };
 
     for (const script of scripts) {
@@ -53,6 +56,7 @@ export async function main(ns) {
     const payouts = readJson(ns, reportFiles.payouts, {});
     const runtime = readJson(ns, reportFiles.runtime, {});
     const share = readJson(ns, reportFiles.share, {});
+    const xp = readJson(ns, reportFiles.xp, {});
 
     printHeader(ns, mode);
 
@@ -61,11 +65,12 @@ export async function main(ns) {
     if (mode === "payouts") return printPayouts(ns, payouts);
     if (mode === "runtime") return printRuntime(ns, runtime);
     if (mode === "share") return printShare(ns, share);
-    if (mode === "actions") return printActions(ns, money, security, payouts, runtime, share);
-    if (mode === "server") return printServer(ns, serverArg, money, security, payouts, runtime, share);
+    if (mode === "xp") return printXp(ns, xp);
+    if (mode === "actions") return printActions(ns, money, security, payouts, runtime, share, xp);
+    if (mode === "server") return printServer(ns, serverArg, money, security, payouts, runtime, share, xp);
 
-    printOverview(ns, money, security, payouts, runtime, share);
-    printActions(ns, money, security, payouts, runtime, share);
+    printOverview(ns, money, security, payouts, runtime, share, xp);
+    printActions(ns, money, security, payouts, runtime, share, xp);
 }
 
 async function refreshReports(ns, scripts, reportFiles) {
@@ -81,7 +86,8 @@ async function refreshReports(ns, scripts, reportFiles) {
     const deadline = Date.now() + 10000;
     while (Date.now() < deadline) {
         const stillRunning = running.some(pid => ns.isRunning(pid));
-        const allReportsExist = Object.values(reportFiles).every(file => ns.fileExists(file, "home"));
+        const requiredFiles = [reportFiles.money, reportFiles.security, reportFiles.payouts, reportFiles.runtime, reportFiles.share];
+        const allReportsExist = requiredFiles.every(file => ns.fileExists(file, "home"));
         if (!stillRunning && allReportsExist) return;
         await ns.sleep(200);
     }
@@ -117,12 +123,13 @@ function printHeader(ns, mode) {
     ns.print("=".repeat(100));
 }
 
-function printOverview(ns, money, security, payouts, runtime, share) {
+function printOverview(ns, money, security, payouts, runtime, share, xp) {
     const m = money.summary || {};
     const s = security.summary || {};
     const p = payouts.summary || {};
     const r = runtime.summary || {};
     const sh = share.summary || {};
+    const x = xp.summary || {};
 
     ns.print("HIGH-LEVEL SUMMARY");
     ns.print("-".repeat(100));
@@ -132,6 +139,9 @@ function printOverview(ns, money, security, payouts, runtime, share) {
     ns.print(`Payouts:       est next hack ${fmtMoney(p.nextHackMoney)} | hack-ready ${n(p.hackReadyTargets)} | best ${p.bestTarget || "none"}`);
     ns.print(`Processes:     weaken ${n(r.weakenWorkers)} | grow ${n(r.growWorkers)} | hack ${n(r.hackWorkers)} | idle managers ${n(r.idleManagers)}`);
     ns.print(`Share:         ${sh.managerRunning ? "manager running" : "manager stopped"} | ${n(sh.shareThreads)} threads | ${fmtRam(sh.shareRam)} RAM | power ${fmtSharePower(sh.sharePower)}`);
+    if (x.workersRunning || x.totalThreads) {
+        ns.print(`XP farm:       ${n(x.workersRunning)} workers | ${n(x.totalThreads)} threads | target ${xp.target || "unknown"} | hacking ${x.hacking ?? "-"}`);
+    }
     ns.print("");
 
     ns.print("TOP ISSUES");
@@ -143,6 +153,7 @@ function printOverview(ns, money, security, payouts, runtime, share) {
     if ((m.lowMoneyTargets || 0) > 0) issues.push(`${m.lowMoneyTargets} targets below money threshold`);
     if ((r.restartRequired || false)) issues.push("restart/redeploy marker present");
     if (!(sh.managerRunning || false) && (sh.possibleExtraThreads || 0) > 0) issues.push(`share/rent manager stopped; ${sh.possibleExtraThreads} possible spare threads`);
+    if ((p.preparedButUnhackableTargets || 0) > 0 && !(x.workersRunning || 0)) issues.push(`${p.preparedButUnhackableTargets} prepared targets are not yet hackable; consider xp-farm mode`);
     if (issues.length === 0) ns.print("No major issues detected.");
     else for (const issue of issues) ns.print(`- ${issue}`);
     ns.print("");
@@ -291,11 +302,55 @@ function printShare(ns, report) {
     ]);
 }
 
-function printActions(ns, money, security, payouts, runtime, share) {
+
+function printXp(ns, report) {
+    const s = report.summary || {};
+    const settings = report.settings || {};
+
+    ns.print("XP FARM SUMMARY");
+    ns.print("-".repeat(100));
+
+    if (!report || !report.summary) {
+        ns.print("No XP farm report found.");
+        ns.print("");
+        ns.print("Start XP farming:");
+        ns.print("run clean.js share");
+        ns.print("run xp-farm.js nwo 1024 false 10000 60");
+        return;
+    }
+
+    ns.print(`Target:        ${report.target || "-"}`);
+    ns.print(`Hacking:       ${s.hacking ?? "-"} | XP ${fmtNum(s.hackingExp, 2)}`);
+    ns.print(`Workers:       ${n(s.workersRunning)} running | ${n(s.workersStartedThisLoop)} started last loop`);
+    ns.print(`Threads:       ${n(s.totalThreads)} committed | ${n(s.possibleExtraThreads)} possible extra`);
+    ns.print(`RAM committed: ${fmtRam(s.committedRam)}`);
+    ns.print(`Weaken time:   ${fmtDuration(s.weakenTimeMs)}`);
+    ns.print(`Target sec:    ${fmtNum(s.targetSecurity, 2)} / ${fmtNum(s.targetMinSecurity, 2)}`);
+    ns.print("");
+    ns.print("Settings");
+    ns.print("--------");
+    ns.print(`Reserve/host:  ${fmtRam(settings.reserveGb)}`);
+    ns.print(`Max use:       ${settings.maxUsePct ?? "-"}%`);
+    ns.print(`Include home:  ${settings.includeHome ?? false}`);
+    ns.print(`Loop:          ${settings.loopMs ?? "-"}ms`);
+    ns.print("");
+    printTable(ns, report.hosts || [], [
+        ["host", "Host", 22], ["status", "Status", 14], ["threads", "Threads", 10],
+        ["ram", "RAM", 24], ["free", "Free", 12], ["committed", "Committed", 12]
+    ]);
+    ns.print("");
+    ns.print("Commands:");
+    ns.print("run xp-farm.js stop             # stop XP farm workers");
+    ns.print("run startup.js true false       # return to normal management/share mode");
+}
+
+function printActions(ns, money, security, payouts, runtime, share, xp) {
     const m = money.summary || {};
     const s = security.summary || {};
+    const p = payouts.summary || {};
     const r = runtime.summary || {};
     const sh = share.summary || {};
+    const x = xp.summary || {};
 
     ns.print("ACTIONS");
     ns.print("-".repeat(100));
@@ -304,15 +359,17 @@ function printActions(ns, money, security, payouts, runtime, share) {
     if ((r.payloadMissing || 0) > 0) ns.print("run upload.js                    # refresh payload deployment");
     if ((s.notReadyTargets || 0) > 0) ns.print("run manager-console.js security  # inspect security pressure / weaken ETA");
     if ((m.lowMoneyTargets || 0) > 0) ns.print("run manager-console.js money     # inspect grow backlog");
-    if (!(sh.managerRunning || false) && (sh.possibleExtraThreads || 0) > 0) ns.print("run rent-capacity.js             # start spare RAM sharing/rental manager");
-    if (!r.restartRequired && !(r.unmanagedTargets > 0) && !(r.payloadMissing > 0) && !(s.notReadyTargets > 0) && !(m.lowMoneyTargets > 0) && !(!(sh.managerRunning || false) && (sh.possibleExtraThreads || 0) > 0)) {
+    if (!(sh.managerRunning || false) && (sh.possibleExtraThreads || 0) > 0) ns.print("run startup.js true false        # restart normal management/share mode cleanly");
+    if ((p.preparedButUnhackableTargets || 0) > 0 && !(x.workersRunning || 0)) ns.print("run clean.js share && run xp-farm.js nwo 1024 false 10000 60  # optional hacking XP mode");
+    if (x.workersRunning > 0) ns.print("run manager-console.js xp        # inspect active hacking XP farm");
+    if (!r.restartRequired && !(r.unmanagedTargets > 0) && !(r.payloadMissing > 0) && !(s.notReadyTargets > 0) && !(m.lowMoneyTargets > 0) && !(!(sh.managerRunning || false) && (sh.possibleExtraThreads || 0) > 0) && !((p.preparedButUnhackableTargets || 0) > 0 && !(x.workersRunning || 0))) {
         ns.print("No immediate action recommended.");
     }
     ns.print("");
-    ns.print("Views: overview | money | security | payouts | runtime | share | actions | server <name>");
+    ns.print("Views: overview | money | security | payouts | runtime | share | xp | actions | server <name>");
 }
 
-function printServer(ns, name, money, security, payouts, runtime, share) {
+function printServer(ns, name, money, security, payouts, runtime, share, xp) {
     if (!name) {
         ns.print("Usage: run manager-console.js server <serverName>");
         return;
@@ -323,6 +380,7 @@ function printServer(ns, name, money, security, payouts, runtime, share) {
         ["Security", findByServer(security.targets, name)],
         ["Payout", findByServer(payouts.targets, name)],
         ["Share", findByServer(share.hosts, name, "host")],
+        ["XP Farm", findByServer(xp.hosts, name, "host")],
     ];
     ns.print(`SERVER DETAIL: ${name}`);
     ns.print("-".repeat(100));
@@ -375,6 +433,20 @@ function fmtRam(value) {
     if (value >= 1024 * 1024) return `${(value / 1024 / 1024).toFixed(2)}PB`;
     if (value >= 1024) return `${(value / 1024).toFixed(2)}TB`;
     return `${value.toFixed(2)}GB`;
+}
+
+function fmtDuration(ms) {
+    const n = Number(ms);
+    if (!Number.isFinite(n) || n <= 0) return "-";
+
+    const totalSeconds = Math.ceil(n / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    if (hours > 0) return `${hours}h ${minutes}m`;
+    if (minutes > 0) return `${minutes}m ${seconds}s`;
+    return `${seconds}s`;
 }
 
 function fmtSharePower(value) {
