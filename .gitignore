@@ -11,7 +11,7 @@
 /bitburnerFiles/restart-required.txt
 /bitburnerFiles/session-gains-*.json
 
-# Infection/version markers
+# Infection/version markers in bitburnerFiles root
 /bitburnerFiles/*-infect-version.txt
 /bitburnerFiles/tmp-*-infect-version.txt
 /bitburnerFiles/*infect-version*.txt
