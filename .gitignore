@@ -1,25 +1,43 @@
-# Bitburner generated/runtime discovery data
+# ============================================================
+# Bitburner generated/runtime data
+# ============================================================
+
 /bitburnerFiles/catalog/
 /bitburnerFiles/data/
 /bitburnerFiles/found/
 
-# Generated catalogue/state files in bitburnerFiles root
+# Generated copies of scripts gathered from remote servers
+/bitburnerFiles/scripts/
+
+# ============================================================
+# Generated state/catalogue files that may appear at root
+# ============================================================
+
 /bitburnerFiles/servers.json
 /bitburnerFiles/home_cat.json
 /bitburnerFiles/*_cat.json
-/bitburnerFiles/process-state.json
+/bitburnerFiles/process-state*.json
 /bitburnerFiles/restart-required.txt
 /bitburnerFiles/session-gains-*.json
+/bitburnerFiles/purchased-servers.json
 
-# Infection/version markers in bitburnerFiles root
+# ============================================================
+# Infection/version markers
+# ============================================================
+
 /bitburnerFiles/*-infect-version.txt
 /bitburnerFiles/tmp-*-infect-version.txt
 /bitburnerFiles/*infect-version*.txt
 
-# Logs / temp files
+# ============================================================
+# Logs / temporary / OS files
+# ============================================================
+
 *.log
 *.tmp
 tmp-*
+
 .cache/
 .DS_Store
 Thumbs.db
+desktop.ini
