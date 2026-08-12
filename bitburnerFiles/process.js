@@ -1,301 +1,425 @@
-/**
- * process.js
- *
- * Persistent per-target controller.
- *
- * Can run locally:
- *   run process.js target
- *
- * Or remotely:
- *   run process.js target
- *
- * Args:
- *   0 targetServer       default: current host
- *   1 securityBuffer     default: 5
- *   2 moneyTargetRatio   default: 0.85
- *   3 hackTargetRatio    default: 0.10
- *   4 sleepMs            default: 5000
- *
- * Behaviour:
- *   - If security is above min + buffer: weaken
- *   - Else if money is below threshold: grow
- *   - Else: hack
- *
- * This version aggressively kills stale workers for the same target on the same host
- * whenever the desired action changes.
- *
- * @param {NS} ns
- **/
+/** @param {NS} ns **/
 export async function main(ns) {
     ns.disableLog("ALL");
 
     const host = ns.getHostname();
-    const target = String(ns.args[0] || host);
+    const target = String(ns.args[0] ?? host);
 
-    const securityBuffer = num(ns.args[1], 5);
-    const moneyTargetRatio = clamp(num(ns.args[2], 0.85), 0.01, 1);
-    const hackTargetRatio = clamp(num(ns.args[3], 0.10), 0.001, 0.95);
-    const sleepMs = Math.max(1000, num(ns.args[4], 5000));
+    const securityBuffer = Number(ns.args[1] ?? 5);
+    const moneyTargetRatio = Number(ns.args[2] ?? 0.85);
+    const hackTargetRatio = Number(ns.args[3] ?? 0.10);
+    const sleepMs = Number(ns.args[4] ?? 5000);
 
-    const scripts = {
+    /*
+        Optional operational controls:
+        arg5 reserveGb: RAM to leave free on this worker host.
+        arg6 maxUsePct: upper use ceiling for this host, 1.0 = 100%.
+    */
+    const reserveGb = Number(ns.args[5] ?? 8);
+    const maxUsePct = Number(ns.args[6] ?? 0.98);
+
+    const processStateFile = `/data/process-${safeName(target)}.json`;
+    const processErrorFile = `/data/process-error-${safeName(target)}.txt`;
+
+    const workers = {
         weaken: "weaken.js",
         grow: "grow.js",
-        hack: "hack.js",
+        hack: "hack.js"
     };
 
-    if (!ns.serverExists(target)) {
-        ns.print(`ERROR: target does not exist: ${target}`);
-        return;
-    }
+    try {
+        if (host === "home") return 0;
 
-    if (target === "home") {
-        ns.print("ERROR: refusing to target home.");
-        return;
-    }
-
-    for (const script of Object.values(scripts)) {
-        if (!ns.fileExists(script, host)) {
-            ns.print(`ERROR: missing ${script} on ${host}`);
-            return;
-        }
-    }
-
-    while (true) {
-        try {
-            await tick(ns, host, target, scripts, {
-                securityBuffer,
-                moneyTargetRatio,
-                hackTargetRatio,
-            });
-        } catch (e) {
-            ns.print(`ERROR: ${String(e)}`);
+        if (!ns.serverExists(target)) {
+            await writeFatal(ns, processErrorFile, host, target, "target-does-not-exist");
+            return -1;
         }
 
-        await ns.sleep(sleepMs);
+        if (!ns.hasRootAccess(target)) {
+            await writeFatal(ns, processErrorFile, host, target, "no-root-access");
+            return -2;
+        }
+
+        if (ns.getServerMaxRam(host) <= 0) {
+            await writeFatal(ns, processErrorFile, host, target, "host-has-no-ram");
+            return -3;
+        }
+
+        while (true) {
+            try {
+                if (safeGetMaxMoney(ns, target) > 0) {
+                    await manageWorkers(
+                        ns,
+                        host,
+                        target,
+                        workers,
+                        securityBuffer,
+                        moneyTargetRatio,
+                        hackTargetRatio,
+                        reserveGb,
+                        maxUsePct,
+                        processStateFile
+                    );
+                } else {
+                    await writeIdleState(ns, host, target, processStateFile, "no-money");
+                }
+            } catch (cycleError) {
+                await writeFatal(
+                    ns,
+                    processErrorFile,
+                    host,
+                    target,
+                    `cycle-error: ${String(cycleError)}`
+                );
+
+                await writeIdleState(
+                    ns,
+                    host,
+                    target,
+                    processStateFile,
+                    "cycle-error"
+                );
+            }
+
+            await ns.sleep(sleepMs);
+        }
+    } catch (fatal) {
+        await writeFatal(ns, processErrorFile, host, target, `fatal: ${String(fatal)}`);
+        return -99;
     }
 }
 
-async function tick(ns, host, target, scripts, config) {
-    const rooted = ns.hasRootAccess(target);
-    const maxMoney = ns.getServerMaxMoney(target);
-    const currentMoney = ns.getServerMoneyAvailable(target);
+async function manageWorkers(
+    ns,
+    host,
+    target,
+    workers,
+    securityBuffer,
+    moneyTargetRatio,
+    hackTargetRatio,
+    reserveGb,
+    maxUsePct,
+    processStateFile
+) {
+    const decision = chooseBestAction(
+        ns,
+        target,
+        securityBuffer,
+        moneyTargetRatio,
+        hackTargetRatio
+    );
+
+    stopUnwantedWorkers(ns, host, target, workers, decision.action);
+
+    const script = workers[decision.action];
+
+    if (!script) {
+        await writeIdleState(ns, host, target, processStateFile, "no-script");
+        return;
+    }
+
+    if (!ns.fileExists(script, host)) {
+        await writeIdleState(ns, host, target, processStateFile, `missing-${script}`);
+        return;
+    }
+
+    if (!isWorkerRunningForTarget(ns, host, script, target)) {
+        const threads = getRunnableThreads(ns, host, script, decision.wantedThreads, reserveGb, maxUsePct);
+
+        decision.runnableThreads = threads;
+
+        if (threads > 0) {
+            const pid = ns.exec(script, host, threads, target);
+
+            decision.startedPid = pid;
+            decision.startedThreads = pid > 0 ? threads : 0;
+
+            if (pid === 0) {
+                decision.reason = `${decision.reason}; exec-failed`;
+            }
+        } else {
+            decision.reason = `${decision.reason}; no-runnable-threads`;
+        }
+    }
+
+    await writeProcessState(ns, host, target, decision, workers, processStateFile, reserveGb, maxUsePct);
+}
+
+function chooseBestAction(ns, target, securityBuffer, moneyTargetRatio, hackTargetRatio) {
     const minSecurity = ns.getServerMinSecurityLevel(target);
     const currentSecurity = ns.getServerSecurityLevel(target);
 
-    const allowedSecurity = minSecurity + config.securityBuffer;
-    const securityExcess = Math.max(0, currentSecurity - allowedSecurity);
-    const moneyTarget = maxMoney * config.moneyTargetRatio;
-    const moneyDeficit = Math.max(0, moneyTarget - currentMoney);
+    const maxMoney = ns.getServerMaxMoney(target);
+    const currentMoney = ns.getServerMoneyAvailable(target);
 
-    let desiredAction = "idle";
-    let desiredScript = null;
-    let wantedThreads = 0;
-    let reason = "";
+    const securityLimit = minSecurity + securityBuffer;
+    const moneyTarget = maxMoney * moneyTargetRatio;
 
-    if (!rooted) {
-        reason = "noRoot";
-    } else if (maxMoney <= 0) {
-        reason = "noMoney";
-    } else if (securityExcess > 0.0001) {
-        desiredAction = "weaken";
-        desiredScript = scripts.weaken;
-        wantedThreads = calcWeakenThreads(ns, securityExcess);
-        reason = "security";
-    } else if (currentMoney < moneyTarget) {
-        desiredAction = "grow";
-        desiredScript = scripts.grow;
-        wantedThreads = calcGrowThreads(ns, target, currentMoney, moneyTarget);
-        reason = "money";
-    } else {
-        desiredAction = "hack";
-        desiredScript = scripts.hack;
-        wantedThreads = calcHackThreads(ns, target, config.hackTargetRatio);
-        reason = "payout";
+    if (currentSecurity > securityLimit) {
+        const securityToRemove = currentSecurity - minSecurity;
+        const weakenPerThread = ns.weakenAnalyze(1);
+        const wantedThreads = Math.ceil(securityToRemove / weakenPerThread);
+
+        return {
+            action: "weaken",
+            wantedThreads: Math.max(1, wantedThreads),
+            reason: "security-high",
+            metrics: {
+                minSecurity,
+                currentSecurity,
+                securityLimit,
+                securityAboveMin: currentSecurity - minSecurity,
+                maxMoney,
+                currentMoney,
+                moneyTarget,
+                moneyPct: pct(currentMoney, maxMoney)
+            }
+        };
     }
 
-    const state = {
-        timestamp: Date.now(),
-        host,
-        target,
-        rooted,
-        desiredAction,
-        reason,
-        currentMoney,
-        maxMoney,
-        moneyPct: maxMoney > 0 ? currentMoney / maxMoney * 100 : 0,
-        moneyTarget,
-        moneyDeficit,
-        currentSecurity,
-        minSecurity,
-        allowedSecurity,
-        securityExcess,
-        wantedThreads,
-        running: getTargetWorkers(ns, host, target),
+    if (currentMoney < moneyTarget) {
+        const safeMoney = Math.max(currentMoney, 1);
+        const growthFactor = Math.max(1, maxMoney / safeMoney);
+        const wantedThreads = Math.ceil(ns.growthAnalyze(target, growthFactor));
+
+        return {
+            action: "grow",
+            wantedThreads: Math.max(1, wantedThreads),
+            reason: "money-low",
+            metrics: {
+                minSecurity,
+                currentSecurity,
+                securityLimit,
+                securityAboveMin: currentSecurity - minSecurity,
+                maxMoney,
+                currentMoney,
+                moneyTarget,
+                moneyPct: pct(currentMoney, maxMoney),
+                growthFactor
+            }
+        };
+    }
+
+    const hackPerThread = ns.hackAnalyze(target);
+
+    if (hackPerThread <= 0) {
+        return {
+            action: "weaken",
+            wantedThreads: 1,
+            reason: "hack-analysis-zero",
+            metrics: {
+                minSecurity,
+                currentSecurity,
+                securityLimit,
+                securityAboveMin: currentSecurity - minSecurity,
+                maxMoney,
+                currentMoney,
+                moneyTarget,
+                moneyPct: pct(currentMoney, maxMoney),
+                hackPerThread
+            }
+        };
+    }
+
+    const wantedThreads = Math.floor(hackTargetRatio / hackPerThread);
+
+    return {
+        action: "hack",
+        wantedThreads: Math.max(1, wantedThreads),
+        reason: "ready-to-hack",
+        metrics: {
+            minSecurity,
+            currentSecurity,
+            securityLimit,
+            securityAboveMin: currentSecurity - minSecurity,
+            maxMoney,
+            currentMoney,
+            moneyTarget,
+            moneyPct: pct(currentMoney, maxMoney),
+            hackPerThread,
+            hackTargetRatio
+        }
     };
-
-    if (!desiredScript || wantedThreads <= 0) {
-        killTargetWorkers(ns, host, target);
-        writeState(ns, host, target, { ...state, launched: false, runnableThreads: 0 });
-        return;
-    }
-
-    const runningDesired = getTargetWorkers(ns, host, target)
-        .filter(p => p.filename === desiredScript);
-
-    const runningWrong = getTargetWorkers(ns, host, target)
-        .filter(p => p.filename !== desiredScript);
-
-    for (const proc of runningWrong) {
-        ns.kill(proc.pid);
-    }
-
-    if (runningDesired.length > 0) {
-        writeState(ns, host, target, {
-            ...state,
-            launched: false,
-            launchReason: "desired worker already running",
-            running: getTargetWorkers(ns, host, target),
-        });
-        return;
-    }
-
-    const runnableThreads = calcRunnableThreads(ns, host, desiredScript, wantedThreads);
-
-    if (runnableThreads <= 0) {
-        writeState(ns, host, target, {
-            ...state,
-            launched: false,
-            runnableThreads,
-            launchReason: "insufficient RAM",
-        });
-        return;
-    }
-
-    const pid = ns.exec(desiredScript, host, runnableThreads, target);
-
-    writeState(ns, host, target, {
-        ...state,
-        launched: pid > 0,
-        pid,
-        runnableThreads,
-        launchReason: pid > 0 ? "started worker" : "exec failed",
-    });
 }
 
-function getTargetWorkers(ns, host, target) {
-    const workerNames = new Set(["weaken.js", "grow.js", "hack.js"]);
+function stopUnwantedWorkers(ns, host, target, workers, desiredAction) {
+    for (const [action, script] of Object.entries(workers)) {
+        if (action === desiredAction) continue;
 
-    return ns.ps(host)
-        .filter(p => workerNames.has(p.filename))
-        .filter(p => String(p.args[0] || host) === target)
-        .map(p => ({
-            pid: p.pid,
-            filename: p.filename,
-            threads: p.threads,
-            args: p.args.map(String),
-        }));
-}
-
-function killTargetWorkers(ns, host, target) {
-    for (const proc of getTargetWorkers(ns, host, target)) {
-        ns.kill(proc.pid);
+        for (const proc of ns.ps(host)) {
+            if (
+                proc.filename === script &&
+                proc.args.length > 0 &&
+                String(proc.args[0]) === String(target)
+            ) {
+                ns.kill(proc.pid);
+            }
+        }
     }
 }
 
-function calcWeakenThreads(ns, securityExcess) {
-    const perThread = ns.weakenAnalyze(1);
-    if (!Number.isFinite(perThread) || perThread <= 0) return 1;
-    return Math.max(1, Math.ceil(securityExcess / perThread));
-}
-
-function calcGrowThreads(ns, target, currentMoney, targetMoney) {
-    if (targetMoney <= 0) return 0;
-
-    const safeCurrent = Math.max(1, currentMoney);
-    const growthFactor = Math.max(1.01, targetMoney / safeCurrent);
-
-    let threads = 1;
-
-    try {
-        threads = Math.ceil(ns.growthAnalyze(target, growthFactor));
-    } catch {
-        threads = 1;
-    }
-
-    if (!Number.isFinite(threads) || threads <= 0) threads = 1;
-
-    return Math.max(1, threads);
-}
-
-function calcHackThreads(ns, target, hackTargetRatio) {
-    const perThread = ns.hackAnalyze(target);
-
-    if (!Number.isFinite(perThread) || perThread <= 0) {
-        return 0;
-    }
-
-    return Math.max(1, Math.ceil(hackTargetRatio / perThread));
-}
-
-function calcRunnableThreads(ns, host, script, wantedThreads) {
+function getRunnableThreads(ns, host, script, wantedThreads, reserveGb, maxUsePct) {
     const scriptRam = ns.getScriptRam(script, host);
-    if (!Number.isFinite(scriptRam) || scriptRam <= 0) return 0;
+    if (scriptRam <= 0) return 0;
 
     const maxRam = ns.getServerMaxRam(host);
     const usedRam = ns.getServerUsedRam(host);
     const freeRam = Math.max(0, maxRam - usedRam);
 
-    const maxThreads = Math.floor(freeRam / scriptRam);
+    const reserveLimitedRam = Math.max(0, freeRam - reserveGb);
+    const pctLimitedRam = Math.max(0, (maxRam * maxUsePct) - usedRam);
+    const usableRam = Math.min(reserveLimitedRam, pctLimitedRam);
+
+    const maxThreads = Math.floor(usableRam / scriptRam);
 
     return Math.max(0, Math.min(wantedThreads, maxThreads));
 }
 
-function writeState(ns, host, target, state) {
-    const safeTarget = target.replace(/[^a-zA-Z0-9_.-]/g, "_");
-    const file = `/data/process-state-${safeTarget}.json`;
+function isWorkerRunningForTarget(ns, host, script, target) {
+    return ns.ps(host).some(p =>
+        p.filename === script &&
+        p.args.length > 0 &&
+        String(p.args[0]) === String(target)
+    );
+}
 
+async function writeProcessState(ns, host, target, decision, workers, processStateFile, reserveGb, maxUsePct) {
+    const script = workers[decision.action];
+
+    const running = ns.ps(host)
+        .filter(p =>
+            p.filename === script &&
+            p.args.length > 0 &&
+            String(p.args[0]) === String(target)
+        )
+        .map(p => ({
+            pid: p.pid,
+            filename: p.filename,
+            threads: p.threads,
+            args: p.args,
+            ram: ns.getScriptRam(p.filename, host) * p.threads
+        }));
+
+    const totalThreads = running.reduce((sum, p) => sum + p.threads, 0);
+    const totalRam = running.reduce((sum, p) => sum + p.ram, 0);
+
+    const hostMaxRam = ns.getServerMaxRam(host);
+    const hostUsedRam = ns.getServerUsedRam(host);
+
+    const state = {
+        timestamp: Date.now(),
+        host,
+        target,
+        remote: host !== target,
+
+        cycle: decision.action,
+        reason: decision.reason,
+
+        wantedThreads: decision.wantedThreads,
+        runnableThreads: decision.runnableThreads ?? null,
+        runningThreads: totalThreads,
+        runningRam: totalRam,
+
+        startedPid: decision.startedPid ?? null,
+        startedThreads: decision.startedThreads ?? null,
+
+        script,
+        running,
+
+        hostRam: {
+            max: hostMaxRam,
+            used: hostUsedRam,
+            free: Math.max(0, hostMaxRam - hostUsedRam),
+            usedPct: pct(hostUsedRam, hostMaxRam),
+            reserveGb,
+            maxUsePct
+        },
+
+        metrics: decision.metrics
+    };
+
+    await ns.write(processStateFile, JSON.stringify(state, null, 2), "w");
+}
+
+async function writeIdleState(ns, host, target, processStateFile, reason) {
+    const hostMaxRam = ns.getServerMaxRam(host);
+    const hostUsedRam = ns.getServerUsedRam(host);
+
+    const state = {
+        timestamp: Date.now(),
+        host,
+        target,
+        remote: host !== target,
+
+        cycle: "idle",
+        reason,
+
+        wantedThreads: 0,
+        runningThreads: 0,
+        runningRam: 0,
+
+        script: null,
+        running: [],
+
+        hostRam: {
+            max: hostMaxRam,
+            used: hostUsedRam,
+            free: Math.max(0, hostMaxRam - hostUsedRam),
+            usedPct: pct(hostUsedRam, hostMaxRam)
+        },
+
+        metrics: safeMetrics(ns, target)
+    };
+
+    await ns.write(processStateFile, JSON.stringify(state, null, 2), "w");
+}
+
+async function writeFatal(ns, file, host, target, message) {
+    const text = [
+        `timestamp=${Date.now()}`,
+        `host=${host}`,
+        `target=${target}`,
+        `error=${message}`
+    ].join("\n");
+
+    await ns.write(file, text, "w");
+}
+
+function safeMetrics(ns, target) {
     try {
-        ns.write(file, JSON.stringify(sanitizeForJson(state), null, 2), "w");
+        const maxMoney = ns.getServerMaxMoney(target);
+        const currentMoney = ns.getServerMoneyAvailable(target);
+        const minSecurity = ns.getServerMinSecurityLevel(target);
+        const currentSecurity = ns.getServerSecurityLevel(target);
+
+        return {
+            maxMoney,
+            currentMoney,
+            moneyPct: pct(currentMoney, maxMoney),
+            minSecurity,
+            currentSecurity,
+            securityAboveMin: currentSecurity - minSecurity
+        };
+    } catch (err) {
+        return {
+            error: String(err)
+        };
+    }
+}
+
+function safeGetMaxMoney(ns, target) {
+    try {
+        return ns.getServerMaxMoney(target);
     } catch {
-        // State output is useful but not required.
-    }
-
-    if (host === target) {
-        try {
-            ns.write("process-state.json", JSON.stringify(sanitizeForJson(state), null, 2), "w");
-        } catch {
-            // Legacy local state output is useful but not required.
-        }
+        return 0;
     }
 }
 
-function sanitizeForJson(value) {
-    if (typeof value === "bigint") return value.toString();
-    if (value === undefined) return null;
-    if (value === null) return null;
-
-    if (typeof value !== "object") {
-        if (typeof value === "number" && !Number.isFinite(value)) return null;
-        return value;
-    }
-
-    if (Array.isArray(value)) {
-        return value.map(sanitizeForJson);
-    }
-
-    const output = {};
-    for (const key of Object.keys(value)) {
-        output[key] = sanitizeForJson(value[key]);
-    }
-
-    return output;
+function pct(value, max) {
+    if (!Number.isFinite(value) || !Number.isFinite(max) || max <= 0) return 0;
+    return (value / max) * 100;
 }
 
-function num(value, fallback) {
-    const n = Number(value);
-    return Number.isFinite(n) ? n : fallback;
-}
-
-function clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
+function safeName(value) {
+    return String(value).replace(/[^a-zA-Z0-9._-]/g, "_");
 }
