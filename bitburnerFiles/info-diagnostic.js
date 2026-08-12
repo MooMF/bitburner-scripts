@@ -1,973 +1,101 @@
-/**
- * info-diagnostic.js
- *
- * Consolidated AI diagnostic handoff for the Bitburner manager-console suite.
- *
- * Purpose:
- *   Build one JSON package containing:
- *   - existing manager reports;
- *   - full server inventory;
- *   - all running processes, including unrelated/unknown scripts;
- *   - purchased server state;
- *   - discovered coding contracts;
- *   - stock-market placeholder/snapshot;
- *   - future subsystem placeholders;
- *   - AI-ready prompts and action suggestions based on current runtime state.
- *
- * Usage:
- *   run info-diagnostic.js
- *   run info-diagnostic.js silent
- *
- * Output:
- *   /data/manager/ai-diagnostic.json
- *
- * @param {NS} ns
- **/
+/** @param {NS} ns **/
 export async function main(ns) {
     ns.disableLog("ALL");
 
-    const silent = String(ns.args[0] || "").toLowerCase() === "silent";
-    const outputFile = "/data/manager/ai-diagnostic.json";
+    const reportFile = String(ns.args[0] ?? "/data/manager/ai-diagnostic.json");
+    const registryFile = "/data/purchased-servers.json";
+    const securityBuffer = Number(ns.args[1] ?? 5);
+    const moneyTargetRatio = Number(ns.args[2] ?? 0.85);
+    const hackTargetRatio = Number(ns.args[3] ?? 0.10);
 
-    if (!silent) {
-        ns.clearLog();
-        openConsole(ns, 1180, 720);
-    }
+    const now = Date.now();
+    const servers = getAllServers(ns, "home").sort();
+    const owned = getOwnedServerDetails(ns, registryFile);
+    const processes = allProcesses(ns, servers);
+    const inventory = servers.map(server => inventoryRow(ns, server, owned.names));
 
-    await refreshKnownReports(ns);
-
-    const timestamp = Date.now();
-    const servers = scanAll(ns);
-
-    const managerReports = {
-        runtime: readJson(ns, "/data/manager/runtime.json", null),
-        money: readJson(ns, "/data/manager/money.json", null),
-        security: readJson(ns, "/data/manager/security.json", null),
-        payouts: readJson(ns, "/data/manager/payouts.json", null),
-        share: readJson(ns, "/data/manager/share.json", null),
-        player: readJson(ns, "/data/manager/player.json", null),
-        xpFarm: readJson(ns, "/data/manager/xp-farm.json", null),
-    };
-
-    const serverInventory = buildServerInventory(ns, servers);
-    const processInventory = buildProcessInventory(ns, servers);
-    const processSummary = summarizeProcesses(processInventory);
-    const purchasedServerState = buildPurchasedServerState(ns);
-    const contracts = buildContractSnapshot(ns);
-    const stockMarket = buildStockMarketSnapshot(ns);
-    const futureSystems = buildFutureSystemsSnapshot(ns);
-
-    const summaries = {
-        network: summarizeNetwork(serverInventory),
-        processes: processSummary,
-        purchasedServers: purchasedServerState.summary,
-        contracts: contracts.summary,
-        stockMarket: stockMarket.summary,
-        futureSystems: futureSystems.summary,
-    };
+    const runtime = buildRuntime(ns, inventory, processes);
+    const money = buildMoney(ns, inventory, processes, moneyTargetRatio);
+    const security = buildSecurity(ns, inventory, processes, securityBuffer);
+    const payouts = buildPayouts(ns, inventory, processes, securityBuffer, moneyTargetRatio, hackTargetRatio);
+    const share = buildShare(ns, inventory, processes, owned.names);
+    const xpFarm = buildXpFarm(ns, processes);
+    const player = buildPlayer(ns);
+    const contracts = buildContracts(ns, servers);
+    const purchasedServers = buildPurchasedSummary(ns, owned, registryFile);
+    const network = buildNetworkSummary(inventory);
+    const processSummary = buildProcessSummary(processes);
 
     const actionSuggestions = buildActionSuggestions({
-        ns,
-        managerReports,
-        summaries,
-        serverInventory,
-        processInventory,
-        purchasedServerState,
+        runtime,
+        money,
+        security,
+        payouts,
         contracts,
-        stockMarket,
-        futureSystems,
-    });
-
-    const aiPrompts = buildAiPrompts({
-        actionSuggestions,
-        summaries,
-        managerReports,
-        contracts,
-        stockMarket,
-        processSummary,
+        purchasedServers,
+        player
     });
 
     const diagnostic = {
         context: "Bitburner manager-console AI diagnostic package",
-        schemaVersion: 2,
-        generatedAt: timestamp,
-        generatedAtText: new Date(timestamp).toISOString(),
-
+        schemaVersion: 3,
+        generatedAt: now,
+        generatedAtText: new Date(now).toISOString(),
         operatingAssumptions: {
             bitburnerApi: "v3.x",
-            primaryEntryPoint: "check-infection.js",
-            managerEntryPoint: "manager-console.js",
             reportDirectory: "/data/manager/",
-            note: "Upload this JSON into a prompt when asking for tuning, bug-fixing, refactoring, or new process design.",
+            purchasedServerRegistry: registryFile,
+            note: "Bought/cloud servers are detected by API first, registry second. No naming prefix is assumed."
         },
-
         howToUseThisPackage: {
             uploadInstruction: "Upload /data/manager/ai-diagnostic.json into ChatGPT and ask it to review current system state.",
-            recommendedPrompt: "Review this Bitburner diagnostic JSON. Identify bottlenecks, broken assumptions, missing scripts, and the next safest code changes. Prioritise fixes that improve automation reliability.",
-            copyPasteCommand: "run info-diagnostic.js",
+            recommendedPrompt: "Review this Bitburner diagnostic JSON. Identify bottlenecks, broken assumptions, missing scripts, and the next safest code changes.",
+            copyPasteCommand: "run info-diagnostic.js"
         },
-
-        filesExpectedOnHome: [
-            "check-infection.js",
-            "manager-console.js",
-            "info-runtime.js",
-            "info-money.js",
-            "info-security.js",
-            "info-payouts.js",
-            "info-share.js",
-            "info-player.js",
-            "info-diagnostic.js",
-            "startup.js",
-            "upload.js",
-            "assign-targets.js",
-            "process.js",
-            "weaken.js",
-            "grow.js",
-            "hack.js",
-            "rent-capacity.js",
-            "rent-share.js",
-            "xp-farm.js",
-            "buy-servers.js",
-            "clean.js",
-            "logview.js",
-        ],
-
-        existingManagerReports: managerReports,
-
-        summaries,
-
+        filesExpectedOnHome: expectedHomeFiles(),
+        existingManagerReports: {
+            runtime,
+            money,
+            security,
+            payouts,
+            share,
+            player,
+            xpFarm
+        },
+        summaries: {
+            network,
+            processes: processSummary,
+            purchasedServers,
+            contracts,
+            stockMarket: buildStockMarket(ns),
+            futureSystems: {
+                contracts: contracts.solverImplemented ? "implemented" : "placeholder-present",
+                stockMarket: "api-detected-or-stubbed",
+                darkWeb: "placeholder-empty",
+                factions: "placeholder-empty",
+                augmentations: "placeholder-empty",
+                corporations: "placeholder-empty",
+                gangs: "placeholder-empty",
+                sleeves: "placeholder-empty",
+                bladeburner: "placeholder-empty",
+                hacknet: "placeholder-empty"
+            }
+        },
         actionSuggestions,
-        aiPrompts,
-
-        serverInventory,
-        processInventory,
-        purchasedServerState,
-        contracts,
-        stockMarket,
-        futureSystems,
+        aiPrompts: buildAiPrompts({ network, processSummary, contracts, actionSuggestions }),
+        serverInventory: inventory
     };
 
-    const safeJson = JSON.stringify(sanitizeForJson(diagnostic), null, 2);
-    ns.write(outputFile, safeJson, "w");
+    await ns.write(reportFile, JSON.stringify(diagnostic, null, 2), "w");
 
-    if (!silent) {
-        printSummary(ns, diagnostic, outputFile, safeJson.length);
-    }
+    ns.tprint(`info-diagnostic.js: wrote ${reportFile}`);
+    ns.tprint(`Servers: ${network.total}; rooted: ${network.rooted}; RAM used: ${network.ramUsedPct.toFixed(1)}%; bought/cloud servers: ${purchasedServers.count}`);
+    ns.tprint(`High/medium action suggestions: ${actionSuggestions.filter(a => a.priority === "high" || a.priority === "medium").length}`);
+
+    return 0;
 }
 
-/**
- * Refresh child reports before building the AI package.
- * Missing child scripts are ignored, so this script remains useful even during partial installs.
- */
-async function refreshKnownReports(ns) {
-    const childScripts = [
-        "info-runtime.js",
-        "info-money.js",
-        "info-security.js",
-        "info-payouts.js",
-        "info-share.js",
-        "info-player.js",
-        "info-contracts.js",
-    ];
-
-    const stamp = Date.now();
-    const pids = [];
-
-    for (const script of childScripts) {
-        if (!ns.fileExists(script, "home")) continue;
-
-        const pid = ns.run(script, 1, "silent", stamp);
-        if (pid) pids.push(pid);
-    }
-
-    const deadline = Date.now() + 10000;
-
-    while (Date.now() < deadline) {
-        const stillRunning = pids.some(pid => ns.isRunning(pid));
-        if (!stillRunning) return;
-        await ns.sleep(200);
-    }
-}
-
-function buildServerInventory(ns, servers) {
-    const purchasedServers = safeCall(() => ns.getPurchasedServers(), []);
-
-    const rows = [];
-
-    for (const server of servers) {
-        const rooted = safeCall(() => ns.hasRootAccess(server), false);
-        const requiredHackLevel = safeCall(() => ns.getServerRequiredHackingLevel(server), null);
-        const portsRequired = safeCall(() => ns.getServerNumPortsRequired(server), null);
-
-        const maxRam = safeCall(() => ns.getServerMaxRam(server), 0);
-        const usedRam = safeCall(() => ns.getServerUsedRam(server), 0);
-        const freeRam = Math.max(0, maxRam - usedRam);
-
-        const maxMoney = safeCall(() => ns.getServerMaxMoney(server), 0);
-        const money = safeCall(() => ns.getServerMoneyAvailable(server), 0);
-
-        const minSecurity = safeCall(() => ns.getServerMinSecurityLevel(server), 0);
-        const security = safeCall(() => ns.getServerSecurityLevel(server), 0);
-
-        const files = safeCall(() => ns.ls(server), []);
-        const contracts = files.filter(f => String(f).endsWith(".cct"));
-
-        rows.push({
-            server,
-            rooted,
-            purchased: server !== "home" && purchasedServers.includes(server),
-            hasMoney: maxMoney > 0,
-
-            hacking: {
-                requiredLevel: requiredHackLevel,
-                portsRequired,
-            },
-
-            ram: {
-                max: maxRam,
-                used: usedRam,
-                free: freeRam,
-                usedPct: maxRam > 0 ? usedRam / maxRam * 100 : 0,
-            },
-
-            money: {
-                current: money,
-                max: maxMoney,
-                pct: maxMoney > 0 ? money / maxMoney * 100 : 0,
-            },
-
-            security: {
-                current: security,
-                min: minSecurity,
-                aboveMin: Math.max(0, security - minSecurity),
-            },
-
-            timings: {
-                hackMs: maxMoney > 0 ? safeCall(() => ns.getHackTime(server), null) : null,
-                growMs: maxMoney > 0 ? safeCall(() => ns.getGrowTime(server), null) : null,
-                weakenMs: maxMoney > 0 ? safeCall(() => ns.getWeakenTime(server), null) : null,
-            },
-
-            files: {
-                count: files.length,
-                contracts,
-                hasProcess: files.includes("process.js"),
-                hasWeaken: files.includes("weaken.js"),
-                hasGrow: files.includes("grow.js"),
-                hasHack: files.includes("hack.js"),
-                hasRentShare: files.includes("rent-share.js"),
-                hasRentCapacity: files.includes("rent-capacity.js"),
-            },
-        });
-    }
-
-    return rows.sort((a, b) => a.server.localeCompare(b.server));
-}
-
-function buildProcessInventory(ns, servers) {
-    const rows = [];
-
-    for (const host of servers) {
-        const processes = safeCall(() => ns.ps(host), []);
-
-        for (const proc of processes) {
-            const filename = String(proc.filename || "");
-            const args = Array.isArray(proc.args) ? proc.args.map(a => String(a)) : [];
-            const targetGuess = args.length > 0 ? args[0] : host;
-
-            rows.push({
-                host,
-                pid: proc.pid,
-                filename,
-                args,
-                threads: proc.threads || 0,
-
-                classification: classifyProcess(filename, args, host),
-
-                targetGuess,
-
-                framework: {
-                    isKnownFrameworkScript: isKnownFrameworkScript(filename),
-                    isWorker: ["weaken.js", "grow.js", "hack.js"].includes(filename),
-                    isManager: filename === "process.js",
-                    isShareWorker: filename === "rent-share.js",
-                    isShareManager: filename === "rent-capacity.js",
-                    isXpFarmManager: filename === "xp-farm.js",
-                    isXpFarmWorker: filename === "weaken.js" && args.length >= 2 && String(args[1]) === "xp-farm",
-                    isConsole: filename === "manager-console.js" || filename.startsWith("info-"),
-                },
-            });
-        }
-    }
-
-    return rows.sort((a, b) =>
-        a.host.localeCompare(b.host) ||
-        String(a.filename).localeCompare(String(b.filename)) ||
-        Number(a.pid || 0) - Number(b.pid || 0)
-    );
-}
-
-function summarizeProcesses(processes) {
-    const summary = {
-        total: processes.length,
-
-        knownFramework: 0,
-        unknownOrExternal: 0,
-
-        processManagers: 0,
-        weakenWorkers: 0,
-        growWorkers: 0,
-        hackWorkers: 0,
-        shareManagers: 0,
-        shareWorkers: 0,
-        xpFarmManagers: 0,
-        xpFarmWorkers: 0,
-        consoleScripts: 0,
-
-        byFilename: {},
-        byHost: {},
-        unknownFiles: {},
-    };
-
-    for (const p of processes) {
-        if (p.framework.isKnownFrameworkScript) {
-            summary.knownFramework++;
-        } else {
-            summary.unknownOrExternal++;
-            summary.unknownFiles[p.filename] = (summary.unknownFiles[p.filename] || 0) + 1;
-        }
-
-        if (p.filename === "process.js") summary.processManagers++;
-        if (p.filename === "weaken.js") summary.weakenWorkers++;
-        if (p.filename === "grow.js") summary.growWorkers++;
-        if (p.filename === "hack.js") summary.hackWorkers++;
-        if (p.filename === "rent-capacity.js") summary.shareManagers++;
-        if (p.filename === "rent-share.js") summary.shareWorkers++;
-        if (p.filename === "xp-farm.js") summary.xpFarmManagers++;
-        if (p.filename === "weaken.js" && p.args && String(p.args[1]) === "xp-farm") summary.xpFarmWorkers++;
-        if (p.framework.isConsole) summary.consoleScripts++;
-
-        summary.byFilename[p.filename] = (summary.byFilename[p.filename] || 0) + 1;
-        summary.byHost[p.host] = (summary.byHost[p.host] || 0) + 1;
-    }
-
-    return summary;
-}
-
-function buildPurchasedServerState(ns) {
-    const purchased = safeCall(() => ns.getPurchasedServers(), []);
-    const rows = [];
-
-    let totalRam = 0;
-    let usedRam = 0;
-
-    for (const server of purchased) {
-        const max = safeCall(() => ns.getServerMaxRam(server), 0);
-        const used = safeCall(() => ns.getServerUsedRam(server), 0);
-        totalRam += max;
-        usedRam += used;
-
-        rows.push({
-            server,
-            ram: {
-                max,
-                used,
-                free: Math.max(0, max - used),
-                usedPct: max > 0 ? used / max * 100 : 0,
-            },
-            processes: safeCall(() => ns.ps(server), []).map(p => ({
-                pid: p.pid,
-                filename: p.filename,
-                threads: p.threads,
-                args: Array.isArray(p.args) ? p.args.map(String) : [],
-            })),
-        });
-    }
-
-    const limit = safeCall(() => ns.getPurchasedServerLimit(), null);
-    const maxRam = safeCall(() => ns.getPurchasedServerMaxRam(), null);
-
-    return {
-        summary: {
-            count: purchased.length,
-            limit,
-            maxServerRam: maxRam,
-            totalRam,
-            usedRam,
-            freeRam: Math.max(0, totalRam - usedRam),
-            usedPct: totalRam > 0 ? usedRam / totalRam * 100 : 0,
-            restartRequired: safeCall(() => ns.fileExists("restart-required.txt", "home"), false),
-        },
-        servers: rows.sort((a, b) => a.server.localeCompare(b.server)),
-    };
-}
-
-function buildContractSnapshot(ns) {
-    const report = readJson(ns, "/data/manager/contracts.json", null);
-
-    if (!report) {
-        return {
-            summary: {
-                serversScanned: 0,
-                rawContractFilesFound: 0,
-                uniqueContracts: 0,
-                duplicateFilesSuppressed: 0,
-                validUniqueContracts: 0,
-                invalidUniqueContractFiles: 0,
-                homePreferredContracts: 0,
-                remotePreferredContracts: 0,
-                byType: {},
-                implemented: "read-only inventory unavailable",
-                solverImplemented: false,
-                warning: "info-contracts.js has not generated /data/manager/contracts.json yet.",
-                nextScriptCandidate: "info-contracts.js",
-            },
-            contracts: [],
-            duplicates: [],
-            rawContracts: [],
-        };
-    }
-
-    const summary = report.summary || {};
-
-    return {
-        summary: {
-            serversScanned: summary.serversScanned || 0,
-
-            rawContractFilesFound: summary.rawContractFilesFound || 0,
-            uniqueContracts: summary.uniqueContracts || 0,
-            duplicateFilesSuppressed: summary.duplicateFilesSuppressed || 0,
-
-            validUniqueContracts: summary.validUniqueContracts || 0,
-            invalidUniqueContractFiles: summary.invalidUniqueContractFiles || 0,
-
-            homePreferredContracts: summary.homePreferredContracts || 0,
-            remotePreferredContracts: summary.remotePreferredContracts || 0,
-
-            byType: summary.byType || {},
-
-            implemented: summary.implemented || "read-only inventory",
-            solverImplemented: Boolean(summary.solverImplemented),
-            warning: summary.warning || "No solve attempts are made by the contract inventory.",
-            dedupeRule: summary.dedupeRule || "fileName + fileSize",
-            preferenceRule: summary.preferenceRule || "home first, then valid, then higher tries remaining",
-
-            nextScriptCandidate: "solve-contracts.js",
-        },
-
-        contracts: report.contracts || [],
-        duplicates: report.duplicates || [],
-        rawContracts: report.rawContracts || [],
-    };
-}
-
-function buildStockMarketSnapshot(ns) {
-    const result = {
-        summary: {
-            available: false,
-            hasTixApi: false,
-            has4SData: false,
-            symbols: 0,
-            positions: 0,
-            implemented: false,
-        },
-        symbols: [],
-        positions: [],
-        note: "Stock trading process is not yet implemented. This section is present so the AI package schema does not need to change later.",
-    };
-
-    if (!ns.stock) return result;
-
-    result.summary.available = true;
-
-    const symbols = safeCall(() => ns.stock.getSymbols(), []);
-
-    result.symbols = symbols.map(sym => {
-        const position = safeCall(() => ns.stock.getPosition(sym), null);
-        const price = safeCall(() => ns.stock.getPrice(sym), null);
-        const forecast = safeCall(() => ns.stock.getForecast(sym), null);
-        const volatility = safeCall(() => ns.stock.getVolatility(sym), null);
-
-        const longShares = Array.isArray(position) ? position[0] : 0;
-        const longAvg = Array.isArray(position) ? position[1] : 0;
-        const shortShares = Array.isArray(position) ? position[2] : 0;
-        const shortAvg = Array.isArray(position) ? position[3] : 0;
-
-        if (longShares > 0 || shortShares > 0) {
-            result.summary.positions++;
-            result.positions.push({
-                symbol: sym,
-                longShares,
-                longAvg,
-                shortShares,
-                shortAvg,
-                price,
-                forecast,
-                volatility,
-            });
-        }
-
-        return {
-            symbol: sym,
-            price,
-            forecast,
-            volatility,
-            hasPosition: longShares > 0 || shortShares > 0,
-        };
-    });
-
-    result.summary.symbols = result.symbols.length;
-    result.summary.hasTixApi = result.summary.symbols > 0;
-    result.summary.has4SData = result.symbols.some(s => s.forecast !== null || s.volatility !== null);
-
-    return result;
-}
-
-function buildFutureSystemsSnapshot(ns) {
-    return {
-        summary: {
-            contracts: "placeholder-present",
-            stockMarket: ns.stock ? "api-detected-or-stubbed" : "not-detected",
-            darkWeb: "placeholder-empty",
-            factions: "placeholder-empty",
-            augmentations: "placeholder-empty",
-            corporations: "placeholder-empty",
-            gangs: "placeholder-empty",
-            sleeves: "placeholder-empty",
-            bladeburner: "placeholder-empty",
-            hacknet: "placeholder-empty",
-        },
-
-        darkWeb: {
-            implemented: false,
-            programsOwned: detectPrograms(ns),
-            missingPrograms: detectMissingPrograms(ns),
-            note: "Can later become info-darkweb.js or buy-programs.js.",
-        },
-
-        factions: {
-            implemented: false,
-            joined: [],
-            invitations: [],
-            note: "Singularity-dependent faction automation intentionally not implemented yet.",
-        },
-
-        augmentations: {
-            implemented: false,
-            owned: [],
-            available: [],
-            note: "Singularity-dependent augmentation planning intentionally not implemented yet.",
-        },
-
-        corporations: {
-            implemented: false,
-            state: null,
-            note: "Corporation automation not yet implemented.",
-        },
-
-        gangs: {
-            implemented: false,
-            state: null,
-            note: "Gang automation not yet implemented.",
-        },
-
-        sleeves: {
-            implemented: false,
-            state: null,
-            note: "Sleeve automation not yet implemented.",
-        },
-
-        bladeburner: {
-            implemented: false,
-            state: null,
-            note: "Bladeburner automation not yet implemented.",
-        },
-
-        hacknet: {
-            implemented: false,
-            state: null,
-            note: "Hacknet automation not yet implemented.",
-        },
-    };
-}
-
-function buildActionSuggestions(context) {
-    const {
-        managerReports,
-        summaries,
-        processInventory,
-        purchasedServerState,
-        contracts,
-        stockMarket,
-        futureSystems,
-    } = context;
-
-    const suggestions = [];
-
-    const runtime = managerReports.runtime && managerReports.runtime.summary;
-    const money = managerReports.money && managerReports.money.summary;
-    const security = managerReports.security && managerReports.security.summary;
-    const payouts = managerReports.payouts && managerReports.payouts.summary;
-    const share = managerReports.share && managerReports.share.summary;
-    const player = managerReports.player && managerReports.player.summary;
-    const xpFarm = managerReports.xpFarm && managerReports.xpFarm.summary;
-    const network = summaries.network;
-    const processes = summaries.processes;
-
-    // Compatibility layer for old/new info-share.js schemas.
-    const shareManagerRunning = Boolean(share && share.managerRunning);
-    const shareWorkers = share ? firstNumber([share.shareWorkers, share.workerProcesses], 0) : 0;
-    const shareThreads = share ? firstNumber([share.shareThreads, share.workerThreads], 0) : 0;
-    const spareShareRam = share ? firstNumber([share.idleShareCapableRam, share.spareShareRam, share.shareCapableFreeRam], 0) : 0;
-    const possibleExtraThreads = share ? firstNumber([share.possibleExtraThreads], 0) : 0;
-
-    const xpFarmRunning = Boolean((xpFarm && xpFarm.workersRunning > 0) || processes.xpFarmManagers > 0 || processes.xpFarmWorkers > 0);
-    const playerHacking = player ? firstNumber([player.hacking], null) : null;
-
-    addSuggestion(suggestions, {
-        id: "deployment-restart-required",
-        priority: "high",
-        category: "deployment",
-        condition: purchasedServerState.summary.restartRequired,
-        observation: "restart-required.txt exists, which normally means purchased/cloud server capacity changed.",
-        recommendedCommand: "run startup.js true false",
-        aiPrompt: "The diagnostic shows restart-required.txt is present. Review whether startup.js, upload.js, and assign-targets.js will correctly redeploy after server purchases/upgrades. Suggest any safe changes.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "unrooted-servers",
-        priority: "medium",
-        category: "rooting",
-        condition: network.unrooted > 0,
-        observation: `${network.unrooted} discovered server(s) are not rooted.`,
-        recommendedCommand: "run upload.js",
-        aiPrompt: "The diagnostic shows unrooted servers. Review the rooting/deployment flow and suggest whether upload.js or a dedicated root-all script should be improved.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "unmanaged-money-targets",
-        priority: "high",
-        category: "target-management",
-        condition: runtime && runtime.unmanagedTargets > 0,
-        observation: runtime ? `${runtime.unmanagedTargets} money target(s) appear unmanaged.` : "Runtime report missing; cannot verify managed targets.",
-        recommendedCommand: "run assign-targets.js 1 2",
-        aiPrompt: "The diagnostic shows unmanaged money targets. Review assign-targets.js and process.js assumptions. Suggest changes to ensure low-RAM money targets are remotely managed.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "payload-missing",
-        priority: "high",
-        category: "deployment",
-        condition: runtime && runtime.payloadMissing > 0,
-        observation: runtime ? `${runtime.payloadMissing} server(s) appear to be missing one or more payload scripts.` : "Runtime report missing; cannot verify payload deployment.",
-        recommendedCommand: "run upload.js",
-        aiPrompt: "The diagnostic shows payload gaps. Review upload.js file lists and deployment logic. Suggest changes to make script propagation reliable.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "security-pressure",
-        priority: "high",
-        category: "security",
-        condition: security && security.notReadyTargets > 0,
-        observation: security ? `${security.notReadyTargets} target(s) are above the configured security buffer. Total excess: ${round(security.totalSecurityExcess, 2)}.` : "Security report missing.",
-        recommendedCommand: "run manager-console.js security",
-        aiPrompt: "The diagnostic shows targets blocked by security. Review process.js weakening logic, thread allocation, and whether securityBuffer is appropriate. Suggest tuning changes.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "money-low",
-        priority: "medium",
-        category: "money",
-        condition: money && money.lowMoneyTargets > 0,
-        observation: money ? `${money.lowMoneyTargets} target(s) are below the money threshold. Current network money is ${round(money.moneyPct, 1)}% of max.` : "Money report missing.",
-        recommendedCommand: "run manager-console.js money",
-        aiPrompt: "The diagnostic shows a grow backlog. Review process.js grow logic, moneyTargetRatio, and remote worker capacity. Suggest tuning changes.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "low-hack-readiness",
-        priority: "medium",
-        category: "payouts",
-        condition: payouts && payouts.hackReadyTargets === 0,
-        observation: payouts ? "No targets currently appear hack-ready." : "Payout report missing.",
-        recommendedCommand: "run manager-console.js payouts",
-        aiPrompt: "The diagnostic shows no hack-ready targets. Determine whether the system is correctly preparing targets or whether process.js is stuck in weaken/grow cycles.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "unknown-processes",
-        priority: "informational",
-        category: "process-inventory",
-        condition: processes.unknownOrExternal > 0,
-        observation: `${processes.unknownOrExternal} running process(es) are outside the known framework scripts.`,
-        recommendedCommand: "run info-diagnostic.js",
-        aiPrompt: "The diagnostic includes unknown/external running processes. Review processInventory and classify whether these should be ignored, adopted into the framework, or killed by clean.js.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "share-manager-missing",
-        priority: "medium",
-        category: "share-rental",
-        condition: share && !shareManagerRunning && spareShareRam > 0,
-        observation: share
-            ? `Share/rental capacity appears available but rent-capacity.js is not running. Spare share RAM: ${round(spareShareRam, 2)}GB; possible extra threads: ${possibleExtraThreads}.`
-            : "Share report missing.",
-        recommendedCommand: "run startup.js true false",
-        aiPrompt: "The diagnostic suggests spare share/rental capacity is available but the share manager is not running. Review startup.js, rent-capacity.js, and info-share.js integration.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "share-active-review",
-        priority: "low",
-        category: "share-rental",
-        condition: share && shareManagerRunning,
-        observation: share
-            ? `Share manager is running. Share workers: ${shareWorkers}; share threads: ${shareThreads}; spare share RAM: ${round(spareShareRam, 2)}GB; possible extra threads: ${possibleExtraThreads}.`
-            : "Share report missing.",
-        recommendedCommand: "run manager-console.js share",
-        aiPrompt: "The diagnostic shows active share/rental workers. Review whether share RAM reservation is too aggressive or too conservative relative to money-making workers.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "xp-farm-opportunity",
-        priority: (payouts && payouts.preparedButUnhackableTargets > 0 && !xpFarmRunning) ? "medium" : "informational",
-        category: "hacking-xp",
-        condition: payouts && payouts.preparedButUnhackableTargets > 0,
-        observation: payouts
-            ? `${payouts.preparedButUnhackableTargets} prepared target(s) are not yet hackable. Current hacking level: ${playerHacking ?? "unknown"}. XP farm running: ${xpFarmRunning}.`
-            : "Payout report missing.",
-        recommendedCommand: xpFarmRunning ? "run manager-console.js xp" : "run clean.js share; run xp-farm.js nwo 1024 false 10000 60",
-        aiPrompt: "The diagnostic shows prepared-but-unhackable targets. Review whether temporary xp-farm.js use is appropriate, and whether it should replace share/rent capacity until hacking level improves.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "xp-farm-active-review",
-        priority: "low",
-        category: "hacking-xp",
-        condition: xpFarmRunning,
-        observation: xpFarm
-            ? `XP farm is active against ${managerReports.xpFarm.target || "unknown"}. Workers: ${xpFarm.workersRunning || 0}; threads: ${xpFarm.totalThreads || 0}; committed RAM: ${round(xpFarm.committedRam, 2)}GB.`
-            : `XP farm processes are running, but /data/manager/xp-farm.json is missing or stale. Managers: ${processes.xpFarmManagers}; workers: ${processes.xpFarmWorkers}.`,
-        recommendedCommand: "run manager-console.js xp",
-        aiPrompt: "The diagnostic shows active XP farming. Review whether it is competing with money/share work and whether it should continue or be stopped with xp-farm.js stop.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "contracts-discovered",
-        priority: (contracts.summary.validUniqueContracts || 0) > 0 ? "medium" : "low",
-        category: "contracts",
-        condition: true,
-        observation: (contracts.summary.validUniqueContracts || 0) > 0
-            ? `${contracts.summary.validUniqueContracts} unique valid coding contract(s) discovered. Raw files: ${contracts.summary.rawContractFilesFound || 0}; duplicates suppressed: ${contracts.summary.duplicateFilesSuppressed || 0}.`
-            : "No unique valid coding contracts discovered. Contract subsystem placeholder is present.",
-        recommendedCommand: (contracts.summary.validUniqueContracts || 0) > 0 ? "run info-contracts.js" : null,
-        aiPrompt: (contracts.summary.validUniqueContracts || 0) > 0
-            ? "The diagnostic discovered de-duplicated coding contracts. Review /data/manager/contracts.json. Design a safe solve-contracts.js architecture, but do not risk failed attempts without solver confidence."
-            : "No valid unique coding contracts are currently discovered. Keep contract support as a future subsystem placeholder.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "stock-market-placeholder",
-        priority: stockMarket.summary.positions > 0 ? "medium" : "low",
-        category: "stock-market",
-        condition: true,
-        observation: stockMarket.summary.positions > 0
-            ? `${stockMarket.summary.positions} stock position(s) detected. Stock automation is not implemented.`
-            : "Stock market automation is not implemented. Placeholder is present.",
-        recommendedCommand: stockMarket.summary.positions > 0 ? "run info-diagnostic.js" : null,
-        aiPrompt: stockMarket.summary.positions > 0
-            ? "The diagnostic detected stock positions. Design info-stocks.js before any automated trading script. Prioritise observation and risk reporting first."
-            : "Stock automation is not currently active. Propose a read-only info-stocks.js before any trading automation.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "darkweb-programs",
-        priority: futureSystems.darkWeb.missingPrograms.length > 0 ? "low" : "informational",
-        category: "dark-web",
-        condition: true,
-        observation: futureSystems.darkWeb.missingPrograms.length > 0
-            ? `Missing dark-web/program files: ${futureSystems.darkWeb.missingPrograms.join(", ")}.`
-            : "All tracked program files appear to exist on home.",
-        recommendedCommand: null,
-        aiPrompt: "Review the missing/owned program list and suggest whether a future dark-web helper should be created. Avoid Singularity dependency unless explicitly available.",
-    });
-
-    addSuggestion(suggestions, {
-        id: "purchased-server-capacity",
-        priority: purchasedServerState.summary.freeRam > 0 ? "low" : "informational",
-        category: "purchased-servers",
-        condition: true,
-        observation: `Purchased servers: ${purchasedServerState.summary.count}/${purchasedServerState.summary.limit}. RAM used: ${round(purchasedServerState.summary.usedPct, 1)}%.`,
-        recommendedCommand: purchasedServerState.summary.count < purchasedServerState.summary.limit ? "run buy-servers.js 0.4" : null,
-        aiPrompt: "Review purchased server capacity. Suggest whether buy-servers.js should buy, upgrade, or hold based on current fleet and money-making state.",
-    });
-
-    return suggestions;
-}
-
-function firstNumber(values, fallback = 0) {
-    for (const value of values) {
-        const n = Number(value);
-        if (Number.isFinite(n)) return n;
-    }
-
-    return fallback;
-}
-
-function addSuggestion(suggestions, item) {
-    if (!item.condition) return;
-
-    suggestions.push({
-        id: item.id,
-        priority: item.priority || "informational",
-        category: item.category || "general",
-        observation: item.observation || "",
-        recommendedCommand: item.recommendedCommand || null,
-        aiPrompt: item.aiPrompt || "",
-    });
-}
-
-function buildAiPrompts(context) {
-    const {
-        actionSuggestions,
-        summaries,
-        contracts,
-        stockMarket,
-        processSummary,
-    } = context;
-
-    const highPriority = actionSuggestions.filter(s => s.priority === "high");
-    const mediumPriority = actionSuggestions.filter(s => s.priority === "medium");
-
-    const topSuggestions = [...highPriority, ...mediumPriority].slice(0, 5);
-
-    const recommendedNextPrompt = topSuggestions.length > 0
-        ? [
-            "Review this Bitburner diagnostic JSON.",
-            "Prioritise the actionSuggestions with priority high or medium.",
-            "For each issue, explain the likely cause, the safest immediate command, and whether a script change is recommended.",
-            "If script changes are recommended, rewrite the complete affected scripts for copy/paste.",
-        ].join(" ")
-        : [
-            "Review this Bitburner diagnostic JSON.",
-            "The system does not show obvious high-priority issues.",
-            "Look for tuning opportunities, simplification opportunities, stale assumptions, and future subsystem candidates.",
-        ].join(" ");
-
-    return {
-        recommendedNextPrompt,
-
-        shortPrompt: "Review this Bitburner diagnostic JSON and tell me the next three operational or code changes to make, in priority order.",
-
-        codeReviewPrompt: "Review this Bitburner diagnostic JSON as if you are maintaining the automation suite. Identify broken assumptions, process conflicts, missing script coverage, and any scripts that should be rewritten. Provide complete copy/paste scripts where needed.",
-
-        tuningPrompt: "Review the money, security, payout, runtime, and share sections. Recommend tuning values for securityBuffer, moneyTargetRatio, hackTargetRatio, remote assignment, and share/rent capacity.",
-
-        architecturePrompt: "Review this diagnostic JSON and suggest how to evolve the manager-console suite. Keep worker scripts minimal. Prefer independent info-* scripts over complex imports unless there is a clear benefit.",
-
-        subsystemPrompt: "Review the placeholder subsystems: contracts, stock market, dark web, factions, augmentations, corporations, gangs, sleeves, bladeburner, and hacknet. Recommend the safest next read-only info-* script to add.",
-
-        generatedActionPrompts: actionSuggestions.map(s => ({
-            id: s.id,
-            priority: s.priority,
-            category: s.category,
-            prompt: s.aiPrompt,
-        })),
-
-        immediateFocus: {
-            highPriorityCount: highPriority.length,
-            mediumPriorityCount: mediumPriority.length,
-            topIssues: topSuggestions.map(s => ({
-                id: s.id,
-                priority: s.priority,
-                observation: s.observation,
-                recommendedCommand: s.recommendedCommand,
-            })),
-        },
-
-        environmentSummaryForPrompt: {
-            servers: summaries.network.total,
-            rooted: summaries.network.rooted,
-            moneyServers: summaries.network.moneyServers,
-            ramUsedPct: summaries.network.ramUsedPct,
-            moneyPct: summaries.network.moneyPct,
-            totalProcesses: processSummary.total,
-            unknownProcesses: processSummary.unknownOrExternal,
-            contractsUniqueValid: contracts.summary.validUniqueContracts || 0,
-            contractsRawFiles: contracts.summary.rawContractFilesFound || 0,
-            contractsDuplicatesSuppressed: contracts.summary.duplicateFilesSuppressed || 0,
-            stockSymbols: stockMarket.summary.symbols,
-            stockPositions: stockMarket.summary.positions,
-        },
-    };
-}
-
-function summarizeNetwork(serverInventory) {
-    const summary = {
-        total: serverInventory.length,
-        rooted: 0,
-        unrooted: 0,
-        moneyServers: 0,
-        purchasedServers: 0,
-
-        totalRam: 0,
-        usedRam: 0,
-        freeRam: 0,
-        ramUsedPct: 0,
-
-        currentMoney: 0,
-        maxMoney: 0,
-        moneyPct: 0,
-
-        totalSecurityAboveMin: 0,
-    };
-
-    for (const s of serverInventory) {
-        if (s.rooted) summary.rooted++;
-        else summary.unrooted++;
-
-        if (s.hasMoney) summary.moneyServers++;
-        if (s.purchased) summary.purchasedServers++;
-
-        summary.totalRam += s.ram.max || 0;
-        summary.usedRam += s.ram.used || 0;
-        summary.freeRam += s.ram.free || 0;
-
-        summary.currentMoney += s.money.current || 0;
-        summary.maxMoney += s.money.max || 0;
-
-        summary.totalSecurityAboveMin += s.security.aboveMin || 0;
-    }
-
-    summary.ramUsedPct = summary.totalRam > 0 ? summary.usedRam / summary.totalRam * 100 : 0;
-    summary.moneyPct = summary.maxMoney > 0 ? summary.currentMoney / summary.maxMoney * 100 : 0;
-
-    return summary;
-}
-
-function classifyProcess(filename, args, host) {
-    if (filename === "process.js") return "target-manager";
-    if (filename === "xp-farm.js") return "xp-farm-manager";
-    if (filename === "weaken.js" && args.length >= 2 && String(args[1]) === "xp-farm") return "xp-farm-worker";
-    if (filename === "weaken.js") return "worker-weaken";
-    if (filename === "grow.js") return "worker-grow";
-    if (filename === "hack.js") return "worker-hack";
-    if (filename === "rent-capacity.js") return "share-capacity-manager";
-    if (filename === "rent-share.js") return "share-worker";
-    if (filename === "manager-console.js") return "manager-console";
-    if (filename.startsWith("info-")) return "manager-info-script";
-    if (filename === "startup.js") return "startup-orchestrator";
-    if (filename === "upload.js") return "deployment";
-    if (filename === "assign-targets.js") return "remote-assignment";
-    if (filename === "buy-servers.js") return "purchased-server-manager";
-    if (filename === "clean.js") return "cleanup";
-    if (filename === "logview.js") return "diagnostic-logviewer";
-    if (filename.startsWith("infect")) return "legacy-infection";
-    if (filename === "iteration.js") return "file-discovery";
-    return `unknown-or-external@${host}`;
-}
-
-function isKnownFrameworkScript(filename) {
+function expectedHomeFiles() {
     return [
         "check-infection.js",
         "manager-console.js",
@@ -991,225 +119,796 @@ function isKnownFrameworkScript(filename) {
         "buy-servers.js",
         "clean.js",
         "logview.js",
-        "iteration.js",
-        "infect.js",
-        "infect-root.js",
-        "infect-deploy.js",
-        "infect-start.js",
-    ].includes(filename);
-}
-
-function detectPrograms(ns) {
-    const programs = [
-        "BruteSSH.exe",
-        "FTPCrack.exe",
-        "relaySMTP.exe",
-        "HTTPWorm.exe",
-        "SQLInject.exe",
-        "ServerProfiler.exe",
-        "DeepscanV1.exe",
-        "DeepscanV2.exe",
-        "AutoLink.exe",
-        "Formulas.exe",
+        "backdoor-check.js"
     ];
-
-    return programs.filter(p => ns.fileExists(p, "home"));
 }
 
-function detectMissingPrograms(ns) {
-    const programs = [
-        "BruteSSH.exe",
-        "FTPCrack.exe",
-        "relaySMTP.exe",
-        "HTTPWorm.exe",
-        "SQLInject.exe",
-        "ServerProfiler.exe",
-        "DeepscanV1.exe",
-        "DeepscanV2.exe",
-        "AutoLink.exe",
-        "Formulas.exe",
-    ];
+function getCloudApi(ns) {
+    if (ns.cloud && typeof ns.cloud.getServerNames === "function") {
+        return {
+            available: true,
+            mode: "ns.cloud",
+            getNames: () => ns.cloud.getServerNames(),
+            getLimit: () => ns.cloud.getServerLimit(),
+            getRamLimit: () => ns.cloud.getRamLimit()
+        };
+    }
 
-    return programs.filter(p => !ns.fileExists(p, "home"));
+    if (typeof ns.getPurchasedServers === "function") {
+        return {
+            available: true,
+            mode: "legacy purchased-server API",
+            getNames: () => ns.getPurchasedServers(),
+            getLimit: () => typeof ns.getPurchasedServerLimit === "function" ? ns.getPurchasedServerLimit() : null,
+            getRamLimit: () => typeof ns.getPurchasedServerMaxRam === "function" ? ns.getPurchasedServerMaxRam() : null
+        };
+    }
+
+    return {
+        available: false,
+        mode: "none",
+        getNames: () => [],
+        getLimit: () => null,
+        getRamLimit: () => null
+    };
 }
 
-function scanAll(ns) {
-    const seen = new Set(["home"]);
-    const queue = ["home"];
+function getOwnedServerDetails(ns, registryFile = "/data/purchased-servers.json") {
+    const names = new Set();
+    const sources = {};
+    const cloud = getCloudApi(ns);
+    const registry = readJson(ns, registryFile);
 
-    for (let i = 0; i < queue.length; i++) {
-        const host = queue[i];
+    // Primary: actual game API. This catches servers bought before this script existed.
+    try {
+        if (cloud.available) {
+            for (const name of cloud.getNames()) {
+                if (name && ns.serverExists(name)) {
+                    names.add(name);
+                    sources[name] = cloud.mode;
+                }
+            }
+        }
+    } catch {}
 
-        for (const next of ns.scan(host)) {
-            if (seen.has(next)) continue;
-            seen.add(next);
-            queue.push(next);
+    // Secondary: persistent metadata registry.
+    try {
+        if (registry && Array.isArray(registry.servers)) {
+            for (const item of registry.servers) {
+                const name = typeof item === "string" ? item : item.name;
+                if (name && ns.serverExists(name)) {
+                    names.add(name);
+                    if (!sources[name]) sources[name] = "registry";
+                }
+            }
+        }
+    } catch {}
+
+    return {
+        names,
+        sources,
+        registry,
+        apiMode: cloud.mode,
+        apiAvailable: cloud.available,
+        apiLimit: safeCall(() => cloud.getLimit(), null),
+        apiMaxRam: safeCall(() => cloud.getRamLimit(), null)
+    };
+}
+
+function buildPurchasedSummary(ns, owned, registryFile) {
+    const servers = [...owned.names]
+        .filter(name => ns.serverExists(name))
+        .sort()
+        .map(name => {
+            const maxRam = ns.getServerMaxRam(name);
+            const usedRam = ns.getServerUsedRam(name);
+            return {
+                name,
+                maxRam,
+                usedRam,
+                freeRam: Math.max(0, maxRam - usedRam),
+                usedPct: pct(usedRam, maxRam),
+                source: owned.sources[name] ?? "unknown"
+            };
+        });
+
+    const totalRam = sum(servers.map(s => s.maxRam));
+    const usedRam = sum(servers.map(s => s.usedRam));
+
+    return {
+        count: servers.length,
+        limit: owned.apiLimit,
+        maxServerRam: owned.apiMaxRam,
+        totalRam,
+        usedRam,
+        freeRam: Math.max(0, totalRam - usedRam),
+        usedPct: pct(usedRam, totalRam),
+        restartRequired: safeCall(() => ns.fileExists("restart-required.txt", "home"), false),
+        registryFile,
+        registryPresent: !!owned.registry,
+        apiMode: owned.apiMode,
+        apiAvailable: owned.apiAvailable,
+        detection: "API names union registry names; no naming-prefix assumption",
+        servers
+    };
+}
+
+function inventoryRow(ns, server, ownedNames) {
+    const rooted = safeCall(() => ns.hasRootAccess(server), false);
+    const maxRam = safeCall(() => ns.getServerMaxRam(server), 0);
+    const usedRam = safeCall(() => ns.getServerUsedRam(server), 0);
+    const maxMoney = safeCall(() => ns.getServerMaxMoney(server), 0);
+    const currentMoney = safeCall(() => ns.getServerMoneyAvailable(server), 0);
+    const currentSecurity = safeCall(() => ns.getServerSecurityLevel(server), 0);
+    const minSecurity = safeCall(() => ns.getServerMinSecurityLevel(server), 0);
+    const files = safeCall(() => ns.ls(server), []);
+
+    return {
+        server,
+        rooted,
+        purchased: ownedNames.has(server),
+        hasMoney: maxMoney > 0,
+        hacking: {
+            requiredLevel: safeCall(() => ns.getServerRequiredHackingLevel(server), null),
+            portsRequired: safeCall(() => ns.getServerNumPortsRequired(server), null)
+        },
+        ram: {
+            max: maxRam,
+            used: usedRam,
+            free: Math.max(0, maxRam - usedRam),
+            usedPct: pct(usedRam, maxRam)
+        },
+        money: {
+            current: currentMoney,
+            max: maxMoney,
+            pct: pct(currentMoney, maxMoney)
+        },
+        security: {
+            current: currentSecurity,
+            min: minSecurity,
+            aboveMin: Math.max(0, currentSecurity - minSecurity)
+        },
+        timings: {
+            hackMs: maxMoney > 0 ? safeCall(() => ns.getHackTime(server), null) : null,
+            growMs: maxMoney > 0 ? safeCall(() => ns.getGrowTime(server), null) : null,
+            weakenMs: maxMoney > 0 ? safeCall(() => ns.getWeakenTime(server), null) : null
+        },
+        files: {
+            count: files.length,
+            contracts: files.filter(f => f.endsWith(".cct")),
+            hasProcess: files.includes("process.js"),
+            hasWeaken: files.includes("weaken.js"),
+            hasGrow: files.includes("grow.js"),
+            hasHack: files.includes("hack.js"),
+            hasRentShare: files.includes("rent-share.js"),
+            hasRentCapacity: files.includes("rent-capacity.js")
+        }
+    };
+}
+
+function buildRuntime(ns, inventory, processes) {
+    const targets = inventory.map(item => {
+        const manager = findManager(processes, item.server);
+        const cycle = findCycle(processes, item.server);
+        return {
+            server: item.server,
+            root: item.rooted ? "yes" : "no",
+            purchased: item.purchased,
+            ram: `${fmtRam(ns, item.ram.used)}/${fmtRam(ns, item.ram.max)} ${item.ram.usedPct.toFixed(1)}%`,
+            manager: manager.kind,
+            cycle: cycle.text,
+            status: !item.rooted
+                ? "noRoot"
+                : item.hasMoney
+                    ? manager.kind === "none" ? "unmanaged" : "managed"
+                    : "nonMoney"
+        };
+    });
+
+    const moneyTargets = targets.filter(t => inventory.find(i => i.server === t.server)?.hasMoney);
+
+    return {
+        timestamp: Date.now(),
+        summary: {
+            totalServers: inventory.length,
+            rootedServers: inventory.filter(i => i.rooted).length,
+            unrootedServers: inventory.filter(i => !i.rooted).length,
+            moneyServers: inventory.filter(i => i.hasMoney).length,
+            managedTargets: moneyTargets.filter(t => t.status === "managed").length,
+            unmanagedTargets: moneyTargets.filter(t => t.status === "unmanaged").length,
+            rootedUnmanagedMoneyTargets: moneyTargets.filter(t => t.status === "unmanaged" && inventory.find(i => i.server === t.server)?.rooted).length,
+            payloadMissing: inventory.filter(i => i.rooted && !i.files.hasProcess && !i.purchased).length,
+            totalRam: sum(inventory.map(i => i.ram.max)),
+            usedRam: sum(inventory.map(i => i.ram.used)),
+            ramUsedPct: pct(sum(inventory.map(i => i.ram.used)), sum(inventory.map(i => i.ram.max))),
+            weakenWorkers: processes.filter(p => p.filename === "weaken.js").length,
+            growWorkers: processes.filter(p => p.filename === "grow.js").length,
+            hackWorkers: processes.filter(p => p.filename === "hack.js").length,
+            processManagers: processes.filter(p => p.filename === "process.js").length,
+            idleManagers: targets.filter(t => t.manager !== "none" && t.cycle === "idle").length,
+            restartRequired: safeCall(() => ns.fileExists("restart-required.txt", "home"), false)
+        },
+        targets
+    };
+}
+
+function buildMoney(ns, inventory, processes, moneyTargetRatio) {
+    const targets = inventory
+        .filter(i => i.hasMoney)
+        .sort((a, b) => b.money.max - a.money.max)
+        .map(i => {
+            const manager = findManager(processes, i.server);
+            const cycle = findCycle(processes, i.server);
+            return {
+                server: i.server,
+                rooted: i.rooted,
+                money: `${i.money.pct.toFixed(1)}% ${fmtMoney(ns, i.money.current)}`,
+                pct: `${i.money.pct.toFixed(1)}%`,
+                max: fmtMoney(ns, i.money.max),
+                manager: manager.kind,
+                cycle: cycle.text,
+                currentMoney: i.money.current,
+                maxMoney: i.money.max,
+                moneyPct: i.money.pct,
+                ready: i.money.current >= i.money.max * moneyTargetRatio
+            };
+        });
+
+    const currentMoney = sum(targets.map(t => t.currentMoney));
+    const maxMoney = sum(targets.map(t => t.maxMoney));
+
+    return {
+        timestamp: Date.now(),
+        summary: {
+            moneyTargets: targets.length,
+            currentMoney,
+            maxMoney,
+            moneyPct: pct(currentMoney, maxMoney),
+            readyTargets: targets.filter(t => t.ready).length,
+            lowMoneyTargets: targets.filter(t => !t.ready).length,
+            rootedLowMoneyTargets: targets.filter(t => t.rooted && !t.ready).length,
+            moneyTargetRatio
+        },
+        targets
+    };
+}
+
+function buildSecurity(ns, inventory, processes, securityBuffer) {
+    const targets = inventory
+        .filter(i => i.hasMoney)
+        .map(i => {
+            const allowed = i.security.min + securityBuffer;
+            const excess = Math.max(0, i.security.current - allowed);
+            const cycle = findCycle(processes, i.server);
+            return {
+                server: i.server,
+                rooted: i.rooted,
+                security: `${i.security.current.toFixed(2)}/${i.security.min.toFixed(2)}`,
+                aboveMin: i.security.aboveMin.toFixed(2),
+                buffer: securityBuffer.toFixed(2),
+                allowed: allowed.toFixed(2),
+                excess: excess.toFixed(2),
+                cycle: cycle.text,
+                currentSecurity: i.security.current,
+                minSecurity: i.security.min,
+                allowedSecurity: allowed,
+                securityAboveMin: i.security.aboveMin,
+                securityExcess: excess,
+                securityEtaMs: excess > 0 ? i.timings.weakenMs : 0,
+                securityEtaText: excess > 0 ? fmtDuration(i.timings.weakenMs) : "now",
+                ready: excess <= 0
+            };
+        })
+        .sort((a, b) => b.securityExcess - a.securityExcess);
+
+    return {
+        timestamp: Date.now(),
+        summary: {
+            moneyTargets: targets.length,
+            readyTargets: targets.filter(t => t.ready).length,
+            notReadyTargets: targets.filter(t => !t.ready).length,
+            rootedNotReadyTargets: targets.filter(t => t.rooted && !t.ready).length,
+            totalSecurityExcess: sum(targets.map(t => t.securityExcess)),
+            worstServer: targets[0]?.server ?? null,
+            worstExcess: targets[0]?.securityExcess ?? 0,
+            securityBuffer
+        },
+        worst: targets.slice(0, 10),
+        targets
+    };
+}
+
+function buildPayouts(ns, inventory, processes, securityBuffer, moneyTargetRatio, hackTargetRatio) {
+    const targets = inventory
+        .filter(i => i.hasMoney)
+        .map(i => {
+            const securityExcess = Math.max(0, i.security.current - (i.security.min + securityBuffer));
+            const moneyReady = i.money.current >= i.money.max * moneyTargetRatio;
+            const securityReady = securityExcess <= 0;
+            const hackFractionPerThread = safeCall(() => ns.hackAnalyze(i.server), 0);
+            const hackThreads = hackFractionPerThread > 0 ? Math.ceil(hackTargetRatio / hackFractionPerThread) : 0;
+            const hackable = i.rooted && hackThreads > 0;
+            const hackReady = moneyReady && securityReady && hackable;
+            const cycle = findCycle(processes, i.server);
+            const estimatedHackMoney = hackReady ? i.money.current * hackTargetRatio : 0;
+
+            return {
+                server: i.server,
+                money: `${i.money.pct.toFixed(1)}% ${fmtMoney(ns, i.money.current)}`,
+                security: `${i.security.current.toFixed(2)}/${i.security.min.toFixed(2)}`,
+                readiness: hackReady ? "hackReady" : !securityReady ? "blockedBySecurity" : !moneyReady ? "blockedByMoney" : !hackable ? "preparedButUnhackable" : "unknown",
+                prepared: moneyReady && securityReady,
+                hackable,
+                hackReady,
+                hackMoney: fmtMoney(ns, estimatedHackMoney),
+                hackEta: hackReady ? fmtDuration(i.timings.hackMs) : "blocked",
+                growEta: moneyReady ? "now" : fmtDuration(i.timings.growMs),
+                weakenEta: securityReady ? "now" : fmtDuration(i.timings.weakenMs),
+                cycle: cycle.text,
+                currentMoney: i.money.current,
+                maxMoney: i.money.max,
+                moneyPct: i.money.pct,
+                currentSecurity: i.security.current,
+                minSecurity: i.security.min,
+                securityExcess,
+                moneyReady,
+                securityReady,
+                hackFractionPerThread,
+                hackThreads,
+                estimatedHackMoney,
+                hackTimeMs: i.timings.hackMs,
+                growTimeMs: i.timings.growMs,
+                weakenTimeMs: i.timings.weakenMs
+            };
+        })
+        .sort((a, b) => b.estimatedHackMoney - a.estimatedHackMoney || b.maxMoney - a.maxMoney);
+
+    return {
+        timestamp: Date.now(),
+        timestampText: new Date(Date.now()).toISOString(),
+        summary: {
+            targets: targets.length,
+            hackReadyTargets: targets.filter(t => t.hackReady).length,
+            preparedButUnhackableTargets: targets.filter(t => t.readiness === "preparedButUnhackable").length,
+            blockedBySecurityTargets: targets.filter(t => t.readiness === "blockedBySecurity").length,
+            blockedByMoneyTargets: targets.filter(t => t.readiness === "blockedByMoney").length,
+            nextHackMoney: sum(targets.filter(t => t.hackReady).map(t => t.estimatedHackMoney)),
+            bestTarget: targets[0]?.server ?? null,
+            bestHackMoney: targets[0]?.estimatedHackMoney ?? 0,
+            securityBuffer,
+            moneyTargetRatio,
+            hackTargetRatio,
+            note: "hackReady requires money ready, security ready, root, and hackAnalyze() > 0."
+        },
+        best: targets.filter(t => t.hackReady).slice(0, 10),
+        preparedButUnhackable: targets.filter(t => t.readiness === "preparedButUnhackable"),
+        targets
+    };
+}
+
+function buildShare(ns, inventory, processes, ownedNames) {
+    const shareManagers = processes.filter(p => p.filename === "rent-capacity.js");
+    const shareWorkers = processes.filter(p => p.filename === "rent-share.js");
+    const shareRam = sum(shareWorkers.map(p => safeCall(() => ns.getScriptRam(p.filename, p.host), 0) * p.threads));
+    const capableHosts = inventory.filter(i => i.rooted && i.ram.max > 0 && !i.hasMoney && i.server !== "home");
+    const capableRam = sum(capableHosts.map(h => h.ram.max));
+    const capableUsed = sum(capableHosts.map(h => h.ram.used));
+
+    return {
+        timestamp: Date.now(),
+        summary: {
+            managerRunning: shareManagers.length > 0,
+            managerCount: shareManagers.length,
+            managerHosts: [...new Set(shareManagers.map(p => p.host))],
+            sharePower: safeCall(() => ns.getSharePower(), null),
+            shareCapableHosts: capableHosts.length,
+            shareCapableRam: capableRam,
+            shareCapableUsedRam: capableUsed,
+            shareCapableFreeRam: Math.max(0, capableRam - capableUsed),
+            shareCapableUsedPct: pct(capableUsed, capableRam),
+            shareHosts: new Set(shareWorkers.map(p => p.host)).size,
+            shareWorkers: shareWorkers.length,
+            shareThreads: sum(shareWorkers.map(p => p.threads)),
+            shareRam,
+            shareRamPct: pct(shareRam, capableRam),
+            boughtCloudCapableHosts: capableHosts.filter(h => ownedNames.has(h.server)).length
+        },
+        managers: shareManagers,
+        workers: shareWorkers,
+        hosts: capableHosts.map(h => ({
+            host: h.server,
+            bought: ownedNames.has(h.server),
+            ram: `${fmtRam(ns, h.ram.used)}/${fmtRam(ns, h.ram.max)} ${h.ram.usedPct.toFixed(1)}%`,
+            free: fmtRam(ns, h.ram.free),
+            status: h.ram.free > 0 ? "available" : "full"
+        }))
+    };
+}
+
+function buildXpFarm(ns, processes) {
+    const managers = processes.filter(p => p.filename === "xp-farm.js");
+    const workers = processes.filter(p => p.filename === "weaken.js" && p.args.length > 0 && String(p.args[0]) === "joesguns");
+    return {
+        timestamp: Date.now(),
+        summary: {
+            managerRunning: managers.length > 0,
+            managerCount: managers.length,
+            workerCount: workers.length,
+            workerThreads: sum(workers.map(w => w.threads)),
+            note: "Heuristic: weaken.js joesguns workers may include XP farm or normal target work."
+        },
+        managers,
+        workers
+    };
+}
+
+function buildPlayer(ns) {
+    const player = safeCall(() => ns.getPlayer(), null);
+    const moneySources = safeCall(() => ns.getMoneySources(), null);
+    if (!player) return { context: "Bitburner player state report", summary: { ok: false } };
+
+    return {
+        context: "Bitburner player state report",
+        schemaVersion: 1,
+        generatedAt: Date.now(),
+        generatedAtText: new Date(Date.now()).toISOString(),
+        summary: {
+            ok: true,
+            money: player.money,
+            city: player.city,
+            location: player.location,
+            hacking: player.skills?.hacking ?? player.hacking ?? null,
+            factions: player.factions ?? [],
+            jobs: player.jobs ?? {},
+            tor: safeCall(() => ns.scan("darkweb").length > 0, null),
+            currentNode: safeCall(() => ns.getResetInfo().currentNode, null),
+            lastAugReset: safeCall(() => ns.getResetInfo().lastAugReset, null),
+            lastNodeReset: safeCall(() => ns.getResetInfo().lastNodeReset, null)
+        },
+        player,
+        resetInfo: safeCall(() => ns.getResetInfo(), null),
+        moneySources
+    };
+}
+
+function buildContracts(ns, servers) {
+    const raw = [];
+    for (const server of servers) {
+        const files = safeCall(() => ns.ls(server, ".cct"), []);
+        for (const file of files) {
+            const type = safeCall(() => ns.codingcontract.getContractType(file, server), "unknown");
+            const triesRemaining = safeCall(() => ns.codingcontract.getNumTriesRemaining(file, server), null);
+            const data = safeCall(() => ns.codingcontract.getData(file, server), null);
+            raw.push({ server, file, type, triesRemaining, dataSignature: stableStringify(data).slice(0, 500) });
         }
     }
 
-    return [...seen].sort();
+    const seen = new Set();
+    const unique = [];
+    for (const c of raw) {
+        const key = `${c.file}|${c.type}|${c.dataSignature}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        unique.push(c);
+    }
+
+    const byType = {};
+    for (const c of unique) byType[c.type] = (byType[c.type] ?? 0) + 1;
+
+    return {
+        serversScanned: servers.length,
+        rawContractFilesFound: raw.length,
+        uniqueContracts: unique.length,
+        duplicateFilesSuppressed: raw.length - unique.length,
+        validUniqueContracts: unique.length,
+        invalidUniqueContractFiles: 0,
+        homePreferredContracts: unique.filter(c => c.server === "home").length,
+        remotePreferredContracts: unique.filter(c => c.server !== "home").length,
+        byType,
+        implemented: "read-only inventory",
+        solverImplemented: false,
+        warning: "No solve attempts are made by this script.",
+        dedupeRule: "fileName + contractType + dataSignature",
+        preferenceRule: "home first, then valid, then higher tries remaining",
+        nextScriptCandidate: "solve-contracts.js",
+        contracts: unique
+    };
 }
 
-function readJson(ns, file, fallback) {
+function buildStockMarket(ns) {
+    const symbols = safeCall(() => ns.stock.getSymbols(), []);
+    let positions = 0;
+    for (const sym of symbols) {
+        const pos = safeCall(() => ns.stock.getPosition(sym), [0, 0, 0, 0]);
+        if ((pos[0] ?? 0) > 0 || (pos[2] ?? 0) > 0) positions++;
+    }
+
+    return {
+        available: symbols.length > 0,
+        hasTixApi: symbols.length > 0,
+        has4SData: safeCall(() => typeof ns.stock.has4SDataTIXAPI === "function" ? ns.stock.has4SDataTIXAPI() : null, null),
+        symbols: symbols.length,
+        positions,
+        implemented: false
+    };
+}
+
+function buildNetworkSummary(inventory) {
+    const totalRam = sum(inventory.map(i => i.ram.max));
+    const usedRam = sum(inventory.map(i => i.ram.used));
+    const currentMoney = sum(inventory.map(i => i.money.current));
+    const maxMoney = sum(inventory.map(i => i.money.max));
+
+    return {
+        total: inventory.length,
+        rooted: inventory.filter(i => i.rooted).length,
+        unrooted: inventory.filter(i => !i.rooted).length,
+        moneyServers: inventory.filter(i => i.hasMoney).length,
+        purchasedServers: inventory.filter(i => i.purchased).length,
+        totalRam,
+        usedRam,
+        freeRam: Math.max(0, totalRam - usedRam),
+        ramUsedPct: pct(usedRam, totalRam),
+        currentMoney,
+        maxMoney,
+        moneyPct: pct(currentMoney, maxMoney),
+        totalSecurityAboveMin: sum(inventory.map(i => i.security.aboveMin))
+    };
+}
+
+function buildProcessSummary(processes) {
+    const framework = new Set(["process.js", "weaken.js", "grow.js", "hack.js", "rent-capacity.js", "rent-share.js", "xp-farm.js", "info-diagnostic.js", "manager-console.js"]);
+    const byFilename = {};
+    const byHost = {};
+    const unknownFiles = {};
+
+    for (const p of processes) {
+        byFilename[p.filename] = (byFilename[p.filename] ?? 0) + 1;
+        byHost[p.host] = (byHost[p.host] ?? 0) + 1;
+        if (!framework.has(p.filename)) unknownFiles[p.filename] = (unknownFiles[p.filename] ?? 0) + 1;
+    }
+
+    return {
+        total: processes.length,
+        knownFramework: processes.length - sum(Object.values(unknownFiles)),
+        unknownOrExternal: sum(Object.values(unknownFiles)),
+        processManagers: processes.filter(p => p.filename === "process.js").length,
+        weakenWorkers: processes.filter(p => p.filename === "weaken.js").length,
+        growWorkers: processes.filter(p => p.filename === "grow.js").length,
+        hackWorkers: processes.filter(p => p.filename === "hack.js").length,
+        shareManagers: processes.filter(p => p.filename === "rent-capacity.js").length,
+        shareWorkers: processes.filter(p => p.filename === "rent-share.js").length,
+        xpFarmManagers: processes.filter(p => p.filename === "xp-farm.js").length,
+        byFilename,
+        byHost,
+        unknownFiles
+    };
+}
+
+function buildActionSuggestions(ctx) {
+    const suggestions = [];
+
+    if ((ctx.runtime.summary.rootedUnmanagedMoneyTargets ?? 0) > 0) {
+        suggestions.push({
+            id: "unmanaged-rooted-money-targets",
+            priority: "high",
+            category: "target-management",
+            observation: `${ctx.runtime.summary.rootedUnmanagedMoneyTargets} rooted money target(s) appear unmanaged.`,
+            recommendedCommand: "run assign-targets.js 1 4 false true 128 8",
+            aiPrompt: "Review assign-targets.js and process.js assumptions. Ensure rooted low-RAM money targets are remotely managed."
+        });
+    }
+
+    if ((ctx.runtime.summary.unmanagedTargets ?? 0) > 0) {
+        suggestions.push({
+            id: "unmanaged-money-targets",
+            priority: (ctx.runtime.summary.rootedUnmanagedMoneyTargets ?? 0) > 0 ? "high" : "medium",
+            category: "target-management",
+            observation: `${ctx.runtime.summary.unmanagedTargets} money target(s) appear unmanaged; ${ctx.runtime.summary.rootedUnmanagedMoneyTargets ?? 0} are rooted.`,
+            recommendedCommand: "run upload.js; run assign-targets.js 1 4 false true 128 8",
+            aiPrompt: "Separate unrooted from rooted-unmanaged targets before changing allocator logic."
+        });
+    }
+
+    if ((ctx.security.summary.rootedNotReadyTargets ?? 0) > 0 || ctx.security.summary.totalSecurityExcess > 0) {
+        suggestions.push({
+            id: "security-pressure",
+            priority: "high",
+            category: "security",
+            observation: `${ctx.security.summary.notReadyTargets} target(s) are above the configured security buffer. Total excess: ${ctx.security.summary.totalSecurityExcess.toFixed(2)}.`,
+            recommendedCommand: "run manager-console.js security",
+            aiPrompt: "Review process.js weakening logic, thread allocation, and whether securityBuffer is appropriate."
+        });
+    }
+
+    if ((ctx.money.summary.lowMoneyTargets ?? 0) > 0) {
+        suggestions.push({
+            id: "money-low",
+            priority: "medium",
+            category: "money",
+            observation: `${ctx.money.summary.lowMoneyTargets} target(s) are below the money threshold. Current network money is ${ctx.money.summary.moneyPct.toFixed(1)}% of max.`,
+            recommendedCommand: "run manager-console.js money",
+            aiPrompt: "Review grow backlog, moneyTargetRatio, and whether grow workers are being starved."
+        });
+    }
+
+    const unrooted = ctx.runtime.summary.unrootedServers ?? 0;
+    if (unrooted > 0) {
+        suggestions.push({
+            id: "unrooted-servers",
+            priority: "medium",
+            category: "rooting",
+            observation: `${unrooted} discovered server(s) are not rooted.`,
+            recommendedCommand: "run upload.js",
+            aiPrompt: "Review rooting/deployment flow and whether more port programs are needed."
+        });
+    }
+
+    if ((ctx.contracts.validUniqueContracts ?? 0) > 0) {
+        suggestions.push({
+            id: "contracts-discovered",
+            priority: "medium",
+            category: "contracts",
+            observation: `${ctx.contracts.validUniqueContracts} unique valid coding contract(s) discovered.`,
+            recommendedCommand: "run info-contracts.js",
+            aiPrompt: "Design a safe solve-contracts.js architecture, but avoid failed attempts without solver confidence."
+        });
+    }
+
+    if (ctx.purchasedServers.count === 0 && ctx.purchasedServers.apiAvailable) {
+        suggestions.push({
+            id: "purchased-server-registry-empty",
+            priority: "low",
+            category: "purchased-servers",
+            observation: "Purchased/cloud server API is available, but no bought servers were detected.",
+            recommendedCommand: "run buy-servers.js 0.01",
+            aiPrompt: "Refresh the purchased-server registry and verify whether bought servers already exist."
+        });
+    }
+
+    return suggestions;
+}
+
+function buildAiPrompts(ctx) {
+    return {
+        recommendedNextPrompt: "Review this Bitburner diagnostic JSON. Prioritise the actionSuggestions with priority high or medium. For each issue, explain likely cause, safest command, and whether a script change is recommended.",
+        shortPrompt: "Review this Bitburner diagnostic JSON and tell me the next three operational or code changes to make, in priority order.",
+        codeReviewPrompt: "Review this Bitburner diagnostic JSON as if maintaining the automation suite. Identify broken assumptions, process conflicts, missing script coverage, and scripts that should be rewritten.",
+        tuningPrompt: "Review money, security, payout, runtime, and share sections. Recommend tuning values for securityBuffer, moneyTargetRatio, hackTargetRatio, remote assignment, and share/rent capacity.",
+        architecturePrompt: "Suggest how to evolve the manager-console suite. Keep worker scripts minimal. Prefer independent info-* scripts over complex imports unless clearly beneficial.",
+        immediateFocus: {
+            highPriorityCount: ctx.actionSuggestions.filter(a => a.priority === "high").length,
+            mediumPriorityCount: ctx.actionSuggestions.filter(a => a.priority === "medium").length,
+            topIssues: ctx.actionSuggestions.filter(a => a.priority === "high" || a.priority === "medium").slice(0, 5)
+        },
+        environmentSummaryForPrompt: {
+            servers: ctx.network.total,
+            rooted: ctx.network.rooted,
+            moneyServers: ctx.network.moneyServers,
+            ramUsedPct: ctx.network.ramUsedPct,
+            moneyPct: ctx.network.moneyPct,
+            totalProcesses: ctx.processSummary.total,
+            unknownProcesses: ctx.processSummary.unknownOrExternal,
+            contractsUniqueValid: ctx.contracts.validUniqueContracts,
+            contractsRawFiles: ctx.contracts.rawContractFilesFound,
+            contractsDuplicatesSuppressed: ctx.contracts.duplicateFilesSuppressed
+        }
+    };
+}
+
+function findManager(processes, target) {
+    const local = processes.find(p => p.host === target && p.filename === "process.js" && p.args.length > 0 && String(p.args[0]) === target);
+    if (local) return { kind: "local", host: target, pid: local.pid };
+
+    const remote = processes.find(p => p.host !== target && p.filename === "process.js" && p.args.length > 0 && String(p.args[0]) === target);
+    if (remote) return { kind: `remote@${remote.host}`, host: remote.host, pid: remote.pid };
+
+    return { kind: "none", host: null, pid: null };
+}
+
+function findCycle(processes, target) {
+    for (const script of ["hack.js", "grow.js", "weaken.js"]) {
+        const proc = processes.find(p => p.filename === script && p.args.length > 0 && String(p.args[0]) === target);
+        if (proc) return { text: `${script.replace(".js", "")}@${proc.host} ${proc.threads}t`, host: proc.host, pid: proc.pid, script };
+    }
+    return { text: "idle", host: null, pid: null, script: null };
+}
+
+function allProcesses(ns, servers) {
+    const rows = [];
+    for (const host of servers) {
+        for (const proc of safeCall(() => ns.ps(host), [])) {
+            rows.push({
+                host,
+                pid: proc.pid,
+                filename: proc.filename,
+                threads: proc.threads,
+                args: proc.args ?? []
+            });
+        }
+    }
+    return rows;
+}
+
+function getAllServers(ns, start) {
+    const seen = new Set();
+    const stack = [start];
+
+    while (stack.length > 0) {
+        const server = stack.pop();
+        if (seen.has(server)) continue;
+        seen.add(server);
+        for (const next of safeCall(() => ns.scan(server), [])) {
+            if (!seen.has(next)) stack.push(next);
+        }
+    }
+
+    return [...seen];
+}
+
+function readJson(ns, file) {
     try {
-        if (!ns.fileExists(file, "home")) return fallback;
+        if (!ns.fileExists(file, "home")) return null;
         const text = ns.read(file);
-        if (!text || !text.trim()) return fallback;
+        if (!text) return null;
         return JSON.parse(text);
     } catch {
-        return fallback;
+        return null;
     }
 }
 
-function safeCall(fn, fallback = null) {
+function safeCall(fn, fallback) {
     try {
-        const value = fn();
-        if (value === undefined) return fallback;
-        return value;
+        return fn();
     } catch {
         return fallback;
     }
 }
 
-function sanitizeForJson(value) {
-    if (typeof value === "bigint") {
-        return value.toString();
-    }
-
-    if (value === undefined) {
-        return null;
-    }
-
-    if (value === null) {
-        return null;
-    }
-
-    if (typeof value !== "object") {
-        if (typeof value === "number" && !Number.isFinite(value)) return null;
-        return value;
-    }
-
-    if (Array.isArray(value)) {
-        return value.map(v => sanitizeForJson(v));
-    }
-
-    const output = {};
-    for (const key of Object.keys(value)) {
-        output[key] = sanitizeForJson(value[key]);
-    }
-
-    return output;
+function sum(values) {
+    return values.reduce((a, b) => a + (Number.isFinite(b) ? b : 0), 0);
 }
 
-function printSummary(ns, diagnostic, outputFile, byteLength) {
-    const network = diagnostic.summaries.network;
-    const processes = diagnostic.summaries.processes;
-    const contracts = diagnostic.summaries.contracts;
-    const stocks = diagnostic.summaries.stockMarket;
-    const suggestions = diagnostic.actionSuggestions || [];
-    const high = suggestions.filter(s => s.priority === "high");
-    const medium = suggestions.filter(s => s.priority === "medium");
-
-    ns.print("AI DIAGNOSTIC JSON PACKAGE");
-    ns.print("=".repeat(100));
-    ns.print(`Output:        ${outputFile}`);
-    ns.print(`Size:          ${formatBytes(byteLength)}`);
-    ns.print(`Generated:     ${diagnostic.generatedAtText}`);
-    ns.print("");
-
-    ns.print("NETWORK");
-    ns.print("-".repeat(100));
-    ns.print(`Servers:       ${network.total}`);
-    ns.print(`Rooted:        ${network.rooted}/${network.total}`);
-    ns.print(`Money servers: ${network.moneyServers}`);
-    ns.print(`RAM:           ${formatGb(network.usedRam)} / ${formatGb(network.totalRam)} (${formatPct(network.ramUsedPct)})`);
-    ns.print(`Money:         ${formatMoney(network.currentMoney)} / ${formatMoney(network.maxMoney)} (${formatPct(network.moneyPct)})`);
-    ns.print("");
-
-    ns.print("PROCESSES");
-    ns.print("-".repeat(100));
-    ns.print(`Total:         ${processes.total}`);
-    ns.print(`Known:         ${processes.knownFramework}`);
-    ns.print(`Unknown/ext:   ${processes.unknownOrExternal}`);
-    ns.print(`Managers:      ${processes.processManagers}`);
-    ns.print(`Workers:       weaken ${processes.weakenWorkers}, grow ${processes.growWorkers}, hack ${processes.hackWorkers}`);
-    ns.print(`Share:         managers ${processes.shareManagers}, workers ${processes.shareWorkers}`);
-    ns.print("");
-
-    ns.print("FUTURE / NON-CORE SYSTEMS");
-    ns.print("-".repeat(100));
-    ns.print(`Contracts:     ${contracts.validUniqueContracts || 0} unique valid | raw ${contracts.rawContractFilesFound || 0} | dupes ${contracts.duplicateFilesSuppressed || 0}`);
-    ns.print(`Stock API:     ${stocks.available ? "detected" : "not detected"} | symbols ${stocks.symbols || 0} | positions ${stocks.positions || 0}`);
-    ns.print("");
-
-    ns.print("ACTION SUGGESTIONS");
-    ns.print("-".repeat(100));
-    ns.print(`High priority:   ${high.length}`);
-    ns.print(`Medium priority: ${medium.length}`);
-    ns.print("");
-
-    const top = suggestions
-        .filter(s => ["high", "medium"].includes(s.priority))
-        .slice(0, 8);
-
-    if (top.length === 0) {
-        ns.print("No high/medium priority suggestions generated.");
-    } else {
-        for (const s of top) {
-            ns.print(`[${s.priority}] ${s.category}: ${s.observation}`);
-            if (s.recommendedCommand) ns.print(`  command: ${s.recommendedCommand}`);
-        }
-    }
-
-    ns.print("");
-    ns.print("RECOMMENDED AI PROMPT");
-    ns.print("-".repeat(100));
-    ns.print(diagnostic.aiPrompts.recommendedNextPrompt);
-    ns.print("");
-
-    ns.print("UPLOAD THIS FILE INTO CHATGPT WHEN ASKING FOR SYSTEM TUNING:");
-    ns.print(outputFile);
+function pct(value, max) {
+    if (!Number.isFinite(value) || !Number.isFinite(max) || max <= 0) return 0;
+    return (value / max) * 100;
 }
 
-function openConsole(ns, width = 1180, height = 720) {
+function stableStringify(value) {
     try {
-        if (ns.ui && typeof ns.ui.openTail === "function") ns.ui.openTail();
-        if (ns.ui && typeof ns.ui.resizeTail === "function") ns.ui.resizeTail(width, height);
+        return JSON.stringify(value, (_key, val) => typeof val === "bigint" ? val.toString() : val);
     } catch {
-        // Tail display is useful but not required.
+        return String(value);
     }
 }
 
-function formatGb(v) {
-    return `${Number(v || 0).toFixed(2)}GB`;
+function fmtRam(ns, value, decimals = 2) {
+    if (!Number.isFinite(value)) return "-";
+    try {
+        if (ns.format && typeof ns.format.ram === "function") return ns.format.ram(value, decimals);
+    } catch {}
+    return `${Number(value).toFixed(decimals)}GB`;
 }
 
-function formatPct(v) {
-    return `${Number(v || 0).toFixed(1)}%`;
+function fmtMoney(ns, value) {
+    if (!Number.isFinite(value)) return "-";
+    try {
+        if (ns.format && typeof ns.format.money === "function") return ns.format.money(value);
+    } catch {}
+    if (value >= 1e12) return `$${(value / 1e12).toFixed(2)}t`;
+    if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}b`;
+    if (value >= 1e6) return `$${(value / 1e6).toFixed(2)}m`;
+    if (value >= 1e3) return `$${(value / 1e3).toFixed(2)}k`;
+    return `$${Number(value).toFixed(0)}`;
 }
 
-function formatBytes(v) {
-    v = Number(v || 0);
-    if (v >= 1024 * 1024) return `${(v / 1024 / 1024).toFixed(2)}MB`;
-    if (v >= 1024) return `${(v / 1024).toFixed(2)}KB`;
-    return `${v}B`;
-}
-
-function formatMoney(value) {
-    value = Number(value || 0);
-    const abs = Math.abs(value);
-
-    if (abs >= 1e15) return `$${(value / 1e15).toFixed(2)}q`;
-    if (abs >= 1e12) return `$${(value / 1e12).toFixed(2)}t`;
-    if (abs >= 1e9) return `$${(value / 1e9).toFixed(2)}b`;
-    if (abs >= 1e6) return `$${(value / 1e6).toFixed(2)}m`;
-    if (abs >= 1e3) return `$${(value / 1e3).toFixed(2)}k`;
-
-    return `$${value.toFixed(0)}`;
-}
-
-function round(value, dp = 2) {
-    value = Number(value || 0);
-    const factor = Math.pow(10, dp);
-    return Math.round(value * factor) / factor;
+function fmtDuration(ms) {
+    if (!Number.isFinite(ms) || ms <= 0) return "now";
+    const seconds = Math.ceil(ms / 1000);
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    if (h > 0) return `${h}h ${m}m`;
+    if (m > 0) return `${m}m ${s}s`;
+    return `${s}s`;
 }
