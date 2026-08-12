@@ -7,8 +7,9 @@ export async function main(ns) {
         prefix: String(ns.args[1] ?? "pserv-"),
         dryRun: parseBool(ns.args[2] ?? false),
         tail: parseBool(ns.args[3] ?? true),
-        minRam: 8,
-        markerFile: "restart-required.txt"
+        minRam: Math.max(2, Number(ns.args[4] ?? 8)),
+        markerFile: "restart-required.txt",
+        registryFile: "/data/purchased-servers.json"
     };
 
     if (ns.getHostname() !== "home") {
@@ -19,286 +20,214 @@ export async function main(ns) {
     const cloud = getCloudApi(ns);
 
     if (!cloud.available) {
-        ns.tprint("ERROR: No purchased/cloud server API is available.");
-        ns.tprint("Bitburner v3 expects ns.cloud.* functions.");
+        ns.tprint("ERROR: No purchased/cloud server API is available in this Bitburner context.");
         return -2;
     }
 
-    if (CFG.tail) {
-        await openTail(ns, "Buy / Upgrade Cloud Servers");
-    }
-
+    if (CFG.tail) await openTail(ns, "Buy / Upgrade Servers");
     ns.clearLog();
 
-    // Remove stale marker at the start. It will only be recreated if capacity actually changes.
-    if (ns.fileExists(CFG.markerFile, "home")) {
-        ns.rm(CFG.markerFile, "home");
-    }
+    await writePurchasedRegistry(ns, CFG, cloud, [], false);
+
+    if (ns.fileExists(CFG.markerFile, "home")) ns.rm(CFG.markerFile, "home");
 
     const startMoney = ns.getServerMoneyAvailable("home");
     const budget = Math.floor(startMoney * CFG.spendRatio);
     let remainingBudget = budget;
-    let spent = 0;
-    let bought = 0;
-    let upgraded = 0;
-    let skipped = 0;
-    const actions = [];
 
-    const limit = cloud.getLimit();
-    const maxRam = cloud.getRamLimit();
+    const limit = Number(cloud.getLimit());
+    const maxRam = Number(cloud.getRamLimit());
 
     if (!Number.isFinite(limit) || limit <= 0 || !Number.isFinite(maxRam) || maxRam <= 0) {
-        ns.tprint(`ERROR: Invalid cloud limits. limit=${limit}, maxRam=${maxRam}`);
+        ns.tprint(`ERROR: Invalid purchased/cloud limits. limit=${limit}, maxRam=${maxRam}`);
         return -3;
     }
 
-    const existing = cloud.getNames().sort(sortServerNames(CFG.prefix));
+    let bought = 0;
+    let upgraded = 0;
+    let skipped = 0;
+    let spent = 0;
+    const actions = [];
 
-    logHeader(ns, CFG, startMoney, budget, limit, maxRam, existing, cloud.mode);
+    ns.print("Purchased/cloud server buyer");
+    ns.print(`API mode:          ${cloud.mode}`);
+    ns.print(`Spend ratio:       ${CFG.spendRatio}`);
+    ns.print(`Prefix for new:    ${CFG.prefix}`);
+    ns.print(`Dry run:           ${CFG.dryRun}`);
+    ns.print(`Budget:            ${fmtMoney(ns, budget)}`);
+    ns.print(`Limit:             ${limit}`);
+    ns.print(`Max RAM/server:    ${fmtRam(ns, maxRam)}`);
+    ns.print(`Registry:          ${CFG.registryFile}`);
+    ns.print("");
 
-    // Phase 1: fill empty slots.
-    const existingSet = new Set(existing);
+    let existing = safeNames(ns, cloud);
+    let nextIndex = nextGeneratedIndex(existing, CFG.prefix);
 
-    for (let i = 0; i < limit; i++) {
-        const name = `${CFG.prefix}${i}`;
-
-        if (existingSet.has(name) || ns.serverExists(name)) {
-            continue;
-        }
+    while (existing.length < limit) {
+        const name = nextAvailableGeneratedName(ns, CFG.prefix, nextIndex);
+        nextIndex++;
 
         const ram = largestAffordableRam(cloud, remainingBudget, maxRam, CFG.minRam);
-
         if (ram < CFG.minRam) {
             skipped++;
-            actions.push({
-                action: "skip-buy",
-                server: name,
-                reason: "insufficient budget for minimum RAM",
-                remainingBudget
-            });
+            actions.push({ action: "skip-buy", server: name, reason: "insufficient budget for minimum RAM", remainingBudget });
             break;
         }
 
-        const cost = cloud.getCost(ram);
+        const cost = Number(cloud.getCost(ram));
 
         if (CFG.dryRun) {
             bought++;
             spent += cost;
             remainingBudget -= cost;
-            actions.push({
-                action: "dry-buy",
-                server: name,
-                ram,
-                cost
-            });
+            existing.push(name);
+            actions.push({ action: "dry-buy", server: name, ram, cost });
             continue;
         }
 
-        const purchasedName = cloud.purchase(name, ram);
+        const result = cloud.purchase(name, ram);
+        const purchasedName = normalisePurchaseResult(result, name);
 
-        if (purchasedName) {
+        if (purchasedName && ns.serverExists(purchasedName)) {
             bought++;
             spent += cost;
             remainingBudget -= cost;
-            existingSet.add(purchasedName);
-            actions.push({
-                action: "buy",
-                server: purchasedName,
-                ram,
-                cost
-            });
+            existing = safeNames(ns, cloud);
+            actions.push({ action: "buy", server: purchasedName, ram, cost });
         } else {
             skipped++;
-            actions.push({
-                action: "failed-buy",
-                server: name,
-                ram,
-                cost
-            });
-        }
-
-        await ns.sleep(10);
-    }
-
-    // Phase 2: upgrade smallest servers first once fleet is full.
-    while (true) {
-        const fleet = cloud.getNames()
-            .map(name => ({
-                name,
-                ram: ns.getServerMaxRam(name)
-            }))
-            .sort((a, b) => a.ram - b.ram || a.name.localeCompare(b.name));
-
-        if (fleet.length < limit) {
+            actions.push({ action: "failed-buy", server: name, ram, cost, result: String(result) });
             break;
         }
 
-        const candidate = findBestUpgrade(cloud, fleet, remainingBudget, maxRam);
+        await ns.sleep(20);
+    }
 
-        if (!candidate) {
+    while (true) {
+        const fleet = safeNames(ns, cloud)
+            .filter(name => ns.serverExists(name))
+            .map(name => ({ name, ram: ns.getServerMaxRam(name) }))
+            .sort((a, b) => a.ram - b.ram || a.name.localeCompare(b.name));
+
+        if (fleet.length < limit) break;
+
+        const upgrade = findBestUpgrade(cloud, fleet, remainingBudget, maxRam);
+        if (!upgrade) {
             skipped++;
-            actions.push({
-                action: "skip-upgrade",
-                server: "-",
-                reason: "no affordable useful upgrade",
-                remainingBudget
-            });
+            actions.push({ action: "skip-upgrade", server: "-", reason: "no affordable useful upgrade", remainingBudget });
             break;
         }
 
         if (CFG.dryRun) {
             upgraded++;
-            spent += candidate.cost;
-            remainingBudget -= candidate.cost;
-            actions.push({
-                action: "dry-upgrade",
-                server: candidate.name,
-                fromRam: candidate.oldRam,
-                toRam: candidate.newRam,
-                cost: candidate.cost
-            });
+            spent += upgrade.cost;
+            remainingBudget -= upgrade.cost;
+            actions.push({ action: "dry-upgrade", server: upgrade.name, fromRam: upgrade.oldRam, toRam: upgrade.newRam, cost: upgrade.cost });
             continue;
         }
 
-        ns.killall(candidate.name, true);
+        ns.killall(upgrade.name, true);
         await ns.sleep(50);
 
-        const ok = cloud.upgrade(candidate.name, candidate.newRam);
+        const ok = cloud.upgrade(upgrade.name, upgrade.newRam);
 
         if (ok) {
             upgraded++;
-            spent += candidate.cost;
-            remainingBudget -= candidate.cost;
-            actions.push({
-                action: "upgrade",
-                server: candidate.name,
-                fromRam: candidate.oldRam,
-                toRam: candidate.newRam,
-                cost: candidate.cost
-            });
+            spent += upgrade.cost;
+            remainingBudget -= upgrade.cost;
+            actions.push({ action: "upgrade", server: upgrade.name, fromRam: upgrade.oldRam, toRam: upgrade.newRam, cost: upgrade.cost });
         } else {
             skipped++;
-            actions.push({
-                action: "failed-upgrade",
-                server: candidate.name,
-                fromRam: candidate.oldRam,
-                toRam: candidate.newRam,
-                cost: candidate.cost
-            });
+            actions.push({ action: "failed-upgrade", server: upgrade.name, fromRam: upgrade.oldRam, toRam: upgrade.newRam, cost: upgrade.cost });
             break;
         }
 
-        await ns.sleep(10);
+        await ns.sleep(20);
     }
 
     const changedCapacity = bought > 0 || upgraded > 0;
 
+    if (!CFG.dryRun) {
+        await writePurchasedRegistry(ns, CFG, cloud, actions, changedCapacity);
+    }
+
     if (changedCapacity && !CFG.dryRun) {
         const marker = {
             timestamp: Date.now(),
+            timestampText: new Date(Date.now()).toISOString(),
             script: "buy-servers.js",
-            api: cloud.mode,
+            apiMode: cloud.mode,
             bought,
             upgraded,
             skipped,
             spendRatio: CFG.spendRatio,
+            newServerPrefix: CFG.prefix,
             budget,
             spent,
             remainingBudget,
-            message: "Server capacity changed. Run startup.js true false to clean, redeploy, assign targets, and restart the share/rent layer."
+            registryFile: CFG.registryFile,
+            message: "Purchased/cloud server capacity changed. Redeploy with startup.js true false or upload.js + assign-targets.js."
         };
 
         await ns.write(CFG.markerFile, JSON.stringify(marker, null, 2), "w");
-    } else {
-        // Critical fix: no marker if no actual buy/upgrade occurred.
-        if (ns.fileExists(CFG.markerFile, "home")) {
-            ns.rm(CFG.markerFile, "home");
-        }
     }
 
-    printSummary(ns, {
-        CFG,
-        cloud,
-        limit,
-        maxRam,
-        startMoney,
-        budget,
-        remainingBudget,
-        spent,
-        bought,
-        upgraded,
-        skipped,
-        changedCapacity,
-        actions
-    });
+    printSummary(ns, { CFG, cloud, bought, upgraded, skipped, spent, remainingBudget, changedCapacity, actions });
 
     if (changedCapacity && !CFG.dryRun) {
         ns.tprint(`buy-servers.js: capacity changed — bought ${bought}, upgraded ${upgraded}. Run: startup.js true false`);
     } else if (CFG.dryRun) {
         ns.tprint(`buy-servers.js dry run: would buy ${bought}, upgrade ${upgraded}, spend ${fmtMoney(ns, spent)}.`);
     } else {
-        ns.tprint("buy-servers.js: no capacity changed; restart marker not written.");
+        ns.tprint("buy-servers.js: registry refreshed; no capacity changed.");
     }
 
     return changedCapacity ? 1 : 0;
 }
 
-/* ==============================
-   Cloud / purchased-server API adapter
-   ============================== */
-
 function getCloudApi(ns) {
-    // Bitburner v3 API.
-    if (ns.cloud) {
+    if (ns.cloud && typeof ns.cloud.getServerNames === "function") {
         return {
             available: true,
             mode: "ns.cloud",
+            getNames: () => ns.cloud.getServerNames(),
             getLimit: () => ns.cloud.getServerLimit(),
             getRamLimit: () => ns.cloud.getRamLimit(),
-            getNames: () => ns.cloud.getServerNames(),
             getCost: ram => ns.cloud.getServerCost(ram),
-            getUpgradeCost: (name, ram) => ns.cloud.getServerUpgradeCost(name, ram),
+            getUpgradeCost: (host, ram) => ns.cloud.getServerUpgradeCost(host, ram),
             purchase: (name, ram) => ns.cloud.purchaseServer(name, ram),
-            upgrade: (name, ram) => ns.cloud.upgradeServer(name, ram)
+            upgrade: (host, ram) => ns.cloud.upgradeServer(host, ram)
         };
     }
 
-    // Older API fallback.
-    if (
+    const legacyAvailable =
+        typeof ns.getPurchasedServers === "function" &&
         typeof ns.getPurchasedServerLimit === "function" &&
         typeof ns.getPurchasedServerMaxRam === "function" &&
-        typeof ns.getPurchasedServers === "function" &&
         typeof ns.getPurchasedServerCost === "function" &&
-        typeof ns.purchaseServer === "function"
-    ) {
+        typeof ns.purchaseServer === "function";
+
+    if (legacyAvailable) {
         return {
             available: true,
             mode: "legacy purchased-server API",
+            getNames: () => ns.getPurchasedServers(),
             getLimit: () => ns.getPurchasedServerLimit(),
             getRamLimit: () => ns.getPurchasedServerMaxRam(),
-            getNames: () => ns.getPurchasedServers(),
             getCost: ram => ns.getPurchasedServerCost(ram),
-            getUpgradeCost: (name, ram) => {
+            getUpgradeCost: (host, ram) => {
                 if (typeof ns.getPurchasedServerUpgradeCost === "function") {
-                    return ns.getPurchasedServerUpgradeCost(name, ram);
+                    return ns.getPurchasedServerUpgradeCost(host, ram);
                 }
 
-                const current = ns.getServerMaxRam(name);
-                return Math.max(0, ns.getPurchasedServerCost(ram) - ns.getPurchasedServerCost(current));
+                const currentRam = ns.getServerMaxRam(host);
+                return Math.max(0, ns.getPurchasedServerCost(ram) - ns.getPurchasedServerCost(currentRam));
             },
             purchase: (name, ram) => ns.purchaseServer(name, ram),
-            upgrade: (name, ram) => {
+            upgrade: (host, ram) => {
                 if (typeof ns.upgradePurchasedServer === "function") {
-                    return ns.upgradePurchasedServer(name, ram);
+                    return ns.upgradePurchasedServer(host, ram);
                 }
-
-                if (typeof ns.deleteServer === "function") {
-                    ns.killall(name, true);
-                    const deleted = ns.deleteServer(name);
-                    if (!deleted) return false;
-                    return ns.purchaseServer(name, ram) === name;
-                }
-
                 return false;
             }
         };
@@ -306,23 +235,113 @@ function getCloudApi(ns) {
 
     return {
         available: false,
-        mode: "none"
+        mode: "none",
+        getNames: () => [],
+        getLimit: () => null,
+        getRamLimit: () => null,
+        getCost: () => Infinity,
+        getUpgradeCost: () => Infinity,
+        purchase: () => "",
+        upgrade: () => false
     };
 }
 
-/* ==============================
-   Buying / upgrading
-   ============================== */
+async function writePurchasedRegistry(ns, CFG, cloud, actions = [], changedCapacity = false) {
+    const now = Date.now();
+    const names = new Set();
+
+    try {
+        if (cloud.available) {
+            for (const name of cloud.getNames()) {
+                if (name && ns.serverExists(name)) names.add(name);
+            }
+        }
+    } catch {}
+
+    try {
+        if (ns.fileExists(CFG.registryFile, "home")) {
+            const oldRegistry = JSON.parse(ns.read(CFG.registryFile));
+            for (const item of oldRegistry.servers ?? []) {
+                const name = typeof item === "string" ? item : item.name;
+                if (name && ns.serverExists(name)) names.add(name);
+            }
+        }
+    } catch {}
+
+    const servers = [...names]
+        .sort()
+        .map(name => {
+            const maxRam = ns.getServerMaxRam(name);
+            const usedRam = ns.getServerUsedRam(name);
+            return {
+                name,
+                maxRam,
+                usedRam,
+                freeRam: Math.max(0, maxRam - usedRam),
+                source: "api-or-registry",
+                exists: true
+            };
+        });
+
+    const registry = {
+        schemaVersion: 1,
+        updatedAt: now,
+        updatedAtText: new Date(now).toISOString(),
+        writer: "buy-servers.js",
+        apiMode: cloud.mode,
+        newServerNamingPrefix: CFG.prefix,
+        dryRun: CFG.dryRun,
+        changedCapacity,
+        serverCount: servers.length,
+        totalRam: sum(servers.map(s => s.maxRam)),
+        usedRam: sum(servers.map(s => s.usedRam)),
+        freeRam: sum(servers.map(s => s.freeRam)),
+        servers,
+        recentActions: actions.slice(-50),
+        note: "Ownership is detected from the Bitburner API first, then merged with this registry. No naming prefix is assumed."
+    };
+
+    await ns.write(CFG.registryFile, JSON.stringify(registry, null, 2), "w");
+}
+
+function safeNames(ns, cloud) {
+    try {
+        if (!cloud.available) return [];
+        return cloud.getNames().filter(name => name && ns.serverExists(name)).sort();
+    } catch {
+        return [];
+    }
+}
+
+function normalisePurchaseResult(result, requestedName) {
+    if (typeof result === "string") return result || "";
+    if (result === true) return requestedName;
+    return "";
+}
+
+function nextGeneratedIndex(existingNames, prefix) {
+    let max = -1;
+    for (const name of existingNames) {
+        if (!String(name).startsWith(prefix)) continue;
+        const suffix = String(name).slice(prefix.length);
+        if (/^\d+$/.test(suffix)) max = Math.max(max, Number(suffix));
+    }
+    return max + 1;
+}
+
+function nextAvailableGeneratedName(ns, prefix, startIndex) {
+    let i = startIndex;
+    while (ns.serverExists(`${prefix}${i}`)) i++;
+    return `${prefix}${i}`;
+}
 
 function largestAffordableRam(cloud, budget, maxRam, minRam) {
-    let ram = minRam;
-
+    let ram = normalisePowerOfTwo(minRam);
     if (cloud.getCost(ram) > budget) return 0;
 
     while (ram * 2 <= maxRam) {
         const next = ram * 2;
-        const cost = cloud.getCost(next);
-
+        const cost = Number(cloud.getCost(next));
         if (!Number.isFinite(cost) || cost > budget) break;
         ram = next;
     }
@@ -334,25 +353,17 @@ function findBestUpgrade(cloud, fleet, budget, maxRam) {
     for (const server of fleet) {
         if (server.ram >= maxRam) continue;
 
-        let targetRam = server.ram * 2;
+        let targetRam = Math.max(2, normalisePowerOfTwo(server.ram * 2));
         let best = null;
 
         while (targetRam <= maxRam) {
-            const cost = cloud.getUpgradeCost(server.name, targetRam);
-
+            const cost = Number(cloud.getUpgradeCost(server.name, targetRam));
             if (Number.isFinite(cost) && cost <= budget) {
-                best = {
-                    name: server.name,
-                    oldRam: server.ram,
-                    newRam: targetRam,
-                    cost
-                };
-
+                best = { name: server.name, oldRam: server.ram, newRam: targetRam, cost };
                 targetRam *= 2;
-                continue;
+            } else {
+                break;
             }
-
-            break;
         }
 
         if (best) return best;
@@ -361,40 +372,30 @@ function findBestUpgrade(cloud, fleet, budget, maxRam) {
     return null;
 }
 
-/* ==============================
-   Output
-   ============================== */
-
-function logHeader(ns, CFG, startMoney, budget, limit, maxRam, existing, apiMode) {
-    ns.print("Cloud server buyer");
-    ns.print(`API: ${apiMode}`);
-    ns.print(`Spend ratio: ${CFG.spendRatio}`);
-    ns.print(`Home money: ${fmtMoney(ns, startMoney)}`);
-    ns.print(`Budget: ${fmtMoney(ns, budget)}`);
-    ns.print(`Limit: ${limit}`);
-    ns.print(`Max RAM/server: ${fmtRam(ns, maxRam)}`);
-    ns.print(`Existing: ${existing.length}/${limit}`);
-    ns.print(`Dry run: ${CFG.dryRun}`);
-    ns.print("");
+function normalisePowerOfTwo(value) {
+    let ram = 1;
+    while (ram < value) ram *= 2;
+    return ram;
 }
 
 function printSummary(ns, result) {
-    const rows = [
-        ["API", result.cloud.mode],
-        ["Bought", String(result.bought)],
-        ["Upgraded", String(result.upgraded)],
-        ["Skipped", String(result.skipped)],
-        ["Spent", fmtMoney(ns, result.spent)],
-        ["Remaining budget", fmtMoney(ns, result.remainingBudget)],
-        ["Capacity changed", result.changedCapacity ? "yes" : "no"],
-        ["Restart marker", result.changedCapacity && !result.CFG.dryRun ? "written" : "not written"]
-    ];
-
     ns.print("");
     ns.print("Summary");
-    ns.print(table(["Metric", "Value"], rows));
+    ns.print(table(
+        ["Metric", "Value"],
+        [
+            ["API", result.cloud.mode],
+            ["Bought", String(result.bought)],
+            ["Upgraded", String(result.upgraded)],
+            ["Skipped", String(result.skipped)],
+            ["Spent", fmtMoney(ns, result.spent)],
+            ["Remaining budget", fmtMoney(ns, result.remainingBudget)],
+            ["Changed capacity", result.changedCapacity ? "yes" : "no"],
+            ["Registry", result.CFG.registryFile]
+        ]
+    ));
 
-    if (result.actions.length) {
+    if (result.actions.length > 0) {
         ns.print("");
         ns.print("Actions");
         ns.print(table(
@@ -409,10 +410,6 @@ function printSummary(ns, result) {
     }
 }
 
-/* ==============================
-   Helpers
-   ============================== */
-
 function clampNumber(value, min, max) {
     if (!Number.isFinite(value)) return min;
     return Math.max(min, Math.min(max, value));
@@ -420,65 +417,39 @@ function clampNumber(value, min, max) {
 
 function parseBool(value) {
     if (typeof value === "boolean") return value;
-
     const text = String(value).toLowerCase().trim();
     return text === "true" || text === "1" || text === "yes" || text === "y";
 }
 
-function sortServerNames(prefix) {
-    return (a, b) => {
-        const ai = Number(String(a).replace(prefix, ""));
-        const bi = Number(String(b).replace(prefix, ""));
-
-        if (Number.isFinite(ai) && Number.isFinite(bi)) {
-            return ai - bi;
-        }
-
-        return String(a).localeCompare(String(b));
-    };
+function sum(values) {
+    return values.reduce((a, b) => a + (Number.isFinite(b) ? b : 0), 0);
 }
 
 function fmtMoney(ns, value) {
+    if (!Number.isFinite(value)) return "-";
     try {
-        if (ns.format && typeof ns.format.money === "function") {
-            return ns.format.money(value);
-        }
-    } catch (_) {}
-
+        if (ns.format && typeof ns.format.money === "function") return ns.format.money(value);
+    } catch {}
     if (value >= 1e12) return `$${(value / 1e12).toFixed(2)}t`;
     if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}b`;
     if (value >= 1e6) return `$${(value / 1e6).toFixed(2)}m`;
     if (value >= 1e3) return `$${(value / 1e3).toFixed(2)}k`;
-
     return `$${Number(value).toFixed(0)}`;
 }
 
-function fmtRam(ns, value) {
+function fmtRam(ns, value, decimals = 2) {
+    if (!Number.isFinite(value)) return "-";
     try {
-        if (ns.format && typeof ns.format.ram === "function") {
-            return ns.format.ram(value);
-        }
-    } catch (_) {}
-
-    try {
-        if (typeof ns.formatRam === "function") {
-            return ns.formatRam(value);
-        }
-    } catch (_) {}
-
-    return `${Number(value).toFixed(1)}GB`;
+        if (ns.format && typeof ns.format.ram === "function") return ns.format.ram(value, decimals);
+    } catch {}
+    return `${Number(value).toFixed(decimals)}GB`;
 }
 
 function table(headers, rows) {
-    const widths = headers.map((h, i) => Math.max(
-        String(h).length,
-        ...rows.map(r => String(r[i] ?? "").length)
-    ));
-
-    const line = values => values.map((v, i) => String(v ?? "").padEnd(widths[i])).join(" | ");
-    const sep = widths.map(w => "-".repeat(w)).join("-|-");
-
-    return [line(headers), sep, ...rows.map(line)].join("\n");
+    if (!rows || rows.length === 0) return "(none)";
+    const widths = headers.map((h, i) => Math.max(String(h).length, ...rows.map(r => String(r[i] ?? "").length)));
+    const line = row => row.map((v, i) => String(v ?? "").padEnd(widths[i])).join(" | ");
+    return [line(headers), widths.map(w => "-".repeat(w)).join("-|-"), ...rows.map(line)].join("\n");
 }
 
 async function openTail(ns, titleText) {
@@ -486,18 +457,10 @@ async function openTail(ns, titleText) {
         if (ns.ui && typeof ns.ui.openTail === "function") {
             ns.ui.openTail();
             await ns.sleep(50);
-            ns.ui.resizeTail(900, 620);
-            ns.ui.moveTail(120, 90);
-            ns.ui.setTailTitle(titleText);
+            if (typeof ns.ui.resizeTail === "function") ns.ui.resizeTail(900, 620);
+            if (typeof ns.ui.moveTail === "function") ns.ui.moveTail(120, 90);
+            if (typeof ns.ui.setTailTitle === "function") ns.ui.setTailTitle(titleText);
             return;
         }
-    } catch (_) {}
-
-    try {
-        ns.tail();
-        await ns.sleep(50);
-        ns.resizeTail(900, 620);
-        ns.moveTail(120, 90);
-        ns.setTitle(titleText);
-    } catch (_) {}
+    } catch {}
 }
