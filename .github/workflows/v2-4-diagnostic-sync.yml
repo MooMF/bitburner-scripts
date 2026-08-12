@@ -18,7 +18,8 @@ jobs:
         shell: bash
         run: |
           cat .release-sync/info-diagnostic.part1.b64 \
-              .release-sync/info-diagnostic.part2.b64 \
+              .release-sync/info-diagnostic.part2a.b64 \
+              .release-sync/info-diagnostic.part2b.b64 \
               .release-sync/info-diagnostic.part3.b64 \
               .release-sync/info-diagnostic.part4.b64 \
               .release-sync/info-diagnostic.part5.b64 \
