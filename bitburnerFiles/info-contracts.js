@@ -11,6 +11,7 @@
  *   - Ignore invalid pseudo-hosts such as ".".
  *   - Validate contracts using ns.codingcontract calls.
  *   - Write a compact JSON report.
+ *   - Add solveQueue entries for every valid contract handle.
  *   - Do not attempt solves.
  *
  * Usage:
@@ -27,6 +28,10 @@
  *       number   = visible row limit
  *   1 limit:
  *       row limit if arg0 is silent
+ *
+ * Solver queue:
+ *   solveQueue is NOT de-duplicated. Every valid contract handle is preserved.
+ *   The solver must re-read live contract data before attempting.
  *
  * De-duplication:
  *   Primary key:
@@ -86,6 +91,14 @@ export async function main(ns) {
         byType[r.type] = (byType[r.type] || 0) + 1;
     }
 
+    const solveQueue = buildSolveQueue(rawRows);
+
+    const bySolverKey = {};
+    for (const r of solveQueue) {
+        const key = r.solverKey || "unsupported";
+        bySolverKey[key] = (bySolverKey[key] || 0) + 1;
+    }
+
     const report = {
         timestamp: Date.now(),
         timestampText: new Date().toISOString(),
@@ -99,14 +112,18 @@ export async function main(ns) {
             validUniqueContracts: valid.length,
             invalidUniqueContractFiles: invalid.length,
 
+            solveQueueContracts: solveQueue.length,
+            solveQueueSupportedNow: solveQueue.filter(r => Boolean(r.solverKey)).length,
+            bySolverKey,
+
             homePreferredContracts: homePreferred.length,
             remotePreferredContracts: remotePreferred.length,
 
             byType,
 
-            implemented: "read-only inventory",
+            implemented: "read-only inventory + solver queue",
             solverImplemented: false,
-            warning: "No solve attempts are made by this script.",
+            warning: "No solve attempts are made by this script. solveQueue only records remote contract handles.",
 
             dedupeRule: "fileName + contractType + dataSignature",
             preferenceRule: "home first, then valid, then higher tries remaining",
@@ -114,6 +131,7 @@ export async function main(ns) {
         },
 
         contracts: preferred,
+        solveQueue,
         duplicates,
         rawContracts: rawRows,
     };
@@ -145,8 +163,12 @@ function inspectContract(ns, server, file) {
         valid: false,
         type: null,
         triesRemaining: null,
+        data: null,
+        dataText: null,
         dataPreview: null,
         dataShape: null,
+        question: null,
+        questionText: null,
         error: null,
     };
 
@@ -165,6 +187,8 @@ function inspectContract(ns, server, file) {
             type,
             triesRemaining,
 
+            data: sanitizeForJson(data),
+            dataText,
             dataTextLength: dataText.length,
             dataHash,
             dataSignature,
@@ -172,6 +196,8 @@ function inspectContract(ns, server, file) {
 
             dataPreview: dataText.length > 600 ? dataText.slice(0, 600) + "..." : dataText,
             dataShape: describeShape(data),
+            question: buildQuestion(type, data),
+            questionText: buildQuestionText(type, data),
             error: null,
         };
 
@@ -193,6 +219,88 @@ function inspectContract(ns, server, file) {
         row.preferredScore = scoreContract(row);
         return row;
     }
+}
+
+function buildSolveQueue(rawRows) {
+    const rows = [];
+
+    for (const row of rawRows) {
+        if (!row || !row.valid) continue;
+
+        const server = row.server;
+        const file = row.file;
+        const type = row.type;
+
+        if (!server || !file || !type) continue;
+
+        rows.push({
+            kind: "codingContract",
+            handle: {
+                server,
+                file,
+            },
+
+            server,
+            file,
+            fileName: row.fileName,
+            type,
+            triesRemaining: row.triesRemaining,
+
+            solverKey: solverKeyForType(type),
+            valid: true,
+
+            data: row.data,
+            dataText: row.dataText,
+            dataTextLength: row.dataTextLength,
+            dataHash: row.dataHash,
+            dataSignature: row.dataSignature,
+            dataShape: row.dataShape,
+            question: row.question,
+            questionText: row.questionText,
+
+            note: "Remote contract handle. Do not copy .cct to home; solve with ns.codingcontract using server + file.",
+        });
+    }
+
+    rows.sort(compareSolveQueueRows);
+    return rows;
+}
+
+function solverKeyForType(type) {
+    switch (String(type || "")) {
+        case "Find Largest Prime Factor":
+            return "largestPrimeFactor";
+        case "Encryption I: Caesar Cipher":
+            return "caesarCipher";
+        case "Encryption II: Vigenère Cipher":
+            return "vigenereCipher";
+        case "Algorithmic Stock Trader I":
+            return "stockTrader1";
+        case "Algorithmic Stock Trader II":
+            return "stockTrader2";
+        case "Algorithmic Stock Trader III":
+            return "stockTrader3";
+        case "Algorithmic Stock Trader IV":
+            return "stockTrader4";
+        default:
+            return null;
+    }
+}
+
+function compareSolveQueueRows(a, b) {
+    const supportedDiff = Number(Boolean(b.solverKey)) - Number(Boolean(a.solverKey));
+    if (supportedDiff !== 0) return supportedDiff;
+
+    const typeDiff = String(a.type || "").localeCompare(String(b.type || ""));
+    if (typeDiff !== 0) return typeDiff;
+
+    const triesDiff = Number(b.triesRemaining || 0) - Number(a.triesRemaining || 0);
+    if (triesDiff !== 0) return triesDiff;
+
+    const serverDiff = String(a.server || "").localeCompare(String(b.server || ""));
+    if (serverDiff !== 0) return serverDiff;
+
+    return String(a.file || "").localeCompare(String(b.file || ""));
 }
 
 function dedupeContracts(rows) {
@@ -226,6 +334,7 @@ function dedupeContracts(rows) {
                 triesRemaining: r.triesRemaining,
                 dataTextLength: r.dataTextLength,
                 dataHash: r.dataHash,
+                questionText: r.questionText,
                 error: r.error,
                 preferredScore: r.preferredScore,
             })),
@@ -256,6 +365,7 @@ function dedupeContracts(rows) {
                     triesRemaining: r.triesRemaining,
                     dataTextLength: r.dataTextLength,
                     dataHash: r.dataHash,
+                    questionText: r.questionText,
                     error: r.error,
                     preferredScore: r.preferredScore,
                 })),
@@ -332,6 +442,8 @@ function printReport(ns, report, limit) {
     ns.print(`Duplicates suppressed:    ${s.duplicateFilesSuppressed}`);
     ns.print(`Valid unique contracts:   ${s.validUniqueContracts}`);
     ns.print(`Invalid unique files:     ${s.invalidUniqueContractFiles}`);
+    ns.print(`Solve queue handles:      ${s.solveQueueContracts}`);
+    ns.print(`Supported now:            ${s.solveQueueSupportedNow}`);
     ns.print(`Preferred on home:        ${s.homePreferredContracts}`);
     ns.print(`Preferred remote:         ${s.remotePreferredContracts}`);
     ns.print(`Solver implemented:       ${s.solverImplemented ? "yes" : "no"}`);
@@ -361,6 +473,7 @@ function printReport(ns, report, limit) {
         ["dataSizeText", "Data size", 10],
         ["type", "Type", 34],
         ["triesRemaining", "Tries", 7],
+        ["questionPreview", "Question", 36],
         ["duplicateCount", "Dupes", 7],
         ["validText", "Valid", 7],
     ];
@@ -373,6 +486,7 @@ function printReport(ns, report, limit) {
             validText: row.valid ? "yes" : "no",
             triesRemaining: row.triesRemaining === null ? "" : row.triesRemaining,
             dataSizeText: row.dataTextLength === null ? "?" : `${row.dataTextLength}B`,
+            questionPreview: row.questionText || row.dataPreview || "",
         };
 
         ns.print(columns.map(([key, _label, width]) => pad(String(display[key] ?? ""), width)).join(" | "));
@@ -451,6 +565,20 @@ function makeDedupeKey(fileName, type, dataSignature) {
     ].join("::");
 }
 
+function buildQuestion(type, data) {
+    return {
+        type: String(type || ""),
+        data: sanitizeForJson(data),
+        dataText: JSON.stringify(sanitizeForJson(data)),
+        prompt: buildQuestionText(type, data),
+    };
+}
+
+function buildQuestionText(type, data) {
+    const dataText = JSON.stringify(sanitizeForJson(data));
+    return `${String(type || "Unknown Contract")}: ${dataText}`;
+}
+
 function describeShape(value) {
     if (Array.isArray(value)) {
         return {
@@ -486,7 +614,6 @@ function openConsole(ns, width = 1180, height = 720) {
         if (ns.ui && typeof ns.ui.openTail === "function") ns.ui.openTail();
         if (ns.ui && typeof ns.ui.resizeTail === "function") ns.ui.resizeTail(width, height);
     } catch {
-        // Tail display is useful but not required.
     }
 }
 
