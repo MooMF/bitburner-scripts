@@ -17,7 +17,7 @@ export async function main(ns) {
 
         New optional arguments:
 
-        [startRent] [rentReserveGb] [rentTargetUsePct] [rentLoopMs] [rentMinThreads] [rentIncludeHome]
+        [startRent] [rentMaxSharePct] [rentReserveGb] [rentIncludeHome] [rentLoopMs]
 
         Recommended normal run:
 
@@ -26,17 +26,17 @@ export async function main(ns) {
         This now also runs: clean.js share
         when clean=true, so the share/rent layer is reset cleanly.
 
-        With explicit rent settings:
+        With explicit rent settings and inital buy:
 
-        run startup.js true false 0.5 1 2 true true 8 0.98 5000 1 false
+        run startup.js true true 0.5 1 2 true true 80 0.98 5000 1 false
     */
 
     const doClean = parseBool(ns.args[0] ?? true);
     const doBuyServers = parseBool(ns.args[1] ?? false);
 
-    const buySpendRatio = Number(ns.args[2] ?? 0.5);
+    const buySpendRatio = Number(ns.args[2] ?? 0.75);
 
-    const assignMinRam = Number(ns.args[3] ?? 1);
+    const assignMinRam = Number(ns.args[3] ?? 0.5);
     const assignPerHost = Number(ns.args[4] ?? 2);
     const assignAllowMoneyHosts = parseBool(ns.args[5] ?? true);
 
@@ -46,7 +46,7 @@ export async function main(ns) {
     // rent-capacity.js argument order:
     // rent-capacity.js <maxSharePct> <reserveGb> <includeHome> <loopMs>
     const rentMaxSharePct = Number(ns.args[7] ?? 60);
-    const rentReserveGb = Number(ns.args[8] ?? 1024);
+    const rentReserveGb = Number(ns.args[8] ?? 0.5);
     const rentIncludeHome = parseBool(ns.args[9] ?? false);
     const rentLoopMs = Number(ns.args[10] ?? 10000);
 
@@ -242,7 +242,7 @@ async function openLargeTail(ns, title = null) {
                 if (!width || !height) return;
 
                 ns.ui.moveTail(10, 10);
-                ns.ui.resizeTail(Math.max(500, width - 30), Math.max(350, height - 60));
+                ns.ui.resizeTail(Math.max(400, width - 30), Math.max(150, height - 60));
             } catch (_) { }
 
             return;
