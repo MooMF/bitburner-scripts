@@ -5,9 +5,10 @@
  *
  * Purpose:
  *   - Read /data/manager/contracts.json from info-contracts.js.
- *   - Rank contracts by solver availability and apparent complexity.
+ *   - Rank contract handles by solver availability and apparent complexity.
+ *   - Prefer solveQueue from info-contracts.js so duplicate rewards are preserved.
  *   - Do not attempt solves.
- *   - Prepare a safe queue for a future solve-contracts.js.
+ *   - Prepare a safe queue for solve-contracts.js.
  *
  * Usage:
  *   run info-contract-triage.js
@@ -42,7 +43,7 @@ export async function main(ns) {
         return;
     }
 
-    const contracts = contractReport.contracts || [];
+    const contracts = getContractRows(contractReport);
     const triaged = contracts.map(triageContract);
 
     triaged.sort(compareTriageRows);
@@ -61,8 +62,9 @@ export async function main(ns) {
             complexCandidate: triaged.filter(r => r.bucket === "complexCandidate"),
             manualReview: triaged.filter(r => r.bucket === "manualReview"),
         },
+        solveQueue: triaged.filter(r => r.bucket === "implementedSolver" && r.valid && r.triesRemaining > 0),
         warning: "This is a read-only triage report. It does not attempt to solve contracts.",
-        nextStep: "Only build solve-contracts.js after implementing and testing solvers per contract type.",
+        nextStep: "Run solve-contracts.js --dry before allowing attempts.",
     };
 
     ns.write(outputFile, JSON.stringify(sanitizeForJson(report), null, 2), "w");
@@ -70,6 +72,18 @@ export async function main(ns) {
     if (!silent) {
         printReport(ns, report, limit, outputFile);
     }
+}
+
+function getContractRows(contractReport) {
+    if (Array.isArray(contractReport.solveQueue)) {
+        return contractReport.solveQueue.filter(r => r && r.valid !== false);
+    }
+
+    if (Array.isArray(contractReport.rawContracts)) {
+        return contractReport.rawContracts.filter(r => r && r.valid !== false);
+    }
+
+    return Array.isArray(contractReport.contracts) ? contractReport.contracts : [];
 }
 
 function triageContract(contract) {
@@ -97,24 +111,37 @@ function triageContract(contract) {
     if (triesRemaining <= 3) priority += 10;
     if (triesRemaining <= 1) priority += 20;
 
+    const server = contract.server || contract.handle?.server;
+    const file = contract.file || contract.handle?.file;
+
     return {
-        server: contract.server,
-        file: contract.file,
-        fileName: contract.fileName,
+        kind: "codingContract",
+        handle: {
+            server,
+            file,
+        },
+        server,
+        file,
+        fileName: contract.fileName || baseName(file),
         type,
         triesRemaining,
         valid: Boolean(contract.valid),
 
         bucket,
         priority,
+        solverKey: solver.key,
         solverStatus: solver.status,
         solverNote: solver.note,
         estimatedComplexity: complexity.level,
         complexityReason: complexity.reason,
 
+        data: contract.data ?? null,
+        dataText: contract.dataText ?? null,
         dataTextLength: contract.dataTextLength ?? null,
         dataHash: contract.dataHash ?? null,
         dataShape,
+        question: contract.question ?? buildQuestion(type, contract.data ?? contract.dataPreview ?? null),
+        questionText: contract.questionText ?? buildQuestionText(type, contract.data ?? contract.dataPreview ?? null),
 
         recommendedAction: buildRecommendedAction(bucket, solver, triesRemaining),
     };
@@ -149,6 +176,10 @@ function classifySolver(type) {
         "Compression III: LZ Compression",
         "Encryption I: Caesar Cipher",
         "Encryption II: Vigenère Cipher",
+        "Algorithmic Stock Trader I",
+        "Algorithmic Stock Trader II",
+        "Algorithmic Stock Trader III",
+        "Algorithmic Stock Trader IV",
     ]);
 
     const complex = new Set([
@@ -160,8 +191,65 @@ function classifySolver(type) {
         "Algorithmic Stock Trader IV",
     ]);
 
+    if (type === "Find Largest Prime Factor") {
+        return {
+            key: "largestPrimeFactor",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js using /data/primes.json with fallback trial division.",
+        };
+    }
+
+    if (type === "Encryption I: Caesar Cipher") {
+        return {
+            key: "caesarCipher",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as uppercase Caesar transform with spaces preserved.",
+        };
+    }
+
+    if (type === "Encryption II: Vigenère Cipher") {
+        return {
+            key: "vigenereCipher",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as uppercase Vigenère transform using supplied keyword.",
+        };
+    }
+
+    if (type === "Algorithmic Stock Trader I") {
+        return {
+            key: "stockTrader1",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as max profit with one transaction.",
+        };
+    }
+
+    if (type === "Algorithmic Stock Trader II") {
+        return {
+            key: "stockTrader2",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as max profit with unlimited transactions.",
+        };
+    }
+
+    if (type === "Algorithmic Stock Trader III") {
+        return {
+            key: "stockTrader3",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as max profit with at most two transactions.",
+        };
+    }
+
+    if (type === "Algorithmic Stock Trader IV") {
+        return {
+            key: "stockTrader4",
+            status: "implemented",
+            note: "Implemented in solve-contracts.js as max profit with at most k transactions.",
+        };
+    }
+
     if (straightforward.has(type) && !complex.has(type)) {
         return {
+            key: null,
             status: "straightforward",
             note: "Known contract type with a relatively direct deterministic solver.",
         };
@@ -169,15 +257,31 @@ function classifySolver(type) {
 
     if (complex.has(type)) {
         return {
+            key: null,
             status: "complex",
             note: "Known contract type, but solver should be tested carefully before automated attempts.",
         };
     }
 
     return {
+        key: null,
         status: "unknown",
         note: "No solver classification yet.",
     };
+}
+
+function buildQuestion(type, data) {
+    return {
+        type: String(type || ""),
+        data: sanitizeForJson(data),
+        dataText: JSON.stringify(sanitizeForJson(data)),
+        prompt: buildQuestionText(type, data),
+    };
+}
+
+function buildQuestionText(type, data) {
+    const dataText = JSON.stringify(sanitizeForJson(data));
+    return `${String(type || "Unknown Contract")}: ${dataText}`;
 }
 
 function estimateComplexity(type, dataShape, dataTextLength) {
@@ -187,6 +291,10 @@ function estimateComplexity(type, dataShape, dataTextLength) {
         "Find Largest Prime Factor",
         "Encryption I: Caesar Cipher",
         "Encryption II: Vigenère Cipher",
+        "Algorithmic Stock Trader I",
+        "Algorithmic Stock Trader II",
+        "Algorithmic Stock Trader III",
+        "Algorithmic Stock Trader IV",
         "Compression I: RLE Compression",
         "HammingCodes: Integer to Encoded Binary",
         "HammingCodes: Encoded Binary to Integer",
@@ -259,8 +367,9 @@ function buildSummary(rows) {
         byType: {},
         byComplexity: {},
         lowTries: rows.filter(r => Number(r.triesRemaining || 0) <= 3).length,
-        solverAutomationSafeNow: false,
-        recommendation: "Do not automate solving yet. Implement solvers and tests first.",
+        implementedSolverContracts: rows.filter(r => r.bucket === "implementedSolver").length,
+        solverAutomationSafeNow: rows.some(r => r.bucket === "implementedSolver"),
+        recommendation: "Run solve-contracts.js --dry first. Then solve only implementedSolver rows.",
     };
 
     for (const row of rows) {
@@ -307,6 +416,7 @@ function printReport(ns, report, limit, outputFile) {
         ["type", "Type", 36],
         ["server", "Server", 18],
         ["triesRemaining", "Tries", 7],
+        ["questionPreview", "Question", 36],
         ["fileName", "File", 20],
     ];
 
@@ -335,6 +445,12 @@ function printReport(ns, report, limit, outputFile) {
     ns.print(outputFile);
 }
 
+function baseName(path) {
+    path = String(path || "");
+    const parts = path.split("/");
+    return parts[parts.length - 1] || path;
+}
+
 function readJson(ns, file, fallback) {
     try {
         if (!ns.fileExists(file, "home")) return fallback;
@@ -358,7 +474,6 @@ function openConsole(ns, width = 1180, height = 720) {
         if (ns.ui && typeof ns.ui.openTail === "function") ns.ui.openTail();
         if (ns.ui && typeof ns.ui.resizeTail === "function") ns.ui.resizeTail(width, height);
     } catch {
-        // Tail display is useful but not required.
     }
 }
 
