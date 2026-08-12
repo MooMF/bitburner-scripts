@@ -8,36 +8,53 @@ Bitburner_Script_Suite_v2_4_Manual.txt
 
 ## Normal startup
 
-After an augmentation, reload, or manual reset, run:
+After an augmentation, reload, or manual reset:
 
 ```text
 run startup.js true false
 ```
 
-This performs the normal v2.4 launch sequence:
+Current tested `startup.js` defaults:
 
-1. cleans managed money scripts;
-2. cleans the share/rent layer;
-3. deploys the current scripts from `home`;
-4. assigns remote managers for low-RAM money targets;
-5. starts the controlled spare-RAM share manager;
-6. opens the management console through `check-infection.js`.
+```text
+clean                 = true
+buyServers            = false
+buySpendRatio         = 0.75
+assignMinRam          = 0.5
+assignPerHost         = 2
+assignAllowMoneyHosts = true
+startRent             = true
+rentMaxSharePct       = 60
+rentReserveGb         = 0.5
+rentIncludeHome       = false
+rentLoopMs            = 10000
+```
+
+Startup performs the normal sequence:
+
+1. clean managed money scripts;
+2. clean the share/rent layer;
+3. optionally buy/upgrade servers;
+4. deploy current scripts from `home`;
+5. assign remote managers;
+6. start controlled spare-RAM sharing;
+7. open the management console through `check-infection.js`.
 
 ## Main dashboard
 
-Compatibility command:
+Compatibility entry point:
 
 ```text
 run check-infection.js
 ```
 
-Direct command:
+Direct entry point:
 
 ```text
 run manager-console.js
 ```
 
-Useful dashboard modes:
+Useful views:
 
 ```text
 run manager-console.js overview
@@ -50,7 +67,7 @@ run manager-console.js actions
 run manager-console.js server 4sigma
 ```
 
-## Buy or upgrade purchased/cloud servers
+## Purchased/cloud servers
 
 Spend 40% of current home cash:
 
@@ -58,71 +75,81 @@ Spend 40% of current home cash:
 run buy-servers.js 0.4
 ```
 
-Then redeploy:
+Dry-run an explicit plan:
+
+```text
+run buy-servers.js 0.5 pserv- true
+```
+
+After capacity changes:
 
 ```text
 run startup.js true false
 ```
 
-Or combine purchase and startup:
+Or buy as part of startup:
 
 ```text
 run startup.js true true 0.4
 ```
 
+`buy-servers.js` records bought/cloud ownership in:
+
+```text
+/data/purchased-servers.json
+```
+
+Detection is API-first with registry fallback; the suite does not rely on a naming prefix to identify owned servers.
+
+## Remote target assignment
+
+Normal startup passes its own first three assignment settings. For direct use, the current tested `assign-targets.js` defaults are:
+
+```text
+minWorkerRam             = 1
+maxAssignmentsPerHost    = 4
+allowMoneyHosts          = false
+forceRemoteSmallTargets  = true
+localRamThreshold        = 128
+reserveGb                = 8
+```
+
+Explicit recommended direct command:
+
+```text
+run assign-targets.js 1 4 false true 128 8
+```
+
 ## Share/rent spare RAM
 
-Normal startup starts the share manager automatically.
+Normal startup starts this automatically.
 
-Manual default:
-
-```text
-run rent-capacity.js
-```
-
-Conservative:
-
-```text
-run rent-capacity.js 40 2048 false 10000
-```
-
-Aggressive:
-
-```text
-run rent-capacity.js 80 512 false 10000
-```
-
-Argument order:
+Manual form:
 
 ```text
 run rent-capacity.js <maxSharePct> <reserveGb> <includeHome> <loopMs>
 ```
 
-Typical defaults:
+Startup currently invokes it with:
 
 ```text
-maxSharePct = 60
-reserveGb   = 1024
-includeHome = false
-loopMs      = 10000
+60 0.5 false 10000
 ```
 
 ## Manual redeploy sequence
-
-Use this when stepping through startup manually:
 
 ```text
 run clean.js managed
 run clean.js share
 run upload.js
-run assign-targets.js 1 2
-run rent-capacity.js 60 1024 false 10000
+run assign-targets.js 1 4 false true 128 8
+run rent-capacity.js 60 0.5 false 10000
 run check-infection.js
 ```
 
 ## Coding contracts
 
-Contract handling is now a three-stage workflow:
+The v2.4 contract pipeline is:
 
 ```text
 info-contracts.js
@@ -135,7 +162,7 @@ solve-contracts.js
     -> /data/manager/contracts-solve-results.json
 ```
 
-Normal safe sequence:
+Safe sequence:
 
 ```text
 run info-contracts.js silent
@@ -149,7 +176,7 @@ If the dry run looks correct:
 run solve-contracts.js
 ```
 
-Useful solver filters:
+Useful filters:
 
 ```text
 run solve-contracts.js --type prime --dry
@@ -157,11 +184,21 @@ run solve-contracts.js --type encryption --dry
 run solve-contracts.js --type stock --dry
 ```
 
+Current implemented solvers:
+
+```text
+Find Largest Prime Factor
+Encryption I: Caesar Cipher
+Encryption II: Vigenère Cipher
+Algorithmic Stock Trader I
+Algorithmic Stock Trader II
+Algorithmic Stock Trader III
+Algorithmic Stock Trader IV
+```
+
 ### After an augmentation
 
-Contract JSON can survive even though the underlying `.cct` contracts have changed.
-
-Clean stale state first:
+Generated contract reports can survive while their `.cct` handles no longer exist. Clear them before building the new queue:
 
 ```text
 rm /data/manager/contracts.json
@@ -173,58 +210,59 @@ run info-contract-triage.js silent
 run solve-contracts.js --dry
 ```
 
-Important:
-
-`solve-contracts.js` prefers:
-
-```text
-/data/manager/contracts-triage.json
-```
-
-over:
-
-```text
-/data/manager/contracts.json
-```
-
-So a stale triage file can cause:
+`solve-contracts.js` prefers `contracts-triage.json` over `contracts.json`, so a stale triage file can cause:
 
 ```text
 Contract file no longer exists on source server.
 ```
 
-even after `info-contracts.js` has been refreshed.
-
 ## Backdoor checker
 
-On BN1, use:
+Current tested v2.4 commands:
 
 ```text
 run backdoor-check.js
+run backdoor-check.js status
+run backdoor-check.js routes
+run backdoor-check.js auto
+run backdoor-check.js auto --world
 ```
 
-The v2.4 checker is intended to show only useful backdoors:
+Current behaviour:
 
-```text
-CSEC
-avmnite-02h
-I.I.I.I
-run4theh111z
-fulcrumassets
-powerhouse-fitness
-w0r1d_d43m0n
-```
+- scans the live network on each run;
+- reports all eligible rooted, hack-ready, unbackdoored non-owned servers;
+- skips `home`, `darkweb`, purchased servers and known purchased naming patterns;
+- prioritises notable faction/progression servers in the report;
+- detects `AutoLink.exe`;
+- prints pasteable terminal routes;
+- excludes `w0r1d_d43m0n` unless `--world` is supplied;
+- contains Singularity auto-install support when that API is available.
 
-These cover faction, progression, and achievement-related targets.
-
-On BN1 the checker is advisory/manual because automatic backdoor installation
-requires Singularity access.
-
-For a READY server, use the route printed by the script and finish with:
+On the current BN1 run Singularity is unavailable, so use the printed manual route and finish with:
 
 ```text
 backdoor
 ```
+
+A future critical-only filter is a proposed change, not part of the tested v2.4 release.
+
+## Player/progression diagnostics
+
+```text
+run info-player.js
+run info-player.js full
+```
+
+Writes:
+
+```text
+/data/manager/player.json
+```
+
+## XP farming
+
+`xp-farm.js` is available as a specialist hacking-XP tool. It is not part of normal startup.
 
 ## Inspect one problem server
 
@@ -233,83 +271,60 @@ run manager-console.js server <serverName>
 run logview.js <hostName>
 ```
 
-Example:
-
-```text
-run manager-console.js server 4sigma
-run logview.js pserv-0
-```
-
 ## What good looks like
 
 A healthy system should trend toward:
 
 ```text
-rooted servers       = total servers
-managed targets      = money targets
+rooted servers       = total reachable servers
+managed targets      = rooted money targets
 payload missing      = 0
 restart required     = false
 money percentage     = rising
 security excess      = falling
-hack-ready targets   = eventually greater than zero
-share manager        = running when spare RAM exists
+hack-ready targets   = eventually > 0
+share manager        = using genuinely spare RAM
 ```
 
-Early after startup it is normal to see mostly weaken/grow work and little or
-no hacking. Hacking starts once money and security preparation succeeds.
+Immediately after startup it is normal to see mostly weaken/grow work and little or no hacking.
 
 ## Common fixes
 
-Deployment incomplete:
+Deployment/capacity changed:
 
 ```text
 run startup.js true false
 ```
 
-Server capacity changed:
+Rooted targets unmanaged:
 
 ```text
-run startup.js true false
+run assign-targets.js 1 4 false true 128 8
 ```
 
-Many unmanaged targets:
-
-```text
-run assign-targets.js 1 2
-```
-
-Share/rent appears stale:
+Share layer stale:
 
 ```text
 run clean.js share
 run startup.js true false
 ```
 
-Server appears stuck:
-
-```text
-run manager-console.js server <serverName>
-run logview.js <managerHost>
-```
-
-Contract solver reports missing source files:
+Contract handles stale:
 
 ```text
 rm /data/manager/contracts.json
 rm /data/manager/contracts-triage.json
 rm /data/manager/contracts-solve-results.json
-
 run info-contracts.js silent
 run info-contract-triage.js silent
 run solve-contracts.js --dry
 ```
 
-## Git/source-control note
+## Git/source-control policy
 
-The repository should contain maintained scripts and documentation, not generated
-runtime state.
+The repository contains maintained source and documentation, not generated runtime state.
 
-Generated areas to ignore include:
+Ignored generated areas include:
 
 ```text
 bitburnerFiles/catalog/
@@ -318,29 +333,16 @@ bitburnerFiles/found/
 bitburnerFiles/scripts/
 ```
 
-Generated root/state files to ignore include:
-
-```text
-servers.json
-home_cat.json
-*_cat.json
-process-state*.json
-restart-required.txt
-session-gains-*.json
-purchased-servers.json
-*infect-version*.txt
-```
+Generated state patterns are also ignored, including catalogue files, process state, restart markers, session gains, purchased-server runtime registry, and infection-version markers.
 
 ## Development workflow
 
-For project changes:
-
 ```text
 1. Agree the improvement.
-2. Produce a complete copy/paste drop-in file or new file.
-3. Test it in the live Bitburner environment.
-4. Sync the tested file into the local repository.
-5. Commit/push the tested version to Git.
+2. Produce a complete drop-in/new file.
+3. Test it in live Bitburner.
+4. Sync the tested file into the local/repository source tree.
+5. Commit/push the tested version.
 ```
 
 Local repository:
@@ -354,6 +356,3 @@ Remote repository:
 ```text
 MooMF/bitburner-scripts
 ```
-
-See `Bitburner_Script_Suite_v2_4_Manual.txt` for architecture, script interaction,
-contract details, backdoor handling, source-control policy, and development notes.
