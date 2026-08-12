@@ -1,0 +1,824 @@
+Bitburner Script Suite Manual - Version 2.4
+================================================
+
+Purpose
+-------
+This document describes the tested Bitburner v2.4 automation suite maintained
+in MooMF/bitburner-scripts.
+
+Version 2.4 keeps the v2.3 money-management architecture while adding and
+formalising:
+
+- updated purchased/cloud-server detection and registry handling;
+- improved remote target assignment;
+- explicit worker RAM reserves in process.js;
+- player/progression diagnostics;
+- coding-contract discovery, triage and solving;
+- current backdoor route/status tooling;
+- generated-file source-control rules;
+- a live-test-first development workflow.
+
+The normal operator entry points are:
+
+    run startup.js true false
+    run manager-console.js
+    run check-infection.js
+
+check-infection.js remains a compatibility wrapper around manager-console.js.
+
+
+===============================================================================
+SECTION 1 - NORMAL STARTUP
+===============================================================================
+
+1.1 Recommended command
+-----------------------
+
+After augmentation, reload, or a manual reset:
+
+    run startup.js true false
+
+Current tested startup defaults:
+
+    clean                  true
+    buyServers             false
+    buySpendRatio          0.75
+    assignMinRam           0.5
+    assignPerHost          2
+    assignAllowMoneyHosts  true
+    startRent              true
+    rentMaxSharePct        60
+    rentReserveGb          0.5
+    rentIncludeHome        false
+    rentLoopMs             10000
+
+Full argument form:
+
+    run startup.js [clean] [buyServers] [buySpendRatio]
+                   [assignMinRam] [assignPerHost] [assignAllowMoneyHosts]
+                   [startRent] [rentMaxSharePct] [rentReserveGb]
+                   [rentIncludeHome] [rentLoopMs]
+
+Typical purchase/startup example:
+
+    run startup.js true true 0.4
+
+Startup order:
+
+    clean.js managed
+    clean.js share
+    buy-servers.js          optional
+    upload.js
+    assign-targets.js
+    rent-capacity.js        optional
+    check-infection.js
+
+Order matters. Deployment and assignment are completed before spare-RAM share
+work is started.
+
+
+1.2 Manual startup sequence
+---------------------------
+
+For diagnostic/manual operation:
+
+    run clean.js managed
+    run clean.js share
+    run upload.js
+    run assign-targets.js 1 4 false true 128 8
+    run rent-capacity.js 60 0.5 false 10000
+    run check-infection.js
+
+The explicit assign-targets command uses that script's own recommended/current
+default model. startup.js currently supplies only its first three assignment
+arguments; assign-targets.js defaults the remaining controls internally.
+
+
+===============================================================================
+SECTION 2 - MAIN MONEY AUTOMATION
+===============================================================================
+
+2.1 High-level architecture
+---------------------------
+
+    startup.js
+        -> clean.js
+        -> buy-servers.js            optional
+        -> upload.js
+        -> assign-targets.js
+        -> rent-capacity.js
+        -> check-infection.js
+              -> manager-console.js
+
+Money-target runtime:
+
+    process.js
+        -> weaken.js
+        -> grow.js
+        -> hack.js
+
+Spare-RAM runtime:
+
+    rent-capacity.js
+        -> rent-share.js
+
+
+2.2 upload.js
+-------------
+
+Normal direct command:
+
+    run upload.js
+
+Optional staged/worm deployment:
+
+    run upload.js true
+
+upload.js is the authoritative central deployment path. It scans from home,
+roots what current port-opening capability allows, refreshes managed scripts,
+and starts local target managers where suitable.
+
+Use startup.js for normal recovery; use upload.js directly when refreshing
+remote script copies without running the full startup sequence.
+
+
+2.3 process.js
+--------------
+
+process.js is the persistent per-target controller.
+
+Conceptually:
+
+    process.js runs on workerHost
+    target argument = moneyServer
+
+It continuously chooses the best current action:
+
+    security too high  -> weaken
+    money too low      -> grow
+    prepared           -> hack
+
+Current argument model:
+
+    run process.js [target]
+                   [securityBuffer]
+                   [moneyTargetRatio]
+                   [hackTargetRatio]
+                   [sleepMs]
+                   [reserveGb]
+                   [maxUsePct]
+
+Current defaults:
+
+    target             current host
+    securityBuffer     5
+    moneyTargetRatio   0.85
+    hackTargetRatio    0.10
+    sleepMs            5000
+    reserveGb          8
+    maxUsePct          0.98
+
+The reserve/max-use controls prevent process workers from consuming every last
+GB of a host and make coexistence with managers and other framework processes
+more predictable.
+
+process state is written under /data/ and is generated runtime state.
+
+
+2.4 Worker scripts
+------------------
+
+    weaken.js
+    grow.js
+    hack.js
+
+These remain intentionally small one-shot workers. Decision logic belongs in
+process.js rather than being duplicated into every worker thread.
+
+
+===============================================================================
+SECTION 3 - REMOTE TARGET ASSIGNMENT
+===============================================================================
+
+3.1 assign-targets.js
+---------------------
+
+Current tested full form:
+
+    run assign-targets.js [minWorkerRam]
+                          [maxAssignmentsPerHost]
+                          [allowMoneyHosts]
+                          [forceRemoteSmallTargets]
+                          [localRamThreshold]
+                          [reserveGb]
+
+Current direct defaults:
+
+    minWorkerRam             1
+    maxAssignmentsPerHost    4
+    allowMoneyHosts          false
+    forceRemoteSmallTargets  true
+    localRamThreshold        128
+    reserveGb                8
+
+Recommended explicit direct command:
+
+    run assign-targets.js 1 4 false true 128 8
+
+The allocator:
+
+- scans all rooted targets and worker hosts;
+- identifies existing local and remote process managers;
+- kills stale previous remote assignments and their workers;
+- can deliberately move small locally-managed targets to larger worker hosts;
+- prefers non-money hosts;
+- gives purchased/cloud servers an allocation preference;
+- reserves RAM on worker hosts;
+- avoids assuming that purchased servers use a particular name prefix.
+
+Purchased/cloud ownership is detected from the game API first and the
+persistent registry second.
+
+
+===============================================================================
+SECTION 4 - PURCHASED/CLOUD SERVERS
+===============================================================================
+
+4.1 buy-servers.js
+------------------
+
+Typical command:
+
+    run buy-servers.js 0.4
+
+Full form:
+
+    run buy-servers.js [spendRatio] [prefix] [dryRun] [tail] [minRam]
+
+Current defaults inside buy-servers.js:
+
+    spendRatio   0.5
+    prefix       pserv-
+    dryRun       false
+    tail         true
+    minRam       8
+
+Example dry-run:
+
+    run buy-servers.js 0.5 pserv- true
+
+The script supports the current cloud API when present and falls back to the
+legacy purchased-server API shape where required.
+
+It writes/refreshes:
+
+    /data/purchased-servers.json
+
+The registry is metadata, not the source of truth. Detection is API-first and
+registry-second. Existing bought servers are therefore recognised even if they
+were created before the registry existed or do not use the configured prefix.
+
+When capacity changes, buy-servers.js writes:
+
+    restart-required.txt
+
+A successful startup/redeployment clears this marker.
+
+
+===============================================================================
+SECTION 5 - SPARE-RAM SHARE LAYER
+===============================================================================
+
+5.1 rent-capacity.js
+--------------------
+
+Manual form:
+
+    run rent-capacity.js [maxSharePct] [reserveGb] [includeHome] [loopMs]
+
+startup.js currently invokes it with default startup settings equivalent to:
+
+    run rent-capacity.js 60 0.5 false 10000
+
+The share layer should be filler capacity only. It starts after target
+assignment so weaken/grow/hack work has priority.
+
+
+5.2 rent-share.js
+-----------------
+
+rent-share.js is the small remote worker repeatedly calling share(). It should
+normally be started and sized only by rent-capacity.js.
+
+
+===============================================================================
+SECTION 6 - MANAGER CONSOLE AND DIAGNOSTICS
+===============================================================================
+
+6.1 Main console
+----------------
+
+    run manager-console.js
+
+Compatibility command:
+
+    run check-infection.js
+
+Useful modes:
+
+    run manager-console.js overview
+    run manager-console.js runtime
+    run manager-console.js money
+    run manager-console.js security
+    run manager-console.js payouts
+    run manager-console.js share
+    run manager-console.js actions
+    run manager-console.js server <server>
+
+The console is primarily a reader/formatter. Focused info scripts produce
+machine-readable JSON reports.
+
+
+6.2 Focused report scripts
+--------------------------
+
+Current operational diagnostics include:
+
+    info-runtime.js
+    info-money.js
+    info-security.js
+    info-payouts.js
+    info-share.js
+    info-startup-config.js
+    info-player.js
+    info-diagnostic.js
+
+Generated manager reports live mainly under:
+
+    /data/manager/
+
+These reports are runtime state and should not normally be committed.
+
+
+6.3 info-player.js
+------------------
+
+Commands:
+
+    run info-player.js
+    run info-player.js full
+
+Output:
+
+    /data/manager/player.json
+
+It captures player money, city/location, skills, factions/jobs, reset/BitNode
+information, and API-accessible progression information. Optional Singularity
+or BitNode information is null when the relevant API is unavailable.
+
+
+6.4 info-diagnostic.js
+----------------------
+
+info-diagnostic.js builds a consolidated AI handoff report:
+
+    /data/manager/ai-diagnostic.json
+
+The current diagnostic model includes network/runtime/money/security/payout/
+share/player/XP-farm/contract/purchased-server information and actionable
+operator suggestions.
+
+Purchased/cloud servers are identified API-first and registry-second, with no
+prefix assumption.
+
+
+6.5 logview.js
+--------------
+
+Inspect one host:
+
+    run logview.js <host>
+
+Example:
+
+    run logview.js pserv-0 3000 80
+
+Use logview.js after manager-console identifies a specific host or manager that
+needs investigation.
+
+
+6.6 session-gains.js
+--------------------
+
+Examples:
+
+    run session-gains.js
+    run session-gains.js reset
+    run session-gains.js watch 10000
+
+This is a performance monitor rather than part of the core control loop.
+
+
+6.7 xp-farm.js
+--------------
+
+xp-farm.js is a specialist hacking-XP tool. It is not started by the normal
+startup sequence.
+
+
+===============================================================================
+SECTION 7 - CODING CONTRACTS
+===============================================================================
+
+7.1 Contract pipeline
+---------------------
+
+    info-contracts.js
+        -> /data/manager/contracts.json
+
+    info-contract-triage.js
+        -> /data/manager/contracts-triage.json
+
+    solve-contracts.js
+        -> /data/manager/contracts-solve-results.json
+
+A coding contract is treated as a remote handle:
+
+    { server, file }
+
+Do not copy .cct files to home as the solving model. The solver re-reads the
+live contract from its original source server immediately before solving.
+
+
+7.2 info-contracts.js
+---------------------
+
+Visible:
+
+    run info-contracts.js
+
+Silent:
+
+    run info-contracts.js silent
+
+Visible row limit:
+
+    run info-contracts.js 100
+
+The numeric argument limits display only; scanning still covers the network.
+
+The current inventory:
+
+- scans live .cct files;
+- validates each with codingcontract APIs;
+- records contract data/question metadata;
+- builds a de-duplicated presentation inventory;
+- also builds a non-deduplicated solveQueue so every valid remote reward handle
+  is preserved;
+- overwrites contracts.json rather than appending.
+
+
+7.3 info-contract-triage.js
+---------------------------
+
+    run info-contract-triage.js
+    run info-contract-triage.js silent
+
+It prefers the solveQueue generated by info-contracts.js, classifies solver
+availability and complexity, and builds a solveQueue containing currently
+implemented solver types with tries remaining.
+
+
+7.4 solve-contracts.js
+----------------------
+
+Always begin with a dry run:
+
+    run solve-contracts.js --dry
+
+Then, if the answers/targets look correct:
+
+    run solve-contracts.js
+
+Useful filters:
+
+    run solve-contracts.js --type prime --dry
+    run solve-contracts.js --type encryption --dry
+    run solve-contracts.js --type stock --dry
+    run solve-contracts.js --server n00dles --file contract-123.cct --dry
+
+Current implemented solvers:
+
+    Find Largest Prime Factor
+    Encryption I: Caesar Cipher
+    Encryption II: Vigenere Cipher
+    Algorithmic Stock Trader I
+    Algorithmic Stock Trader II
+    Algorithmic Stock Trader III
+    Algorithmic Stock Trader IV
+
+The solver re-checks:
+
+    server exists
+    contract file still exists on that server
+    live contract type
+    tries remaining
+    live contract data
+
+before submitting an answer.
+
+
+7.5 Report precedence and stale handles
+---------------------------------------
+
+solve-contracts.js loads reports in this order:
+
+    1. /data/manager/contracts-triage.json
+    2. /data/manager/contracts.json
+
+Therefore a stale triage report can override a freshly regenerated inventory.
+
+After augmentation, old generated JSON may survive while the referenced .cct
+files no longer exist. Recommended reset:
+
+    rm /data/manager/contracts.json
+    rm /data/manager/contracts-triage.json
+    rm /data/manager/contracts-solve-results.json
+
+    run info-contracts.js silent
+    run info-contract-triage.js silent
+    run solve-contracts.js --dry
+
+If the dry run is correct:
+
+    run solve-contracts.js
+
+The message:
+
+    Contract file no longer exists on source server.
+
+normally means a stale remote handle was loaded.
+
+
+===============================================================================
+SECTION 8 - BACKDOOR CHECKING
+===============================================================================
+
+8.1 Current tested checker
+--------------------------
+
+Commands:
+
+    run backdoor-check.js
+    run backdoor-check.js status
+    run backdoor-check.js routes
+    run backdoor-check.js auto
+    run backdoor-check.js auto --world
+
+The current tested v2.4 checker:
+
+- scans the live graph fresh each run;
+- excludes home, darkweb and purchased/known-owned servers;
+- reports all rooted, hacking-ready, unbackdoored eligible servers;
+- prioritises known faction/progression targets in its ordering;
+- detects AutoLink.exe;
+- prints manual connect routes ending in backdoor;
+- writes /data/manager/backdoor.json;
+- excludes w0r1d_d43m0n unless --world is supplied;
+- includes an automatic Singularity path when that API is available.
+
+On the current BN1 run Singularity access is unavailable, so the practical
+workflow is manual: use the printed route, connect to the server, then execute
+backdoor.
+
+A critical-only/faction-only filter has been discussed as a future improvement,
+but it is NOT part of the tested v2.4 release.
+
+
+===============================================================================
+SECTION 9 - CLEANUP AND GENERATED DATA
+===============================================================================
+
+9.1 clean.js
+------------
+
+Useful modes include:
+
+    run clean.js
+    run clean.js strays
+    run clean.js workers
+    run clean.js share
+    run clean.js rent
+    run clean.js managed
+    run clean.js all
+
+Normal startup uses managed + share cleanup.
+
+
+9.2 iteration.js
+----------------
+
+iteration.js runs on remote hosts, catalogues interesting files and copies
+selected readable/downloadable data home. It ignores manager/runtime data paths
+that should not become discovery payload.
+
+Generated discovery areas include:
+
+    /found/
+    /catalog/
+    /data/
+    /scripts/
+
+These are runtime artefacts rather than maintained source.
+
+
+9.3 Git ignore policy
+---------------------
+
+Current repository ignore policy excludes:
+
+    /bitburnerFiles/catalog/
+    /bitburnerFiles/data/
+    /bitburnerFiles/found/
+    /bitburnerFiles/scripts/
+
+and generated root/state patterns including:
+
+    servers.json
+    home_cat.json
+    *_cat.json
+    process-state*.json
+    restart-required.txt
+    session-gains-*.json
+    purchased-servers.json
+    *infect-version*.txt
+
+plus normal log/temp/OS files.
+
+.gitignore does not automatically untrack files already committed. Historical
+tracked generated content requires a separate cached-removal cleanup if we want
+to remove it from repository history/current tracking.
+
+
+===============================================================================
+SECTION 10 - OPTIONAL / SUPPORT SUBSYSTEMS
+===============================================================================
+
+10.1 Staged infection
+---------------------
+
+Optional scripts:
+
+    infect.js
+    infect-root.js
+    infect-deploy.js
+    infect-start.js
+
+Central upload remains the normal auditable deployment model; staged infection
+is retained as a secondary propagation mechanism.
+
+
+10.2 faction-control.js
+-----------------------
+
+faction-control.js remains a progression/faction support script. Some operations
+can depend on Singularity API availability.
+
+
+10.3 start-processes.js
+-----------------------
+
+This is retained as an older/support launcher. Normal operation should prefer
+startup.js, upload.js and assign-targets.js.
+
+
+===============================================================================
+SECTION 11 - HEALTHY OPERATING STATE
+===============================================================================
+
+11.1 Normal mature trend
+------------------------
+
+A healthy system should tend toward:
+
+    rooted reachable servers     high / complete for available port tools
+    rooted money targets managed complete
+    missing deployed payload     zero
+    restart-required marker      false
+    money percentages            rising/high
+    security excess              falling/low
+    hack-ready targets           eventually > 0
+    share utilisation            spare capacity only
+
+
+11.2 Early startup state
+------------------------
+
+Immediately after augmentation/startup it is normal to see:
+
+    many weaken workers
+    many grow workers
+    few/no hack workers
+    low money percentages
+    elevated security on some servers
+
+Preparation occurs before payouts become dominant.
+
+
+11.3 Useful troubleshooting commands
+-------------------------------------
+
+Overall:
+
+    run manager-console.js
+
+Runtime:
+
+    run manager-console.js runtime
+
+Money:
+
+    run manager-console.js money
+
+Security:
+
+    run manager-console.js security
+
+Payouts:
+
+    run manager-console.js payouts
+
+One server:
+
+    run manager-console.js server <server>
+
+Logs:
+
+    run logview.js <managerHost>
+
+Redeploy:
+
+    run startup.js true false
+
+
+===============================================================================
+SECTION 12 - DEVELOPMENT AND RELEASE WORKFLOW
+===============================================================================
+
+12.1 Canonical workflow
+-----------------------
+
+Bitburner code changes use this sequence:
+
+    1. Discuss and agree the improvement.
+    2. Produce a complete copy/paste drop-in replacement or new file.
+    3. Test it inside the live Bitburner environment.
+    4. Sync the tested version into the source repository.
+    5. Commit/push/tag only after the tested state is known.
+
+The live game is the test environment.
+
+Git is the durable record of tested working state, not the first experiment
+environment.
+
+
+12.2 Repository locations
+-------------------------
+
+Local working repository:
+
+    C:\Users\Jim\Documents\bitburnerScripts
+
+Remote repository:
+
+    MooMF/bitburner-scripts
+
+Maintained game scripts:
+
+    bitburnerFiles/
+
+
+===============================================================================
+SECTION 13 - V2.4 CHANGE SUMMARY
+===============================================================================
+
+Compared with v2.3, v2.4 formally records:
+
+1. Updated startup defaults from the tested live script.
+2. Purchased/cloud detection using API-first + registry fallback.
+3. /data/purchased-servers.json ownership metadata.
+4. Improved remote assignment and deliberate relocation of small targets.
+5. process.js reserveGb/maxUsePct worker controls.
+6. info-player.js progression diagnostics.
+7. xp-farm.js as a specialist support tool.
+8. Contract solveQueue generation and triage.
+9. solve-contracts.js with dry-run and seven implemented contract types.
+10. Post-augmentation stale-contract reset workflow.
+11. Current tested backdoor checker behaviour and manual BN1 usage.
+12. Expanded generated-file .gitignore policy.
+13. Live-test-first Git/release workflow.
+
+
+===============================================================================
+END OF VERSION 2.4 MANUAL
+===============================================================================
