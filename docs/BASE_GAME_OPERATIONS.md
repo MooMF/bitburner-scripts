@@ -73,3 +73,12 @@ dependency were replaced by a shared library. Compatibility
 `check-infection.js`, `rent-share.js` and older infection support files
 are retained to avoid breaking existing script references. No destructive
 deletions were made to previously deployed operational scripts.
+
+
+## Operations help and dependency hygiene
+
+`check-infection.js` is now the canonical console. `manager-console.js` is
+maintained only as a forwarding alias. For interactive in-game command usage,
+run `help-market.js` or `help-contracts.js` (or `contract-help.js`).
+See `docs/HELP_COMMANDS.md`, `docs/LEGACY_SCRIPT_AUDIT.md`, and
+`docs/SCRIPT_DEPENDENCIES.md` for the broader dependency sweep.

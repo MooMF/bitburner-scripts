@@ -380,3 +380,21 @@ run startup.js --marketing
 
 `--marketing` keeps the normal startup defaults and selects the market view;
 it does not start stock trading. See `docs/BASE_GAME_OPERATIONS.md` for details.
+
+
+## Script help and console consolidation
+
+```text
+run check-infection.js
+run check-infection.js marketing
+run manager-console.js marketing    # legacy alias
+run help-diagnostics.js
+run help-network.js
+run help-market.js
+run help-contracts.js
+```
+
+The full management console now lives in `check-infection.js`. The
+`manager-console.js` command forwards to it for compatibility, without a
+second implementation of the reporting logic. See docs/HELP_COMMANDS.md and
+docs/SCRIPT_DEPENDENCIES.md for the in-game help menu and dependency diagram.
