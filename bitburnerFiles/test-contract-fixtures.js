@@ -33,14 +33,15 @@ export async function main(ns){
   ["Proper 2-Coloring of a Graph",[4,[[0,1],[1,2],[2,3]]],[0,1,0,1]],
   ["Proper 2-Coloring of a Graph",[3,[[0,1],[1,2],[2,0]]],[]],
   ["Compression I: RLE Compression","aaaaaaaaaaaa","9a3a"],
-  ["Compression II: LZ Decompression","5aaabb0103","aaabbabb"],
+  ["Compression II: LZ Decompression","5aaabb33","aaabbabb"],
   ["Encryption I: Caesar Cipher",["BCD",1],"ABC"],
   ["Encryption II: Vigenère Cipher",["ATTACKATDAWN","LEMON"],"LXFOPVEFRNHR"],
   ["Square Root","17","4"],
   ["Total Number of Primes",[10,20],4],
   ["Largest Rectangle in a Matrix",[[1,1,0],[1,1,1]],[[0,0],[1,1]]]
  ];
- const eq=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+ const json=x=>JSON.stringify(x,(_k,v)=>typeof v==="bigint"?v.toString():v);
+ const eq=(a,b)=>json(a)===json(b);
  const results=cases.map(([type,data,expected])=>{
    try{const actual=solveContract(type,data);return {type,pass:eq(actual,expected),actual,expected}}
    catch(e){return {type,pass:false,error:String(e)}}
@@ -53,7 +54,7 @@ export async function main(ns){
    catch(e){results.push({type:"Compression III: LZ Compression",pass:false,error:String(e)})}
  }
  const coverage=SUPPORTED_TYPES.filter(t=>!results.some(x=>x.type===t));
- const report={timestamp:Date.now(),total:results.length,passed:results.filter(r=>r.pass).length,coverageMissing:coverage,results};
+ const report={timestamp:Date.now(),total:results.length,passed:results.filter(r=>r.pass).length,coverageMissing:coverage,results:JSON.parse(json(results))};
  ns.write("/data/manager/contracts-fixture-tests.json",JSON.stringify(report,null,2),"w");
  ns.tprint(`Contract fixture tests: ${report.passed}/${report.total}, missing coverage ${coverage.length}; /data/manager/contracts-fixture-tests.json`);
 }

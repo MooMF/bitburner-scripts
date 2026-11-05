@@ -16,7 +16,7 @@ I wrote the original bare-bones versions of what I considered the core subset of
 
 Over time, the scripts have been refined, split into more focused components, and extended with diagnostic tooling intended to provide actionable feedback both to the player and back to the AI.
 
-The current suite is **Version 2.4**.
+The core suite is **Version 2.4**, with additional base-game operations under active validation.
 
 It includes:
 
@@ -71,3 +71,16 @@ It is an experiment in using an AI as a development collaborator inside a bounde
 I invite people to read the code, critique it, experiment with it, and improve the script library.
 
 +MooMF
+
+## Extended base-game operations
+
+The contract library now covers all 29 known contract types, with fixture and
+in-game dummy-contract test harnesses. **Real contract submission is opt-in**:
+`solve-contracts.js --dry` computes without submitting; `--live` attempts.
+
+Stock reporting is available through `manager-console.js marketing` (alias
+`market`). The existing startup command accepts `--marketing`, which selects
+the detailed market console but does not activate live trading.
+
+See [Base-game operations](docs/BASE_GAME_OPERATIONS.md) and
+[Darknet swarm proposal](docs/DARKNET_SWARM_DESIGN.md).

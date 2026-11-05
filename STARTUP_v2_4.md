@@ -356,3 +356,27 @@ Remote repository:
 ```text
 MooMF/bitburner-scripts
 ```
+
+
+## Extended operations (post-v2.4)
+
+Test the contract algorithms before live attempts:
+
+```text
+run test-contract-fixtures.js
+run test-contract-dummies.js 3
+run info-contracts.js
+run info-contract-triage.js
+run solve-contracts.js --dry
+run solve-contracts.js --live
+```
+
+View detailed stocks (read-only):
+
+```text
+run manager-console.js marketing
+run startup.js --marketing
+```
+
+`--marketing` keeps the normal startup defaults and selects the market view;
+it does not start stock trading. See `docs/BASE_GAME_OPERATIONS.md` for details.
