@@ -31,7 +31,9 @@ export async function main(ns) {
 
     const mode = String(ns.args[0] || "overview").toLowerCase();
     const serverArg = String(ns.args[1] || "");
-    const scripts = ["info-money.js", "info-security.js", "info-payouts.js", "info-runtime.js", "info-share.js"];
+    const scripts = mode === "market" || mode === "marketing"
+        ? ["info-stock.js"]
+        : ["info-money.js", "info-security.js", "info-payouts.js", "info-runtime.js", "info-share.js"];
     const reportFiles = {
         money: "/data/manager/money.json",
         security: "/data/manager/security.json",
@@ -39,6 +41,8 @@ export async function main(ns) {
         runtime: "/data/manager/runtime.json",
         share: "/data/manager/share.json",
         xp: "/data/manager/xp-farm.json",
+        stock: "/data/manager/stocks.json",
+        stockTrades: "/data/manager/stock-trader.json",
     };
 
     for (const script of scripts) {
@@ -49,6 +53,12 @@ export async function main(ns) {
         }
     }
 
+    if (mode === "market" || mode === "marketing") {
+        await refreshOptionalReport(ns,"info-stock.js");
+        printHeader(ns, mode);
+        printMarket(ns, readJson(ns, reportFiles.stock, {}), readJson(ns,reportFiles.stockTrades,{}));
+        return;
+    }
     await refreshReports(ns, scripts, reportFiles);
 
     const money = readJson(ns, reportFiles.money, {});
@@ -138,6 +148,8 @@ function printOverview(ns, money, security, payouts, runtime, share, xp) {
     ns.print(`Security:      ready ${n(s.readyTargets)}/${n(s.moneyTargets)} | excess ${fmtNum(s.totalSecurityExcess, 2)} | worst ${s.worstServer || "none"}`);
     ns.print(`Payouts:       est next hack ${fmtMoney(p.nextHackMoney)} | hack-ready ${n(p.hackReadyTargets)} | best ${p.bestTarget || "none"}`);
     ns.print(`Processes:     weaken ${n(r.weakenWorkers)} | grow ${n(r.growWorkers)} | hack ${n(r.hackWorkers)} | idle managers ${n(r.idleManagers)}`);
+    const stocks = readJson(ns, "/data/manager/stocks.json", {});
+    if (stocks.available) ns.print(`Stocks:        ${stocks.symbols?.length || 0} symbols | ${stocks.positions?.length || 0} open | run manager-console.js marketing`);
     ns.print(`Share:         ${sh.managerRunning ? "manager running" : "manager stopped"} | ${n(sh.shareThreads)} threads | ${fmtRam(sh.shareRam)} RAM | power ${fmtSharePower(sh.sharePower)}`);
     if (x.workersRunning || x.totalThreads) {
         ns.print(`XP farm:       ${n(x.workersRunning)} workers | ${n(x.totalThreads)} threads | target ${xp.target || "unknown"} | hacking ${x.hacking ?? "-"}`);
@@ -161,6 +173,50 @@ function printOverview(ns, money, security, payouts, runtime, share, xp) {
     printCompactRows(ns, "Worst security", security.worst || [], ["server", "security", "excess", "reducePct", "eta"]);
     printCompactRows(ns, "Best payouts", payouts.best || [], ["server", "money", "hackMoney", "hackEta", "cycle"]);
     printCompactRows(ns, "Share capacity", share.hosts || [], ["host", "share", "free", "extra", "status"]);
+}
+
+
+async function refreshOptionalReport(ns,script){
+    if(!ns.fileExists(script,"home"))return;
+    const pid=ns.run(script,1);
+    if(!pid)return;
+    while(ns.isRunning(pid,"home")) await ns.sleep(100);
+}
+function printMarket(ns,stock,trades){
+    ns.print("STOCK MARKET — PORTFOLIO & OPPORTUNITIES");
+    ns.print("-".repeat(120));
+    if(!stock.available){ns.print(stock.message||"No stock report available. Run info-stock.js.");return;}
+    const positions=stock.positions||[],rows=stock.symbols||[];
+    const longCost=positions.reduce((a,r)=>a+r.longShares*r.longAvg,0);
+    const longValue=positions.reduce((a,r)=>a+r.longShares*r.bid,0);
+    const shortCost=positions.reduce((a,r)=>a+r.shortShares*r.shortAvg,0);
+    const shortCover=positions.reduce((a,r)=>a+r.shortShares*r.ask,0);
+    const longPnL=longValue-longCost,shortPnL=shortCost-shortCover;
+    ns.print(`Cash: ${fmtMoney(stock.cash)} | Open positions: ${positions.length} | 4S: ${stock.fourS?"yes":"no"}`);
+    ns.print(`Long market value: ${fmtMoney(longValue)} | unrealised P/L: ${fmtMoney(longPnL)}`);
+    ns.print(`Short cover value: ${fmtMoney(shortCover)} | unrealised P/L: ${fmtMoney(shortPnL)}`);
+    ns.print(`Combined unrealised P/L: ${fmtMoney(longPnL+shortPnL)} (excludes transaction fees)`);
+    ns.print("");
+    ns.print("OPEN POSITIONS");
+    printTable(ns,positions.map(r=>({
+       symbol:r.symbol,long:r.longShares,short:r.shortShares,avgLong:r.longAvg.toFixed(2),
+       avgShort:r.shortAvg.toFixed(2),bid:r.bid.toFixed(2),ask:r.ask.toFixed(2),
+       pnl:fmtMoney(r.longShares*(r.bid-r.longAvg)+r.shortShares*(r.shortAvg-r.ask)),
+       forecast:r.forecast===undefined?"-":r.forecast.toFixed(3)
+    })),[["symbol","Symbol",12],["long","Long",13],["short","Short",13],
+       ["avgLong","L Avg",12],["avgShort","S Avg",12],["bid","Bid",12],["ask","Ask",12],
+       ["pnl","P/L",14],["forecast","4S Forecast",13]]);
+    if(stock.fourS){
+      ns.print("");
+      ns.print("4S SIGNALS (forecast >= 0.60 bullish; <= 0.40 bearish)");
+      const signals=rows.filter(r=>r.forecast>=0.60||r.forecast<=0.40)
+          .sort((a,b)=>Math.abs(b.forecast-0.5)-Math.abs(a.forecast-0.5));
+      printTable(ns,signals,[["symbol","Symbol",12],["price","Price",14],
+        ["forecast","Forecast",14],["volatility","Volatility",14]]);
+    }
+    ns.print("");
+    if(trades.timestamp){ns.print(`Last trader report: ${new Date(trades.timestamp).toLocaleString()} | ${trades.live?"LIVE":"DRY"} | ${trades.actions?.length||0} signals`);}
+    ns.print("Commands: run info-stock.js | run stock-trader.js | run stock-trader.js --live");
 }
 
 function printMoney(ns, report) {
@@ -366,7 +422,7 @@ function printActions(ns, money, security, payouts, runtime, share, xp) {
         ns.print("No immediate action recommended.");
     }
     ns.print("");
-    ns.print("Views: overview | money | security | payouts | runtime | share | xp | actions | server <name>");
+    ns.print("Views: overview | money | security | payouts | runtime | share | xp | market/marketing | actions | server <name>");
 }
 
 function printServer(ns, name, money, security, payouts, runtime, share, xp) {

@@ -31,25 +31,28 @@ export async function main(ns) {
         run startup.js true true 0.5 1 2 true true 80 0.98 5000 1 false
     */
 
-    const doClean = parseBool(ns.args[0] ?? true);
-    const doBuyServers = parseBool(ns.args[1] ?? false);
+    const namedMarket = ns.args.some(x=>["marketing","market","--marketing","--market"].includes(String(x).toLowerCase()));
+    const cliArgs=ns.args.filter(x=>!["marketing","market","--marketing","--market"].includes(String(x).toLowerCase()));
+    const doClean = parseBool(cliArgs[0] ?? true);
+    const doBuyServers = parseBool(cliArgs[1] ?? false);
 
-    const buySpendRatio = Number(ns.args[2] ?? 0.75);
+    const buySpendRatio = Number(cliArgs[2] ?? 0.75);
 
-    const assignMinRam = Number(ns.args[3] ?? 0.5);
-    const assignPerHost = Number(ns.args[4] ?? 2);
-    const assignAllowMoneyHosts = parseBool(ns.args[5] ?? true);
+    const assignMinRam = Number(cliArgs[3] ?? 0.5);
+    const assignPerHost = Number(cliArgs[4] ?? 2);
+    const assignAllowMoneyHosts = parseBool(cliArgs[5] ?? true);
 
     // New rent-capacity layer.
-    const startRent = parseBool(ns.args[6] ?? true);
+    const startRent = parseBool(cliArgs[6] ?? true);
 
     // rent-capacity.js argument order:
     // rent-capacity.js <maxSharePct> <reserveGb> <includeHome> <loopMs>
-    const rentMaxSharePct = Number(ns.args[7] ?? 60);
-    const rentReserveGb = Number(ns.args[8] ?? 0.5);
-    const rentIncludeHome = parseBool(ns.args[9] ?? false);
-    const rentLoopMs = Number(ns.args[10] ?? 10000);
+    const rentMaxSharePct = Number(cliArgs[7] ?? 60);
+    const rentReserveGb = Number(cliArgs[8] ?? 0.5);
+    const rentIncludeHome = parseBool(cliArgs[9] ?? false);
+    const rentLoopMs = Number(cliArgs[10] ?? 10000);
 
+    const consoleMode = namedMarket ? "marketing" : String(cliArgs[11] ?? "overview").toLowerCase();
     const restartMarker = "restart-required.txt";
 
     const requiredScripts = [
@@ -135,7 +138,7 @@ export async function main(ns) {
         ns.print(`Cleared ${restartMarker}`);
     }
 
-    const checkPid = ns.run("check-infection.js", 1);
+    const checkPid = ns.run("check-infection.js", 1, consoleMode);
 
     if (checkPid === 0) {
         ns.print("WARNING: Could not start check-infection.js.");
