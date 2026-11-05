@@ -10,7 +10,7 @@ export const SOLVERS = {
  "Total Ways to Sum": n=>ways(n,Array.from({length:n-1},(_,i)=>i+1)),
  "Total Ways to Sum II": d=>ways(d[0],d[1]),
  "Spiralize Matrix": a=>spiral(a),
- "Array Jumping Game": a=>jump(a)?1:0,
+ "Array Jumping Game": a=>(a.length===1||jump(a)>0)?1:0,
  "Array Jumping Game II": a=>jump(a),
  "Merge Overlapping Intervals": a=>merge(a),
  "Generate IP Addresses": s=>ips(s),

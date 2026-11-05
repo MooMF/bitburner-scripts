@@ -1,3 +1,4 @@
+import { SOLVERS, solveContract } from "./contract-solvers.js";
 /**
  * solve-contracts.js
  *
@@ -53,7 +54,7 @@ export async function main(ns) {
         return;
     }
 
-    const primes = loadPrimeTable(ns, opts.primeFile);
+    const primes = []; // library handles trial division without a primes catalogue
     const rows = getCandidateRows(report)
         .filter(r => filterRow(r, opts))
         .sort(compareRows);
@@ -83,7 +84,7 @@ export async function main(ns) {
 
     ns.write("/data/manager/contracts-solve-results.json", JSON.stringify(sanitizeForJson(output), null, 2), "w");
 
-    ns.tprint(`Contract solver complete. seen=${results.length}, solved=${output.summary.solved}, failed=${output.summary.failed}, dryRun=${opts.dryRun}`);
+    ns.tprint(`Contract solver complete. seen=${results.length}, solved=${output.summary.solved}, failed=${output.summary.failed}, dryRun=${opts.dryRun}; use --live for actual submissions`);
 }
 
 function solveOne(ns, server, file, row, primes, opts) {
@@ -128,7 +129,7 @@ function solveOne(ns, server, file, row, primes, opts) {
         const data = ns.codingcontract.getData(file, server);
         const dataText = JSON.stringify(sanitizeForJson(data));
         const dataHash = simpleHash(dataText);
-        const solverKey = solverKeyForType(liveType);
+        const solverKey = Object.hasOwn(SOLVERS,liveType) ? liveType : null;
 
         base.liveType = liveType;
         base.triesRemaining = triesRemaining;
@@ -147,11 +148,11 @@ function solveOne(ns, server, file, row, primes, opts) {
             return { ...base, skipped: true, note: "No tries remaining." };
         }
 
-        const answer = solveByKey(solverKey, data, primes);
+        const answer = solveContract(liveType, data);
         base.answer = answer;
 
         if (opts.dryRun) {
-            return { ...base, solved: true, note: "Dry-run only. Answer not submitted." };
+            return { ...base, solved: false, note: "Computed only; not game-validated (dry run)." };
         }
 
         const reward = ns.codingcontract.attempt(answer, file, server, { returnReward: true });
@@ -409,7 +410,7 @@ function filterRow(row, opts) {
     const server = row.server || row.handle?.server;
     const file = row.file || row.handle?.file;
     const type = String(row.type || "");
-    const key = row.solverKey || solverKeyForType(type);
+    const key = Object.hasOwn(SOLVERS,type) ? type : null;
 
     if (!server || !file) return false;
     if (!key) return false;
@@ -420,39 +421,39 @@ function filterRow(row, opts) {
     if (opts.type) {
         const requested = opts.type.toLowerCase();
         if (requested === "prime" || requested === "largestprimefactor" || requested === "largest-prime-factor") {
-            return key === "largestPrimeFactor";
+            return type === "Find Largest Prime Factor";
         }
 
         if (requested === "encryption" || requested === "cipher" || requested === "crypto") {
-            return key === "caesarCipher" || key === "vigenereCipher";
+            return type.startsWith("Encryption ");
         }
 
         if (requested === "caesar" || requested === "caesar-cipher") {
-            return key === "caesarCipher";
+            return type.startsWith("Encryption I:");
         }
 
         if (requested === "vigenere" || requested === "vigenère" || requested === "vigenere-cipher" || requested === "vigenère-cipher") {
-            return key === "vigenereCipher";
+            return type.startsWith("Encryption II:");
         }
 
         if (requested === "stock" || requested === "trader" || requested === "stock-trader") {
-            return key === "stockTrader1" || key === "stockTrader2" || key === "stockTrader3" || key === "stockTrader4";
+            return type.startsWith("Algorithmic Stock Trader ");
         }
 
         if (requested === "stock1" || requested === "trader1" || requested === "stock-trader-i") {
-            return key === "stockTrader1";
+            return type === "Algorithmic Stock Trader I";
         }
 
         if (requested === "stock2" || requested === "trader2" || requested === "stock-trader-ii") {
-            return key === "stockTrader2";
+            return type === "Algorithmic Stock Trader II";
         }
 
         if (requested === "stock3" || requested === "trader3" || requested === "stock-trader-iii") {
-            return key === "stockTrader3";
+            return type === "Algorithmic Stock Trader III";
         }
 
         if (requested === "stock4" || requested === "trader4" || requested === "stock-trader-iv") {
-            return key === "stockTrader4";
+            return type === "Algorithmic Stock Trader IV";
         }
 
         return type.toLowerCase().includes(requested) || String(key).toLowerCase().includes(requested);
@@ -463,8 +464,8 @@ function filterRow(row, opts) {
 
 function loadContractReport(ns) {
     const preferred = [
-        "/data/manager/contracts-triage.json",
         "/data/manager/contracts.json",
+        "/data/manager/contracts-triage.json",
     ];
 
     for (const path of preferred) {
@@ -507,7 +508,7 @@ function loadPrimeTable(ns, path) {
 
 function parseArgs(args) {
     const opts = {
-        dryRun: false,
+        dryRun: true,
         silent: false,
         type: null,
         server: null,
@@ -518,6 +519,8 @@ function parseArgs(args) {
     for (let i = 0; i < args.length; i++) {
         const arg = String(args[i]);
         const lower = arg.toLowerCase();
+
+        if (lower === "--live" || lower === "live") { opts.dryRun = false; continue; }
 
         if (lower === "--dry" || lower === "dry" || lower === "--dry-run") {
             opts.dryRun = true;
@@ -596,7 +599,7 @@ function printResult(ns, r) {
     }
 
     if (r.answer !== null && r.answer !== undefined) {
-        ns.print(`     answer=${JSON.stringify(r.answer)}`);
+        ns.print(`     answer=${JSON.stringify(sanitizeForJson(r.answer))}`);
     }
 
     if (r.reward) ns.print(`     reward=${r.reward}`);

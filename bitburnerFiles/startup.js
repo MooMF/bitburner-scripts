@@ -50,6 +50,7 @@ export async function main(ns) {
     const rentIncludeHome = parseBool(ns.args[9] ?? false);
     const rentLoopMs = Number(ns.args[10] ?? 10000);
 
+    const consoleMode = String(ns.args[11] ?? "overview").toLowerCase();
     const restartMarker = "restart-required.txt";
 
     const requiredScripts = [
@@ -135,7 +136,7 @@ export async function main(ns) {
         ns.print(`Cleared ${restartMarker}`);
     }
 
-    const checkPid = ns.run("check-infection.js", 1);
+    const checkPid = ns.run("check-infection.js", 1, consoleMode);
 
     if (checkPid === 0) {
         ns.print("WARNING: Could not start check-infection.js.");

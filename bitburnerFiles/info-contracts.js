@@ -1,3 +1,4 @@
+import { SOLVERS } from "./contract-solvers.js";
 /**
  * info-contracts.js
  *
@@ -266,26 +267,7 @@ function buildSolveQueue(rawRows) {
     return rows;
 }
 
-function solverKeyForType(type) {
-    switch (String(type || "")) {
-        case "Find Largest Prime Factor":
-            return "largestPrimeFactor";
-        case "Encryption I: Caesar Cipher":
-            return "caesarCipher";
-        case "Encryption II: Vigenère Cipher":
-            return "vigenereCipher";
-        case "Algorithmic Stock Trader I":
-            return "stockTrader1";
-        case "Algorithmic Stock Trader II":
-            return "stockTrader2";
-        case "Algorithmic Stock Trader III":
-            return "stockTrader3";
-        case "Algorithmic Stock Trader IV":
-            return "stockTrader4";
-        default:
-            return null;
-    }
-}
+function solverKeyForType(type) { return Object.hasOwn(SOLVERS,type) ? type : null; }
 
 function compareSolveQueueRows(a, b) {
     const supportedDiff = Number(Boolean(b.solverKey)) - Number(Boolean(a.solverKey));

@@ -4,6 +4,7 @@
  *
  * Usage:
  *   run check-infection.js
+ *   run check-infection.js marketing
  *   run check-infection.js security
  *   run check-infection.js money
  *   run check-infection.js payouts

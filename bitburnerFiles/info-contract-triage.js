@@ -1,3 +1,4 @@
+import { SOLVERS } from "./contract-solvers.js";
 /**
  * info-contract-triage.js
  *
@@ -148,126 +149,9 @@ function triageContract(contract) {
 }
 
 function classifySolver(type) {
-    const straightforward = new Set([
-        "Find Largest Prime Factor",
-        "Subarray with Maximum Sum",
-        "Total Ways to Sum",
-        "Total Ways to Sum II",
-        "Spiralize Matrix",
-        "Array Jumping Game",
-        "Array Jumping Game II",
-        "Merge Overlapping Intervals",
-        "Generate IP Addresses",
-        "Algorithmic Stock Trader I",
-        "Algorithmic Stock Trader II",
-        "Algorithmic Stock Trader III",
-        "Algorithmic Stock Trader IV",
-        "Minimum Path Sum in a Triangle",
-        "Unique Paths in a Grid I",
-        "Unique Paths in a Grid II",
-        "Shortest Path in a Grid",
-        "Sanitize Parentheses in Expression",
-        "Find All Valid Math Expressions",
-        "HammingCodes: Integer to Encoded Binary",
-        "HammingCodes: Encoded Binary to Integer",
-        "Proper 2-Coloring of a Graph",
-        "Compression I: RLE Compression",
-        "Compression II: LZ Decompression",
-        "Compression III: LZ Compression",
-        "Encryption I: Caesar Cipher",
-        "Encryption II: Vigenère Cipher",
-        "Algorithmic Stock Trader I",
-        "Algorithmic Stock Trader II",
-        "Algorithmic Stock Trader III",
-        "Algorithmic Stock Trader IV",
-    ]);
-
-    const complex = new Set([
-        "Find All Valid Math Expressions",
-        "Sanitize Parentheses in Expression",
-        "Compression III: LZ Compression",
-        "Proper 2-Coloring of a Graph",
-        "Shortest Path in a Grid",
-        "Algorithmic Stock Trader IV",
-    ]);
-
-    if (type === "Find Largest Prime Factor") {
-        return {
-            key: "largestPrimeFactor",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js using /data/primes.json with fallback trial division.",
-        };
-    }
-
-    if (type === "Encryption I: Caesar Cipher") {
-        return {
-            key: "caesarCipher",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as uppercase Caesar transform with spaces preserved.",
-        };
-    }
-
-    if (type === "Encryption II: Vigenère Cipher") {
-        return {
-            key: "vigenereCipher",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as uppercase Vigenère transform using supplied keyword.",
-        };
-    }
-
-    if (type === "Algorithmic Stock Trader I") {
-        return {
-            key: "stockTrader1",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as max profit with one transaction.",
-        };
-    }
-
-    if (type === "Algorithmic Stock Trader II") {
-        return {
-            key: "stockTrader2",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as max profit with unlimited transactions.",
-        };
-    }
-
-    if (type === "Algorithmic Stock Trader III") {
-        return {
-            key: "stockTrader3",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as max profit with at most two transactions.",
-        };
-    }
-
-    if (type === "Algorithmic Stock Trader IV") {
-        return {
-            key: "stockTrader4",
-            status: "implemented",
-            note: "Implemented in solve-contracts.js as max profit with at most k transactions.",
-        };
-    }
-
-    if (straightforward.has(type) && !complex.has(type)) {
-        return {
-            key: null,
-            status: "straightforward",
-            note: "Known contract type with a relatively direct deterministic solver.",
-        };
-    }
-
-    if (complex.has(type)) {
-        return {
-            key: null,
-            status: "complex",
-            note: "Known contract type, but solver should be tested carefully before automated attempts.",
-        };
-    }
-
-    return {
-        key: null,
-        status: "unknown",
-        note: "No solver classification yet.",
-    };
+    return Object.hasOwn(SOLVERS,type)
+        ? {key:type,status:"implemented",note:"Deterministic solver in contract-solvers.js; validate with dummy contract tests before live submission."}
+        : {key:null,status:"unknown",note:"Unsupported by installed solver catalogue."};
 }
 
 function buildQuestion(type, data) {
