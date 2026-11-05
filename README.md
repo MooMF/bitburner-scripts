@@ -84,3 +84,16 @@ the detailed market console but does not activate live trading.
 
 See [Base-game operations](docs/BASE_GAME_OPERATIONS.md) and
 [Darknet swarm proposal](docs/DARKNET_SWARM_DESIGN.md).
+
+## Script dependency audit and in-game help
+
+The management console now runs directly in `check-infection.js`.
+`manager-console.js` remains a backwards-compatible command alias.
+
+Run `help-market.js`, `help-contracts.js`, `help-network.js`,
+`help-servers.js`, `help-share.js`, `help-diagnostics.js`,
+`help-progression.js`, or `help-darknet.js` to inspect usage inside the game.
+
+- [Dependency diagram](docs/SCRIPT_DEPENDENCIES.md)
+- [Static script sweep / legacy candidates](docs/LEGACY_SCRIPT_AUDIT.md)
+- [Help command index](docs/HELP_COMMANDS.md)
