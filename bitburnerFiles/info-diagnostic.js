@@ -70,7 +70,7 @@ export async function main(ns) {
             stockMarket: buildStockMarket(ns),
             futureSystems: {
                 contracts: contracts.solverImplemented ? "implemented" : "placeholder-present",
-                stockMarket: "api-detected-or-stubbed",
+                stockMarket: "reporting-implemented-trading-opt-in",
                 darkWeb: "placeholder-empty",
                 factions: "placeholder-empty",
                 augmentations: "placeholder-empty",
@@ -119,7 +119,13 @@ function expectedHomeFiles() {
         "buy-servers.js",
         "clean.js",
         "logview.js",
-        "backdoor-check.js"
+        "backdoor-check.js",
+        "contract-solvers.js",
+        "solve-contracts.js",
+        "test-contract-fixtures.js",
+        "test-contract-dummies.js",
+        "info-stock.js",
+        "stock-trader.js"
     ];
 }
 
@@ -606,7 +612,7 @@ function buildContracts(ns, servers) {
         remotePreferredContracts: unique.filter(c => c.server !== "home").length,
         byType,
         implemented: "read-only inventory",
-        solverImplemented: false,
+        solverImplemented: ns.fileExists("contract-solvers.js","home") && ns.fileExists("solve-contracts.js","home"),
         warning: "No solve attempts are made by this script.",
         dedupeRule: "fileName + contractType + dataSignature",
         preferenceRule: "home first, then valid, then higher tries remaining",
@@ -626,10 +632,11 @@ function buildStockMarket(ns) {
     return {
         available: symbols.length > 0,
         hasTixApi: symbols.length > 0,
-        has4SData: safeCall(() => typeof ns.stock.has4SDataTIXAPI === "function" ? ns.stock.has4SDataTIXAPI() : null, null),
+        has4SData: safeCall(() => typeof ns.stock.has4SDataTixApi === "function" ? ns.stock.has4SDataTixApi() : null, null),
         symbols: symbols.length,
         positions,
-        implemented: false
+        implemented: ns.fileExists("info-stock.js","home"),
+        detailsReport: "/data/manager/stocks.json"
     };
 }
 

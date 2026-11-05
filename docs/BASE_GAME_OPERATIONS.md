@@ -2,7 +2,7 @@
 
 This extends v2.4; the current hacking framework remains separately orchestrated.
 
-## Coding contracts (29 contract types)
+## Coding contracts (30 contract types)
 
 A deterministic solver catalogue lives in `bitburnerFiles/contract-solvers.js`.
 Inventory and triage share its supported-type registry. The original `.cct`
@@ -43,12 +43,14 @@ view reports cash, open long/short positions, average price, market value,
 unrealized P/L, 4S forecast and volatility where available, and latest trader
 signals. `stock-trader.js` is **not** started automatically.
 
-The existing `startup.js` takes an optional **12th positional argument**
+The existing `startup.js` accepts the named **--marketing** flag (or an optional 12th positional argument)
 (index 11) for startup console view: `marketing` or `market`. For example:
 
 ```text
 run startup.js true false 0.75 0.5 2 true true 60 0.5 false 10000 marketing
 ```
+
+Alternatively, use the simpler `run startup.js --marketing` to preserve normal startup defaults.
 
 This selects the stock dashboard *without trading or changing the operating
 strategy*. To switch views later: `run manager-console.js marketing`.

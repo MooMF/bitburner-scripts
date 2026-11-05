@@ -74,7 +74,7 @@ I invite people to read the code, critique it, experiment with it, and improve t
 
 ## Extended base-game operations
 
-The contract library now covers all 29 known contract types, with fixture and
+The contract library now covers all 30 known contract types, with fixture and
 in-game dummy-contract test harnesses. **Real contract submission is opt-in**:
 `solve-contracts.js --dry` computes without submitting; `--live` attempts.
 

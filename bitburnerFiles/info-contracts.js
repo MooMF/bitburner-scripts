@@ -122,8 +122,8 @@ export async function main(ns) {
 
             byType,
 
-            implemented: "read-only inventory + solver queue",
-            solverImplemented: false,
+            implemented: "read-only inventory + full shared solver type registry",
+            solverImplemented: true,
             warning: "No solve attempts are made by this script. solveQueue only records remote contract handles.",
 
             dedupeRule: "fileName + contractType + dataSignature",
